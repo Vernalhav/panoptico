@@ -9,4 +9,8 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="5.0.10" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="ViewModels" />
+  </ItemGroup>
+
 </Project>
