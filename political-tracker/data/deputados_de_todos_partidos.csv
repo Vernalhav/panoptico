@@ -1,0 +1,633 @@
+UF,id,nomeEleitoral,siglaPartido
+MG,204515,André Janones,AVANTE
+RJ,204476,Chiquinho Brazão,AVANTE
+MG,198197,Greyce Elias,AVANTE
+AP,204375,Leda Sadala,AVANTE
+MG,160510,Luis Tibé,AVANTE
+BA,204553,Pastor Sargento Isidório,AVANTE
+PE,178921,Sebastião Oliveira,AVANTE
+BA,197438,Tito,AVANTE
+SP,178972,Alex Manente,CIDADANIA
+SP,141391,Arnaldo Jardim,CIDADANIA
+SC,164360,Carmen Zanotto,CIDADANIA
+ES,204355,Da Vitoria,CIDADANIA
+PE,178916,Daniel Coelho,CIDADANIA
+DF,204377,Paula Belmonte,CIDADANIA
+PR,73466,Rubens Bueno,CIDADANIA
+RJ,204448,Luiz Antônio Corrêa,DC
+AC,178836,Alan Rick,DEM
+SP,160545,Alexandre Leite,DEM
+CE,74212,Aníbal Gomes,DEM
+BA,160600,Arthur Oliveira Maia,DEM
+MG,141513,Bilac Pinto,DEM
+TO,178993,Carlos Henrique Gaguim,DEM
+SP,204511,David Soares,DEM
+GO,204412,Dr. Zacharias Calil,DEM
+PB,141422,Efraim Filho,DEM
+SP,160532,Eli Corrêa Filho,DEM
+BA,178854,Elmar Nascimento,DEM
+PE,141431,Fernando Coelho Filho,DEM
+SP,204527,Geninho Zuliani,DEM
+PA,178909,Hélio Leite,DEM
+BA,204564,Igor Kannário,DEM
+GO,204386,Jose Mario Schreiner,DEM
+MA,178886,Juscelino Filho,DEM
+SP,204536,Kim Kataguiri,DEM
+BA,92102,Leur Lomanto Júnior,DEM
+DF,204381,Luis Miranda,DEM
+RJ,178943,Marcos Soares,DEM
+ES,66179,Norma Ayub,DEM
+PA,204498,Olival Marques,DEM
+BA,178860,Paulo Azi,DEM
+PR,204395,Pedro Lupion,DEM
+TO,160639,Professora Dorinha Seabra Rezende,DEM
+RJ,178947,Sóstenes Cavalcante,DEM
+RJ,191945,Zé Augusto Nalin,DEM
+RS,160559,Alceu Moreira,MDB
+SP,178975,Baleia Rossi,MDB
+SC,204361,Carlos Chiodini,MDB
+SC,141405,Celso Maldaner,MDB
+RJ,204459,Daniela do Waguinho,MDB
+TO,178994,Dulce Miranda,MDB
+PA,74075,Elcione Barbalho,MDB
+MG,141427,Fábio Ramalho,MDB
+SE,171623,Fabio Reis,MDB
+AC,141434,Flaviano Melo,MDB
+RS,178996,Giovani Feltes,MDB
+RJ,204456,Gutemberg Reis,MDB
+MG,204539,Hercílio Coelho Diniz,MDB
+SP,178981,Herculano Passos,MDB
+PR,73772,Hermes Parcianello,MDB
+MA,178884,Hildo Rocha,MDB
+AL,204436,Isnaldo Bulhões Jr.,MDB
+AC,178839,Jéssica Sales,MDB
+MA,112437,João Marcelo Souza,MDB
+PA,74079,José Priante,MDB
+MT,204474,Juarez Costa,MDB
+RJ,74254,Leonardo Picciani,MDB
+RO,178954,Lucio Mosquini,MDB
+RS,179001,Márcio Biolchi,MDB
+PI,204431,Marcos Aurélio Sampaio,MDB
+MG,74749,Mauro Lopes,MDB
+CE,178997,Moses Rodrigues,MDB
+MG,178896,Newton Cardoso Jr,MDB
+RS,73692,Osmar Terra,MDB
+PE,141523,Raul Henry,MDB
+SC,160651,Rogério Peninha Mendonça,MDB
+PR,178933,Sergio Souza,MDB
+MT,141552,Valtenir Pereira,MDB
+RN,178952,Walter Alves,MDB
+SP,204528,Adriana Ventura,NOVO
+SP,204516,Alexis Fonteyne,NOVO
+SC,204365,Gilson Marques,NOVO
+MG,204523,Lucas Gonzalez,NOVO
+RS,156190,Marcel van Hattem,NOVO
+RJ,204461,Paulo Ganime,NOVO
+MG,204519,Tiago Mitraud,NOVO
+SP,204532,Vinicius Poit,NOVO
+GO,204413,Alcides Rodrigues,PATRI
+MG,204518,Dr. Frederico,PATRI
+MG,204494,Fred Costa,PATRI
+CE,204550,Júnior Mano,PATRI
+MA,204566,Marreca Filho,PATRI
+PE,160642,Pastor Eurico,PATRI
+RJ,215042,Ricardo da Karol,PATRI
+GO,204413,Alcides Rodrigues,PATRIOTA
+MG,204518,Dr. Frederico,PATRIOTA
+MG,204494,Fred Costa,PATRIOTA
+MA,204566,Marreca Filho,PATRIOTA
+PE,160642,Pastor Eurico,PATRIOTA
+RJ,215042,Ricardo da Karol,PATRIOTA
+PR,178930,Roman,PATRIOTA
+BA,74057,Alice Portugal,PCdoB
+BA,74060,Daniel Almeida,PCdoB
+RJ,74848,Jandira Feghali,PCdoB
+SP,178987,Orlando Silva,PCdoB
+AC,73943,Perpétua Almeida,PCdoB
+AP,160641,Professora Marcivania,PCdoB
+PE,73801,Renildo Calheiros,PCdoB
+MA,178887,Rubens Pereira Júnior,PCdoB
+RS,178835,Afonso Motta,PDT
+BA,204571,Alex Santana,PDT
+CE,133439,André Figueiredo,PDT
+RJ,141439,Chico D'Angelo,PDT
+MS,141411,Dagoberto Nogueira,PDT
+PB,74467,Damião Feliciano,PDT
+CE,204541,Eduardo Bismarck,PDT
+SE,68720,Fábio Henrique,PDT
+BA,160666,Félix Mendonça Júnior,PDT
+GO,160598,Flávia Morais,PDT
+PI,191923,Flávio Nogueira,PDT
+MA,204575,Gil Cutrim,PDT
+PR,73460,Gustavo Fruet,PDT
+CE,204533,Idilvan Alencar,PDT
+AC,204435,Jesus Sérgio,PDT
+CE,74299,Leônidas Cristino,PDT
+MG,74158,Mário Heringer,PDT
+RS,204403,Marlon Santos,PDT
+RJ,133968,Paulo Ramos,PDT
+RS,73486,Pompeo de Mattos,PDT
+CE,204489,Robério Monteiro,PDT
+RO,204360,Silvia Cristina,PDT
+MG,177282,Subtenente Gonzaga,PDT
+SP,204534,Tabata Amaral,PDT
+PE,157130,Túlio Gadêlha,PDT
+PE,74439,Wolney Queiroz,PDT
+BA,204554,Abílio Santana,PHS
+PE,204427,Fernando Rodolfo,PHS
+MG,204510,Franco Cartafina,PHS
+RJ,115746,Gelson Azevedo,PHS
+BA,204564,Igor Kannário,PHS
+MA,215043,Josivaldo JP,PHS
+MG,146788,Marcelo Aro,PHS
+BA,204554,Abílio Santana,PL
+MG,141372,Aelton Freitas,PL
+RJ,178937,Altineu Côrtes,PL
+SE,74052,Bosco Costa,PL
+SP,178829,Capitão Augusto,PL
+PI,178924,Capitão Fábio Abreu,PL
+PR,178928,Christiane de Souza Yared,PL
+PA,135054,Cristiano Vale,PL
+CE,204481,Dr. Jaziel,PL
+RR,141417,Edio Lopes,PL
+PE,204427,Fernando Rodolfo,PL
+RJ,115746,Gelson Azevedo,PL
+PR,74383,Giacobo,PL
+RS,160673,Giovani Cherini,PL
+BA,141458,João Carlos Bacelar,PL
+RN,141459,João Maia,PL
+BA,74554,José Rocha,PL
+MA,204563,Josimar Maranhãozinho,PL
+MA,204574,Junior Lourenço,PL
+CE,204550,Júnior Mano,PL
+DF,141478,Laerte Bessa,PL
+ES,160534,Lauriete,PL
+MG,74585,Lincoln Portela,PL
+RJ,204448,Luiz Antônio Corrêa,PL
+SP,204485,Luiz Carlos Motta,PL
+PR,162332,Luiz Nishimori,PL
+GO,166402,Magda Mofatto,PL
+AM,204556,Marcelo Ramos,PL
+SP,178983,Marcio Alvino,PL
+PI,204432,Marina Santos,PL
+SP,178985,Miguel Lombardi,PL
+MA,204570,Pastor Gil,PL
+SP,160558,Paulo Freire Costa,PL
+SP,204529,Policial Katia Sastre,PL
+SP,160601,Pr. Marco Feliciano,PL
+BA,204567,Raimundo Costa,PL
+PE,178921,Sebastião Oliveira,PL
+AL,204438,Sergio Toledo,PL
+RJ,178946,Soraya Santos,PL
+SP,160976,Tiririca,PL
+SE,204385,Valdevan Noventa,PL
+TO,137070,Vicentinho Júnior,PL
+AP,160591,Vinicius Gurgel,PL
+PB,74043,Wellington Roberto,PL
+MG,204517,Zé Vitor,PL
+MA,204570,Pastor Gil,PMN
+MG,204517,Zé Vitor,PMN
+MA,178881,Aluisio Mendes,PODE
+BA,69871,Bacelar,PODE
+PR,178929,Diego Garcia,PODE
+MG,204508,Igor Timo,PODE
+MT,204472,José Medeiros,PODE
+GO,204391,José Nelto,PODE
+MA,215043,Josivaldo JP,PODE
+RO,204359,Léo Moraes,PODE
+SP,160601,Pr. Marco Feliciano,PODE
+SP,178989,Renata Abreu,PODE
+PE,178920,Ricardo Teobaldo,PODE
+SP,160653,Roberto de Lucena,PODE
+GO,121948,Adriano do Baldy,PP
+RS,136811,Afonso Hamm,PP
+PB,160527,Aguinaldo Ribeiro,PP
+CE,204549,AJ Albuquerque,PP
+AP,178831,André Abdon,PP
+MA,178882,André Fufuca,PP
+SC,73696,Angela Amin,PP
+AL,160541,Arthur Lira,PP
+AM,74090,Átila Lins,PP
+PI,74459,Átila Lira,PP
+RN,178948,Beto Rosado,PP
+BA,93083,Cacá Leão,PP
+DF,204380,Celina Leão,PP
+RJ,204440,Christino Aureo,PP
+BA,74537,Claudio Cajado,PP
+RS,178963,Covatti Filho,PP
+MG,160599,Dimas Fabiano,PP
+RJ,204450,Dr. Luiz Antonio Teixeira Jr.,PP
+PE,141421,Eduardo da Fonte,PP
+ES,178871,Evair Vieira de Melo,PP
+SP,66828,Fausto Pinato,PP
+PE,92699,Fernando Monteiro,PP
+MG,204510,Franco Cartafina,PP
+SP,204531,Guilherme Derrite,PP
+SP,160667,Guilherme Mussi,PP
+RR,178959,Hiran Gonçalves,PP
+PI,67138,Iracema Portella,PP
+RO,108338,Jaqueline Cassol,PP
+RS,160570,Jerônimo Goergen,PP
+RJ,74253,Julio Lopes,PP
+SE,151208,Laercio Oliveira,PP
+MG,146788,Marcelo Aro,PP
+PI,204430,Margarete Coelho,PP
+BA,178858,Mário Negromonte Jr.,PP
+MT,146307,Neri Geller,PP
+PR,73463,Osmar Serraglio,PP
+RS,204406,Pedro Westphalen,PP
+MG,204524,Pinheirinho,PP
+GO,204390,Professor Alcides,PP
+PR,73788,Ricardo Barros,PP
+SP,160655,Ricardo Izar,PP
+BA,178861,Ronaldo Carletto,PP
+BA,178863,Uldurico Junior,PPL
+SP,178972,Alex Manente,PPS
+SP,141391,Arnaldo Jardim,PPS
+SC,164360,Carmen Zanotto,PPS
+ES,204355,Da Vitoria,PPS
+PE,178916,Daniel Coelho,PPS
+DF,204377,Paula Belmonte,PPS
+PR,73466,Rubens Bueno,PPS
+BA,204554,Abílio Santana,PR
+MG,141372,Aelton Freitas,PR
+RJ,178937,Altineu Côrtes,PR
+SE,74052,Bosco Costa,PR
+SP,178829,Capitão Augusto,PR
+PI,178924,Capitão Fábio Abreu,PR
+PR,178928,Christiane de Souza Yared,PR
+PA,135054,Cristiano Vale,PR
+CE,204481,Dr. Jaziel,PR
+RR,141417,Edio Lopes,PR
+PE,204427,Fernando Rodolfo,PR
+RJ,115746,Gelson Azevedo,PR
+PR,74383,Giacobo,PR
+RS,160673,Giovani Cherini,PR
+BA,141458,João Carlos Bacelar,PR
+RN,141459,João Maia,PR
+BA,74554,José Rocha,PR
+MA,204563,Josimar Maranhãozinho,PR
+MA,204574,Junior Lourenço,PR
+CE,204550,Júnior Mano,PR
+DF,141478,Laerte Bessa,PR
+ES,160534,Lauriete,PR
+MG,74585,Lincoln Portela,PR
+SP,204485,Luiz Carlos Motta,PR
+PR,162332,Luiz Nishimori,PR
+GO,166402,Magda Mofatto,PR
+AM,204556,Marcelo Ramos,PR
+SP,178983,Marcio Alvino,PR
+SP,178985,Miguel Lombardi,PR
+SP,160558,Paulo Freire Costa,PR
+SP,204529,Policial Katia Sastre,PR
+BA,204567,Raimundo Costa,PR
+PE,178921,Sebastião Oliveira,PR
+AL,204438,Sergio Toledo,PR
+RJ,178946,Soraya Santos,PR
+SP,160976,Tiririca,PR
+TO,137070,Vicentinho Júnior,PR
+AP,160591,Vinicius Gurgel,PR
+PB,74043,Wellington Roberto,PR
+MG,204517,Zé Vitor,PR
+AP,204353,Aline Gurgel,PRB
+ES,204356,Amaro Neto,PRB
+PR,204414,Aroldo Martins,PRB
+RN,109429,Benes Leocádio,PRB
+AM,204572,Capitão Alberto Neto,PRB
+RS,178962,Carlos Gomes,PRB
+SP,73441,Celso Russomanno,PRB
+MA,141408,Cleber Verde,PRB
+MG,204491,Gilberto Abramo,PRB
+SC,204373,Hélio Costa,PRB
+SP,217036,Henrique do Paraíso,PRB
+PB,160674,Hugo Motta,PRB
+RR,160531,Jhonatan de Jesus,PRB
+GO,74366,João Campos,PRB
+RJ,205550,Jorge Braz,PRB
+DF,204372,Julio Cesar Ribeiro,PRB
+MG,98057,Lafayette de Andrada,PRB
+PR,204418,Luizão Goulart,PRB
+BA,150418,Márcio Marinho,PRB
+SP,204506,Marcos Pereira,PRB
+SP,204540,Maria Rosas,PRB
+PE,204422,Ossesio Silva,PRB
+SP,152610,Roberto Alves,PRB
+RJ,178945,Rosangela Gomes,PRB
+AL,204437,Severino Pessoa,PRB
+AM,74356,Silas Câmara,PRB
+PE,204425,Silvio Costa Filho,PRB
+BA,178862,Tia Eron,PRB
+PA,204505,Vavá Martins,PRB
+SP,141555,Vinicius Carvalho,PRB
+AP,204379,Acácio Favacho,PROS
+CE,204487,Capitão Wagner,PROS
+RN,213762,Carla Dickson,PROS
+RJ,178939,Clarissa Garotinho,PROS
+MG,160640,Eros Biondini,PROS
+MA,74200,Gastão Vieira,PROS
+PR,178934,Toninho Wandscheer,PROS
+BA,178863,Uldurico Junior,PROS
+CE,195866,Vaidon Oliveira,PROS
+MG,160518,Weliton Prado,PROS
+GO,204413,Alcides Rodrigues,PRP
+DF,204374,Bia Kicis,PRP
+BA,204567,Raimundo Costa,PRP
+RJ,215042,Ricardo da Karol,PRP
+RJ,160511,Alessandro Molon,PSB
+PR,178927,Aliel Machado,PSB
+PI,74459,Átila Lira,PSB
+MA,204561,Bira do Pindaré,PSB
+AP,204352,Camilo Capiberibe,PSB
+PA,204499,Cássio Andrade,PSB
+PE,160528,Danilo Cabral,PSB
+CE,204542,Denis Bezerra,PSB
+GO,204389,Elias Vaz,PSB
+MG,161550,Emidinho Madeira,PSB
+PE,72442,Felipe Carreras,PSB
+ES,204371,Felipe Rigoni,PSB
+PB,204394,Gervásio Maia,PSB
+PE,74419,Gonzaga Patriota,PSB
+RS,178964,Heitor Schuch,PSB
+SP,74273,Jefferson Campos,PSB
+MG,73586,Júlio Delgado,PSB
+BA,139285,Lídice da Mata,PSB
+RS,204405,Liziane Bayer,PSB
+PR,178931,Luciano Ducci,PSB
+RJ,76874,Marcelo Freixo,PSB
+BA,204558,Marcelo Nilo,PSB
+RO,141508,Mauro Nazif,PSB
+PE,92172,Milton Coelho,PSB
+RN,178951,Rafael Motta,PSB
+SP,213274,Ricardo Silva,PSB
+SP,204530,Rodrigo Agostinho,PSB
+SC,204366,Rodrigo Coelho,PSB
+SP,204525,Rosana Valle,PSB
+SP,204534,Tabata Amaral,PSB
+PE,178922,Tadeu Alencar,PSB
+ES,206231,Ted Conti,PSB
+MG,204483,Vilson da Fetaemg,PSB
+MA,178881,Aluisio Mendes,PSC
+PE,204423,André Ferreira,PSC
+MG,204482,Euclydes Pettersen,PSC
+SP,74270,Gilberto Nascimento,PSC
+GO,204419,Glaustin da Fokus,PSC
+ES,160534,Lauriete,PSC
+TO,204363,Osires Damaso,PSC
+RJ,204441,Otoni de Paula,PSC
+PR,193726,Paulo Eduardo Martins,PSC
+AP,217330,Pedro Dalua,PSC
+RJ,215042,Ricardo da Karol,PSC
+SE,204385,Valdevan Noventa,PSC
+PE,74471,André de Paula,PSD
+BA,160553,Antonio Brito,PSD
+SP,204504,Cezinha de Madureira,PSD
+BA,205476,Charles Fernandes,PSD
+SC,116379,Darci de Matos,PSD
+PA,178908,Delegado Éder Mauro,PSD
+MG,160588,Diego Andrade,PSD
+CE,143632,Domingos Neto,PSD
+MA,204562,Edilázio Júnior,PSD
+RO,178953,Expedito Netto,PSD
+SE,178969,Fábio Mitidieri,PSD
+MS,160587,Fábio Trad,PSD
+GO,204392,Francisco Jr.,PSD
+RR,204465,Haroldo Cathedral,PSD
+RJ,141450,Hugo Leal,PSD
+PA,178910,Joaquim Passarinho,PSD
+RJ,217480,Jones Moura,PSD
+BA,160619,José Nunes,PSD
+PI,74317,Júlio Cesar,PSD
+PA,204497,Júnior Ferrari,PSD
+SP,204522,Marco Bertaiolli,PSD
+AL,178843,Marx Beltrão,PSD
+MG,178895,Misael Varella,PSD
+ES,74165,Neucimar Fraga,PSD
+BA,204573,Otto Alencar Filho,PSD
+BA,74574,Paulo Magalhães,PSD
+RS,216544,Paulo Vicente Caleffi,PSD
+RJ,215045,Pedro Augusto Palareti,PSD
+PR,205865,Reinhold Stephanes Junior,PSD
+SC,204362,Ricardo Guidi,PSD
+PR,178930,Roman,PSD
+PR,204387,Sargento Fahur,PSD
+BA,73808,Sérgio Brito,PSD
+AM,204557,Sidney Leite,PSD
+MG,92776,Stefano Aguiar,PSD
+PR,204396,Vermelho,PSD
+BA,204560,Adolfo Viana,PSDB
+MG,74646,Aécio Neves,PSDB
+SP,204544,Alexandre Frota,PSDB
+MS,204358,Beto Pereira,PSDB
+MS,207176,Bia Cavassa,PSDB
+SP,160589,Bruna Furlan,PSDB
+SP,74262,Carlos Sampaio,PSDB
+GO,178876,Célio Silveira,PSDB
+PA,204496,Celso Sabino,PSDB
+RS,204409,Daniel Trzeciak,PSDB
+CE,62881,Danilo Forte,PSDB
+MG,160758,Domingos Sávio,PSDB
+PB,204421,Edna Henrique,PSDB
+MG,74655,Eduardo Barbosa,PSDB
+SP,178977,Eduardo Cury,PSDB
+SC,178966,Geovania de Sá,PSDB
+RS,204404,Lucas Redecker,PSDB
+AC,204471,Mara Rocha,PSDB
+RO,178956,Mariana Carvalho,PSDB
+PA,74352,Nilson Pinto,PSDB
+RJ,141515,Otavio Leite,PSDB
+MG,141516,Paulo Abi-Ackel,PSDB
+PB,178912,Pedro Cunha Lima,PSDB
+AL,178844,Pedro Vilela,PSDB
+MG,141531,Rodrigo de Castro,PSDB
+MS,204357,Rose Modesto,PSDB
+PR,178935,Rossoni,PSDB
+PB,160635,Ruy Carneiro,PSDB
+SP,178990,Samuel Moreira,PSDB
+RR,178961,Shéridan,PSDB
+AL,204466,Tereza Nelma,PSDB
+SP,141553,Vanderlei Macris,PSDB
+SP,178992,Vitor Lippi,PSDB
+SP,204521,Abou Anni,PSL
+MG,204545,Alê Silva,PSL
+SP,204544,Alexandre Frota,PSL
+PR,204400,Aline Sleutjes,PSL
+DF,204374,Bia Kicis,PSL
+RS,204388,Bibo Nunes,PSL
+SP,204502,Bozzella,PSL
+SP,204507,Carla Zambelli,PSL
+RJ,204460,Carlos Jordy,PSL
+SC,204369,Caroline de Toni,PSL
+PA,204496,Celso Sabino,PSL
+MG,204490,Charlles Evangelista,PSL
+RJ,204462,Chris Tonietto,PSL
+SC,204376,Coronel Armando,PSL
+RO,204378,Coronel Chrisóstomo,PSL
+SP,204514,Coronel Tadeu,PSL
+SC,204367,Daniel Freitas,PSL
+RJ,204454,Daniel Silveira,PSL
+RJ,204451,Delegado Antônio Furtado,PSL
+MG,204512,Delegado Marcelo Freitas,PSL
+AM,204569,Delegado Pablo,PSL
+GO,164359,Delegado Waldir,PSL
+MS,204351,Dr. Luiz Ovando,PSL
+ES,81297,Dra. Soraya Manato,PSL
+SP,92346,Eduardo Bolsonaro,PSL
+SC,204368,Fabio Schiochet,PSL
+RJ,204477,Felício Laterça,PSL
+PR,204398,Felipe Francischini,PSL
+PR,204411,Filipe Barros,PSL
+RN,204473,General Girão,PSL
+SP,204484,General Peternelli,PSL
+SP,204513,Guiga Peixoto,PSL
+RJ,204442,Gurgel,PSL
+CE,204548,Heitor Freire,PSL
+RJ,204444,Helio Lopes,PSL
+SP,204546,Joice Hasselmann,PSL
+PB,204420,Julian Lemos,PSL
+MG,204520,Junio Amaral,PSL
+MG,204547,Léo Motta,PSL
+MS,204382,Loester Trutis,PSL
+RJ,196358,Lourival Gomes,PSL
+PE,74478,Luciano Bivar,PSL
+RJ,204455,Luiz Lima,PSL
+SP,204526,Luiz Philippe de Orleans e Bragança,PSL
+RJ,204458,Major Fabiana,PSL
+MG,179000,Marcelo Álvaro Antônio,PSL
+RS,205863,Marcelo Brum,PSL
+RJ,204452,Márcio Labre,PSL
+MT,204449,Nelson Barbudo,PSL
+RS,204415,Nereu Crispim,PSL
+RR,204479,Nicoletti,PSL
+RJ,204446,Professor Joziel,PSL
+BA,204565,Professora Dayane Pimentel,PSL
+RS,204416,Sanderson,PSL
+GO,179587,Vitor Hugo,PSL
+MG,204509,Áurea Carolina,PSOL
+RJ,205548,David Miranda,PSOL
+RS,204407,Fernanda Melchionna,PSOL
+RJ,152605,Glauber Braga,PSOL
+SP,73531,Ivan Valente,PSOL
+SP,74784,Luiza Erundina,PSOL
+RJ,76874,Marcelo Freixo,PSOL
+SP,204535,Sâmia Bomfim,PSOL
+RJ,204464,Talíria Petrone,PSOL
+PA,215044,Vivi Reis,PSOL
+BA,160508,Afonso Florence,PT
+PA,204495,Airton Faleiro,PT
+SP,204501,Alencar Santana Braga,PT
+SP,204503,Alexandre Padilha,PT
+SP,73433,Arlindo Chinaglia,PT
+RJ,73701,Benedita da Silva,PT
+PA,141335,Beto Faro,PT
+RS,160538,Bohn Gass,PT
+PE,204426,Carlos Veras,PT
+SP,141398,Carlos Zarattini,PT
+TO,204370,Célio Moura,PT
+PR,132504,Enio Verri,PT
+DF,160575,Erika Kokay,PT
+PB,204393,Frei Anastacio Ribeiro,PT
+PR,107283,Gleisi Hoffmann,PT
+ES,178873,Helder Salomão,PT
+RS,73482,Henrique Fontana,PT
+SE,178970,João Daniel,PT
+BA,178857,Jorge Solla,PT
+CE,141464,José Airton Félix Cirilo,PT
+CE,141470,José Guimarães,PT
+AM,204555,José Ricardo,PT
+BA,209189,Joseildo Ramos,PT
+AC,178825,LEO DE BRITO,PT
+MG,74156,Leonardo Monteiro,PT
+CE,178866,Luizianne Lins,PT
+RS,160535,Marcon,PT
+RS,74398,Maria do Rosário,PT
+PE,204428,Marília Arraes,PT
+PI,188097,Merlong Solano,PT
+RN,204453,Natália Bonavides,PT
+SP,178986,Nilto Tatto,PT
+MG,74159,Odair Cunha,PT
+MG,160556,Padre João,PT
+MG,74160,Patrus Ananias,PT
+AL,171617,Paulão,PT
+MG,204492,Paulo Guedes,PT
+RS,74400,Paulo Pimenta,PT
+SP,141488,Paulo Teixeira,PT
+SC,160604,Pedro Uczai,PT
+MT,204467,Professora Rosa Neide,PT
+MG,74161,Reginaldo Lopes,PT
+PI,178925,Rejane Dias,PT
+MG,204480,Rogério Correia,PT
+GO,74371,Rubens Otoni,PT
+SP,73604,Rui Falcão,PT
+BA,160610,Valmir Assunção,PT
+MS,74376,Vander Loubet,PT
+SP,74283,Vicentinho,PT
+BA,160569,Waldenor Pereira,PT
+MA,178889,Zé Carlos,PT
+BA,204559,Zé Neto,PT
+PR,160592,Zeca Dirceu,PT
+PA,204500,Eduardo Costa,PTB
+MT,198783,Emanuel Pinheiro Neto,PTB
+PR,204410,Luisa Canziani,PTB
+RS,133810,Marcelo Moraes,PTB
+RS,75431,Maurício Dziedricki,PTB
+AL,194260,Nivaldo Albuquerque,PTB
+PA,204538,Paulo Bengtson,PTB
+CE,90201,Pedro Augusto Bezerra,PTB
+MA,122974,Pedro Lucas Fernandes,PTB
+PB,74044,Wilson Santiago,PTB
+RN,109429,Benes Leocádio,PTC
+PI,204432,Marina Santos,PTC
+CE,204488,Célio Studart,PV
+SP,204537,Enrico Misasi,PV
+PR,178832,Leandre,PV
+DF,204383,Professor Israel Batista,PV
+RR,204468,Joenia Wapichana,REDE
+AP,204353,Aline Gurgel,REPUBLICANOS
+ES,204356,Amaro Neto,REPUBLICANOS
+PR,204414,Aroldo Martins,REPUBLICANOS
+RN,109429,Benes Leocádio,REPUBLICANOS
+AM,204572,Capitão Alberto Neto,REPUBLICANOS
+RS,178962,Carlos Gomes,REPUBLICANOS
+SP,73441,Celso Russomanno,REPUBLICANOS
+MA,141408,Cleber Verde,REPUBLICANOS
+MA,204575,Gil Cutrim,REPUBLICANOS
+MG,204491,Gilberto Abramo,REPUBLICANOS
+SC,204373,Hélio Costa,REPUBLICANOS
+SP,217036,Henrique do Paraíso,REPUBLICANOS
+PB,160674,Hugo Motta,REPUBLICANOS
+RR,160531,Jhonatan de Jesus,REPUBLICANOS
+GO,74366,João Campos,REPUBLICANOS
+RJ,205550,Jorge Braz,REPUBLICANOS
+DF,204372,Julio Cesar Ribeiro,REPUBLICANOS
+MG,98057,Lafayette de Andrada,REPUBLICANOS
+PR,204418,Luizão Goulart,REPUBLICANOS
+BA,150418,Márcio Marinho,REPUBLICANOS
+SP,204506,Marcos Pereira,REPUBLICANOS
+SP,204540,Maria Rosas,REPUBLICANOS
+PE,204422,Ossesio Silva,REPUBLICANOS
+SP,160601,Pr. Marco Feliciano,REPUBLICANOS
+SP,152610,Roberto Alves,REPUBLICANOS
+RJ,178945,Rosangela Gomes,REPUBLICANOS
+AL,204437,Severino Pessoa,REPUBLICANOS
+AM,74356,Silas Câmara,REPUBLICANOS
+PE,204425,Silvio Costa Filho,REPUBLICANOS
+BA,178862,Tia Eron,REPUBLICANOS
+PA,204505,Vavá Martins,REPUBLICANOS
+SP,141555,Vinicius Carvalho,REPUBLICANOS
+SP,204544,Alexandre Frota,S.PART.
+PA,204496,Celso Sabino,S.PART.
+RJ,204448,Luiz Antônio Corrêa,S.PART.
+PE,160665,Augusto Coutinho,SOLIDARIEDADE
+RJ,160512,Aureo Ribeiro,SOLIDARIEDADE
+AM,204551,Bosco Saraiva,SOLIDARIEDADE
+MT,204439,Dr. Leonardo,SOLIDARIEDADE
+AC,204434,Dra. Vanda Milani,SOLIDARIEDADE
+TO,204364,Eli Borges,SOLIDARIEDADE
+CE,160669,Genecias Noronha,SOLIDARIEDADE
+SE,204408,Gustinho Ribeiro,SOLIDARIEDADE
+GO,178879,Lucas Vergilio,SOLIDARIEDADE
+PI,204432,Marina Santos,SOLIDARIEDADE
+RR,204475,Ottaci Nascimento,SOLIDARIEDADE
+SP,141518,Paulo Pereira da Silva,SOLIDARIEDADE
+TO,143084,Tiago Dimas,SOLIDARIEDADE
+MG,160632,Zé Silva,SOLIDARIEDADE
