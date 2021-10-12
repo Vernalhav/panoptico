@@ -7,7 +7,7 @@ export class DeputadosController {
   constructor(private deputadoService: DeputadoService) {}
 
   @Get()
-  async getDeputados() {
-    return this.deputadoService.findAll();
+  async getDeputadosByParty() {
+    return this.deputadoService.getAllGroupedByParty();
   }
 }
