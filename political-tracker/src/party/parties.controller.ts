@@ -4,10 +4,10 @@ import { PartyService } from './party.service';
 
 @Controller('partidos')
 export class PartiesController {
-  constructor(private congresspersonService: PartyService) {}
+  constructor(private partyService: PartyService) {}
 
   @Get()
   async getAll() {
-    
+    return await this.partyService.getAll();
   }
 }

@@ -1,16 +1,19 @@
 import { Injectable } from '@nestjs/common';
-import { Connection } from 'typeorm';
-import { Party } from './interfaces/party.interface';
+import { InjectRepository } from '@nestjs/typeorm';
+import { Repository } from 'typeorm';
+import PartyEntity from './entities/party.entity';
 
 @Injectable()
 export class PartyService {
 
-  constructor(private connection: Connection) {}
+  constructor(
+    @InjectRepository(PartyEntity)
+    private partiesRepository: Repository<PartyEntity>
+  ) {}
 
-  async getAll(): Promise<Party[]> {
-    // const result = await this.connection.query('SELECT * FROM deputados') as Deputado[];
-    // console.log(result);
-    // return result;
-    return [];
+  async getAll(): Promise<PartyEntity[]> {
+    const result = await this.partiesRepository.find();
+    console.log(result);
+    return result;
   }
 }
