@@ -1,15 +1,13 @@
-import { Controller, Get } from '@nestjs/common';
-import { InjectConnection } from '@nestjs/typeorm';
-import { Connection } from 'typeorm';
+import { Controller, Get, Param } from '@nestjs/common';
+import { DeputadoService } from './deputados.service';
+
 
 @Controller('deputados')
 export class DeputadosController {
-  constructor(@InjectConnection() private readonly connection: Connection) {}
+  constructor(private deputadoService: DeputadoService) {}
 
   @Get()
-  async getDeputado() {
-    const deputados = await this.connection.query('SELECT * from deputados');
-    console.log(deputados);
-    return deputados;
+  async getDeputados() {
+    return this.deputadoService.findAll();
   }
 }
