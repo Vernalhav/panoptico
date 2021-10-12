@@ -1,41 +1,41 @@
-,id,sigla,nome
-0,36898,AVANTE,Avante
-1,37905,CIDADANIA,Cidadania
-2,37902,DC,Democracia Cristã
-3,36769,DEM,Democratas
-4,36899,MDB,Movimento Democrático Brasileiro
-5,37901,NOVO,Partido Novo
-6,37900,PATRI,Patriota
-7,37907,PATRIOTA,Patriota
-8,36863,PCB,Partido Constitucionalista Brasileiro
-9,36779,PCdoB,Partido Comunista do Brasil
-10,36781,PCO,Partido da Causa Operária
-11,36786,PDT,Partido Democrático Trabalhista
-12,36793,PHS,Partido Humanista da Solidariedade
-13,37906,PL,Partido Liberal
-14,36887,PMB,Partido da Mulher Brasileira
-15,36801,PMN,Partido da Mobilização Nacional
-16,36896,PODE,Podemos
-17,37903,PP,Progressistas
-18,36762,PPL,Partido Pátria Livre
-19,36813,PPS,Partido Popular Socialista
-20,36814,PR,Partido da República
-21,36815,PRB,Partido Republicano Brasileiro
-22,36763,PROS,Partido Republicano da Ordem Social
-23,36824,PRP,Partido Republicano Progressista
-24,36829,PRTB,Partido Renovador Trabalhista Brasileiro
-25,36832,PSB,Partido Socialista Brasileiro
-26,36833,PSC,Partido Social Cristão
-27,36834,PSD,Partido Social Democrático
-28,36835,PSDB,Partido da Social Democracia Brasileira
-29,36837,PSL,Partido Social Liberal
-30,36839,PSOL,Partido Socialismo e Liberdade
-31,36843,PSTU,Partido Socialista dos Trabalhadores Unificado
-32,36844,PT,Partido dos Trabalhadores
-33,36845,PTB,Partido Trabalhista Brasileiro
-34,36846,PTC,Partido Trabalhista Cristão
-35,36851,PV,Partido Verde
-36,36886,REDE,Rede Sustentabilidade
-37,37908,REPUBLICANOS,Republicanos
-38,36852,S.PART.,Sem Partido
-39,37904,SOLIDARIEDADE,Solidariedade
+id,sigla,nome
+36898,AVANTE,Avante
+37905,CIDADANIA,Cidadania
+37902,DC,Democracia Cristã
+36769,DEM,Democratas
+36899,MDB,Movimento Democrático Brasileiro
+37901,NOVO,Partido Novo
+37900,PATRI,Patriota
+37907,PATRIOTA,Patriota
+36863,PCB,Partido Constitucionalista Brasileiro
+36779,PCdoB,Partido Comunista do Brasil
+36781,PCO,Partido da Causa Operária
+36786,PDT,Partido Democrático Trabalhista
+36793,PHS,Partido Humanista da Solidariedade
+37906,PL,Partido Liberal
+36887,PMB,Partido da Mulher Brasileira
+36801,PMN,Partido da Mobilização Nacional
+36896,PODE,Podemos
+37903,PP,Progressistas
+36762,PPL,Partido Pátria Livre
+36813,PPS,Partido Popular Socialista
+36814,PR,Partido da República
+36815,PRB,Partido Republicano Brasileiro
+36763,PROS,Partido Republicano da Ordem Social
+36824,PRP,Partido Republicano Progressista
+36829,PRTB,Partido Renovador Trabalhista Brasileiro
+36832,PSB,Partido Socialista Brasileiro
+36833,PSC,Partido Social Cristão
+36834,PSD,Partido Social Democrático
+36835,PSDB,Partido da Social Democracia Brasileira
+36837,PSL,Partido Social Liberal
+36839,PSOL,Partido Socialismo e Liberdade
+36843,PSTU,Partido Socialista dos Trabalhadores Unificado
+36844,PT,Partido dos Trabalhadores
+36845,PTB,Partido Trabalhista Brasileiro
+36846,PTC,Partido Trabalhista Cristão
+36851,PV,Partido Verde
+36886,REDE,Rede Sustentabilidade
+37908,REPUBLICANOS,Republicanos
+36852,S.PART.,Sem Partido
+37904,SOLIDARIEDADE,Solidariedade
