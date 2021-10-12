@@ -1,15 +1,14 @@
 import { Injectable } from '@nestjs/common';
-import { InjectConnection } from '@nestjs/typeorm';
 import { Connection } from 'typeorm';
-import { Deputado } from './interfaces/deputado.interface'
+import { Congressperson } from './interfaces/congressperson.interface'
 
 @Injectable()
-export class DeputadoService {
+export class CongresspersonService {
 
   constructor(private connection: Connection) {}
 
-  async getAll(): Promise<Deputado[]> {
-    const result = await this.connection.query('SELECT * FROM deputados') as Deputado[];
+  async getAll(): Promise<Congressperson[]> {
+    const result = await this.connection.query('SELECT * FROM deputados') as Congressperson[];
     console.log(result);
     return result;
   }

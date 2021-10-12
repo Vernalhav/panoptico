@@ -2,8 +2,8 @@ import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { DeputadosController } from './deputados/deputados.controller';
-import { DeputadoService } from './deputados/deputados.service';
+import { CongresspeopleController } from './congressperson/congresspeople.controller';
+import { CongresspersonService } from './congressperson/congressperson.service';
 
 @Module({
   imports: [
@@ -12,7 +12,7 @@ import { DeputadoService } from './deputados/deputados.service';
       database: 'data/database.sqlite3',
     }),
   ],
-  controllers: [AppController, DeputadosController],
-  providers: [AppService, DeputadoService],
+  controllers: [AppController, CongresspeopleController],
+  providers: [AppService, CongresspersonService],
 })
 export class AppModule {}
