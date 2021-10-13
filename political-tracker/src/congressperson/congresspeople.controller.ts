@@ -7,7 +7,7 @@ export class CongresspeopleController {
   constructor(private congresspersonService: CongresspersonService) {}
 
   @Get()
-  async getCongresspeopleByParty() {
-    return this.congresspersonService.getAllGroupedByParty();
+  async getAll() {
+    return this.congresspersonService.getAll();
   }
 }

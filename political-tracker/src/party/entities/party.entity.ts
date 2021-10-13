@@ -1,7 +1,9 @@
-import { Entity, Column, PrimaryGeneratedColumn, PrimaryColumn } from 'typeorm';
+import CongresspersonEntity from 'src/congressperson/entities/congressperson.entity';
+import { Entity, Column, PrimaryColumn, OneToMany } from 'typeorm';
 
 @Entity({name: 'partidos'})
 export default class PartyEntity {
+  
   @PrimaryColumn({name: 'id'})
   id: number;
 
@@ -10,4 +12,7 @@ export default class PartyEntity {
   
   @Column({name: 'nome', length: 128})
   name: string;
+
+  @OneToMany(() => CongresspersonEntity, congressperson => congressperson.party)
+  members: CongresspersonEntity[];
 }

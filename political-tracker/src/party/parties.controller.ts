@@ -10,4 +10,9 @@ export class PartiesController {
   async getAll() {
     return await this.partyService.getAll();
   }
+
+  @Get('membros')
+  async getAllWithMembers() {
+    return await this.partyService.getAllWithMembers();
+  }
 }

@@ -16,4 +16,10 @@ export class PartyService {
     console.log(result);
     return result;
   }
+
+  async getAllWithMembers(): Promise<PartyEntity[]> {
+    const result = await this.partiesRepository.find({relations: ['members']});
+    console.log(result);
+    return result;
+  }
 }
