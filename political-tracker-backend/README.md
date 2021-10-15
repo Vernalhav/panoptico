@@ -44,3 +44,14 @@ political-tracker-backend
 
 ## MVC
 A arquitetura recomendada pelo framework Nest.JS dá nomes diferentes aos componentes comummente associados ao MVC. Para esse projeto, os arquivos com extensão `.controller.ts`correspondem aos Controllers e os arquivos `.service.ts` correspondem aos Models. 
+
+## Instalação e execução
+Após clonar o projeto, execute
+```
+npm install
+```
+para instalar as dependências, e depois
+```
+npm start
+```
+para executar a aplucação. O servidor escutará a porta 3000.
