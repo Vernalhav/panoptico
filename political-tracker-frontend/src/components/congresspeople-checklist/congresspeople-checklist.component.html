@@ -1,0 +1,13 @@
+<mat-accordion>
+  <mat-expansion-panel *ngFor="let party of congresspeopleByParty">
+    <mat-expansion-panel-header>
+      <mat-panel-title>{{party.name}} ({{party.acronym}})</mat-panel-title>
+    </mat-expansion-panel-header>
+
+    <mat-selection-list>
+      <mat-list-option color="accent" *ngFor="let member of party.members">
+        {{member.name}}
+      </mat-list-option>
+    </mat-selection-list>
+  </mat-expansion-panel>
+</mat-accordion>
