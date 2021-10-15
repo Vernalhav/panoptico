@@ -2,16 +2,10 @@
     <mat-card>
         <mat-tab-group>
             <mat-tab label="Partidos">
-                <app-filterable-checklist [items]="parties">
-
-                </app-filterable-checklist>
+                <app-filterable-checklist [items]="parties"></app-filterable-checklist>
             </mat-tab>
             <mat-tab label="Deputados">
-                <mat-selection-list>
-                    <mat-list-option color="accent" *ngFor="let party of parties">
-                    {{party.acronym}}
-                    </mat-list-option>
-                </mat-selection-list>
+                <app-congresspeople-checklist [congresspeopleByParty]="parties"></app-congresspeople-checklist>
             </mat-tab>
             <mat-tab label="Tópicos">
                 TODO :D

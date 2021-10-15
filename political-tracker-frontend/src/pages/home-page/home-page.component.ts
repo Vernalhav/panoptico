@@ -14,6 +14,6 @@ export class HomePageComponent implements OnInit {
 
   ngOnInit(): void {
     this.backendService.getParties()
-    .subscribe((parties: Party[]) => { this.parties = parties })
+      .subscribe((parties: Party[]) => { this.parties = parties });
   }
 }
