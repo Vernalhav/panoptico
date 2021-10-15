@@ -1,4 +1,21 @@
-<p>home-page worksaa!</p>
+<main class="mat-app-background">
+    <mat-card>
+        <mat-tab-group>
+            <mat-tab label="Partidos">
+                <app-filterable-checklist [items]="parties">
 
-<li *ngFor="let party of parties">{{party.acronym}} ~~ {{party.name}}</li>
-
+                </app-filterable-checklist>
+            </mat-tab>
+            <mat-tab label="Deputados">
+                <mat-selection-list>
+                    <mat-list-option color="accent" *ngFor="let party of parties">
+                    {{party.acronym}}
+                    </mat-list-option>
+                </mat-selection-list>
+            </mat-tab>
+            <mat-tab label="Tópicos">
+                TODO :D
+            </mat-tab>
+        </mat-tab-group>
+    </mat-card>
+</main>
