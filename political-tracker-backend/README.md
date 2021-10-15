@@ -41,3 +41,6 @@ political-tracker-backend
 │       └── entities
 └── test                    # Contém os testes automatizados
 ```
+
+## MVC
+A arquitetura recomendada pelo framework Nest.JS dá nomes diferentes aos componentes comummente associados ao MVC. Para esse projeto, os arquivos com extensão `.controller.ts`correspondem aos Controllers e os arquivos `.service.ts` correspondem aos Models. 
