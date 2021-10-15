@@ -14,5 +14,4 @@ export class FilterableChecklistComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }
