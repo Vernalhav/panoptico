@@ -1,9 +1,9 @@
-import Party from "./party.interface";
+import Party from './party.interface';
 
-export default interface Congressperson { 
-    id: number, 
-    name: string, 
-    state: string,
-    partyId?: number,
-    party?: Party,
+export default interface Congressperson {
+  id: number;
+  name: string;
+  state: string;
+  partyId?: number;
+  party?: Party;
 }

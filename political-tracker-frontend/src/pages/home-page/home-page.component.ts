@@ -5,15 +5,16 @@ import { BackendService } from 'src/app/core/services/backend/backend.service';
 @Component({
   selector: 'app-home-page',
   templateUrl: './home-page.component.html',
-  styleUrls: ['./home-page.component.scss']
+  styleUrls: ['./home-page.component.scss'],
 })
 export class HomePageComponent implements OnInit {
-  parties: Party[] = []
+  parties: Party[] = [];
 
-  constructor(private backendService: BackendService ) { }
+  constructor(private backendService: BackendService) {}
 
   ngOnInit(): void {
-    this.backendService.getParties()
-      .subscribe((parties: Party[]) => { this.parties = parties });
+    this.backendService.getParties().subscribe((parties: Party[]) => {
+      this.parties = parties;
+    });
   }
 }

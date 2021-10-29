@@ -14,9 +14,9 @@ import CongresspersonEntity from './congressperson/entities/congressperson.entit
     TypeOrmModule.forRoot({
       type: 'sqlite',
       database: 'data/database.sqlite3',
-      entities: [PartyEntity, CongresspersonEntity]
+      entities: [PartyEntity, CongresspersonEntity],
     }),
-    TypeOrmModule.forFeature([PartyEntity, CongresspersonEntity])
+    TypeOrmModule.forFeature([PartyEntity, CongresspersonEntity]),
   ],
   controllers: [AppController, CongresspeopleController, PartiesController],
   providers: [AppService, CongresspersonService, PartyService],

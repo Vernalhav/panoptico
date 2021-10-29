@@ -3,21 +3,25 @@ import { HttpClient } from '@angular/common/http';
 import Party from '../../interfaces/party.interface';
 import Congressperson from '../../interfaces/congressperson.interface';
 
-
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class BackendService {
-  baseUrl:string = 'http://localhost:3000';
+  baseUrl = 'http://localhost:3000';
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
-  private request<R>(method: string, url: string, data?: any, responseType?: any) {
-    const result =  this.http.request<R>(method, url, {
+  private request<R>(
+    method: string,
+    url: string,
+    data?: any,
+    responseType?: any,
+  ) {
+    const result = this.http.request<R>(method, url, {
       body: data,
       responseType: responseType || 'json',
       observe: 'body',
-      headers: { }
+      headers: {},
     });
 
     return result;
