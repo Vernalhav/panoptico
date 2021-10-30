@@ -3,8 +3,8 @@ import { EventBus } from './common/event-bus';
 import { MonitoredKeyword } from './entities/monitored-keyword.entity';
 
 export abstract class MonitoredKeywordsModel {
-  private monitoredKeywords: MonitoredKeyword[] = [];
-  private eventBus: EventBus<MonitoredKeyword[]> = new EventBus<
+  protected monitoredKeywords: MonitoredKeyword[] = [];
+  protected eventBus: EventBus<MonitoredKeyword[]> = new EventBus<
     MonitoredKeyword[]
   >();
 
