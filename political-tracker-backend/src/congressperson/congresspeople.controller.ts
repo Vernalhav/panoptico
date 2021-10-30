@@ -1,6 +1,5 @@
-import { Controller, Get, Param } from '@nestjs/common';
+import { Controller, Get } from '@nestjs/common';
 import { CongresspersonService } from './congressperson.service';
-
 
 @Controller('deputados')
 export class CongresspeopleController {

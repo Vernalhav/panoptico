@@ -1,19 +1,12 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import Party from 'src/app/core/interfaces/party.interface';
 
 @Component({
   selector: 'app-congresspeople-checklist',
   templateUrl: './congresspeople-checklist.component.html',
-  styleUrls: ['./congresspeople-checklist.component.scss']
+  styleUrls: ['./congresspeople-checklist.component.scss'],
 })
-export class CongresspeopleChecklistComponent implements OnInit {
-
+export class CongresspeopleChecklistComponent {
   @Input()
   congresspeopleByParty: Party[] = [];
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
 }

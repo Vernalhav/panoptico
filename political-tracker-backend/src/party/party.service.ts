@@ -5,10 +5,9 @@ import PartyEntity from './entities/party.entity';
 
 @Injectable()
 export class PartyService {
-
   constructor(
     @InjectRepository(PartyEntity)
-    private partiesRepository: Repository<PartyEntity>
+    private partiesRepository: Repository<PartyEntity>,
   ) {}
 
   async getAll(): Promise<PartyEntity[]> {
@@ -18,9 +17,11 @@ export class PartyService {
   }
 
   async getAllWithMembers(): Promise<PartyEntity[]> {
-    let result = await this.partiesRepository.find({relations: ['members']});
-    result = result.filter(party => party.members.length > 0);
-    console.log(result.reduce((acc: number, current) => acc + current.members.length, 0));
+    let result = await this.partiesRepository.find({ relations: ['members'] });
+    result = result.filter((party) => party.members.length > 0);
+    console.log(
+      result.reduce((acc: number, current) => acc + current.members.length, 0),
+    );
     return result;
   }
 }
