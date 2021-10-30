@@ -10,13 +10,12 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatTabsModule } from '@angular/material/tabs';
 import { CongresspeopleChecklistComponent } from './congresspeople-checklist/congresspeople-checklist.component';
 import { FilterableChecklistComponent } from './filterable-checklist/filterable-checklist.component';
-import { MonitoredKeywordsComponent } from './monitored-keywords/monitored-keywords.component';
+import { MonitoredKeywordsModule } from './monitored-keywords/monitored-keywords.module';
 
 @NgModule({
   declarations: [
     CongresspeopleChecklistComponent,
     FilterableChecklistComponent,
-    MonitoredKeywordsComponent,
   ],
   imports: [
     CommonModule,
@@ -28,11 +27,12 @@ import { MonitoredKeywordsComponent } from './monitored-keywords/monitored-keywo
     MatInputModule,
     MatFormFieldModule,
     MatExpansionModule,
+    MonitoredKeywordsModule,
   ],
   exports: [
     CongresspeopleChecklistComponent,
     FilterableChecklistComponent,
-    MonitoredKeywordsComponent,
+    MonitoredKeywordsModule,
   ],
 })
 export class ComponentsModule {}

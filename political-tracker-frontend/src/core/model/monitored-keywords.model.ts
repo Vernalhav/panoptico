@@ -1,7 +1,6 @@
+import { v4 as uuid } from 'uuid';
 import { EventBus } from './common/event-bus';
 import { MonitoredKeyword } from './entities/monitored-keyword.entity';
-import { v4 as uuid } from 'uuid';
-import { InjectionToken } from '@angular/core';
 
 export abstract class MonitoredKeywordsModel {
   private monitoredKeywords: MonitoredKeyword[] = [];

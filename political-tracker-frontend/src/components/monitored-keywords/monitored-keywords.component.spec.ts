@@ -8,9 +8,8 @@ describe('MonitoredKeywordsComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MonitoredKeywordsComponent ]
-    })
-    .compileComponents();
+      declarations: [MonitoredKeywordsComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {

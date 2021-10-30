@@ -1,10 +1,11 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HomePageComponent } from './home-page/home-page.component';
-import { ComponentsModule } from 'src/components/components.module';
+import { NgModule } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
-import { MatTabsModule } from '@angular/material/tabs';
 import { MatDividerModule } from '@angular/material/divider';
+import { MatTabsModule } from '@angular/material/tabs';
+import { ComponentsModule } from 'src/components/components.module';
+import { HomePageComponent } from './home-page/home-page.component';
 
 @NgModule({
   declarations: [HomePageComponent],
@@ -14,6 +15,7 @@ import { MatDividerModule } from '@angular/material/divider';
     MatCardModule,
     MatTabsModule,
     MatDividerModule,
+    MatButtonModule,
   ],
 })
 export class PagesModule {}
