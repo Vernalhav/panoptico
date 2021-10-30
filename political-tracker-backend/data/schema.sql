@@ -11,3 +11,58 @@ CREATE TABLE deputados(
 	idPartido INTEGER,
 	FOREIGN KEY(idPartido) REFERENCES partidos(id)
 );
+
+CREATE TABLE topicos(
+	id INTEGER PRIMARY KEY,
+	nome VARCHAR(64)
+);
+
+CREATE TABLE proposicoesAutores(
+	idDeputado INTEGER,
+	idProposicao INTEGER
+);
+
+CREATE TABLE proposicoesTemas(
+	idProposicao KEY,
+	ano INTEGER,
+	idTopico INTEGER,
+	siglaTipo varchar(12)
+);
+
+CREATE TABLE proposicoesVotacoes(
+	dataVotacao VARCHAR(12),
+	idVotacao INTEGER,
+	idProposicao INTEGER
+);
+
+CREATE TABLE votos(
+	idDeputado INTEGER,
+	idVotacao INTEGER,
+	voto VARCHAR(24)
+);
+
+-- SQLite3 populate tables
+-- .mode csv partidos
+-- .import partidos.csv partidos
+
+-- .mode csv deputados
+-- .import deputados.csv deputados
+
+-- .mode csv topicos
+-- .import topicos.csv topicos
+
+-- .mode csv proposicoesAutores
+-- .import proposicao-autores.csv proposicoesAutores
+
+-- .mode csv proposicoesTemas
+-- .import proposicao-temas.csv proposicoesTemas
+
+-- .mode csv proposicoesVotacoes
+-- .import proposicao-votacoes.csv proposicoesVotacoes
+
+-- .mode csv votos
+-- .import votacoes-votos.csv votos
+
+-- .output ./monitordb.sql
+-- .dump
+-- .exit
