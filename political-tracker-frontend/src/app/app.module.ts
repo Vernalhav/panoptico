@@ -18,6 +18,8 @@ import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { CoreModule } from 'src/core/core.module';
+import { MonitoredKeywordsComponent } from 'src/components/monitored-keywords/monitored-keywords.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
     HomePageComponent,
     FilterableChecklistComponent,
     CongresspeopleChecklistComponent,
+    MonitoredKeywordsComponent,
   ],
   imports: [
     BrowserModule,
@@ -39,6 +42,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
     MatInputModule,
     MatFormFieldModule,
     MatExpansionModule,
+    CoreModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
