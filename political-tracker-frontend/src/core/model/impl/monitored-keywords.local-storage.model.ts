@@ -15,11 +15,11 @@ export class MonitoredKeywordsLocalStorageModel extends MonitoredKeywordsModel {
   }
 
   add(keyword: MonitoredKeyword) {
-    return super.add(keyword).then(this.sync.bind(this));
+    return super.add(keyword);
   }
 
   remove(keyword: MonitoredKeyword) {
-    return super.remove(keyword).then(this.sync.bind(this));
+    return super.remove(keyword);
   }
 
   private serialize(kw: MonitoredKeyword) {

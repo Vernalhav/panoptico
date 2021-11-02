@@ -16,6 +16,7 @@ export class ConcreteMonitoredKeywordsView
   constructor(private readonly model: MonitoredKeywordsModel) {
     super();
     this.monitoredKeywords = model.monitoredKeywords.value;
+    this.subscribeToModel();
   }
 
   async update(monitoredKeywords: MonitoredKeyword[]) {
