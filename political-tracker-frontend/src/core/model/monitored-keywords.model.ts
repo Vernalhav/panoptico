@@ -1,38 +1,32 @@
-import { v4 as uuid } from 'uuid';
 import { EventBus } from './common/event-bus';
+import { PublishableValue } from './common/publishable-value';
+import { SubscribableValue } from './common/subscribable-value';
 import { MonitoredKeyword } from './entities/monitored-keyword.entity';
 
 export abstract class MonitoredKeywordsModel {
-  protected monitoredKeywords: MonitoredKeyword[] = [];
   protected eventBus: EventBus<MonitoredKeyword[]> = new EventBus<
     MonitoredKeyword[]
   >();
 
-  public subscribe(
-    callback: (monitoredKeywords: MonitoredKeyword[]) => Promise<any>,
-  ) {
-    const id = uuid();
-    this.eventBus.subscribe(id, callback);
-    callback(this.monitoredKeywords);
-    return id;
-  }
-
-  public unsubscribe(id: string) {
-    this.eventBus.unsubscribe(id);
+  protected _monitoredKeywords: PublishableValue<MonitoredKeyword[]> =
+    new PublishableValue([] as MonitoredKeyword[]);
+  public get monitoredKeywords(): SubscribableValue<MonitoredKeyword[]> {
+    return this._monitoredKeywords;
   }
 
   public async add(monitoredKeyword: MonitoredKeyword) {
-    this.monitoredKeywords.push(monitoredKeyword);
-    this.eventBus.publish(this.monitoredKeywords);
+    this._monitoredKeywords.value.push(monitoredKeyword);
+    this._monitoredKeywords.publish(this._monitoredKeywords.value);
   }
 
   public async remove(monitoredKeyword: MonitoredKeyword) {
-    this.monitoredKeywords = this.monitoredKeywords.filter(
-      (mk) =>
-        mk.isRegex !== monitoredKeyword.isRegex ||
-        mk.word !== monitoredKeyword.word,
+    this._monitoredKeywords.publish(
+      this._monitoredKeywords.value.filter(
+        (mk) =>
+          mk.isRegex !== monitoredKeyword.isRegex ||
+          mk.word !== monitoredKeyword.word,
+      ),
     );
-    this.eventBus.publish(this.monitoredKeywords);
   }
 }
 

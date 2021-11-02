@@ -4,7 +4,7 @@ import {
   ConcreteMonitoredKeywordsController,
   MonitoredKeywordsController,
 } from './controller/monitored-keywords.controller';
-import { MonitoredKeywordsLocalStorageModel } from './model/impl/monitored-keywords.local-storge.model';
+import { MonitoredKeywordsLocalStorageModel } from './model/impl/monitored-keywords.local-storage.model';
 import { MonitoredKeywordsModel } from './model/monitored-keywords.model';
 import {
   ConcreteMonitoredKeywordsView,

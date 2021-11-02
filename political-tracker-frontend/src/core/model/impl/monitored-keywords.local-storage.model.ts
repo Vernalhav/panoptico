@@ -10,7 +10,8 @@ export class MonitoredKeywordsLocalStorageModel extends MonitoredKeywordsModel {
 
   constructor() {
     super();
-    this.monitoredKeywords = this.retrieveFromLocalStorage();
+    this._monitoredKeywords.publish(this.retrieveFromLocalStorage());
+    this._monitoredKeywords.subscribe(this.sync.bind(this));
   }
 
   add(keyword: MonitoredKeyword) {
@@ -51,14 +52,9 @@ export class MonitoredKeywordsLocalStorageModel extends MonitoredKeywordsModel {
       .filter((x) => x !== null) as MonitoredKeyword[];
   }
 
-  private reset() {
-    this.monitoredKeywords = [];
-    this.sync();
-  }
-
-  private sync() {
+  private async sync() {
     const valueToSave = JSON.stringify(
-      this.monitoredKeywords.map(this.serialize),
+      this._monitoredKeywords.value.map(this.serialize),
     );
     localStorage.setItem(
       MonitoredKeywordsLocalStorageModel.KEY_MONITORED_KEYWORDS,
