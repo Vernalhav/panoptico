@@ -7,10 +7,12 @@ import {
   MonitoredKeywordsController,
 } from './controller/monitored-keywords.controller';
 import { AvailablePartiesModel } from './model/available-parties.model';
+import { BackendQueryModel } from './model/backend-query.model';
 import { AvailablePartiesApiModel } from './model/impl/available-parties.api.model';
 import { MonitoredEntitiesLocalStorageModel } from './model/impl/monitored-entitites.local-storage.model';
 import { MonitoredKeywordsLocalStorageModel } from './model/impl/monitored-keywords.local-storage.model';
 import { MonitoredEntitiesModel } from './model/monitored-entities.model';
+import { MonitoredIntervalModel } from './model/monitored-interval.model';
 import { MonitoredKeywordsModel } from './model/monitored-keywords.model';
 import { AvailablePartiesView } from './view/available-parties.view';
 import { MonitoredEntitiesView } from './view/monitored-entities.view';
@@ -53,6 +55,11 @@ import {
       provide: MonitoredEntitiesController,
       useClass: MonitoredEntitiesController,
     },
+    {
+      provide: MonitoredIntervalModel,
+      useClass: MonitoredIntervalModel,
+    },
+    BackendQueryModel,
   ],
   imports: [CommonModule, HttpClientModule],
 })
