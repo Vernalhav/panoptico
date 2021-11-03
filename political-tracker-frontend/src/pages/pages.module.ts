@@ -5,6 +5,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatTabsModule } from '@angular/material/tabs';
 import { ComponentsModule } from 'src/components/components.module';
+import { CoreModule } from 'src/core/core.module';
 import { HomePageComponent } from './home-page/home-page.component';
 
 @NgModule({
@@ -12,6 +13,7 @@ import { HomePageComponent } from './home-page/home-page.component';
   imports: [
     CommonModule,
     ComponentsModule,
+    CoreModule,
     MatCardModule,
     MatTabsModule,
     MatDividerModule,

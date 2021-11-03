@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import Party from '../../interfaces/party.interface';
-import Congressperson from '../../interfaces/congressperson.interface';
+import IAPIParty from '../../interfaces/party.interface';
+import IAPICongressperson from '../../interfaces/congressperson.interface';
 
 @Injectable({
   providedIn: 'root',
@@ -29,12 +29,18 @@ export class BackendService {
 
   getParties(includeMembers = true) {
     if (includeMembers) {
-      return this.request<Party[]>('get', `${this.baseUrl}/partidos/membros`);
+      return this.request<IAPIParty[]>(
+        'get',
+        `${this.baseUrl}/partidos/membros`,
+      );
     }
-    return this.request<Party[]>('get', `${this.baseUrl}/partidos`);
+    return this.request<IAPIParty[]>('get', `${this.baseUrl}/partidos`);
   }
 
   getCongressPeople() {
-    return this.request<Congressperson[]>('get', `${this.baseUrl}/deputados`);
+    return this.request<IAPICongressperson[]>(
+      'get',
+      `${this.baseUrl}/deputados`,
+    );
   }
 }

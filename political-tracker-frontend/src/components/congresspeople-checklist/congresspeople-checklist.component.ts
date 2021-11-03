@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import Party from 'src/app/core/interfaces/party.interface';
+import { Party } from 'src/core/model/entities/party.entity';
 
 @Component({
   selector: 'app-congresspeople-checklist',

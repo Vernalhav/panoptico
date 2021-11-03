@@ -1,4 +1,4 @@
-import { Injectable, InjectionToken, OnDestroy } from '@angular/core';
+import { Injectable, OnDestroy } from '@angular/core';
 import { MonitoredKeyword } from '../model/entities/monitored-keyword.entity';
 import { MonitoredKeywordsModel } from '../model/monitored-keywords.model';
 

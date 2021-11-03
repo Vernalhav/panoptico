@@ -1,9 +1,9 @@
-import Party from './party.interface';
+import IAPIParty from './party.interface';
 
-export default interface Congressperson {
+export default interface IAPICongressperson {
   id: number;
   name: string;
   state: string;
   partyId?: number;
-  party?: Party;
+  party?: IAPIParty;
 }

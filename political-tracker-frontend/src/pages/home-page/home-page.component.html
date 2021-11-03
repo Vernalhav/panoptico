@@ -1,23 +1,29 @@
 <main class="mat-app-background">
-    <mat-card class="main-card">
-        <mat-card-content>
-            <mat-tab-group>
-                <mat-tab label="Partidos">
-                    <app-filterable-checklist [items]="parties"></app-filterable-checklist>
-                </mat-tab>
-                <mat-tab label="Deputados">
-                    <app-congresspeople-checklist [congresspeopleByParty]="parties"></app-congresspeople-checklist>
-                </mat-tab>
-                <mat-tab label="Tópicos">
-                    <app-monitored-keywords></app-monitored-keywords>
-                </mat-tab>
-            </mat-tab-group>    
-        </mat-card-content>
-        
-        <mat-divider inset></mat-divider>
+  <mat-card class="main-card">
+    <mat-card-content>
+      <mat-tab-group>
+        <mat-tab label="Partidos">
+          <app-filterable-checklist
+            [items]="availablePartiesView.availableParties"
+          ></app-filterable-checklist>
+        </mat-tab>
+        <mat-tab label="Deputados">
+          <app-congresspeople-checklist
+            [congresspeopleByParty]="availablePartiesView.availableParties"
+          ></app-congresspeople-checklist>
+        </mat-tab>
+        <mat-tab label="Tópicos">
+          <app-monitored-keywords></app-monitored-keywords>
+        </mat-tab>
+      </mat-tab-group>
+    </mat-card-content>
 
-        <mat-card-actions align="end">
-            <button mat-raised-button color="accent" class="monitor-button"> Monitorar </button>
-        </mat-card-actions>
-    </mat-card>
+    <mat-divider inset></mat-divider>
+
+    <mat-card-actions align="end">
+      <button mat-raised-button color="accent" class="monitor-button">
+        Monitorar
+      </button>
+    </mat-card-actions>
+  </mat-card>
 </main>

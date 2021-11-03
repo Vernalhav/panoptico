@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { MonitoredKeywordsController } from 'src/core/controller/monitored-keywords.controller';
 
 @Component({
