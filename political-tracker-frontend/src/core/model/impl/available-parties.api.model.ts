@@ -23,7 +23,7 @@ export class AvailablePartiesApiModel extends AvailablePartiesModel {
 
   private static ApiPartyInterfaceToEntity(apiParty: IAPIParty): Party {
     const party = new Party(apiParty.id, apiParty.name, apiParty.acronym);
-    const members = (party.members || []).map((m) =>
+    const members = (apiParty.members || []).map((m) =>
       AvailablePartiesApiModel.ApiCongresspersonInterfaceToEntity(m, party),
     );
     party.members.push(...members);
