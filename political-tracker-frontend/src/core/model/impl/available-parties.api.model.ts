@@ -10,6 +10,7 @@ import { Party } from '../entities/party.entity';
 export class AvailablePartiesApiModel extends AvailablePartiesModel {
   constructor(private readonly backend: BackendService) {
     super();
+    this.fetch();
     setTimeout(() => this.fetch(), 15000);
   }
 
