@@ -10,6 +10,8 @@ import { PartiesController } from './party/parties.controller';
 import CongresspersonEntity from './congressperson/entities/congressperson.entity';
 import { VotingService } from './voting/voting.service';
 import { VotingController } from './voting/voting.controller';
+import { TopicService } from './topics/topic.service';
+
 
 @Module({
   imports: [
@@ -21,6 +23,6 @@ import { VotingController } from './voting/voting.controller';
     TypeOrmModule.forFeature([PartyEntity, CongresspersonEntity]),
   ],
   controllers: [AppController, CongresspeopleController, PartiesController, VotingController],
-  providers: [AppService, CongresspersonService, PartyService, VotingService],
+  providers: [AppService, CongresspersonService, PartyService, VotingService, TopicService],
 })
 export class AppModule {}
