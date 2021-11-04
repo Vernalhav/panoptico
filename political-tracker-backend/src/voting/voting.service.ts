@@ -1,19 +1,23 @@
 import { Injectable } from '@nestjs/common';
 import { getConnection, Between } from 'typeorm';
-import { Subject } from './entities/subject.interface'
+import { TopicService } from '../topics/topic.service';
 
 @Injectable()
 export class VotingService {
-  constructor() {}
+  
+  constructor(private topicService: TopicService) {}
 
   async getAll(partiesIds?: number[],
                 congresspersonIds?: number[], 
                 subjects = ['Previdência e Assistência Social'],
-                regexSubjects = ['Fi.*', 'aaaaaa', 'P+'],
+                regexSubjects: string[] = [] ,
                 startDate = '2019-04-24',
                 endDate = '2019-07-10'){
-    
-    const query = await getConnection().manager.createQueryBuilder()
+
+    console.log(regexSubjects);
+    const filteredSubjects = await this.topicService.getTopicsByRegexList(regexSubjects);
+    subjects = subjects.concat(filteredSubjects);
+    const query = getConnection().manager.createQueryBuilder()
                   .select(['v.idVotacao', 'pV.dataVotacao', 'COUNT(*) as total'])
                   .addSelect(`'[' || group_concat(DISTINCT '"' || REPLACE(t.nome, '"', '') || '"') || ']'`, 'temas')
                   .addSelect(`SUM(CASE WHEN (v.voto = 'Sim') THEN 1 ELSE 0 END)`, 'sim')

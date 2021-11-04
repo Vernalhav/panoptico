@@ -16,10 +16,13 @@ export class TopicService {
     const filterByRegex = (filteredArray, topic) => {
       
       regexList.forEach((regex) => {
-        if (new RegExp(regex).test(topic.nome)) {
-          filteredArray.push(topic.nome);
-          return filteredArray;
+        try {
+          if (new RegExp(regex).test(topic.nome)) {
+            filteredArray.push(topic.nome);
+            return filteredArray;
+          }
         }
+        catch {}
       });
       
       return filteredArray;
