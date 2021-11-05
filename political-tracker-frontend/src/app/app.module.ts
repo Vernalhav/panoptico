@@ -6,6 +6,7 @@ import { CoreModule } from 'src/core/core.module';
 import { PagesModule } from 'src/pages/pages.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CamaraService } from './core/services/camara/camara.service';
 
 @NgModule({
   declarations: [AppComponent],
@@ -17,7 +18,7 @@ import { AppComponent } from './app.component';
     CoreModule,
     PagesModule,
   ],
-  providers: [],
+  providers: [CamaraService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

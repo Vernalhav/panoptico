@@ -1,3 +1,5 @@
+import { v4 } from 'uuid';
+
 export interface InternalSubscriptionList<EventType> {
   [key: string]: undefined | ((event: EventType) => Promise<any>);
 }
@@ -5,8 +7,10 @@ export interface InternalSubscriptionList<EventType> {
 export class EventBus<EventType> {
   private subscriptions = {} as InternalSubscriptionList<EventType>;
 
-  public subscribe(id: string, callback: (event: EventType) => Promise<any>) {
+  public subscribe(callback: (event: EventType) => Promise<any>, _id?: string) {
+    const id = _id || v4();
     this.subscriptions[id] = callback;
+    return id;
   }
 
   public unsubscribe(id: string) {

@@ -1,0 +1,19 @@
+<div class="bg-gray-300 rounded-md shadow-md p-4 h-full w-full">
+  <p class="font-semibold text-gray-700 text-xl">Votação {{ voting.id }}</p>
+  <div class="mt-2">
+    <canvas
+      baseChart
+      [datasets]="[
+        {
+          data: [voting.yes, voting.no, voting.abstain, voting.others],
+          label: 'Voto'
+        }
+      ]"
+      [labels]="['Sim', 'Não', 'Abstenção', 'Outros']"
+      [options]="{ legend: { display: false } }"
+      chartType="bar"
+    >
+    </canvas>
+  </div>
+  <app-voting-details [votingId]="voting.id"></app-voting-details>
+</div>
