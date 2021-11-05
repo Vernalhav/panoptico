@@ -12,7 +12,7 @@ export class VotingService {
             subjects: string[],
             startDate: string,
             endDate: string,
-            maxItems: number = 5) {
+            maxItems: number = 20) {
             
     const query = getConnection().manager.createQueryBuilder()
                     .select(['v.idVotacao', 'pV.dataVotacao', 'COUNT(*) as total'])
@@ -45,12 +45,12 @@ export class VotingService {
     return query;
   }
 
-  async getAll(partiesIds: number[] = [],
-                congresspersonIds: number[] = [],
-                subjects: string[] = [],
-                regexSubjects: string[] = ['.*'] ,
-                startDate = '2019-01-01',
-                endDate = '2021-12-30') {
+  async getAll(partiesIds: number[],
+                congresspersonIds: number[],
+                subjects: string[],
+                regexSubjects: string[],
+                startDate: string,
+                endDate: string) {
 
     const filteredSubjects = await this.topicService.getByRegexList(regexSubjects);
     subjects = subjects.concat(filteredSubjects);
@@ -61,7 +61,7 @@ export class VotingService {
     const data = await query.getRawMany();
     data.forEach(element => {
       element.temas = JSON.parse(element.temas)
-    });;
+    });
 
     return data;
   }
