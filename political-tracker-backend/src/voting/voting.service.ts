@@ -100,4 +100,35 @@ export class VotingService {
     
     return data;
   }
+
+  async getBySubjects(subjects: string[], regexSubjects: string[], startDate: string, endDate: string) {
+    
+    const filteredSubjects = await this.topicService.getByRegexList(regexSubjects);
+    subjects = subjects.concat(filteredSubjects);
+    
+    const query = getConnection().manager.createQueryBuilder()
+      .select(['t.nome AS tema', 'COUNT(*) as total'])
+      .addSelect(`SUM(CASE WHEN (v.voto = 'Sim') THEN 1 ELSE 0 END)`, 'sim')
+      .addSelect(`SUM(CASE WHEN (v.voto = 'Não') THEN 1 ELSE 0 END)`, 'nao')
+      .addSelect(`SUM(CASE WHEN (v.voto = 'Abstenção') THEN 1 ELSE 0 END)`, 'abstencao')
+      .addSelect(`SUM(CASE WHEN (v.voto IN ('Sim', 'Não', 'Abstenção')) THEN 0 ELSE 1 END)`, 'outros')
+      
+      .from('topicos', 't')
+      .innerJoin('proposicoesTemas', 'pT', `t.id = pT.idTopico`)
+      .innerJoin('proposicoesVotacoes', 'pV', 'pT.idProposicao = pV.idProposicao AND pV.dataVotacao BETWEEN :start AND :end', {
+        'start': startDate,
+        'end': endDate
+      })
+      .innerJoin('votos', 'v', 'pV.idVotacao = v.idVotacao')
+      .where(`t.nome IN (:...topics)`, {
+        'topics': subjects,
+      })
+      .groupBy('t.nome');
+      
+    const data = await query.getRawMany();
+    
+    console.log(query.getSql() + '\n');
+    
+    return data;
+  }
 }

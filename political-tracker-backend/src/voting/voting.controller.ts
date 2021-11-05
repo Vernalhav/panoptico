@@ -49,7 +49,6 @@ export class VotingController {
       regexSubjects = arrayOrElementToArray(regexSubjects);
       subjects = arrayOrElementToArray(subjects);
       
-      //TODO:
-      //return await this.votingService.getBySubjects(subjects, regexSubjects, startDate, endDate)
+      return await this.votingService.getBySubjects(subjects, regexSubjects, startDate, endDate)
   }
 }
