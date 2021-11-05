@@ -12,7 +12,7 @@ export class VotingService {
             subjects: string[],
             startDate: string,
             endDate: string,
-            limit: number) {
+            maxItems: number = 5) {
             
     const query = getConnection().manager.createQueryBuilder()
                     .select(['v.idVotacao', 'pV.dataVotacao', 'COUNT(*) as total'])
@@ -29,14 +29,18 @@ export class VotingService {
                     .innerJoin('proposicoesTemas', 'pT', 'pV.idProposicao = pT.idProposicao')
                     .innerJoin('topicos', 't', `pT.idTopico = t.id AND (t.nome IN (:...topics))`, {
                       'topics': subjects,
-                    })
-                    .innerJoin('deputados', 'd', 'd.id = v.idDeputado AND (d.id IN (:...congresspeople) OR d.idPartido IN (:...parties))', {
+                    });
+
+      if (partiesIds.length > 0 || congresspersonIds.length > 0) {
+        query.innerJoin('deputados', 'd', 'd.id = v.idDeputado AND (d.id IN (:...congresspeople) OR d.idPartido IN (:...parties))', {
                       'congresspeople': congresspersonIds,
                       'parties': partiesIds
-                    })
-                    .groupBy('v.idVotacao')
+                    });
+      }
+
+      query.groupBy('v.idVotacao')
                     .addGroupBy('pv.dataVotacao')
-                    .limit(limit);
+                    .limit(maxItems);
     
     return query;
   }
@@ -51,7 +55,7 @@ export class VotingService {
     const filteredSubjects = await this.topicService.getTopicsByRegexList(regexSubjects);
     subjects = subjects.concat(filteredSubjects);
 
-    const query = this.buildGroupByVotingQuery(partiesIds, congresspersonIds, subjects, startDate, endDate, 5);
+    const query = this.buildGroupByVotingQuery(partiesIds, congresspersonIds, subjects, startDate, endDate);
     console.log(query.getSql());
     
     const data = await query.getRawMany();
