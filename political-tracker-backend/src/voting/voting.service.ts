@@ -52,7 +52,7 @@ export class VotingService {
                 startDate = '2019-01-01',
                 endDate = '2021-12-30') {
 
-    const filteredSubjects = await this.topicService.getTopicsByRegexList(regexSubjects);
+    const filteredSubjects = await this.topicService.getByRegexList(regexSubjects);
     subjects = subjects.concat(filteredSubjects);
 
     const query = this.buildGroupByVotingQuery(partiesIds, congresspersonIds, subjects, startDate, endDate);
