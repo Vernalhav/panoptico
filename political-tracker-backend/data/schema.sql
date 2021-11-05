@@ -41,6 +41,11 @@ CREATE TABLE votos(
 	voto VARCHAR(24)
 );
 
+CREATE TABLE votacoes(
+    idVotacao INTEGER,
+    dataVotacao VARCHAR(12)
+);
+
 -- SQLite3 populate tables
 -- .mode csv partidos
 -- .import partidos.csv partidos
@@ -62,6 +67,8 @@ CREATE TABLE votos(
 
 -- .mode csv votos
 -- .import votacoes-votos.csv votos
+
+INSERT INTO votacoes SELECT idVotacao, dataVotacao FROM proposicoesVotacoes GROUP BY idVotacao;
 
 -- .output ./monitordb.sql
 -- .dump
