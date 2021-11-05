@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
-import { MonitoredIntervalModel } from 'src/core/model/monitored-interval.model';
+import { MonitoredIntervalController } from 'src/core/controller/monitored-interval.controller';
+import { MonitoredIntervalView } from 'src/core/view/monitored-interval.view';
 
 @Component({
   selector: 'app-monitored-dates',
@@ -13,10 +14,13 @@ export class MonitoredDatesComponent {
     end: new FormControl(),
   });
 
-  constructor(readonly model: MonitoredIntervalModel) {
+  constructor(
+    readonly view: MonitoredIntervalView,
+    readonly controller: MonitoredIntervalController,
+  ) {
     this.range.patchValue({
-      start: model.start,
-      end: model.end,
+      start: view.start,
+      end: view.end,
     });
   }
 
@@ -26,7 +30,9 @@ export class MonitoredDatesComponent {
   }
 
   handleChange() {
-    this.model.start = this.range.value.start || this.model.start;
-    this.model.end = this.range.value.end || this.model.end;
+    if (this.validateDates()) {
+      this.controller.setStart(this.range.value.start);
+      this.controller.setEnd(this.range.value.end);
+    }
   }
 }

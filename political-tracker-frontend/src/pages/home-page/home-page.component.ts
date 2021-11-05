@@ -11,8 +11,5 @@ import { AvailablePartiesView } from 'src/core/view/available-parties.view';
 export class HomePageComponent {
   parties: Party[] = [];
 
-  constructor(
-    readonly availablePartiesView: AvailablePartiesView,
-    readonly backend: BackendQueryModel,
-  ) {}
+  constructor(readonly availablePartiesView: AvailablePartiesView) {}
 }
