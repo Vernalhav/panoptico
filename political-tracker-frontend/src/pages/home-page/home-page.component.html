@@ -24,7 +24,12 @@
     <mat-divider inset></mat-divider>
 
     <mat-card-actions align="end">
-      <button mat-raised-button color="accent" class="monitor-button">
+      <button
+        mat-raised-button
+        color="accent"
+        class="monitor-button"
+        (click)="monitorar()"
+      >
         Monitorar
       </button>
     </mat-card-actions>

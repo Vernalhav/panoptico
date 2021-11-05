@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { IAPIVoting } from 'src/app/core/interfaces/votings.interface';
 import { BackendService } from 'src/app/core/services/backend/backend.service';
 import { BackendQueryModel } from '../backend-query.model';
+import { PublishableValue } from '../common/publishable-value';
 import { Voting } from '../entities/voting.entity';
 import { MonitoredEntitiesModel } from '../monitored-entities.model';
 import { MonitoredIntervalModel } from '../monitored-interval.model';
@@ -60,24 +61,29 @@ export class BackendQueryAPIModel extends BackendQueryModel {
     return votings.map((v) => BackendQueryAPIModel.deserializeFromAPI(v));
   }
 
-  private publishFromAPI(votings: IAPIVoting[]) {
-    this._votingsFromMonitoredEntities.publish(
-      BackendQueryAPIModel.deserializeArrayFromAPI(votings),
-    );
+  private publishFromAPI(
+    value: PublishableValue<Voting[]>,
+    votings: IAPIVoting[],
+  ) {
+    value.publish(BackendQueryAPIModel.deserializeArrayFromAPI(votings));
   }
 
   private updateVotingsFromMonitoredEntities() {
     const params = this.monitoredEntitiesParams;
     this.backendService
       .getVotings(params)
-      .subscribe(this.publishFromAPI.bind(this));
+      .subscribe((data) =>
+        this.publishFromAPI(this._votingsFromMonitoredEntities, data),
+      );
   }
 
   private updateVotingsFromMonitoredSubjects() {
     const params = this.monitoredSubjectsParams;
     this.backendService
       .getVotings(params)
-      .subscribe(this.publishFromAPI.bind(this));
+      .subscribe((data) =>
+        this.publishFromAPI(this._votingsFromMonitoredSubjects, data),
+      );
   }
 
   constructor(
@@ -101,5 +107,8 @@ export class BackendQueryAPIModel extends BackendQueryModel {
       this.updateVotingsFromMonitoredEntities();
       this.updateVotingsFromMonitoredSubjects();
     });
+
+    this.updateVotingsFromMonitoredEntities();
+    this.updateVotingsFromMonitoredSubjects();
   }
 }

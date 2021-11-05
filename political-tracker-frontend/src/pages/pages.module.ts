@@ -7,9 +7,11 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { ComponentsModule } from 'src/components/components.module';
 import { CoreModule } from 'src/core/core.module';
 import { HomePageComponent } from './home-page/home-page.component';
+import { VotingsPageComponent } from './votings-page/votings-page.component';
+import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
-  declarations: [HomePageComponent],
+  declarations: [HomePageComponent, VotingsPageComponent],
   imports: [
     CommonModule,
     ComponentsModule,
@@ -18,6 +20,7 @@ import { HomePageComponent } from './home-page/home-page.component';
     MatTabsModule,
     MatDividerModule,
     MatButtonModule,
+    ChartsModule,
   ],
 })
 export class PagesModule {}

@@ -1,0 +1,43 @@
+<main class="mat-app-background">
+  <mat-card class="main-card">
+    <mat-card-content>
+      <mat-tab-group>
+        <mat-tab label="Entidades monitoradas">
+          <div class="m-2 font-bold">
+            Como as entidades que monitoro votaram?
+          </div>
+          <div class="py-4 grid grid-cols-1 lg:grid-cols-2">
+            <div
+              *ngFor="let voting of model.votingsFromMonitoredEntities.value"
+              class="p-2"
+            >
+              <app-voting-card [voting]="voting"></app-voting-card>
+            </div>
+          </div>
+        </mat-tab>
+        <mat-tab label="Temas monitorados">
+          <div class="m-2 font-bold">
+            Como foram as votações sobre os assuntos que monitoro?
+          </div>
+          <div class="py-4 grid grid-cols-1 lg:grid-cols-2">
+            <div
+              *ngFor="let voting of model.votingsFromMonitoredSubjects.value"
+              class="p-2"
+            >
+              <app-voting-card [voting]="voting"></app-voting-card>
+            </div></div
+        ></mat-tab>
+      </mat-tab-group>
+    </mat-card-content>
+    <mat-card-actions align="end">
+      <button
+        class="w-full uppercase"
+        mat-raised-button
+        color="accent"
+        (click)="goBack()"
+      >
+        Voltar
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</main>
