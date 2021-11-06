@@ -71,7 +71,7 @@ export class BackendQueryAPIModel extends BackendQueryModel {
   private updateVotingsFromMonitoredEntities() {
     const params = this.monitoredEntitiesParams;
     this.backendService
-      .getVotings(params)
+      .getVotingsByEntities(params)
       .subscribe((data) =>
         this.publishFromAPI(this._votingsFromMonitoredEntities, data),
       );
@@ -80,7 +80,7 @@ export class BackendQueryAPIModel extends BackendQueryModel {
   private updateVotingsFromMonitoredSubjects() {
     const params = this.monitoredSubjectsParams;
     this.backendService
-      .getVotings(params)
+      .getVotingsBySubjects(params)
       .subscribe((data) =>
         this.publishFromAPI(this._votingsFromMonitoredSubjects, data),
       );

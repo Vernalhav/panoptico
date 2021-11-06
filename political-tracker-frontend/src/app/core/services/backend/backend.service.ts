@@ -50,10 +50,20 @@ export class BackendService {
     );
   }
 
-  getVotings(req: IAPIVotingsRequest) {
+  getVotingsByEntities(req: IAPIVotingsRequest) {
     return this.request<IAPIVoting[]>(
       'get',
-      `${this.baseUrl}/votacoes`,
+      `${this.baseUrl}/votacoes/entidades/`,
+      undefined,
+      undefined,
+      req,
+    );
+  }
+
+  getVotingsBySubjects(req: IAPIVotingsRequest) {
+    return this.request<IAPIVoting[]>(
+      'get',
+      `${this.baseUrl}/votacoes/topicos`,
       undefined,
       undefined,
       req,
