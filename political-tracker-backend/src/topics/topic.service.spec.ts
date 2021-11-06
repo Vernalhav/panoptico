@@ -1,6 +1,6 @@
 import { TopicService } from './topic.service';
 
-describe('CatsController', () => {
+describe('TopicService', () => {
   let topicService: TopicService;
   let allSubjects: string[];
   
