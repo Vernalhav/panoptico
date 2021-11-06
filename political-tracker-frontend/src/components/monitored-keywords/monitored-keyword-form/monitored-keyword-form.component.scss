@@ -1,0 +1,22 @@
+.form {
+  display: flex;
+  align-items: center;
+
+  padding-top: 2rem;
+
+  & > *:not(:last-child) {
+    margin-right: 1rem;
+  }
+}
+
+.full-width {
+  flex: 1;
+}
+
+.checkbox {
+  padding-bottom: 18px;
+}
+
+.btn {
+  width: 100%;
+}

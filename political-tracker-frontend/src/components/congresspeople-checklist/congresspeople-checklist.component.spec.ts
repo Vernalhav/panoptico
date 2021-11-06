@@ -8,9 +8,8 @@ describe('CongresspeopleChecklistComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CongresspeopleChecklistComponent ]
-    })
-    .compileComponents();
+      declarations: [CongresspeopleChecklistComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {

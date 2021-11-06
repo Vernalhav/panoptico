@@ -1,8 +1,8 @@
-import Congressperson from "./congressperson.interface";
+import IAPICongressperson from './congressperson.interface';
 
-export default interface Party {
-    id: number,
-    name: string,
-    acronym: string,
-    members?: Congressperson[]
+export default interface IAPIParty {
+  id: number;
+  name: string;
+  acronym: string;
+  members?: IAPICongressperson[];
 }

@@ -1,19 +1,22 @@
-import { Component, OnInit } from '@angular/core';
-import Party from 'src/app/core/interfaces/party.interface';
-import { BackendService } from 'src/app/core/services/backend/backend.service';
+import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { Party } from 'src/core/model/entities/party.entity';
+import { AvailablePartiesView } from 'src/core/view/available-parties.view';
 
 @Component({
   selector: 'app-home-page',
   templateUrl: './home-page.component.html',
-  styleUrls: ['./home-page.component.scss']
+  styleUrls: ['./home-page.component.scss'],
 })
-export class HomePageComponent implements OnInit {
-  parties: Party[] = []
+export class HomePageComponent {
+  parties: Party[] = [];
 
-  constructor(private backendService: BackendService ) { }
+  constructor(
+    readonly availablePartiesView: AvailablePartiesView,
+    readonly router: Router,
+  ) {}
 
-  ngOnInit(): void {
-    this.backendService.getParties()
-      .subscribe((parties: Party[]) => { this.parties = parties });
+  monitorar() {
+    this.router.navigate(['votings']);
   }
 }
