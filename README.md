@@ -6,3 +6,7 @@ Para mais detalhes sobre o [front-end](./political-tracker-frontend/README.md) e
 ## Telas
 <img src="https://cdn.discordapp.com/attachments/897521344315531294/898619054712061982/unknown.png">
 <img src="https://cdn.discordapp.com/attachments/897521344315531294/898619219200053328/unknown.png">
+<img src="https://cdn.discordapp.com/attachments/802326923660886138/906352110113783878/unknown.png">
+<img src="https://cdn.discordapp.com/attachments/802326923660886138/906352660515549194/unknown.png">
+<img src="https://cdn.discordapp.com/attachments/802326923660886138/906353882853175306/unknown.png">
+
