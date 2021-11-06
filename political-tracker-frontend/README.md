@@ -4,12 +4,17 @@
 ```bash
 monitor-politico-frontend
 └── src
-    ├── app                     # Módulo raíz da aplicação
-    │   └── core
-    │       ├── interfaces      # Define as interfaces de objetos que serão transmitidos entre cliente e servidor
-    │       └── services        # Define os modelos do sistema
+    ├── app
+    │   └── core                # Contém os módulos essenciais dos serviços externos
+    │       ├── interfaces      # Contém as interfaces de tipos de dados dos serviços
+    │       └── services
+    │           ├── backend     # Contém o código relativo à comunicação com o backend
+    │           └── camara      # Contém o código relativo à comunicação com a API da câmara
     ├── assets
     ├── components              # Define os componentes Angular da aplicação
+    ├── core                    # Contém a estrutura Model/Controller da aplicação (view está nos componentes Angular)
+    │   ├── controller
+    │   ├── model
     ├── environments
     └── pages                   # Define os componentes Angular das páginas da aplicação
 ```
