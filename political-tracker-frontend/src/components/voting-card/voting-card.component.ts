@@ -3,9 +3,9 @@ import { Voting } from 'src/core/model/entities/voting.entity';
 
 @Component({
   selector: 'app-voting-card',
-  templateUrl: './result-bar-chart.component.html',
-  styleUrls: ['./result-bar-chart.component.scss'],
+  templateUrl: './voting-card.component.html',
+  styleUrls: ['./voting-card.component.scss'],
 })
-export class ResultBarChartComponent {
+export class VotingCardComponent {
   @Input() voting!: Voting;
 }
