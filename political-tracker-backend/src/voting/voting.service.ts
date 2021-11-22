@@ -201,13 +201,14 @@ export class VotingService {
       })
 
     const subqueryParties = getConnection().manager.createQueryBuilder()
-      .select(['vtc.topico', 'd.idPartido', '"partido" as type' ,'COUNT(*) as total'])
+      .select(['vtc.topico subject', 'p.sigla as name', 'd.idPartido as id', '"partido" as type' ,'COUNT(*) as total'])
       .addSelect(`SUM(CASE WHEN (v.voto = 'Sim') THEN 1 ELSE 0 END)`, 'sim')
       .addSelect(`SUM(CASE WHEN (v.voto = 'Não') THEN 1 ELSE 0 END)`, 'nao')
       .addSelect(`SUM(CASE WHEN (v.voto = 'Abstenção') THEN 1 ELSE 0 END)`, 'abstencao')
       .addSelect(`SUM(CASE WHEN (v.voto IN ('Sim', 'Não', 'Abstenção')) THEN 0 ELSE 1 END)`, 'outros')
       .from('deputados', 'd')
       .innerJoin('votos', 'v', 'd.id = v.idDeputado')
+      .innerJoin('partidos', 'p', 'p.id = d.idPartido')
       .innerJoin(subquerySubjects.getQuery(), 'vtc', 'v.idVotacao = vtc.idVotacao')
       .setParameters(subquerySubjects.getParameters())
       .where('d.idPartido IN (:...parties)', {
@@ -215,13 +216,13 @@ export class VotingService {
       })
       .groupBy('vtc.topico')
       .addGroupBy('d.idPartido')
-      // .limit(maxItems);
+      .limit(maxItems);
 
     console.log(subqueryParties.getSql() + '\n');
     const partiesData = await subqueryParties.getRawMany()
 
     const subqueryCongresspersons = getConnection().manager.createQueryBuilder()
-      .select(['vtc.topico', 'd.id', '"deputado" as type' ,'COUNT(*) as total'])
+      .select(['vtc.topico subject', 'd.nomeEleitoral as name', 'd.id as id', '"deputado" as type' ,'COUNT(*) as total'])
       .addSelect(`SUM(CASE WHEN (v.voto = 'Sim') THEN 1 ELSE 0 END)`, 'sim')
       .addSelect(`SUM(CASE WHEN (v.voto = 'Não') THEN 1 ELSE 0 END)`, 'nao')
       .addSelect(`SUM(CASE WHEN (v.voto = 'Abstenção') THEN 1 ELSE 0 END)`, 'abstencao')
@@ -235,11 +236,21 @@ export class VotingService {
       })
       .groupBy('vtc.topico')
       .addGroupBy('d.id')
-      // .limit(maxItems);
+      .limit(maxItems);
 
     console.log(subqueryCongresspersons.getSql() + '\n');
     const congressData = await subqueryCongresspersons.getRawMany()
+    
+    return [].concat(partiesData).concat(congressData).reduce((results, p) => { 
+      if(results[p.name] === undefined) { 
+        results[p.name] = { id: p.id, type: p.type, subjects: [] }
+      }
+      
+      results[p.name].subjects.push({ 
+        subject: p.subject, total: p.total, sim: p.sim, nao: p.nao, outros: p.outros
+      })
 
-    return [].concat(partiesData).concat(congressData);
+      return results
+    }, {})
   }
 }
