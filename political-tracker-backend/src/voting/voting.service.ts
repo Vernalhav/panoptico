@@ -241,7 +241,7 @@ export class VotingService {
     console.log(subqueryCongresspersons.getSql() + '\n');
     const congressData = await subqueryCongresspersons.getRawMany()
     
-    return [].concat(partiesData).concat(congressData).reduce((results, p) => { 
+    const intermediate = [].concat(partiesData).concat(congressData).reduce((results, p) => { 
       if(results[p.name] === undefined) { 
         results[p.name] = { id: p.id, type: p.type, subjects: [] }
       }
@@ -252,5 +252,20 @@ export class VotingService {
 
       return results
     }, {})
+
+    const result = []
+    Object.entries(intermediate).forEach((pair) => {
+      const key = pair[0];
+      const value: any = pair[1];
+
+      result.push({
+        entityName: key,
+        id: value.id,
+        type: value.type,
+        subjects: value.subjects
+      });
+    });
+
+    return result;
   }
 }
