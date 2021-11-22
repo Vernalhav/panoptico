@@ -17,7 +17,7 @@ import { CongresspeopleChecklistComponent } from './congresspeople-checklist/con
 import { FilterableChecklistComponent } from './filterable-checklist/filterable-checklist.component';
 import { MonitoredDatesComponent } from './monitored-dates/monitored-dates.component';
 import { MonitoredKeywordsModule } from './monitored-keywords/monitored-keywords.module';
-import { VotingCardComponent } from './voting-card/voting-card.component';
+import { ResultBarChartComponent } from './result-bar-chart/result-bar-chart.component';
 import { VotingDetailsComponent } from './voting-details/voting-details.component';
 
 @NgModule({
@@ -25,7 +25,7 @@ import { VotingDetailsComponent } from './voting-details/voting-details.componen
     CongresspeopleChecklistComponent,
     FilterableChecklistComponent,
     MonitoredDatesComponent,
-    VotingCardComponent,
+    ResultBarChartComponent,
     VotingDetailsComponent,
   ],
   imports: [
@@ -50,7 +50,7 @@ import { VotingDetailsComponent } from './voting-details/voting-details.componen
     CongresspeopleChecklistComponent,
     FilterableChecklistComponent,
     MonitoredDatesComponent,
-    VotingCardComponent,
+    ResultBarChartComponent,
     MonitoredKeywordsModule,
   ],
 })

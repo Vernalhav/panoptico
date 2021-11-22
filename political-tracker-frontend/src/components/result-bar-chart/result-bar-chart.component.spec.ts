@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { VotingCardComponent } from './voting-card.component';
+import { ResultBarChartComponent } from './result-bar-chart.component';
 
 describe('VotingCardComponent', () => {
-  let component: VotingCardComponent;
-  let fixture: ComponentFixture<VotingCardComponent>;
+  let component: ResultBarChartComponent;
+  let fixture: ComponentFixture<ResultBarChartComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [VotingCardComponent],
+      declarations: [ResultBarChartComponent],
     }).compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(VotingCardComponent);
+    fixture = TestBed.createComponent(ResultBarChartComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
