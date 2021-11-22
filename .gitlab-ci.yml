@@ -8,25 +8,27 @@ stages:          # List of stages for jobs, and their order of execution
   - test
   - deploy
 
-build-job:       # This job runs in the build stage, which runs first.
+variables:
+  - BACKEND_PATH: "cd political-tracker-backend"
+
+build-backend-job:       # This job runs in the build stage, which runs first.
   stage: build
   script:
-    - echo "(mock) Compiling the code..."
-    - echo "(mock) Compile complete."
+    - cd "$BACKEND_PATH"
+    - npm install
 
-unit-test-job:   # This job runs in the test stage.
+unit-test-backend-job:   # This job runs in the test stage.
   stage: test    # It only starts when the job in the build stage completes successfully.
   script:
-    - echo "(mock) Running unit tests... This will take about 60 seconds."
-    - echo "(mock) Code coverage is 90%"
+    - cd "$BACKEND_PATH"
+    - 'jest --ci --reporters=default --reporters=jest-junit'
+  artifacts:
+    when: always
+    reports:
+      junit:
+        - junit.xml
 
-lint-test-job:   # This job also runs in the test stage.
-  stage: test    # It can run at the same time as unit-test-job (in parallel).
-  script:
-    - echo "(mock) Linting code... This will take about 10 seconds."
-    - echo "(mock) No lint issues found."
-
-deploy-job:      # This job runs in the deploy stage.
+.deploy-backend-job:      # This job runs in the deploy stage.
   stage: deploy  # It only runs when *both* jobs in the test stage complete successfully.
   script:
     - echo "(mock) Deploying application..."
