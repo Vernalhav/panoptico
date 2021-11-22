@@ -15,26 +15,26 @@ build-backend-job:       # This job runs in the build stage, which runs first.
     - npm install
   cache:
     paths:
-      - node_modules/
+      - political-tracker-backend/node_modules/
   artifacts:
     expire_in: 1 days
     when: on_success
     paths:
-      - node_modules/
+      - political-tracker-backend/node_modules/
 
 unit-test-backend-job:   # This job runs in the test stage.
   stage: test    # It only starts when the job in the build stage completes successfully.
   script:
     - cd "$BACKEND_PATH"
-    - 'jest --ci --reporters=default --reporters=jest-junit'
+    - 'npm run test:cli'
   artifacts:
     when: always
     reports:
       junit:
-        - junit.xml
+        - political-tracker-backend/junit.xml
 
 .deploy-backend-job:      # This job runs in the deploy stage.
-  stage: deploy  # It only runs when *both* jobs in the test stage complete successfully.
+  stage: deploy  # It only runs when all jobs in the test stage complete successfully.
   script:
     - echo "(mock) Deploying application..."
     - echo "(mock) Application successfully deployed."
