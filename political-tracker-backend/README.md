@@ -27,19 +27,28 @@ As rotas da API retornam vetores de Deputados e Partidos. As interfaces desses o
 
 `/partidos`: Retorna um vetor de objetos Partido contendo todos os Partidos que contém membros ativos, sem preencher o vetor de membros.  
 
- `/partidos/membros`: Retorna um vetor de objetos Partido contendo todos os Partidos que contém membros ativos, com seus respectivos Deputados;
+ `/partidos/membros`: Retorna um vetor de objetos Partido contendo todos os Partidos que contém membros ativos, com seus respectivos Deputados.
 
+`/votacoes/entidades`: Retorna um vetor de objetos VotacoesEntidades contendo, para cada votação, as entidades selecionadas e seus votos.
+
+`/votacoes/topicos`: Retorna um vetor de objetos VotacoesTopicos contendo, para cada tópico (ou tema), as entidades selecionadas e seus votos.
 
 ## Estrutura do projeto
 ```bash
 political-tracker-backend
-├── data                    # Contém os dados coletados da API de Dados Abertos da Câmara dos Deputados
+├── data                    # Contém o banco de dados e os arquivos de esquema, consultas e dados
+│   └── csv                 # Contém os dados coletados da API de Dados Abertos da Câmara dos Deputados
 ├── src
 │   ├── congressperson      # Contém as classes relativas aos deputados
 │   │   └── entities
-│   └── party               # Contém as classes relativas aos partidos
+│   ├── party               # Contém as classes relativas aos partidos
+│   │   └── entities
+│   ├── topics              # Contém as classes relativas aos temas das proposições
+│   ├── utils               # Contém funções utilitárias
+│   └── voting              # Contém as classes relativas às votações e votos
 │       └── entities
-└── test                    # Contém os testes automatizados
+└── test                   # Contém os testes automatizados
+
 ```
 
 ## MVC
