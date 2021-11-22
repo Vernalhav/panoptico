@@ -22,8 +22,8 @@ build-backend-job:       # This job runs in the build stage, which runs first.
     paths:
       - political-tracker-backend/node_modules/
 
-unit-test-backend-job:   # This job runs in the test stage.
-  stage: test    # It only starts when the job in the build stage completes successfully.
+unit-test-backend-job:    # This job runs in the test stage.
+  stage: test             # It only starts when the job in the build stage completes successfully.
   script:
     - cd "$BACKEND_PATH"
     - 'npm run test:cli'
@@ -32,6 +32,12 @@ unit-test-backend-job:   # This job runs in the test stage.
     reports:
       junit:
         - political-tracker-backend/junit.xml
+
+lint-backend-job:   # This job runs in the test stage.
+  stage: test       # It only starts when the job in the build stage completes successfully.
+  script:
+    - cd "$BACKEND_PATH"
+    - 'npm run lint'
 
 .deploy-backend-job:      # This job runs in the deploy stage.
   stage: deploy  # It only runs when all jobs in the test stage complete successfully.
