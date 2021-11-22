@@ -9,7 +9,7 @@ stages:          # List of stages for jobs, and their order of execution
   - deploy
 
 variables:
-  - BACKEND_PATH: "cd political-tracker-backend"
+  BACKEND_PATH: 'political-tracker-backend'
 
 build-backend-job:       # This job runs in the build stage, which runs first.
   stage: build
