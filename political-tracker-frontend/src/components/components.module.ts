@@ -19,6 +19,7 @@ import { MonitoredDatesComponent } from './monitored-dates/monitored-dates.compo
 import { MonitoredKeywordsModule } from './monitored-keywords/monitored-keywords.module';
 import { VotingCardComponent } from './voting-card/voting-card.component';
 import { VotingDetailsComponent } from './voting-details/voting-details.component';
+import { TopicCardComponent } from './topic-card/topic-card.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { VotingDetailsComponent } from './voting-details/voting-details.componen
     MonitoredDatesComponent,
     VotingCardComponent,
     VotingDetailsComponent,
+    TopicCardComponent,
   ],
   imports: [
     CommonModule,

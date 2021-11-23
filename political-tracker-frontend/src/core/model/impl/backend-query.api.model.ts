@@ -1,8 +1,10 @@
 import { Injectable } from '@angular/core';
+import { IAPIVotingBySubject } from 'src/app/core/interfaces/voting-by-subject.interface';
 import { IAPIVoting } from 'src/app/core/interfaces/votings.interface';
 import { BackendService } from 'src/app/core/services/backend/backend.service';
 import { BackendQueryModel } from '../backend-query.model';
 import { PublishableValue } from '../common/publishable-value';
+import { VotingBySubject } from '../entities/voting-by-subject.entity';
 import { Voting } from '../entities/voting.entity';
 import { MonitoredEntitiesModel } from '../monitored-entities.model';
 import { MonitoredIntervalModel } from '../monitored-interval.model';
@@ -36,15 +38,14 @@ export class BackendQueryAPIModel extends BackendQueryModel {
       ),
       regexSubjects: Array.from(
         this.monitoredKeywords.monitoredKeywords.value
-
           .filter((k) => k.isRegex)
           .map((k) => k.word),
       ),
-      ...this.monitoredIntervalParams,
+      ...this.monitoredEntitiesParams,
     };
   }
 
-  private static deserializeFromAPI(v: IAPIVoting): Voting {
+  private static deserializeVotingFromAPI(v: IAPIVoting): Voting {
     return new Voting(
       v.idVotacao,
       v.dataVotacao,
@@ -57,15 +58,35 @@ export class BackendQueryAPIModel extends BackendQueryModel {
     );
   }
 
-  private static deserializeArrayFromAPI(votings: IAPIVoting[]) {
-    return votings.map((v) => BackendQueryAPIModel.deserializeFromAPI(v));
+  private static deserializeVotingBySubjectFromAPI(v: IAPIVotingBySubject): VotingBySubject {
+    return new VotingBySubject(
+      v.id,
+      v.entityName,
+      v.type,
+      v.subjects
+    );
   }
 
-  private publishFromAPI(
+  private static deserializeVotingArrayFromAPI(votings: IAPIVoting[]) {
+    return votings.map((v) => BackendQueryAPIModel.deserializeVotingFromAPI(v));
+  }
+
+  private static deserializeVotingBySubjectArrayFromAPI(votings: IAPIVotingBySubject[]) {
+    return votings.map((v) => BackendQueryAPIModel.deserializeVotingBySubjectFromAPI(v));
+  }
+
+  private publishVotingFromAPI(
     value: PublishableValue<Voting[]>,
     votings: IAPIVoting[],
   ) {
-    value.publish(BackendQueryAPIModel.deserializeArrayFromAPI(votings));
+    value.publish(BackendQueryAPIModel.deserializeVotingArrayFromAPI(votings));
+  }
+
+  private publishVotingBySubjectFromAPI(
+    value: PublishableValue<VotingBySubject[]>,
+    votings: IAPIVotingBySubject[],
+  ) {
+    value.publish(BackendQueryAPIModel.deserializeVotingBySubjectArrayFromAPI(votings));
   }
 
   private updateVotingsFromMonitoredEntities() {
@@ -73,7 +94,7 @@ export class BackendQueryAPIModel extends BackendQueryModel {
     this.backendService
       .getVotingsByEntities(params)
       .subscribe((data) =>
-        this.publishFromAPI(this._votingsFromMonitoredEntities, data),
+        this.publishVotingFromAPI(this._votingsFromMonitoredEntities, data),
       );
   }
 
@@ -82,7 +103,7 @@ export class BackendQueryAPIModel extends BackendQueryModel {
     this.backendService
       .getVotingsBySubjects(params)
       .subscribe((data) =>
-        this.publishFromAPI(this._votingsFromMonitoredSubjects, data),
+        this.publishVotingBySubjectFromAPI(this._votingsFromMonitoredSubjects, data),
       );
   }
 

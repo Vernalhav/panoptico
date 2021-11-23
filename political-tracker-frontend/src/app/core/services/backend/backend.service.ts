@@ -14,7 +14,7 @@ import {
   API_GET_VOTING_BY_ENTITIES_ROUTE,
   API_GET_VOTTING_BY_SUBJECT_ROUTE,
 } from 'src/config/api-routes.config';
-import { IAPIVotingBySubject } from '../../interfaces/voting-by-topic.entity';
+import { IAPIVotingBySubject } from '../../interfaces/voting-by-subject.interface';
 
 @Injectable({
   providedIn: 'root',
@@ -26,16 +26,16 @@ export class BackendService {
   private request<R>(
     method: string,
     url: string,
+    params?: any,
     data?: any,
     responseType?: any,
-    params?: any,
   ) {
     const result = this.http.request<R>(method, url, {
       body: data,
+      params,
       responseType: responseType || 'json',
       observe: 'body',
       headers: {},
-      params,
     });
 
     return result;
@@ -62,8 +62,6 @@ export class BackendService {
     return this.request<IAPIVoting[]>(
       'get',
       `${API_BASE_URL}${API_GET_VOTING_BY_ENTITIES_ROUTE}`,
-      undefined,
-      undefined,
       req,
     );
   }
@@ -72,8 +70,6 @@ export class BackendService {
     return this.request<IAPIVotingBySubject[]>(
       'get',
       `${API_BASE_URL}${API_GET_VOTTING_BY_SUBJECT_ROUTE}`,
-      undefined,
-      undefined,
       req,
     );
   }
