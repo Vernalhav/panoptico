@@ -1,11 +1,4 @@
-type VotesByEntity = {
-  entity: string;
-  entityType: 'deputado' | 'partido';
-  total: number;
-  sim: number;
-  nao: number;
-  outros: number;
-};
+import { VotesByEntity } from "./voting.entity";
 
 export class VotingBySubject {
   subject: string;

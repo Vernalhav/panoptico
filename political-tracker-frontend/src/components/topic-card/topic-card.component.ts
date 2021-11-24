@@ -1,5 +1,4 @@
-import { Component, Input, Output } from '@angular/core';
-import { MatSlideToggleChange } from '@angular/material/slide-toggle';
+import { Component, Input } from '@angular/core';
 import { ChartDataSets, ChartOptions } from 'chart.js';
 import { Label } from 'ng2-charts';
 import { VotingBySubject } from 'src/core/model/entities/voting-by-subject.entity';

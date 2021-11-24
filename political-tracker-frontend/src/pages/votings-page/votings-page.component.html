@@ -25,7 +25,11 @@
               *ngFor="let voting of model.votingsFromMonitoredEntities.value"
               class="p-2"
             >
-              <app-voting-card [voting]="voting"></app-voting-card>
+              <app-voting-card 
+                [voting]="voting"
+                [includeParties]="isCheckedParties"
+                [includeCongresspeople]="isCheckedCongresspeople">
+              </app-voting-card>
             </div>
           </div>
         </mat-tab>
