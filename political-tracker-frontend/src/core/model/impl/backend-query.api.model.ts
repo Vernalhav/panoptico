@@ -107,6 +107,11 @@ export class BackendQueryAPIModel extends BackendQueryModel {
       );
   }
 
+  public queryUsingCurrentFilters() {
+    this.updateVotingsFromMonitoredEntities();
+    this.updateVotingsFromMonitoredSubjects();
+  }
+
   constructor(
     private readonly monitoredEntities: MonitoredEntitiesModel,
     private readonly monitoredKeywords: MonitoredKeywordsModel,
@@ -114,22 +119,5 @@ export class BackendQueryAPIModel extends BackendQueryModel {
     private readonly backendService: BackendService,
   ) {
     super();
-    this.monitoredEntities.monitoredPartiesIds.subscribe(async () =>
-      this.updateVotingsFromMonitoredEntities(),
-    );
-    this.monitoredKeywords.monitoredKeywords.subscribe(async () =>
-      this.updateVotingsFromMonitoredSubjects(),
-    );
-    this.monitoredInterval.start.subscribe(async () => {
-      this.updateVotingsFromMonitoredEntities();
-      this.updateVotingsFromMonitoredSubjects();
-    });
-    this.monitoredInterval.end.subscribe(async () => {
-      this.updateVotingsFromMonitoredEntities();
-      this.updateVotingsFromMonitoredSubjects();
-    });
-
-    this.updateVotingsFromMonitoredEntities();
-    this.updateVotingsFromMonitoredSubjects();
   }
 }

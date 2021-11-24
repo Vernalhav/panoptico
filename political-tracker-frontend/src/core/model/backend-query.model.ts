@@ -5,7 +5,7 @@ import { VotingBySubject } from './entities/voting-by-subject.entity';
 import { Voting } from './entities/voting.entity';
 
 @Injectable()
-export class BackendQueryModel {
+export abstract class BackendQueryModel {
   protected _votingsFromMonitoredEntities = new PublishableValue<Voting[]>([]);
   protected _votingsFromMonitoredSubjects = new PublishableValue<VotingBySubject[]>([]);
 
@@ -16,4 +16,6 @@ export class BackendQueryModel {
   public get votingsFromMonitoredSubjects(): SubscribableValue<VotingBySubject[]> {
     return this._votingsFromMonitoredSubjects;
   }
+
+  public abstract queryUsingCurrentFilters(): void;
 }
