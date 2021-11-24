@@ -1,8 +1,10 @@
 import { Injectable } from '@angular/core';
+import { IAPIVotingBySubject } from 'src/app/core/interfaces/voting-by-subject.interface';
 import { IAPIVoting } from 'src/app/core/interfaces/votings.interface';
 import { BackendService } from 'src/app/core/services/backend/backend.service';
 import { BackendQueryModel } from '../backend-query.model';
 import { PublishableValue } from '../common/publishable-value';
+import { VotingBySubject } from '../entities/voting-by-subject.entity';
 import { Voting } from '../entities/voting.entity';
 import { MonitoredEntitiesModel } from '../monitored-entities.model';
 import { MonitoredIntervalModel } from '../monitored-interval.model';
@@ -36,15 +38,14 @@ export class BackendQueryAPIModel extends BackendQueryModel {
       ),
       regexSubjects: Array.from(
         this.monitoredKeywords.monitoredKeywords.value
-
           .filter((k) => k.isRegex)
           .map((k) => k.word),
       ),
-      ...this.monitoredIntervalParams,
+      ...this.monitoredEntitiesParams,
     };
   }
 
-  private static deserializeFromAPI(v: IAPIVoting): Voting {
+  private static deserializeVotingFromAPI(v: IAPIVoting): Voting {
     return new Voting(
       v.idVotacao,
       v.dataVotacao,
@@ -57,15 +58,43 @@ export class BackendQueryAPIModel extends BackendQueryModel {
     );
   }
 
-  private static deserializeArrayFromAPI(votings: IAPIVoting[]) {
-    return votings.map((v) => BackendQueryAPIModel.deserializeFromAPI(v));
+  private static deserializeVotingArrayFromAPI(votings: IAPIVoting[]) {
+    return votings.map((v) => BackendQueryAPIModel.deserializeVotingFromAPI(v));
   }
 
-  private publishFromAPI(
+  private static deserializeVotingBySubjectArrayFromAPI(votings: IAPIVotingBySubject[]) {
+    const intermediate: Map<string, VotingBySubject> = new Map();
+    
+    votings.forEach((voting) => {
+      voting.subjects.forEach((subject) => {
+        if (!intermediate.has(subject.subject)) {
+          intermediate.set(subject.subject, new VotingBySubject(subject.subject));
+        }
+        intermediate.get(subject.subject)?.votesByEntity.push({
+          entity: voting.entityName,
+          entityType: voting.type,
+          ...subject
+        });
+      });
+    });
+    
+    const result = Array.from(intermediate.values());
+    console.log(result);
+    return result;
+  }
+
+  private publishVotingFromAPI(
     value: PublishableValue<Voting[]>,
     votings: IAPIVoting[],
   ) {
-    value.publish(BackendQueryAPIModel.deserializeArrayFromAPI(votings));
+    value.publish(BackendQueryAPIModel.deserializeVotingArrayFromAPI(votings));
+  }
+
+  private publishVotingBySubjectFromAPI(
+    value: PublishableValue<VotingBySubject[]>,
+    votings: IAPIVotingBySubject[],
+  ) {
+    value.publish(BackendQueryAPIModel.deserializeVotingBySubjectArrayFromAPI(votings));
   }
 
   private updateVotingsFromMonitoredEntities() {
@@ -73,7 +102,7 @@ export class BackendQueryAPIModel extends BackendQueryModel {
     this.backendService
       .getVotingsByEntities(params)
       .subscribe((data) =>
-        this.publishFromAPI(this._votingsFromMonitoredEntities, data),
+        this.publishVotingFromAPI(this._votingsFromMonitoredEntities, data),
       );
   }
 
@@ -82,8 +111,13 @@ export class BackendQueryAPIModel extends BackendQueryModel {
     this.backendService
       .getVotingsBySubjects(params)
       .subscribe((data) =>
-        this.publishFromAPI(this._votingsFromMonitoredSubjects, data),
+        this.publishVotingBySubjectFromAPI(this._votingsFromMonitoredSubjects, data),
       );
+  }
+
+  public queryUsingCurrentFilters() {
+    this.updateVotingsFromMonitoredEntities();
+    this.updateVotingsFromMonitoredSubjects();
   }
 
   constructor(
@@ -93,22 +127,5 @@ export class BackendQueryAPIModel extends BackendQueryModel {
     private readonly backendService: BackendService,
   ) {
     super();
-    this.monitoredEntities.monitoredPartiesIds.subscribe(async () =>
-      this.updateVotingsFromMonitoredEntities(),
-    );
-    this.monitoredKeywords.monitoredKeywords.subscribe(async () =>
-      this.updateVotingsFromMonitoredSubjects(),
-    );
-    this.monitoredInterval.start.subscribe(async () => {
-      this.updateVotingsFromMonitoredEntities();
-      this.updateVotingsFromMonitoredSubjects();
-    });
-    this.monitoredInterval.end.subscribe(async () => {
-      this.updateVotingsFromMonitoredEntities();
-      this.updateVotingsFromMonitoredSubjects();
-    });
-
-    this.updateVotingsFromMonitoredEntities();
-    this.updateVotingsFromMonitoredSubjects();
   }
 }

@@ -6,28 +6,36 @@ import {
   IAPIVoting,
   IAPIVotingsRequest,
 } from '../../interfaces/votings.interface';
+import {
+  API_BASE_URL,
+  API_GET_CONGRESSPEOPLE_ROUTE,
+  API_GET_PARTIES_WITH_MEMBERS_ROUTE,
+  API_GET_PARTIES_ROUTE,
+  API_GET_VOTING_BY_ENTITIES_ROUTE,
+  API_GET_VOTTING_BY_SUBJECT_ROUTE,
+} from 'src/config/api-routes.config';
+import { IAPIVotingBySubject } from '../../interfaces/voting-by-subject.interface';
 
 @Injectable({
   providedIn: 'root',
 })
 export class BackendService {
-  baseUrl = 'http://localhost:3000';
 
   constructor(private http: HttpClient) {}
 
   private request<R>(
     method: string,
     url: string,
+    params?: any,
     data?: any,
     responseType?: any,
-    params?: any,
   ) {
     const result = this.http.request<R>(method, url, {
       body: data,
+      params,
       responseType: responseType || 'json',
       observe: 'body',
       headers: {},
-      params,
     });
 
     return result;
@@ -37,35 +45,31 @@ export class BackendService {
     if (includeMembers) {
       return this.request<IAPIParty[]>(
         'get',
-        `${this.baseUrl}/partidos/membros`,
+        `${API_BASE_URL}${API_GET_PARTIES_WITH_MEMBERS_ROUTE}`,
       );
     }
-    return this.request<IAPIParty[]>('get', `${this.baseUrl}/partidos`);
+    return this.request<IAPIParty[]>('get', `${API_BASE_URL}${API_GET_PARTIES_ROUTE}`);
   }
 
   getCongressPeople() {
     return this.request<IAPICongressperson[]>(
       'get',
-      `${this.baseUrl}/deputados`,
+      `${API_BASE_URL}${API_GET_CONGRESSPEOPLE_ROUTE}`,
     );
   }
 
   getVotingsByEntities(req: IAPIVotingsRequest) {
     return this.request<IAPIVoting[]>(
       'get',
-      `${this.baseUrl}/votacoes/entidades/`,
-      undefined,
-      undefined,
+      `${API_BASE_URL}${API_GET_VOTING_BY_ENTITIES_ROUTE}`,
       req,
     );
   }
 
   getVotingsBySubjects(req: IAPIVotingsRequest) {
-    return this.request<IAPIVoting[]>(
+    return this.request<IAPIVotingBySubject[]>(
       'get',
-      `${this.baseUrl}/votacoes/topicos`,
-      undefined,
-      undefined,
+      `${API_BASE_URL}${API_GET_VOTTING_BY_SUBJECT_ROUTE}`,
       req,
     );
   }
