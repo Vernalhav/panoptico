@@ -1,5 +1,6 @@
 type VotesByEntity = {
   entity: string;
+  entityType: 'deputado' | 'partido';
   total: number;
   sim: number;
   nao: number;

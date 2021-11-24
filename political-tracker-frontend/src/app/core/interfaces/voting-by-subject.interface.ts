@@ -9,6 +9,6 @@ type VotesBySubject = {
 export interface IAPIVotingBySubject {
   id: number;
   entityName: string;
-  type: string;
+  type: 'deputado' | 'partido';
   subjects: VotesBySubject[];
 }

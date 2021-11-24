@@ -3,12 +3,22 @@
   <div class="mt-2">
     <canvas
       baseChart
-      [datasets]="dataSets"
+      [datasets]="filteredDataset"
       [labels]="labels"
       [options]="chartOptions"
       [legend]="legend"
       chartType="bar"
     >
     </canvas>
+    <mat-slide-toggle
+      [checked]="isCheckedParties"
+      (change)="checkedPartiesChanged($event)">
+      Partidos
+    </mat-slide-toggle>
+    <mat-slide-toggle
+      [checked]="isCheckedCongresspeople"
+      (change)="checkedCongresspeopleChanged($event)">
+      Deputados
+    </mat-slide-toggle>
   </div>
 </div>

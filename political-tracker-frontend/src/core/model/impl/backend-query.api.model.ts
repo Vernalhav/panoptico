@@ -72,6 +72,7 @@ export class BackendQueryAPIModel extends BackendQueryModel {
         }
         intermediate.get(subject.subject)?.votesByEntity.push({
           entity: voting.entityName,
+          entityType: voting.type,
           ...subject
         });
       });
