@@ -1,5 +1,5 @@
-type VotesBySubject = {
-  subject: string;
+type VotesByEntity = {
+  entity: string;
   total: number;
   sim: number;
   nao: number;
@@ -7,20 +7,14 @@ type VotesBySubject = {
 };
 
 export class VotingBySubject {
-  id: number;
-  entityName: string;
-  type: string;
-  subjects: VotesBySubject[];
+  subject: string;
+  votesByEntity: VotesByEntity[];
 
   constructor(
-    id: number,
-    entityName: string,
-    type: string,
-    subjects: VotesBySubject[],
+    subject: string,
+    votesByEntity: VotesByEntity[] = [],
   ) {
-    this.id = id;
-    this.entityName = entityName;
-    this.type = type;
-    this.subjects = subjects;
+    this.subject = subject;
+    this.votesByEntity = votesByEntity;
   }
 };

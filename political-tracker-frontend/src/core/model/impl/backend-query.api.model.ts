@@ -58,21 +58,28 @@ export class BackendQueryAPIModel extends BackendQueryModel {
     );
   }
 
-  private static deserializeVotingBySubjectFromAPI(v: IAPIVotingBySubject): VotingBySubject {
-    return new VotingBySubject(
-      v.id,
-      v.entityName,
-      v.type,
-      v.subjects
-    );
-  }
-
   private static deserializeVotingArrayFromAPI(votings: IAPIVoting[]) {
     return votings.map((v) => BackendQueryAPIModel.deserializeVotingFromAPI(v));
   }
 
   private static deserializeVotingBySubjectArrayFromAPI(votings: IAPIVotingBySubject[]) {
-    return votings.map((v) => BackendQueryAPIModel.deserializeVotingBySubjectFromAPI(v));
+    const intermediate: Map<string, VotingBySubject> = new Map();
+    
+    votings.forEach((voting) => {
+      voting.subjects.forEach((subject) => {
+        if (!intermediate.has(subject.subject)) {
+          intermediate.set(subject.subject, new VotingBySubject(subject.subject));
+        }
+        intermediate.get(subject.subject)?.votesByEntity.push({
+          entity: voting.entityName,
+          ...subject
+        });
+      });
+    });
+    
+    const result = Array.from(intermediate.values());
+    console.log(result);
+    return result;
   }
 
   private publishVotingFromAPI(
