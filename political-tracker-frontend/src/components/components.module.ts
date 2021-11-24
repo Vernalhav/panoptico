@@ -54,6 +54,7 @@ import { TopicCardComponent } from './topic-card/topic-card.component';
     MonitoredDatesComponent,
     VotingCardComponent,
     MonitoredKeywordsModule,
+    TopicCardComponent,
   ],
 })
 export class ComponentsModule {}
