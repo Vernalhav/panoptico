@@ -5,7 +5,7 @@ import { BackendService } from 'src/app/core/services/backend/backend.service';
 import { BackendQueryModel } from '../backend-query.model';
 import { PublishableValue } from '../common/publishable-value';
 import { VotingBySubject } from '../entities/voting-by-subject.entity';
-import { Voting } from '../entities/voting.entity';
+import { VotesByEntity, Voting } from '../entities/voting.entity';
 import { MonitoredEntitiesModel } from '../monitored-entities.model';
 import { MonitoredIntervalModel } from '../monitored-interval.model';
 import { MonitoredKeywordsModel } from '../monitored-keywords.model';
@@ -49,12 +49,16 @@ export class BackendQueryAPIModel extends BackendQueryModel {
     return new Voting(
       v.idVotacao,
       v.dataVotacao,
-      (Array.isArray(v.temas) ? v.temas?.join('; ') : v.temas) + '',
-      v.total,
-      v.sim,
-      v.nao,
-      v.abstencao,
-      v.outros,
+      v.votes.map((e) => { 
+        return { 
+          entity: e.nome, 
+          entityType: e.type, 
+          total: e.total, 
+          sim: e.sim, 
+          nao: e.nao, 
+          outros: e.outros 
+        }
+      })
     );
   }
 
