@@ -17,5 +17,10 @@ export abstract class BackendQueryModel {
     return this._votingsFromMonitoredSubjects;
   }
 
+  public clearQueryResults(): void {
+    this._votingsFromMonitoredEntities.publish([]);
+    this._votingsFromMonitoredSubjects.publish([]);
+  }
+
   public abstract queryUsingCurrentFilters(): void;
 }

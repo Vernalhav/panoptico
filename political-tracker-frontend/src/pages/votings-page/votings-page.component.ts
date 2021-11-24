@@ -11,6 +11,7 @@ export class VotingsPageComponent {
   constructor(readonly model: BackendQueryModel, readonly router: Router) {}
 
   goBack() {
+    this.model.clearQueryResults();
     this.router.navigate(['/']);
   }
 }
