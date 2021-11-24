@@ -253,4 +253,53 @@ export class VotingService {
       return results
     }, {})
   }
+
+  async getByEntitiesWithParcials(partiesIds: number[], congresspersonIds: number[], startDate: string, endDate: string) {
+    const maxItems = 20;
+    const baseQuery = (select) => getConnection().manager.createQueryBuilder()
+      .select(select)
+      .addSelect(`SUM(CASE WHEN (v.voto = 'Sim') THEN 1 ELSE 0 END)`, 'sim')
+      .addSelect(`SUM(CASE WHEN (v.voto = 'Não') THEN 1 ELSE 0 END)`, 'nao')
+      .addSelect(`SUM(CASE WHEN (v.voto = 'Abstenção') THEN 1 ELSE 0 END)`, 'abstencao')
+      .addSelect(`SUM(CASE WHEN (v.voto IN ('Sim', 'Não', 'Abstenção')) THEN 0 ELSE 1 END)`, 'outros')
+      .from('votos', 'v')
+      .innerJoin('votacoes', 'pV', 'v.idVotacao = pV.idVotacao AND pV.dataVotacao BETWEEN :start AND :end', {
+        'start': startDate,
+        'end': endDate
+      })
+      .limit(maxItems);
+
+    const getPartyVotes = baseQuery(['v.idVotacao', 'pV.dataVotacao', 'd.idPartido id', 'p.sigla as nome', '"partido" type', 'COUNT(*) as total'])
+      .innerJoin('deputados', 'd', 'd.id = v.idDeputado AND (d.idPartido IN (:...parties))', {
+          'parties': partiesIds
+        })
+      .innerJoin('partidos', 'p', 'p.id = d.idPartido')
+      .groupBy('v.idVotacao, d.idPartido')
+
+    const getCongressVotes = baseQuery(['v.idVotacao', 'pV.dataVotacao', 'v.idDeputado id', 'd.nomeEleitoral nome', '"deputado" type', 'COUNT(*) as total'])
+      .innerJoin('deputados', 'd', 'd.id = v.idDeputado AND d.id IN (:...congresspeople)', {
+          'congresspeople': congresspersonIds,
+        })
+      .groupBy('v.idVotacao, v.idDeputado')
+    
+    let data = [].concat(await getPartyVotes.getRawMany()).concat(await getCongressVotes.getRawMany())
+    
+    return Object.values(data.reduce((results, row) => { 
+      if(results[row.idVotacao] === undefined) { 
+        results[row.idVotacao] = { idVotacao: row.idVotacao, dataVotacao: row.dataVotacao, votes: [] }
+      }
+
+      results[row.idVotacao].votes.push({
+        type: row.type, 
+        id: row.id, 
+        nome: row.nome,
+        total: row.total, 
+        sim: row.sim, 
+        nao: row.nao, 
+        outros: row.outros
+      })
+
+      return results;
+    }, {}))
+  }
 }

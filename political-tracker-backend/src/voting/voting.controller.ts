@@ -81,4 +81,17 @@ export class VotingController {
       
       return await this.votingService.getGroupedBySubjectsAndEntities(subjects, regexSubjects, partiesIds, congresspersonIds, startDate, endDate)
   }
+
+  @Get('entidades-com-votos')
+  async getByEntitiesWithParcials(
+    @Query('startDate') startDate: string = '2019-01-01',
+    @Query('endDate') endDate: string = '2021-12-30',
+    @Query('partiesIds') partiesIds : number[] | number = [], 
+    @Query('congresspersonIds') congresspersonIds: number[] | number = [],
+  ) { 
+      partiesIds = arrayOrElementToArray(partiesIds);
+      congresspersonIds = arrayOrElementToArray(congresspersonIds);
+            
+      return await this.votingService.getByEntitiesWithParcials(partiesIds, congresspersonIds, startDate, endDate)
+  }
 }
