@@ -20,25 +20,25 @@ export class TopicCardComponent {
   public congresspeopleData: ChartDataSets[] = [];
   public filteredDataset: ChartDataSets[] = [];
   
-  public isCheckedParties = true;
-  public isCheckedCongresspeople = true;
+  public _includeParties = true;
+  public _includeCongresspeople = true;
   
-  public checkedPartiesChanged(e: MatSlideToggleChange) {
-    this.isCheckedParties = e.checked;
-    this.updateFilteredData();
-  }
-
-  public checkedCongresspeopleChanged(e: MatSlideToggleChange) {
-    this.isCheckedCongresspeople = e.checked;
-    this.updateFilteredData();
-  }
-
   private updateFilteredData() {
     this.filteredDataset = [];
-    if (this.isCheckedParties)
+    if (this._includeParties)
       this.filteredDataset = this.filteredDataset.concat(this.partiesData);
-    if (this.isCheckedCongresspeople)
+    if (this._includeCongresspeople)
       this.filteredDataset = this.filteredDataset.concat(this.congresspeopleData);
+  }
+
+  @Input() set includeParties(val: boolean) {
+    this._includeParties = val;
+    this.updateFilteredData();
+  }
+
+  @Input() set includeCongresspeople(val: boolean) {
+    this._includeCongresspeople = val;
+    this.updateFilteredData();
   }
 
   @Input() set voting(voting: VotingBySubject) {
