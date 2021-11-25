@@ -1,16 +1,15 @@
 import { Component, Input } from '@angular/core';
 import { ChartDataSets, ChartOptions } from 'chart.js';
 import { Label } from 'ng2-charts';
-import { Voting } from 'src/core/model/entities/voting.entity';
+import { VotingBySubject } from 'src/core/model/entities/voting-by-subject.entity';
 
 @Component({
-  selector: 'app-voting-card',
-  templateUrl: './voting-card.component.html',
-  styleUrls: ['./voting-card.component.scss'],
+  selector: 'app-topic-card',
+  templateUrl: './topic-card.component.html',
+  styleUrls: ['./topic-card.component.scss']
 })
-export class VotingCardComponent {
+export class TopicCardComponent {
   public title: string = '';
-  public votingId: string = '';
   public legend = false;
   public chartOptions: ChartOptions = {
     responsive: true,
@@ -41,17 +40,16 @@ export class VotingCardComponent {
     this.updateFilteredData();
   }
 
-  @Input() set voting(voting: Voting) {
-    this.title = `Votação ${voting.id}`;
-    this.votingId = voting.id;
+  @Input() set voting(voting: VotingBySubject) {
+    this.title = voting.subject;
 
-    this.partiesData = voting.votes
+    this.partiesData = voting.votesByEntity
       .filter((votes) => votes.entityType === 'partido')
       .map((votes) => {
         return { data: [ votes.sim, votes.nao, votes.outros ], label: votes.entity, stack: 'a' };
       });
     
-    this.congresspeopleData = voting.votes
+    this.congresspeopleData = voting.votesByEntity
       .filter((votes) => votes.entityType === 'deputado')
       .map((votes) => {
         return { data: [ votes.sim, votes.nao, votes.outros ], label: votes.entity, stack: 'a' };

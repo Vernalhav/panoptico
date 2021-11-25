@@ -7,13 +7,21 @@ export interface IAPIVotingsRequest {
   endDate?: string;
 }
 
+
+
+type VotesByVoting = {
+  type: "deputado" | "partido";
+  id: number;
+  nome: string;
+  total: number;
+  sim: number;
+  nao: number;
+  outros: number;
+};
+
+
 export interface IAPIVoting {
   idVotacao: string;
   dataVotacao: string;
-  temas: string[] | null;
-  sim: number;
-  nao: number;
-  abstencao: number;
-  outros: number;
-  total: number;
+  votes: VotesByVoting[];
 }

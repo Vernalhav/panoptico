@@ -11,6 +11,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatListModule } from '@angular/material/list';
 import { MatSelectModule } from '@angular/material/select';
 import { MatTabsModule } from '@angular/material/tabs';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle'; 
 import { ChartsModule } from 'ng2-charts';
 import { CoreModule } from 'src/core/core.module';
 import { CongresspeopleChecklistComponent } from './congresspeople-checklist/congresspeople-checklist.component';
@@ -19,6 +20,7 @@ import { MonitoredDatesComponent } from './monitored-dates/monitored-dates.compo
 import { MonitoredKeywordsModule } from './monitored-keywords/monitored-keywords.module';
 import { VotingCardComponent } from './voting-card/voting-card.component';
 import { VotingDetailsComponent } from './voting-details/voting-details.component';
+import { TopicCardComponent } from './topic-card/topic-card.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,7 @@ import { VotingDetailsComponent } from './voting-details/voting-details.componen
     MonitoredDatesComponent,
     VotingCardComponent,
     VotingDetailsComponent,
+    TopicCardComponent,
   ],
   imports: [
     CommonModule,
@@ -38,6 +41,7 @@ import { VotingDetailsComponent } from './voting-details/voting-details.componen
     MatInputModule,
     MatFormFieldModule,
     MatExpansionModule,
+    MatSlideToggleModule,
     MonitoredKeywordsModule,
     MatNativeDateModule,
     MatDatepickerModule,
@@ -52,6 +56,7 @@ import { VotingDetailsComponent } from './voting-details/voting-details.componen
     MonitoredDatesComponent,
     VotingCardComponent,
     MonitoredKeywordsModule,
+    TopicCardComponent,
   ],
 })
 export class ComponentsModule {}

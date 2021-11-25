@@ -1,30 +1,24 @@
+export type VotesByEntity = {
+  entity: string;
+  entityType: 'deputado' | 'partido';
+  total: number;
+  sim: number;
+  nao: number;
+  outros: number;
+};
+
 export class Voting {
   id: string;
-  date: string;
-  subject: string;
-  total: number;
-  yes: number;
-  no: number;
-  abstain: number;
-  others: number;
+  date: string; 
+  votes: VotesByEntity[];
 
   constructor(
     id: string,
     date: string,
-    subject: string,
-    total: number,
-    yes: number,
-    no: number,
-    abstain: number,
-    others: number,
+    votes: VotesByEntity[] = [],
   ) {
     this.id = id;
     this.date = date;
-    this.subject = subject;
-    this.total = total;
-    this.yes = yes;
-    this.no = no;
-    this.abstain = abstain;
-    this.others = others;
+    this.votes = votes;
   }
-}
+};

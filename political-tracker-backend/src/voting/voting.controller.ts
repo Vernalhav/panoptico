@@ -51,4 +51,47 @@ export class VotingController {
       
       return await this.votingService.getBySubjects(subjects, regexSubjects, startDate, endDate)
   }
+
+  @Get('topicos-por-tema')
+  async getGroupedBySubjects(
+    @Query('startDate') startDate: string = '2019-01-01',
+    @Query('endDate') endDate: string = '2021-12-30',
+    @Query('subjects') subjects: string[] | string = [],
+    @Query('regexSubjects') regexSubjects: string[] | string = [],
+  ) {
+      regexSubjects = arrayOrElementToArray(regexSubjects);
+      subjects = arrayOrElementToArray(subjects);
+      
+      return await this.votingService.getGroupedBySubjects(subjects, regexSubjects, startDate, endDate)
+  }
+
+  @Get('topicos-god')
+  async getGroupedBySubjectsAndEntities(
+    @Query('startDate') startDate: string = '2019-01-01',
+    @Query('endDate') endDate: string = '2021-12-30',
+    @Query('subjects') subjects: string[] | string = [],
+    @Query('regexSubjects') regexSubjects: string[] | string = [],
+    @Query('partiesIds') partiesIds : number[] | number = [], 
+    @Query('congresspersonIds') congresspersonIds: number[] | number = [],
+  ) {
+      regexSubjects = arrayOrElementToArray(regexSubjects);
+      subjects = arrayOrElementToArray(subjects);
+      partiesIds = arrayOrElementToArray(partiesIds);
+      congresspersonIds = arrayOrElementToArray(congresspersonIds);
+      
+      return await this.votingService.getGroupedBySubjectsAndEntities(subjects, regexSubjects, partiesIds, congresspersonIds, startDate, endDate)
+  }
+
+  @Get('entidades-com-votos')
+  async getByEntitiesWithParcials(
+    @Query('startDate') startDate: string = '2019-01-01',
+    @Query('endDate') endDate: string = '2021-12-30',
+    @Query('partiesIds') partiesIds : number[] | number = [], 
+    @Query('congresspersonIds') congresspersonIds: number[] | number = [],
+  ) { 
+      partiesIds = arrayOrElementToArray(partiesIds);
+      congresspersonIds = arrayOrElementToArray(congresspersonIds);
+            
+      return await this.votingService.getByEntitiesWithParcials(partiesIds, congresspersonIds, startDate, endDate)
+  }
 }

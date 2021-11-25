@@ -6,12 +6,30 @@
           <div class="m-2 font-bold">
             Como as entidades que monitoro votaram?
           </div>
+          <mat-slide-toggle
+            class="font-regular mr-4"
+            [checked]="isCheckedParties"
+            (change)="checkedPartiesChanged($event)"
+          >
+            Partidos
+          </mat-slide-toggle>
+          <mat-slide-toggle
+            class="font-regular"
+            [checked]="isCheckedCongresspeople"
+            (change)="checkedCongresspeopleChanged($event)"
+          >
+            Deputados
+          </mat-slide-toggle>
           <div class="py-4 grid grid-cols-1 lg:grid-cols-2">
             <div
               *ngFor="let voting of model.votingsFromMonitoredEntities.value"
               class="p-2"
             >
-              <app-voting-card [voting]="voting"></app-voting-card>
+              <app-voting-card 
+                [voting]="voting"
+                [includeParties]="isCheckedParties"
+                [includeCongresspeople]="isCheckedCongresspeople">
+              </app-voting-card>
             </div>
           </div>
         </mat-tab>
@@ -19,13 +37,32 @@
           <div class="m-2 font-bold">
             Como foram as votações sobre os assuntos que monitoro?
           </div>
+          <mat-slide-toggle
+            class="font-regular mr-4"
+            [checked]="isCheckedParties"
+            (change)="checkedPartiesChanged($event)"
+          >
+            Partidos
+          </mat-slide-toggle>
+          <mat-slide-toggle
+            class="font-regular"
+            [checked]="isCheckedCongresspeople"
+            (change)="checkedCongresspeopleChanged($event)"
+          >
+            Deputados
+          </mat-slide-toggle>
           <div class="py-4 grid grid-cols-1 lg:grid-cols-2">
             <div
               *ngFor="let voting of model.votingsFromMonitoredSubjects.value"
               class="p-2"
             >
-              <app-voting-card [voting]="voting"></app-voting-card>
-            </div></div
+              <app-topic-card
+                [voting]="voting"
+                [includeParties]="isCheckedParties"
+                [includeCongresspeople]="isCheckedCongresspeople"
+              ></app-topic-card>
+            </div
+          ></div
         ></mat-tab>
       </mat-tab-group>
     </mat-card-content>
