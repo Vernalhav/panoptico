@@ -5,7 +5,7 @@ import { BackendService } from 'src/app/core/services/backend/backend.service';
 import { BackendQueryModel } from '../backend-query.model';
 import { PublishableValue } from '../common/publishable-value';
 import { VotingBySubject } from '../entities/voting-by-subject.entity';
-import { VotesByEntity, Voting } from '../entities/voting.entity';
+import { Voting } from '../entities/voting.entity';
 import { MonitoredEntitiesModel } from '../monitored-entities.model';
 import { MonitoredIntervalModel } from '../monitored-interval.model';
 import { MonitoredKeywordsModel } from '../monitored-keywords.model';
@@ -49,16 +49,16 @@ export class BackendQueryAPIModel extends BackendQueryModel {
     return new Voting(
       v.idVotacao,
       v.dataVotacao,
-      v.votes.map((e) => { 
-        return { 
-          entity: e.nome, 
-          entityType: e.type, 
-          total: e.total, 
-          sim: e.sim, 
-          nao: e.nao, 
-          outros: e.outros 
-        }
-      })
+      v.votes.map((e) => {
+        return {
+          entity: e.nome,
+          entityType: e.type,
+          total: e.total,
+          sim: e.sim,
+          nao: e.nao,
+          outros: e.outros,
+        };
+      }),
     );
   }
 
@@ -66,22 +66,27 @@ export class BackendQueryAPIModel extends BackendQueryModel {
     return votings.map((v) => BackendQueryAPIModel.deserializeVotingFromAPI(v));
   }
 
-  private static deserializeVotingBySubjectArrayFromAPI(votings: IAPIVotingBySubject[]) {
+  private static deserializeVotingBySubjectArrayFromAPI(
+    votings: IAPIVotingBySubject[],
+  ) {
     const intermediate: Map<string, VotingBySubject> = new Map();
-    
+
     votings.forEach((voting) => {
       voting.subjects.forEach((subject) => {
         if (!intermediate.has(subject.subject)) {
-          intermediate.set(subject.subject, new VotingBySubject(subject.subject));
+          intermediate.set(
+            subject.subject,
+            new VotingBySubject(subject.subject),
+          );
         }
         intermediate.get(subject.subject)?.votesByEntity.push({
           entity: voting.entityName,
           entityType: voting.type,
-          ...subject
+          ...subject,
         });
       });
     });
-    
+
     const result = Array.from(intermediate.values());
     console.log(result);
     return result;
@@ -98,7 +103,9 @@ export class BackendQueryAPIModel extends BackendQueryModel {
     value: PublishableValue<VotingBySubject[]>,
     votings: IAPIVotingBySubject[],
   ) {
-    value.publish(BackendQueryAPIModel.deserializeVotingBySubjectArrayFromAPI(votings));
+    value.publish(
+      BackendQueryAPIModel.deserializeVotingBySubjectArrayFromAPI(votings),
+    );
   }
 
   private updateVotingsFromMonitoredEntities() {
@@ -115,7 +122,10 @@ export class BackendQueryAPIModel extends BackendQueryModel {
     this.backendService
       .getVotingsBySubjects(params)
       .subscribe((data) =>
-        this.publishVotingBySubjectFromAPI(this._votingsFromMonitoredSubjects, data),
+        this.publishVotingBySubjectFromAPI(
+          this._votingsFromMonitoredSubjects,
+          data,
+        ),
       );
   }
 

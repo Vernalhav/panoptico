@@ -7,13 +7,17 @@ import { Voting } from './entities/voting.entity';
 @Injectable()
 export abstract class BackendQueryModel {
   protected _votingsFromMonitoredEntities = new PublishableValue<Voting[]>([]);
-  protected _votingsFromMonitoredSubjects = new PublishableValue<VotingBySubject[]>([]);
+  protected _votingsFromMonitoredSubjects = new PublishableValue<
+    VotingBySubject[]
+  >([]);
 
   public get votingsFromMonitoredEntities(): SubscribableValue<Voting[]> {
     return this._votingsFromMonitoredEntities;
   }
 
-  public get votingsFromMonitoredSubjects(): SubscribableValue<VotingBySubject[]> {
+  public get votingsFromMonitoredSubjects(): SubscribableValue<
+    VotingBySubject[]
+  > {
     return this._votingsFromMonitoredSubjects;
   }
 

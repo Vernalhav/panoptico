@@ -7,10 +7,8 @@ export interface IAPIVotingsRequest {
   endDate?: string;
 }
 
-
-
 type VotesByVoting = {
-  type: "deputado" | "partido";
+  type: 'deputado' | 'partido';
   id: number;
   nome: string;
   total: number;
@@ -18,7 +16,6 @@ type VotesByVoting = {
   nao: number;
   outros: number;
 };
-
 
 export interface IAPIVoting {
   idVotacao: string;

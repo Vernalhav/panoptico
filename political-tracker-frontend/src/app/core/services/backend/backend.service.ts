@@ -20,7 +20,6 @@ import { IAPIVotingBySubject } from '../../interfaces/voting-by-subject.interfac
   providedIn: 'root',
 })
 export class BackendService {
-
   constructor(private http: HttpClient) {}
 
   private request<R>(
@@ -48,7 +47,10 @@ export class BackendService {
         `${API_BASE_URL}${API_GET_PARTIES_WITH_MEMBERS_ROUTE}`,
       );
     }
-    return this.request<IAPIParty[]>('get', `${API_BASE_URL}${API_GET_PARTIES_ROUTE}`);
+    return this.request<IAPIParty[]>(
+      'get',
+      `${API_BASE_URL}${API_GET_PARTIES_ROUTE}`,
+    );
   }
 
   getCongressPeople() {

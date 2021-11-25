@@ -9,8 +9,8 @@ import { Voting } from 'src/core/model/entities/voting.entity';
   styleUrls: ['./voting-card.component.scss'],
 })
 export class VotingCardComponent {
-  public title: string = '';
-  public votingId: string = '';
+  public title = '';
+  public votingId = '';
   public legend = false;
   public chartOptions: ChartOptions = {
     responsive: true,
@@ -19,16 +19,18 @@ export class VotingCardComponent {
   public partiesData: ChartDataSets[] = [];
   public congresspeopleData: ChartDataSets[] = [];
   public filteredDataset: ChartDataSets[] = [];
-  
+
   public _includeParties = true;
   public _includeCongresspeople = true;
-  
+
   private updateFilteredData() {
     this.filteredDataset = [];
     if (this._includeParties)
       this.filteredDataset = this.filteredDataset.concat(this.partiesData);
     if (this._includeCongresspeople)
-      this.filteredDataset = this.filteredDataset.concat(this.congresspeopleData);
+      this.filteredDataset = this.filteredDataset.concat(
+        this.congresspeopleData,
+      );
   }
 
   @Input() set includeParties(val: boolean) {
@@ -48,15 +50,23 @@ export class VotingCardComponent {
     this.partiesData = voting.votes
       .filter((votes) => votes.entityType === 'partido')
       .map((votes) => {
-        return { data: [ votes.sim, votes.nao, votes.outros ], label: votes.entity, stack: 'a' };
+        return {
+          data: [votes.sim, votes.nao, votes.outros],
+          label: votes.entity,
+          stack: 'a',
+        };
       });
-    
+
     this.congresspeopleData = voting.votes
       .filter((votes) => votes.entityType === 'deputado')
       .map((votes) => {
-        return { data: [ votes.sim, votes.nao, votes.outros ], label: votes.entity, stack: 'a' };
+        return {
+          data: [votes.sim, votes.nao, votes.outros],
+          label: votes.entity,
+          stack: 'a',
+        };
       });
-    
-      this.updateFilteredData();
+
+    this.updateFilteredData();
   }
 }

@@ -13,7 +13,7 @@ export class VotingsPageComponent {
 
   public isCheckedParties = true;
   public isCheckedCongresspeople = true;
-  
+
   public checkedPartiesChanged(e: MatSlideToggleChange) {
     this.isCheckedParties = e.checked;
   }

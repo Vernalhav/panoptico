@@ -11,7 +11,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatListModule } from '@angular/material/list';
 import { MatSelectModule } from '@angular/material/select';
 import { MatTabsModule } from '@angular/material/tabs';
-import { MatSlideToggleModule } from '@angular/material/slide-toggle'; 
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { ChartsModule } from 'ng2-charts';
 import { CoreModule } from 'src/core/core.module';
 import { CongresspeopleChecklistComponent } from './congresspeople-checklist/congresspeople-checklist.component';
