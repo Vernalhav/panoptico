@@ -4,6 +4,16 @@
 
 export const environment = {
   production: false,
+  services: {
+    backend: {
+      BASE_URL: 'http://localhost:3000',
+      GET_PARTIES_PATH: '/party',
+      GET_PARTIES_WITH_MEMBERS_PATH: '/party?members=1',
+      GET_CONGRESSPEOPLE_PATH: '/congressperson',
+      GET_MONITOR_VOTINGS: '/monitor',
+      GET_MONITOR_SUBJECTS: '/subjects-monitor/',
+    },
+  },
 };
 
 /*

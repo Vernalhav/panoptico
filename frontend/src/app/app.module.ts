@@ -2,23 +2,29 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { CoreModule } from 'src/core/core.module';
-import { PagesModule } from 'src/pages/pages.module';
+import { AppComponent } from './app-component/app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { CamaraService } from './core/services/camara/camara.service';
+import { CoreModule } from './core/core.module';
+import { PagesModule } from './pages/pages.module';
 
 @NgModule({
+  bootstrap: [AppComponent],
   declarations: [AppComponent],
   imports: [
+    // Framework Imports
     BrowserModule,
     HttpClientModule,
+
+    // Browser Routing Imports
     AppRoutingModule,
     BrowserAnimationsModule,
+    
+    // Application Modules
     CoreModule,
-    PagesModule,
+    PagesModule
   ],
-  providers: [CamaraService],
-  bootstrap: [AppComponent],
+  providers: [
+    
+  ],
 })
 export class AppModule {}

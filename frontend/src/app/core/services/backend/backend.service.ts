@@ -1,78 +1,53 @@
+import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import IAPIParty from '../../interfaces/party.interface';
-import IAPICongressperson from '../../interfaces/congressperson.interface';
-import {
-  IAPIVoting,
-  IAPIVotingsRequest,
-} from '../../interfaces/votings.interface';
-import {
-  API_BASE_URL,
-  API_GET_CONGRESSPEOPLE_ROUTE,
-  API_GET_PARTIES_WITH_MEMBERS_ROUTE,
-  API_GET_PARTIES_ROUTE,
-  API_GET_VOTING_BY_ENTITIES_ROUTE,
-  API_GET_VOTTING_BY_SUBJECT_ROUTE,
-} from 'src/config/api-routes.config';
-import { IAPIVotingBySubject } from '../../interfaces/voting-by-subject.interface';
+import { environment } from 'src/environments/environment';
+import { Congressperson, Party, Subject, Voting } from '../../entities';
+import { IAPICongresspersonResponse, IAPIMonitorSubjectsResponse, IAPIMonitorVotingsResponse, IAPIPartiesResponse, IAPIVotingsRequest } from '.';
 
-@Injectable({
-  providedIn: 'root',
-})
+
+@Injectable({ providedIn: 'root' })
 export class BackendService {
+  private static config: any = environment.services.backend;
+
   constructor(private http: HttpClient) {}
 
   private request<R>(
     method: string,
-    url: string,
-    params?: any,
-    data?: any,
-    responseType?: any,
-  ) {
-    const result = this.http.request<R>(method, url, {
-      body: data,
-      params,
-      responseType: responseType || 'json',
-      observe: 'body',
-      headers: {},
-    });
-
-    return result;
-  }
-
-  getParties(includeMembers = true) {
-    if (includeMembers) {
-      return this.request<IAPIParty[]>(
-        'get',
-        `${API_BASE_URL}${API_GET_PARTIES_WITH_MEMBERS_ROUTE}`,
-      );
-    }
-    return this.request<IAPIParty[]>(
-      'get',
-      `${API_BASE_URL}${API_GET_PARTIES_ROUTE}`,
+    path: string,
+    options?: { params?: any; data?: any },
+  ): Observable<R> {
+    return this.http.request<R>(method, `${BackendService.config.BASE_URL}${path}`, {
+        params: options?.params || undefined,
+        body: options?.data || undefined,
+        responseType: 'json',
+      },
     );
   }
 
-  getCongressPeople() {
-    return this.request<IAPICongressperson[]>(
-      'get',
-      `${API_BASE_URL}${API_GET_CONGRESSPEOPLE_ROUTE}`,
-    );
+  getParties(): Observable<Party[]> {
+    return this.request<IAPIPartiesResponse>('GET', BackendService.config.GET_PARTIES_PATH)
+      .pipe( map(r => r.parties) )
   }
 
-  getVotingsByEntities(req: IAPIVotingsRequest) {
-    return this.request<IAPIVoting[]>(
-      'get',
-      `${API_BASE_URL}${API_GET_VOTING_BY_ENTITIES_ROUTE}`,
-      req,
-    );
+  getPartiesWithMembers(): Observable<Party[]> {
+    return this.request<IAPIPartiesResponse>('GET', BackendService.config.GET_PARTIES_WITH_MEMBERS_PATH)
+    .pipe( map(r  => r.parties) )
   }
 
-  getVotingsBySubjects(req: IAPIVotingsRequest) {
-    return this.request<IAPIVotingBySubject[]>(
-      'get',
-      `${API_BASE_URL}${API_GET_VOTTING_BY_SUBJECT_ROUTE}`,
-      req,
-    );
+  getCongressPeople(): Observable<Congressperson[]> {
+    return this.request<IAPICongresspersonResponse>('GET', BackendService.config.GET_CONGRESSPEOPLE_PATH)
+    .pipe( map(r => r.congresspeople) )
+  }
+
+  getVotingsByEntities(req: IAPIVotingsRequest): Observable<Voting[]> {
+    return this.request<IAPIMonitorVotingsResponse>('GET', BackendService.config.GET_MONITOR_VOTINGS, { params: req })
+      .pipe( map(r => r.votings) )
+  }
+
+  getVotingsBySubjects(req: IAPIVotingsRequest): Observable<Subject[]> {
+    return this.request<IAPIMonitorSubjectsResponse>('GET', BackendService.config.GET_MONITOR_SUBJECTS, { params: req })
+      .pipe( map(r => r.subjects) )
   }
 }
