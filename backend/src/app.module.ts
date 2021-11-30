@@ -1,29 +1,43 @@
-import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
+import { forwardRef, Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { CongresspeopleController } from './congressperson/congresspeople.controller';
-import { CongresspersonService } from './congressperson/congressperson.service';
-import PartyEntity from './party/entities/party.entity';
-import { PartyService } from './party/party.service';
-import { PartiesController } from './party/parties.controller';
-import CongresspersonEntity from './congressperson/entities/congressperson.entity';
-import { VotingService } from './voting/voting.service';
-import { VotingController } from './voting/voting.controller';
-import { TopicService } from './topics/topic.service';
-import { TopicsController } from './topics/topics.controller';
+import { CongresspersonController, PartyController, SubjectsMonitorController, VotingsMonitorController } from './controllers';
+import { Congressperson, Party, Subject, Vote, VoteByParty, Voting } from './entities';
+import { CongresspersonService, PartyService, SubjectService, SubjectsMonitorService, VotingsMonitorService } from './services';
+import { CongresspeopleMapper, CongresspersonMapper, PartiesMapper, PartyMapper } from './shared/mappers';
 
 
 @Module({
+  controllers: [ 
+    CongresspersonController, 
+    PartyController,
+    VotingsMonitorController,
+    SubjectsMonitorController,
+
+  ],
+
   imports: [
     TypeOrmModule.forRoot({
       type: 'sqlite',
       database: 'data/database.sqlite3',
-      entities: [PartyEntity, CongresspersonEntity],
+      entities: [Party, Congressperson, Subject, Voting, Vote, VoteByParty]
     }),
-    TypeOrmModule.forFeature([PartyEntity, CongresspersonEntity]),
+    TypeOrmModule.forFeature([Party, Congressperson, Subject, Voting, Vote, VoteByParty]),
   ],
-  controllers: [AppController, CongresspeopleController, PartiesController, VotingController, TopicsController],
-  providers: [AppService, CongresspersonService, PartyService, VotingService, TopicService],
+
+  providers: [
+    // Services
+    PartyService,
+    SubjectService,
+    CongresspersonService,
+    VotingsMonitorService,
+    SubjectsMonitorService,
+
+    // Mappers
+    PartyMapper,
+    CongresspersonMapper,
+    PartiesMapper,
+    CongresspeopleMapper,
+  ],
 })
+
 export class AppModule {}
