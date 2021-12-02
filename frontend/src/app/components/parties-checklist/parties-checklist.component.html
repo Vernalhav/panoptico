@@ -1,0 +1,10 @@
+<mat-selection-list>
+  <mat-list-option
+    color="accent"
+    *ngFor="let party of items"
+    [selected]="!!view.isPartyMonitored[party.id]"
+    (click)="handleOptionClick(party)"
+  >
+    {{ party.name }}
+  </mat-list-option>
+</mat-selection-list>
