@@ -29,7 +29,7 @@ import { VotingsPageComponent } from './votings-page/votings-page.component';
 
     // Project Imports
     CoreModule,
-    ComponentsModule
+    ComponentsModule,
   ],
 })
 export class PagesModule {}
