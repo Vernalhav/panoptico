@@ -30,7 +30,7 @@ export class VotingsMonitorService {
 
     const groupByVoting = partiesVotes.reduce((votings: Map<string,VotingDTO>, vote: VoteByParty) => {
       if(votings[vote.votingId] === undefined){
-        votings[vote.votingId] = { votingId: vote.votingId, votingDate: vote.voting.date, votes: []};
+        votings[vote.votingId] = { votingId: vote.votingId, votingDate: vote.voting.date, votes: [] };
       }
 
       votings[vote.votingId].votes.push({

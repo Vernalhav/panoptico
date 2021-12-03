@@ -1,4 +1,4 @@
-import arrayOrElementToArray from './index';
+import { arrayOrElementToArray } from 'src/shared/utils';
 
 describe('Utils', () => {
 
