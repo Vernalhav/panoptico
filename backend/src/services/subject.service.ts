@@ -17,7 +17,13 @@ export class SubjectService {
 
   async getFilteredByName(subjects: string[], regexSubjects: string[]): Promise<Subject[]> { 
     return (await this.getAll()).filter((sbj) => 
-      regexSubjects.find((r) => new RegExp(r).test(sbj.name)) || subjects.find((s) => s === sbj.name)
+      regexSubjects.find((r) => {
+        try {
+          return new RegExp(r).test(sbj.name) || subjects.find((s) => s === sbj.name);
+        } catch {
+          return false;
+        }
+      })
     );
   }
 }
