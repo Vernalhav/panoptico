@@ -48,8 +48,12 @@ describe('Subject Service', () => {
     it('should return all subjects starting with T', async () => {
       const regExArray = ['^T'];
       
-      const expected = ['Trabalho e Emprego', 'Turismo'].sort();
-      const received = (await service.getFilteredByName([], regExArray)).sort();
+      const expected = [
+        {id: 3, votings: [], name: 'Trabalho e Emprego'}, 
+        {id: 4, votings: [], name: 'Turismo'}
+      ];
+      
+      const received = (await service.getFilteredByName([], regExArray));
       
       expect(received).toEqual(expected);
     });
@@ -59,8 +63,12 @@ describe('Subject Service', () => {
     it('should return all subjects starting with T or S', async () => {
       const regExArray = ['^T', '^S'];
       
-      const expected = ['Trabalho e Emprego', 'Turismo', 'Saúde'].sort();
-      const received = (await service.getFilteredByName([], regExArray)).sort();
+      const expected = [
+        {id: 1, votings: [], name: 'Saúde'},
+        {id: 3, votings: [], name: 'Trabalho e Emprego'},
+        {id: 4, votings: [], name: 'Turismo'},
+      ];
+      const received = (await service.getFilteredByName([], regExArray));
       
       expect(received).toEqual(expected);
     });
@@ -92,7 +100,10 @@ describe('Subject Service', () => {
     it('should return an array with subjects starting with T and ignore the invalid RegEx', async () => {
       const regExArray = ['*', '^T'];
       
-      const expected = ['Trabalho e Emprego', 'Turismo'].sort();
+      const expected = [
+        {id: 3, votings: [], name: 'Trabalho e Emprego'},
+        {id: 4, votings: [], name: 'Turismo'},
+      ];
       const received = (await service.getFilteredByName([], regExArray)).sort();
       
       expect(received).toEqual(expected);
