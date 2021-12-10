@@ -5,6 +5,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatGridListModule } from '@angular/material/grid-list';
 import { ChartsModule } from 'ng2-charts';
 
 import { CoreModule } from '../core/core.module';
@@ -12,9 +13,17 @@ import { ComponentsModule } from '../components/components.module';
 
 import { HomePageComponent } from './home-page/home-page.component';
 import { VotingsPageComponent } from './votings-page/votings-page.component';
+import { TabCloudsComponent } from './votings-page/tab-clouds/tab-clouds.component';
 
 @NgModule({
-  declarations: [HomePageComponent, VotingsPageComponent],
+  declarations: [
+    // Pages
+    HomePageComponent, 
+    VotingsPageComponent, 
+    
+    // Pages Components
+    TabCloudsComponent
+  ],
   imports: [
     // Angular Imports
     CommonModule,
@@ -25,6 +34,7 @@ import { VotingsPageComponent } from './votings-page/votings-page.component';
     MatDividerModule,
     MatButtonModule,
     MatSlideToggleModule,
+    MatGridListModule,
     ChartsModule,
 
     // Project Imports
