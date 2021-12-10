@@ -67,6 +67,15 @@ CREATE TABLE votos(
 .mode csv votos
 .import ./csv/votacoes-votos.csv votos
 
+-- FILTER PROPOSITIONS BY TYPE (PL, PLP, PLV, PLS, PLC, PLN, PEC)
+DELETE FROM proposicoesTemas WHERE siglaTipo not in ('PL', 'PLP', 'PLV', 'PLS', 'PLC', 'PLN', 'PEC');
+
+DELETE FROM proposicoesAutores
+	WHERE idProposicao NOT IN (SELECT idProposicao FROM proposicoesTemas);
+
+DELETE FROM proposicoesVotacoes
+	WHERE idProposicao NOT IN (SELECT idProposicao FROM proposicoesTemas);
+
 -- CREATE ENTITY TABLES
 CREATE TABLE Party (
 	id INTEGER PRIMARY KEY,
