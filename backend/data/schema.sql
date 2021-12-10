@@ -132,6 +132,12 @@ CREATE TABLE VotingSubject(
   FOREIGN KEY(subjectId) REFERENCES subject(id)
 );
 
+CREATE TABLE LawCountByAuthor(
+  congresspersonId INTEGER,
+  subjectId INTEGER,
+  lawCount INTEGER
+);
+
 -- POPULATE ENTITIES TABLES
 INSERT INTO Party SELECT id, sigla, nome FROM partidos;
 
@@ -155,6 +161,11 @@ INSERT INTO VotingSubject
   SELECT DISTINCT pV.idVotacao, pT.idTopico
   FROM proposicoesVotacoes pV
   INNER JOIN proposicoesTemas pT ON pV.idProposicao = pT.idProposicao;
+
+INSERT INTO LawCountByAuthor SELECT pA.idDeputado, COUNT(pA.idProposicao), pT.idTopico FROM proposicoesAutores AS pA 
+	INNER JOIN proposicoesTemas AS pT ON pA.idProposicao = pT.idProposicao 
+	WHERE pT.siglaTipo <> 'PEC' 
+	GROUP BY pA.idDeputado, pT.idTopico;
 
 -- REMOVE CSV TEMP TABLES
 DROP TABLE partidos;
