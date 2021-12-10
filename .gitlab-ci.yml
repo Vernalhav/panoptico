@@ -6,7 +6,7 @@ stages:          # List of stages for jobs, and their order of execution
   - deploy
 
 variables:
-  BACKEND_PATH: 'political-tracker-backend'
+  BACKEND_PATH: 'backend'
 
 build-backend-job:       # This job runs in the build stage, which runs first.
   stage: build
@@ -15,12 +15,12 @@ build-backend-job:       # This job runs in the build stage, which runs first.
     - npm install
   cache:
     paths:
-      - political-tracker-backend/node_modules/
+      - backend/node_modules/
   artifacts:
     expire_in: 1 days
     when: on_success
     paths:
-      - political-tracker-backend/node_modules/
+      - backend/node_modules/
 
 unit-test-backend-job:    # This job runs in the test stage.
   stage: test             # It only starts when the job in the build stage completes successfully.
@@ -31,7 +31,7 @@ unit-test-backend-job:    # This job runs in the test stage.
     when: always
     reports:
       junit:
-        - political-tracker-backend/junit.xml
+        - backend/junit.xml
 
 lint-backend-job:   # This job runs in the test stage.
   stage: test       # It only starts when the job in the build stage completes successfully.
