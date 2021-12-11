@@ -1,5 +1,5 @@
-import { Column, Entity, JoinColumn, ManyToOne, PrimaryColumn } from "typeorm";
-import { Party, Subject } from ".";
+import { Column, Entity, JoinColumn, ManyToOne, PrimaryColumn } from 'typeorm';
+import { Party, Subject } from '.';
 
 @Entity({ name: 'LawCountByParty' })
 export class LawCountByParty {

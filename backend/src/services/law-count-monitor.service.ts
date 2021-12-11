@@ -1,7 +1,7 @@
-import { Injectable } from "@nestjs/common";
-import { InjectRepository } from "@nestjs/typeorm";
-import { LawCountByAuthor, LawCountByParty } from "src/entities";
-import { Repository } from "typeorm";
+import { Injectable } from '@nestjs/common';
+import { InjectRepository } from '@nestjs/typeorm';
+import { LawCountByAuthor, LawCountByParty } from 'src/entities';
+import { Repository } from 'typeorm';
 
 @Injectable()
 export class LawCountMonitorService {

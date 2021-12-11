@@ -5,7 +5,7 @@ import { Party, Voting } from '.';
 export class VoteByParty {
   @PrimaryColumn()
   id: number;
-  
+
   @Column()
   partyId: number;
 

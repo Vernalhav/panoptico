@@ -1,14 +1,40 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { CongresspersonController, LawCountMonitorController, PartyController, SubjectsMonitorController, VotingsMonitorController } from './controllers';
-import { Congressperson, LawCountByAuthor, LawCountByParty, Party, Subject, Vote, VoteByParty, Voting } from './entities';
-import { CongresspersonService, LawCountMonitorService, PartyService, SubjectService, SubjectsMonitorService, VotingsMonitorService } from './services';
-import { CongresspeopleMapper, CongresspersonMapper, PartiesMapper, PartyMapper } from './shared/mappers';
-
+import {
+  CongresspersonController,
+  LawCountMonitorController,
+  PartyController,
+  SubjectsMonitorController,
+  VotingsMonitorController,
+} from './controllers';
+import {
+  Congressperson,
+  LawCountByAuthor,
+  LawCountByParty,
+  Party,
+  Subject,
+  Vote,
+  VoteByParty,
+  Voting,
+} from './entities';
+import {
+  CongresspersonService,
+  LawCountMonitorService,
+  PartyService,
+  SubjectService,
+  SubjectsMonitorService,
+  VotingsMonitorService,
+} from './services';
+import {
+  CongresspeopleMapper,
+  CongresspersonMapper,
+  PartiesMapper,
+  PartyMapper,
+} from './shared/mappers';
 
 @Module({
-  controllers: [ 
-    CongresspersonController, 
+  controllers: [
+    CongresspersonController,
     PartyController,
     VotingsMonitorController,
     SubjectsMonitorController,
@@ -19,9 +45,27 @@ import { CongresspeopleMapper, CongresspersonMapper, PartiesMapper, PartyMapper 
     TypeOrmModule.forRoot({
       type: 'sqlite',
       database: 'data/database.sqlite3',
-      entities: [Party, Congressperson, Subject, Voting, Vote, VoteByParty, LawCountByAuthor, LawCountByParty]
+      entities: [
+        Party,
+        Congressperson,
+        Subject,
+        Voting,
+        Vote,
+        VoteByParty,
+        LawCountByAuthor,
+        LawCountByParty,
+      ],
     }),
-    TypeOrmModule.forFeature([Party, Congressperson, Subject, Voting, Vote, VoteByParty, LawCountByAuthor, LawCountByParty]),
+    TypeOrmModule.forFeature([
+      Party,
+      Congressperson,
+      Subject,
+      Voting,
+      Vote,
+      VoteByParty,
+      LawCountByAuthor,
+      LawCountByParty,
+    ]),
   ],
 
   providers: [
@@ -40,5 +84,4 @@ import { CongresspeopleMapper, CongresspersonMapper, PartiesMapper, PartyMapper 
     CongresspeopleMapper,
   ],
 })
-
 export class AppModule {}

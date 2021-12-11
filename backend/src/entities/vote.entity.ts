@@ -5,7 +5,7 @@ import { Congressperson, Party, Voting } from '.';
 export class Vote {
   @PrimaryColumn()
   id: number;
-  
+
   @Column()
   partyId: number;
 
@@ -14,7 +14,7 @@ export class Vote {
 
   @Column()
   votingId: number;
-  
+
   @Column({ length: 24 })
   text: string;
 
@@ -35,7 +35,7 @@ export class Vote {
   @JoinColumn({ name: 'congresspersonId' })
   congressperson: Congressperson;
 
-  @ManyToOne(() => Voting, voting => voting.votes)
+  @ManyToOne(() => Voting, (voting) => voting.votes)
   @JoinColumn({ name: 'votingId' })
   voting: Voting;
 }

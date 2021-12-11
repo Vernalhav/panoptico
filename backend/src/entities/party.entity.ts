@@ -12,15 +12,9 @@ export class Party {
   @Column({ length: 128 })
   name: string;
 
-  @OneToMany(
-    () => Congressperson,
-    (congressperson) => congressperson.party,
-  )
+  @OneToMany(() => Congressperson, (congressperson) => congressperson.party)
   members: Congressperson[];
 
-  @OneToMany(
-    () => VoteByParty,
-    (vote) => vote.partyId,
-  )
+  @OneToMany(() => VoteByParty, (vote) => vote.partyId)
   votes: VoteByParty[];
 }

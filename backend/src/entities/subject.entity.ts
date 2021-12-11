@@ -9,7 +9,7 @@ export class Subject {
   @Column({ length: 64 })
   name: string;
 
-  @ManyToMany(() => Voting, voting => voting.subjects)
+  @ManyToMany(() => Voting, (voting) => voting.subjects)
   @JoinTable({ name: 'SubjectVoting' })
   votings: Voting[];
 }
