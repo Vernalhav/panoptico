@@ -1,5 +1,5 @@
 import { Column, Entity, JoinColumn, ManyToOne, PrimaryColumn } from 'typeorm';
-import { Congressperson, Party, Voting } from '.';
+import { Party, Voting } from '.';
 
 @Entity({ name: 'VoteByParty' })
 export class VoteByParty {
