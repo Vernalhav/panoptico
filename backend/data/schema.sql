@@ -136,6 +136,7 @@ CREATE TABLE LawCountByAuthor(
   congresspersonId INTEGER,
   subjectId INTEGER,
   lawCount INTEGER,
+	PRIMARY KEY (congresspersonId, subjectId),
 	FOREIGN KEY(congresspersonId) REFERENCES congressperson(id),
 	FOREIGN KEY(subjectId) REFERENCES subject(id)
 );
@@ -144,6 +145,7 @@ CREATE TABLE LawCountByParty(
   partyId INTEGER,
   subjectId INTEGER,
   lawCount INTEGER,
+	PRIMARY KEY (partyId, subjectId),
 	FOREIGN KEY(partyId) REFERENCES party(id),
 	FOREIGN KEY(subjectId) REFERENCES subject(id)
 );
@@ -172,7 +174,7 @@ INSERT INTO VotingSubject
   FROM proposicoesVotacoes pV
   INNER JOIN proposicoesTemas pT ON pV.idProposicao = pT.idProposicao;
 
-INSERT INTO LawCountByAuthor SELECT pA.idDeputado, COUNT(pA.idProposicao), pT.idTopico FROM proposicoesAutores AS pA 
+INSERT INTO LawCountByAuthor SELECT pA.idDeputado, pT.idTopico, COUNT(pA.idProposicao) FROM proposicoesAutores AS pA 
 	INNER JOIN proposicoesTemas AS pT ON pA.idProposicao = pT.idProposicao 
 	WHERE pT.siglaTipo <> 'PEC' 
 	GROUP BY pA.idDeputado, pT.idTopico;
@@ -182,6 +184,7 @@ INSERT INTO LawCountByParty
 	FROM proposicoesAutores as pA
 	INNER JOIN deputados as d ON d.id = pA.idDeputado
 	INNER JOIN proposicoesTemas as pT ON pT.idProposicao = pA.idProposicao
+	WHERE pT.siglaTipo <> 'PEC'
 	GROUP BY d.idPartido, pT.idTopico;  
 
 -- REMOVE CSV TEMP TABLES
@@ -192,6 +195,11 @@ DROP TABLE proposicoesAutores;
 DROP TABLE proposicoesTemas;
 DROP TABLE proposicoesVotacoes;
 DROP TABLE votos;
+
+-- SELECT c.name, s.name, LCA.lawCount
+-- 	FROM LawCountByAuthor as LCA
+-- 	INNER JOIN Congressperson as c on c.id = LCA.congresspersonId
+-- 	INNER JOIN Subject as s on s.id = LCA.subjectId;
 
 -- SELECT p.acronym, s.name, LCP.lawCount
 -- 	FROM LawCountByParty as LCP

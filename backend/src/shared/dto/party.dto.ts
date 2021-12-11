@@ -1,13 +1,14 @@
-import { CongresspersonDTO } from "./congressperson.dto";
+import { CongresspersonDTO } from './congressperson.dto';
 
-export class PartyDTO{ 
+export class PartyDTO {
   constructor(
-    public id: number, 
-    public acronym: string, 
-    public name: string, 
-    public members?: CongresspersonDTO[]){ }
+    public id: number,
+    public acronym: string,
+    public name: string,
+    public members?: CongresspersonDTO[],
+  ) {}
 }
 
 export class PartiesResponseDTO {
-  constructor( public parties: PartyDTO[]) { }
+  constructor(public parties: PartyDTO[]) {}
 }
