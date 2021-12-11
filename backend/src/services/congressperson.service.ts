@@ -3,6 +3,8 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { Congressperson } from 'src/entities';
 import { Repository } from 'typeorm';
 
+export class InvalidCongresspersonError extends Error {}
+
 @Injectable()
 export class CongresspersonService {
   constructor(

@@ -173,7 +173,6 @@ export class SubjectsMonitorService {
         endDate,
       );
     const congressSubjects: Map<string,SubjectDTO> = await this.getSubjectsByCongresspeople(congresspersonIds, subjectsIds, startDate, endDate);
-      );
 
     // Merge results into congressSubjects
     Object.keys(partiesSubjects).forEach((key) => {

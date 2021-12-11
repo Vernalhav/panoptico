@@ -3,6 +3,8 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { Party } from 'src/entities';
 
+export class InvalidPartyIdError extends Error {}
+
 @Injectable()
 export class PartyService {
   constructor(
