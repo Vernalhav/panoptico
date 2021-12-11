@@ -24,6 +24,8 @@ import { MatNativeDateModule, MAT_DATE_LOCALE } from "@angular/material/core";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { ChartsModule } from "ng2-charts";
 import { PartiesChecklistComponent } from "./parties-checklist/parties-checklist.component";
+import { WordCloudComponent } from './word-cloud/word-cloud.component';
+import { AngularD3CloudModule } from "angular-d3-cloud";
 
 
 @NgModule({
@@ -35,6 +37,7 @@ import { PartiesChecklistComponent } from "./parties-checklist/parties-checklist
     VotingDetailsComponent,
     TopicCardComponent,
     PartiesChecklistComponent,
+    WordCloudComponent,
   ],
 
   exports: [
@@ -45,6 +48,7 @@ import { PartiesChecklistComponent } from "./parties-checklist/parties-checklist
     MonitoredKeywordsModule,
     TopicCardComponent,
     PartiesChecklistComponent,
+    WordCloudComponent,
   ],
 
   imports: [
@@ -66,6 +70,7 @@ import { PartiesChecklistComponent } from "./parties-checklist/parties-checklist
     FormsModule,
     ReactiveFormsModule,
     ChartsModule,
+    AngularD3CloudModule,
 
     // App Modules
     CoreModule,
