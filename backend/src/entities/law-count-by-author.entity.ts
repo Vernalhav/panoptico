@@ -1,13 +1,13 @@
-import { Column, Entity, JoinColumn, ManyToOne } from "typeorm";
+import { Column, Entity, JoinColumn, ManyToOne, PrimaryColumn } from "typeorm";
 import { Congressperson } from ".";
 import { Subject } from ".";
 
 @Entity({ name: 'LawCountByAuthor' })
 export class LawCountByAuthor {
-  @Column()
+  @PrimaryColumn()
   congresspersonId: number;
 
-  @Column()
+  @PrimaryColumn()
   subjectId: number;
 
   @Column()

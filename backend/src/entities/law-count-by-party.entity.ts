@@ -1,12 +1,12 @@
-import { Column, Entity, JoinColumn, ManyToOne } from "typeorm";
+import { Column, Entity, JoinColumn, ManyToOne, PrimaryColumn } from "typeorm";
 import { Party, Subject } from ".";
 
 @Entity({ name: 'LawCountByParty' })
 export class LawCountByParty {
-  @Column()
+  @PrimaryColumn()
   partyId: number;
 
-  @Column()
+  @PrimaryColumn()
   subjectId: number;
 
   @Column()
