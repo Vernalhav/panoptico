@@ -17,3 +17,10 @@ export class CongresspersonLawCountsDTO {
     public lawCounts: LawCount[] = [],
   ) {}
 }
+
+export class LawCountsDTO {
+  constructor(
+    public congresspeopleLawCounts: CongresspersonLawCountsDTO[] = [],
+    public pariesLawCounts: PartyLawCountsDTO[] = [],
+  ) {}
+}
