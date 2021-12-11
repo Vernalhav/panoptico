@@ -1,7 +1,7 @@
-import { forwardRef, Module } from '@nestjs/common';
+import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { CongresspersonController, PartyController, SubjectsMonitorController, VotingsMonitorController } from './controllers';
-import { Congressperson, Party, Subject, Vote, VoteByParty, Voting } from './entities';
+import { Congressperson, LawCountByAuthor, LawCountByParty, Party, Subject, Vote, VoteByParty, Voting } from './entities';
 import { CongresspersonService, PartyService, SubjectService, SubjectsMonitorService, VotingsMonitorService } from './services';
 import { CongresspeopleMapper, CongresspersonMapper, PartiesMapper, PartyMapper } from './shared/mappers';
 
@@ -12,16 +12,15 @@ import { CongresspeopleMapper, CongresspersonMapper, PartiesMapper, PartyMapper 
     PartyController,
     VotingsMonitorController,
     SubjectsMonitorController,
-
   ],
 
   imports: [
     TypeOrmModule.forRoot({
       type: 'sqlite',
       database: 'data/database.sqlite3',
-      entities: [Party, Congressperson, Subject, Voting, Vote, VoteByParty]
+      entities: [Party, Congressperson, Subject, Voting, Vote, VoteByParty, LawCountByAuthor, LawCountByParty]
     }),
-    TypeOrmModule.forFeature([Party, Congressperson, Subject, Voting, Vote, VoteByParty]),
+    TypeOrmModule.forFeature([Party, Congressperson, Subject, Voting, Vote, VoteByParty, LawCountByAuthor, LawCountByParty]),
   ],
 
   providers: [
