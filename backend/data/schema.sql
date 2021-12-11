@@ -138,6 +138,12 @@ CREATE TABLE LawCountByAuthor(
   lawCount INTEGER
 );
 
+CREATE TABLE LawCountByParty(
+  partyId INTEGER,
+  subjectId INTEGER,
+  lawCount INTEGER
+);
+
 -- POPULATE ENTITIES TABLES
 INSERT INTO Party SELECT id, sigla, nome FROM partidos;
 
@@ -167,6 +173,13 @@ INSERT INTO LawCountByAuthor SELECT pA.idDeputado, COUNT(pA.idProposicao), pT.id
 	WHERE pT.siglaTipo <> 'PEC' 
 	GROUP BY pA.idDeputado, pT.idTopico;
 
+INSERT INTO LawCountByParty
+	SELECT d.idPartido, pT.idTopico, COUNT(pA.idProposicao)
+	FROM proposicoesAutores as pA
+	INNER JOIN deputados as d ON d.id = pA.idDeputado
+	INNER JOIN proposicoesTemas as pT ON pT.idProposicao = pA.idProposicao
+	GROUP BY d.idPartido, pT.idTopico;  
+
 -- REMOVE CSV TEMP TABLES
 DROP TABLE partidos;
 DROP TABLE deputados;
@@ -175,6 +188,11 @@ DROP TABLE proposicoesAutores;
 DROP TABLE proposicoesTemas;
 DROP TABLE proposicoesVotacoes;
 DROP TABLE votos;
+
+-- SELECT p.acronym, s.name, LCP.lawCount
+-- 	FROM LawCountByParty as LCP
+-- 	INNER JOIN Party as p on p.id = LCP.partyId
+-- 	INNER JOIN Subject as s on s.id = LCP.subjectId;
 
 -- .output ./monitordb.sql
 -- .dump
