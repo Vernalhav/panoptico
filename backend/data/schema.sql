@@ -182,6 +182,7 @@ INSERT INTO LawCountByParty
 	FROM proposicoesAutores as pA
 	INNER JOIN deputados as d ON d.id = pA.idDeputado
 	INNER JOIN proposicoesTemas as pT ON pT.idProposicao = pA.idProposicao
+	WHERE pT.siglaTipo <> 'PEC'
 	GROUP BY d.idPartido, pT.idTopico;  
 
 -- REMOVE CSV TEMP TABLES
