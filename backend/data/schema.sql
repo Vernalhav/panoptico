@@ -135,13 +135,17 @@ CREATE TABLE VotingSubject(
 CREATE TABLE LawCountByAuthor(
   congresspersonId INTEGER,
   subjectId INTEGER,
-  lawCount INTEGER
+  lawCount INTEGER,
+	FOREIGN KEY(congresspersonId) REFERENCES congressperson(id),
+	FOREIGN KEY(subjectId) REFERENCES subject(id)
 );
 
 CREATE TABLE LawCountByParty(
   partyId INTEGER,
   subjectId INTEGER,
-  lawCount INTEGER
+  lawCount INTEGER,
+	FOREIGN KEY(partyId) REFERENCES party(id),
+	FOREIGN KEY(subjectId) REFERENCES subject(id)
 );
 
 -- POPULATE ENTITIES TABLES
