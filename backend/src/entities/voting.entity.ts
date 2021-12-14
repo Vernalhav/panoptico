@@ -1,4 +1,11 @@
-import { Entity, Column, PrimaryColumn, ManyToMany, JoinTable, OneToMany } from 'typeorm';
+import {
+  Entity,
+  Column,
+  PrimaryColumn,
+  ManyToMany,
+  JoinTable,
+  OneToMany,
+} from 'typeorm';
 import { Subject, Vote, VoteByParty } from '.';
 
 @Entity({ name: 'Voting' })
@@ -9,13 +16,13 @@ export class Voting {
   @Column({ length: 12 })
   date: string;
 
-  @ManyToMany(() => Subject, subject => subject.votings)
+  @ManyToMany(() => Subject, (subject) => subject.votings)
   @JoinTable({ name: 'VotingSubject' })
   subjects: Subject[];
 
-  @OneToMany(() => Vote, vote => vote.voting)
+  @OneToMany(() => Vote, (vote) => vote.voting)
   votes: Vote[];
 
-  @OneToMany(() => VoteByParty, vote => vote.voting)
+  @OneToMany(() => VoteByParty, (vote) => vote.voting)
   partyVotes: VoteByParty[];
 }

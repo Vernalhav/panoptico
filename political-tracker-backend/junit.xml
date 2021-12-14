@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="1" failures="0" errors="0" time="4.566">
+  <testsuite name="AppController" errors="0" failures="0" skipped="0" timestamp="2021-11-22T19:42:29" time="4.486" tests="1">
+    <testcase classname="AppController root should return &quot;Hello World!&quot;" name="AppController root should return &quot;Hello World!&quot;" time="0.012">
+    </testcase>
+  </testsuite>
+</testsuites>

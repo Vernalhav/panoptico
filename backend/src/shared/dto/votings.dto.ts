@@ -1,15 +1,13 @@
-import { VoteDTO } from ".";
+import { VoteDTO } from '.';
 
-export class VotingDTO { 
+export class VotingDTO {
   constructor(
     public votingId: number,
     public votingDate: string,
-    public votes: VoteDTO[]
+    public votes: VoteDTO[],
   ) {}
 }
 
-export class VotingsMonitorResponseDTO{
-  constructor( 
-    public votings: VotingDTO[]
-  ) {}
+export class VotingsMonitorResponseDTO {
+  constructor(public votings: VotingDTO[]) {}
 }

@@ -1,27 +1,71 @@
-import { forwardRef, Module } from '@nestjs/common';
+import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { CongresspersonController, PartyController, SubjectsMonitorController, VotingsMonitorController } from './controllers';
-import { Congressperson, Party, Subject, Vote, VoteByParty, Voting } from './entities';
-import { CongresspersonService, PartyService, SubjectService, SubjectsMonitorService, VotingsMonitorService } from './services';
-import { CongresspeopleMapper, CongresspersonMapper, PartiesMapper, PartyMapper } from './shared/mappers';
-
+import {
+  CongresspersonController,
+  LawCountMonitorController,
+  PartyController,
+  SubjectsMonitorController,
+  VotingsMonitorController,
+} from './controllers';
+import {
+  Congressperson,
+  LawCountByAuthor,
+  LawCountByParty,
+  Party,
+  Subject,
+  Vote,
+  VoteByParty,
+  Voting,
+} from './entities';
+import {
+  CongresspersonService,
+  LawCountMonitorService,
+  PartyService,
+  SubjectService,
+  SubjectsMonitorService,
+  VotingsMonitorService,
+} from './services';
+import {
+  CongresspeopleMapper,
+  CongresspersonMapper,
+  PartiesMapper,
+  PartyMapper,
+} from './shared/mappers';
 
 @Module({
-  controllers: [ 
-    CongresspersonController, 
+  controllers: [
+    CongresspersonController,
     PartyController,
     VotingsMonitorController,
     SubjectsMonitorController,
-
+    LawCountMonitorController,
   ],
 
   imports: [
     TypeOrmModule.forRoot({
       type: 'sqlite',
       database: 'data/database.sqlite3',
-      entities: [Party, Congressperson, Subject, Voting, Vote, VoteByParty]
+      entities: [
+        Party,
+        Congressperson,
+        Subject,
+        Voting,
+        Vote,
+        VoteByParty,
+        LawCountByAuthor,
+        LawCountByParty,
+      ],
     }),
-    TypeOrmModule.forFeature([Party, Congressperson, Subject, Voting, Vote, VoteByParty]),
+    TypeOrmModule.forFeature([
+      Party,
+      Congressperson,
+      Subject,
+      Voting,
+      Vote,
+      VoteByParty,
+      LawCountByAuthor,
+      LawCountByParty,
+    ]),
   ],
 
   providers: [
@@ -31,6 +75,7 @@ import { CongresspeopleMapper, CongresspersonMapper, PartiesMapper, PartyMapper 
     CongresspersonService,
     VotingsMonitorService,
     SubjectsMonitorService,
+    LawCountMonitorService,
 
     // Mappers
     PartyMapper,
@@ -39,5 +84,4 @@ import { CongresspeopleMapper, CongresspersonMapper, PartiesMapper, PartyMapper 
     CongresspeopleMapper,
   ],
 })
-
 export class AppModule {}

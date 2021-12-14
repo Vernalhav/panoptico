@@ -1,2 +1,2 @@
-export * from './congressperson.mapper'
-export * from './party.mapper'
+export * from './congressperson.mapper';
+export * from './party.mapper';

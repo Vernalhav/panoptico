@@ -67,6 +67,15 @@ CREATE TABLE votos(
 .mode csv votos
 .import ./csv/votacoes-votos.csv votos
 
+-- FILTER PROPOSITIONS BY TYPE (PL, PLP, PLV, PLS, PLC, PLN, PEC)
+DELETE FROM proposicoesTemas WHERE siglaTipo not in ('PL', 'PLP', 'PLV', 'PLS', 'PLC', 'PLN', 'PEC');
+
+DELETE FROM proposicoesAutores
+	WHERE idProposicao NOT IN (SELECT idProposicao FROM proposicoesTemas);
+
+DELETE FROM proposicoesVotacoes
+	WHERE idProposicao NOT IN (SELECT idProposicao FROM proposicoesTemas);
+
 -- CREATE ENTITY TABLES
 CREATE TABLE Party (
 	id INTEGER PRIMARY KEY,
@@ -123,6 +132,24 @@ CREATE TABLE VotingSubject(
   FOREIGN KEY(subjectId) REFERENCES subject(id)
 );
 
+CREATE TABLE LawCountByAuthor(
+  congresspersonId INTEGER,
+  subjectId INTEGER,
+  lawCount INTEGER,
+	PRIMARY KEY (congresspersonId, subjectId),
+	FOREIGN KEY(congresspersonId) REFERENCES congressperson(id),
+	FOREIGN KEY(subjectId) REFERENCES subject(id)
+);
+
+CREATE TABLE LawCountByParty(
+  partyId INTEGER,
+  subjectId INTEGER,
+  lawCount INTEGER,
+	PRIMARY KEY (partyId, subjectId),
+	FOREIGN KEY(partyId) REFERENCES party(id),
+	FOREIGN KEY(subjectId) REFERENCES subject(id)
+);
+
 -- POPULATE ENTITIES TABLES
 INSERT INTO Party SELECT id, sigla, nome FROM partidos;
 
@@ -147,6 +174,19 @@ INSERT INTO VotingSubject
   FROM proposicoesVotacoes pV
   INNER JOIN proposicoesTemas pT ON pV.idProposicao = pT.idProposicao;
 
+INSERT INTO LawCountByAuthor SELECT pA.idDeputado, pT.idTopico, COUNT(pA.idProposicao) FROM proposicoesAutores AS pA 
+	INNER JOIN proposicoesTemas AS pT ON pA.idProposicao = pT.idProposicao 
+	WHERE pT.siglaTipo <> 'PEC' 
+	GROUP BY pA.idDeputado, pT.idTopico;
+
+INSERT INTO LawCountByParty
+	SELECT d.idPartido, pT.idTopico, COUNT(pA.idProposicao)
+	FROM proposicoesAutores as pA
+	INNER JOIN deputados as d ON d.id = pA.idDeputado
+	INNER JOIN proposicoesTemas as pT ON pT.idProposicao = pA.idProposicao
+	WHERE pT.siglaTipo <> 'PEC'
+	GROUP BY d.idPartido, pT.idTopico;  
+
 -- REMOVE CSV TEMP TABLES
 DROP TABLE partidos;
 DROP TABLE deputados;
@@ -155,6 +195,16 @@ DROP TABLE proposicoesAutores;
 DROP TABLE proposicoesTemas;
 DROP TABLE proposicoesVotacoes;
 DROP TABLE votos;
+
+-- SELECT c.name, s.name, LCA.lawCount
+-- 	FROM LawCountByAuthor as LCA
+-- 	INNER JOIN Congressperson as c on c.id = LCA.congresspersonId
+-- 	INNER JOIN Subject as s on s.id = LCA.subjectId;
+
+-- SELECT p.acronym, s.name, LCP.lawCount
+-- 	FROM LawCountByParty as LCP
+-- 	INNER JOIN Party as p on p.id = LCP.partyId
+-- 	INNER JOIN Subject as s on s.id = LCP.subjectId;
 
 -- .output ./monitordb.sql
 -- .dump
