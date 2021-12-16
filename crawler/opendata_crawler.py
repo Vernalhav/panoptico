@@ -52,6 +52,7 @@ def get_deputados_from_partido(id: int) -> dict:
 			'nomeCivil': congressperson_data['nomeCivil'],
 			'escolaridade': congressperson_data['escolaridade'],
 			'ufNascimento': congressperson_data['ufNascimento'],
+			'municipioNascimento': congressperson_data['municipioNascimento'],
 			'sexo': congressperson_data['sexo']
 		})
 	except opendata.BadResponseException:
