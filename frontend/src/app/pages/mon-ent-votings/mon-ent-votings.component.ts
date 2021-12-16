@@ -33,6 +33,6 @@ export class MonEntVotingsComponent implements OnInit {
   handleMonitorButton() {
     this.isLoading = true;
     this.backendQueryModel.clearQueryResults();
-    this.backendQueryModel.queryUsingCurrentFilters();
+    this.backendQueryModel.queryVotingsFromEntities();
   }
 }

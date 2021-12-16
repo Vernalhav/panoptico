@@ -26,6 +26,7 @@ import { HomeComponent } from './home/home.component';
 import { MonitorMenuComponent } from './monitor-menu/monitor-menu.component';
 import { MonPartsAndDepsComponent } from './mon-parts-and-deps/mon-parts-and-deps.component';
 import { MonEntVotingsComponent } from './mon-ent-votings/mon-ent-votings.component';
+import { MonEntSubjectsComponent } from './mon-ent-subjects/mon-ent-subjects.component';
 
 
 @NgModule({
@@ -38,7 +39,7 @@ import { MonEntVotingsComponent } from './mon-ent-votings/mon-ent-votings.compon
     TabCloudsComponent, 
 
     // New Pages
-    HomeComponent, MonitorMenuComponent, MonPartsAndDepsComponent, MonEntVotingsComponent,
+    HomeComponent, MonitorMenuComponent, MonPartsAndDepsComponent, MonEntVotingsComponent, MonEntSubjectsComponent,
   ],
   imports: [
     // Angular Imports
