@@ -27,6 +27,12 @@ def get_deputados_from_partido(id: int) -> dict:
 	
 	return congresspeople
 
+def get_deputados(dfPartidos: dict)-> dict:
+	deputados = []
+	for partido in dfPartidos:
+		deputados += get_deputados_from_partido(partido['id'])
+	return deputados
+
 def dump_congresspeople_json_to_csv(jsonFilePath: str = 'deputados.json', csvFilePath: str = 'deputados.csv'):
 	with open(jsonFilePath) as f:
 		dfDeputados = json.load(f)['dados']
