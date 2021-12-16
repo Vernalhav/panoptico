@@ -1,0 +1,85 @@
+<app-header></app-header>
+
+<main class="monitor-parts-and-deps-component">
+
+  <div class="info-section py-6 md:py-16 w-full flex flex-row justify-center">
+    <div class="row px-4 md:px-16 w-full md:max-w-screen-xl gap-6 md:8 flex grow justify-center flex-col">
+      
+      <div class="title-section grow">
+        <p class="text-left font-semibold font-serif text-3xl md:text-6xl">Monitor de Partidos e Deputados</p>
+        <p class="text-left text-lg md:text-1xl">Quer conhecer os participantes do Big Senado Brasil 2021? 
+          Tenha uma introdução aos simpáticos deputados em exercício atualmente!</p>
+      </div>
+
+      <div class="w-full grid grid-cols-1 md:grid-cols-2 justify-between gap-6">
+        
+        <div class="flex flex-col gap-6 max-h-screen overflow-y-scroll relative">
+          
+          <div  class="z-10" color="primary" style="position: sticky; top: 0;">
+            <app-input-autocomplete
+              label="Filtar Partidos"
+              placeholder="Nome ou Sigla do Partido"
+              [options]="['Partido 1', 'Partido 2', 'Partido 3']"
+              (value)="eventHandlerPartyFilter($event)"
+            ></app-input-autocomplete>  
+          </div>
+
+          <!-- <div>{{ partyFilter }}</div> -->
+          
+          <div *ngFor="let item of [].constructor(20);">
+            <mat-card *ngIf="!this.partyFilter || item == partyFilter" class="">
+              <mat-card-title-group>
+                <mat-card-title>Partido dos Trabalhadores (PT)</mat-card-title>
+                <mat-card-subtitle style="margin-bottom: 0;">Líder: Arlindo Chinaglia | Membros: 53 </mat-card-subtitle>
+              </mat-card-title-group>
+              <mat-card-actions align="end">
+                <button mat-button color="accent">MONITORAR JÁ</button>
+                <button mat-button color="accent">VER MEMBROS</button>
+              </mat-card-actions>
+            </mat-card>
+          </div>
+
+        </div>
+
+        <div class="flex flex-col gap-6 max-h-screen overflow-y-scroll">
+          
+          <div  class="z-10" color="primary" style="position: sticky; top: 0;">
+            <app-input-autocomplete
+              label="Filtar Partidos"
+              placeholder="Nome ou Sigla do Partido"
+              [options]="['Partido 1', 'Partido 2', 'Partido 3']"
+              (value)="eventHandlerCongressFilter($event)"
+            ></app-input-autocomplete>  
+          </div>
+
+          <!-- <div>{{ congressFilter }}</div> -->
+          
+          <mat-card *ngFor="let item of [].constructor(10);">
+            <div class="flex flex-row gap-6 justify-items-start flex-wrap">
+              <img src="https://www.camara.leg.br/internet/deputado/bandep/160508.jpg">
+              <div class="grow">
+                <mat-card-title>Afonso Florence (PT)</mat-card-title>
+                <mat-card-content style="margin-bottom: 0;">
+                  <p><strong>Nome civil:</strong> AFONSO BANDEIRA FLORENCE <br/> 
+                  <strong>E-mail:</strong> dep.afonsoflorence@camara.leg.br <br>
+                  <strong>Estado Eleito:</strong> BA <br/> 
+                  <strong>Nascimento:</strong> Salvador - BA <br/>
+                  <strong>Escolaridade:</strong> Mestrado <br/></p>
+                </mat-card-content>
+              </div>
+              <mat-card-actions class="w-full" style="margin: 0; padding: 0;" align="end">
+                <button mat-button color="accent">PROPOSIÇÕES</button>
+                <button mat-button color="accent">MONITORAR JÁ</button>
+              </mat-card-actions>
+            </div>
+          </mat-card>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</main>
+
+<app-footer></app-footer>

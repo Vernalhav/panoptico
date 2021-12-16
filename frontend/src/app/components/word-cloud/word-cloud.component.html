@@ -1,9 +1,11 @@
 <angular-d3-cloud
-  [data]="data"
-  [padding]="5"
-  [width]="700"
-  [height]=""
+  [data]="cloudData"
+  [width]="width"
+  [height]="height"
+
   font="Roboto"
-  [rotate]="0"
-  [autoFill]="false"
-></angular-d3-cloud>
+  [padding]="5"
+  [rotate]="handleRotate"
+  [autoFill]="true"
+  [fillMapper]="handlerFillColor"
+  ></angular-d3-cloud>
