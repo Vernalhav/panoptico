@@ -1,10 +1,4 @@
-<mat-toolbar class="mat-elevation-z6 z-50" color="primary" style="position: sticky; top: 0;">
-  <span class="text-left font-semibold font-serif text-2xl md:text-4xl">Monitor Políti-kon</span>
-  <span class="spacer grow"></span>
-  <a mat-button href="#" class="text-lg py-1 px-4">Ferramentas</a>
-  <a mat-button href="#" class="text-lg py-1 px-4">Github</a>
-</mat-toolbar>
-
+<app-header></app-header>
 
 <main class="monitor-menu-component">
 
@@ -34,7 +28,7 @@
               uma introdução aos simpáticos deputados em exercício atualmente!</p>
           </mat-card-content>
           <mat-card-actions align="end">
-            <button mat-flat-button color="accent">MONITORAR JÁ</button>
+            <button mat-flat-button routerLink="/monitor/partidos-e-deputados" color="accent">MONITORAR JÁ</button>
           </mat-card-actions>
         </mat-card>
         
@@ -136,3 +130,5 @@
   </div>
 
 </main>
+
+<app-footer></app-footer>
