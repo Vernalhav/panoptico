@@ -6,6 +6,7 @@ import { AppComponent } from './app-component/app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { CoreModule } from './core/core.module';
 import { PagesModule } from './pages/pages.module';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   bootstrap: [AppComponent],
@@ -21,7 +22,8 @@ import { PagesModule } from './pages/pages.module';
     
     // Application Modules
     CoreModule,
-    PagesModule
+    PagesModule,
+    FontAwesomeModule
   ],
   providers: [
     
