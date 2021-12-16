@@ -71,7 +71,7 @@ export class BackendQueryAPIModel extends BackendQueryModel {
   }
 
   public querySubjectsFromEntities() {
-    this.updateVotingsFromMonitoredEntities();
+    this.updateVotingsFromMonitoredSubjects();
   }
 
 }
