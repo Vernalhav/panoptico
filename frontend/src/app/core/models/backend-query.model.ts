@@ -21,4 +21,8 @@ export abstract class BackendQueryModel {
   }
 
   public abstract queryUsingCurrentFilters(): void;
+
+  public abstract queryVotingsFromEntities(): void;
+
+  public abstract querySubjectsFromEntities(): void;
 }
