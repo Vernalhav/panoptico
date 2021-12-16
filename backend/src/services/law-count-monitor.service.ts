@@ -2,6 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { LawCountByAuthor, LawCountByParty } from 'src/entities';
 import { CongresspersonLawCountsDTO, LawCountsDTO, PartyLawCountsDTO } from 'src/shared/dto/law-counts.dto';
+import { addAbortSignal } from 'stream';
 import { Repository } from 'typeorm';
 import { InvalidCongresspersonError, InvalidPartyIdError } from '.';
 
@@ -16,12 +17,18 @@ export class LawCountMonitorService {
 
   async getLawCounts(congresspeopleIds: number[] = [], partyIds: number[] = []): Promise<LawCountsDTO> {
     const result = new LawCountsDTO;
-
-    for (const partyId of partyIds)
-      result.pariesLawCounts.push(await this.getPartyLawCounts(partyId));
-
-    for (const congresspersonId of congresspeopleIds)
-      result.congresspeopleLawCounts.push(await this.getCongresspersonLawCounts(congresspersonId));
+    
+    for (const partyId of partyIds) {
+      try {
+        result.pariesLawCounts.push(await this.getPartyLawCounts(partyId));
+      } catch { continue; }
+    }
+    
+    for (const congresspersonId of congresspeopleIds) {
+      try{
+        result.congresspeopleLawCounts.push(await this.getCongresspersonLawCounts(congresspersonId));
+      } catch { continue; }
+    }
     
     return result;
   }

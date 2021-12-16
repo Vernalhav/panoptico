@@ -1,6 +1,7 @@
-import { Controller, Get, Query } from '@nestjs/common';
-import { LawCountMonitorService } from 'src/services';
+import { Controller, Get, HttpStatus, Query } from '@nestjs/common';
+import { InvalidCongresspersonError, InvalidPartyIdError, LawCountMonitorService } from 'src/services';
 import { arrayOrElementToArray } from 'src/shared/utils';
+import { HttpException } from '@nestjs/common';
 
 @Controller('law-counts')
 export class LawCountMonitorController {
@@ -20,11 +21,19 @@ export class LawCountMonitorController {
 
   @Get('party')
   async partyLawCounts(@Query('partyId') partyId = 36839) {
-    return await this.lawCountMonitorService.getPartyLawCounts(partyId);
+    try{
+      return await this.lawCountMonitorService.getPartyLawCounts(partyId);
+    } catch (exception){
+      return {};
+    }
   }
 
   @Get('congressperson')
   async congresspersonLawCounts(@Query('congresspersonId') congresspersonId = 76874) {
-    return await this.lawCountMonitorService.getCongresspersonLawCounts(congresspersonId);
+    try {
+      return await this.lawCountMonitorService.getCongresspersonLawCounts(congresspersonId);
+    } catch (exception){
+      return {};
+    }
   }
 }
