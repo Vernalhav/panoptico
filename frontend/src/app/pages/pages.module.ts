@@ -11,6 +11,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatFormFieldModule } from '@angular/material/form-field'; 
+import { MatSidenavModule } from '@angular/material/sidenav';
 import { ChartsModule } from 'ng2-charts';
 
 import { CoreModule } from '../core/core.module';
@@ -23,6 +24,7 @@ import { TabCloudsComponent } from './votings-page/tab-clouds/tab-clouds.compone
 import { HomeComponent } from './home/home.component';
 import { MonitorMenuComponent } from './monitor-menu/monitor-menu.component';
 import { MonPartsAndDepsComponent } from './mon-parts-and-deps/mon-parts-and-deps.component';
+import { MonEntVotingsComponent } from './mon-ent-votings/mon-ent-votings.component';
 
 
 @NgModule({
@@ -35,7 +37,7 @@ import { MonPartsAndDepsComponent } from './mon-parts-and-deps/mon-parts-and-dep
     TabCloudsComponent, 
 
     // New Pages
-    HomeComponent, MonitorMenuComponent, MonPartsAndDepsComponent,
+    HomeComponent, MonitorMenuComponent, MonPartsAndDepsComponent, MonEntVotingsComponent,
   ],
   imports: [
     // Angular Imports
@@ -52,6 +54,7 @@ import { MonPartsAndDepsComponent } from './mon-parts-and-deps/mon-parts-and-dep
     MatGridListModule,
     MatAutocompleteModule,
     MatFormFieldModule,
+    MatSidenavModule,
     ChartsModule,
 
     // Project Imports
