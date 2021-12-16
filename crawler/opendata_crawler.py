@@ -28,7 +28,7 @@ def get_partidos()-> dict:
 	return parties
 
 
-def get_deputados_from_partido(id: int) -> dict:
+def get_deputados_from_partido(id: int, siglaPartido: str) -> dict:
 	'''
 	id, nomeEleitoral, siglaPartido, siglaUF, urlFoto, email, nomeCivil, escolaridade, ufNascimento, sexo
 	'''
@@ -42,9 +42,13 @@ def get_deputados_from_partido(id: int) -> dict:
 			congresspersonId = congressperson['id']
 			congressperson_data = opendata.perform_request(f'deputados/{congresspersonId}')['dados']
 			
+			if congressperson_data['ultimoStatus']['siglaPartido'] != siglaPartido:
+				continue
+
 			congresspeople.append({
 			'id': congressperson['id'],
 			'nomeEleitoral': congressperson['nome'],
+			'idPartido': id,
 			'siglaPartido': congressperson['siglaPartido'],
 			'UF': congressperson['siglaUf'],
 			'urlFoto': congressperson['urlFoto'],
@@ -52,6 +56,7 @@ def get_deputados_from_partido(id: int) -> dict:
 			'nomeCivil': congressperson_data['nomeCivil'],
 			'escolaridade': congressperson_data['escolaridade'],
 			'ufNascimento': congressperson_data['ufNascimento'],
+			'municipioNascimento': congressperson_data['municipioNascimento'],
 			'sexo': congressperson_data['sexo']
 		})
 	except opendata.BadResponseException:
@@ -62,7 +67,7 @@ def get_deputados_from_partido(id: int) -> dict:
 def get_deputados(dfPartidos: dict)-> dict:
 	deputados = []
 	for partido in dfPartidos:
-		deputados += get_deputados_from_partido(partido['id'])
+		deputados += get_deputados_from_partido(partido['id'], partido['sigla'])
 	return deputados
 
 def dump_congresspeople_json_to_csv(jsonFilePath: str = 'deputados.json', csvFilePath: str = 'deputados.csv'):
@@ -70,4 +75,4 @@ def dump_congresspeople_json_to_csv(jsonFilePath: str = 'deputados.json', csvFil
 		dfDeputados = json.load(f)['dados']
 		df = pd.DataFrame(dfDeputados)
 		df = df.drop((df.loc[ ~(((df.dataNascimento != '') & (df.dataNascimento > '1930')) & (df.dataFalecimento == '')) ]).index)
-		df.to_csv(csvFilePath)
+		df.to_csv(csvFilePath, header=False, index=False)

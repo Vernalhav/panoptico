@@ -32,5 +32,5 @@ def json_array_to_csv(
     
 	df = pd.DataFrame(data)
 	df = restrict_df_cols(df, include_cols, remove_cols)
-	df.to_csv(file_name)
+	df.to_csv(file_name, header=False, index=False)
 	return df
