@@ -5,6 +5,8 @@ export class PartyDTO {
     public id: number,
     public acronym: string,
     public name: string,
+    public totalMembers: number,
+    public liderName: string,
     public members?: CongresspersonDTO[],
   ) {}
 }
