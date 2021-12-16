@@ -1,0 +1,634 @@
+,id,nomeEleitoral,siglaPartido,UF,urlFoto,email,nomeCivil,escolaridade,ufNascimento,sexo
+0,204515,André Janones,AVANTE,MG,https://www.camara.leg.br/internet/deputado/bandep/204515.jpg,dep.andrejanones@camara.leg.br,ANDRE LUIS GASPAR JANONES,Superior,MG,M
+1,204476,Chiquinho Brazão,AVANTE,RJ,https://www.camara.leg.br/internet/deputado/bandep/204476.jpg,dep.chiquinhobrazao@camara.leg.br,JOÃO FRANCISCO INÁCIO BRAZÃO,Ensino Médio,RJ,M
+2,198197,Greyce Elias,AVANTE,MG,https://www.camara.leg.br/internet/deputado/bandep/198197.jpg,dep.greyceelias@camara.leg.br,GREYCE DE QUEIROZ ELIAS,Superior,MG,F
+3,204375,Leda Sadala,AVANTE,AP,https://www.camara.leg.br/internet/deputado/bandep/204375.jpg,dep.ledasadala@camara.leg.br,LEDA MARIA SADALA BRITO,Superior,PA,F
+4,160510,Luis Tibé,AVANTE,MG,https://www.camara.leg.br/internet/deputado/bandep/160510.jpg,dep.luistibe@camara.leg.br,LUIS HENRIQUE DE OLIVEIRA RESENDE,Superior Incompleto,MG,M
+5,204553,Pastor Sargento Isidório,AVANTE,BA,https://www.camara.leg.br/internet/deputado/bandep/204553.jpg,dep.pastorsargentoisidorio@camara.leg.br,MANOEL ISIDORIO DE SANTANA JUNIOR,Superior Incompleto,BA,M
+6,178921,Sebastião Oliveira,AVANTE,PE,https://www.camara.leg.br/internet/deputado/bandep/178921.jpg,dep.sebastiaooliveira@camara.leg.br,SEBASTIAO IGNACIO DE OLIVEIRA JUNIOR,Superior,PE,M
+7,197438,Tito,AVANTE,BA,https://www.camara.leg.br/internet/deputado/bandep/197438.jpg,dep.tito@camara.leg.br,CARLOS TITO MARQUES CORDEIRO,Mestrado,BA,M
+8,178972,Alex Manente,CIDADANIA,SP,https://www.camara.leg.br/internet/deputado/bandep/178972.jpg,dep.alexmanente@camara.leg.br,ALEX SPINELLI MANENTE,Superior,SP,M
+9,141391,Arnaldo Jardim,CIDADANIA,SP,https://www.camara.leg.br/internet/deputado/bandep/141391.jpg,dep.arnaldojardim@camara.leg.br,ARNALDO CALIL PEREIRA JARDIM,Superior,SP,M
+10,164360,Carmen Zanotto,CIDADANIA,SC,https://www.camara.leg.br/internet/deputado/bandep/164360.jpg,dep.carmenzanotto@camara.leg.br,CARMEN EMÍLIA BONFÁ ZANOTTO,Superior,SC,F
+11,204355,Da Vitoria,CIDADANIA,ES,https://www.camara.leg.br/internet/deputado/bandep/204355.jpg,dep.davitoria@camara.leg.br,JOSIAS MARIO DA VITORIA,Superior,ES,M
+12,178916,Daniel Coelho,CIDADANIA,PE,https://www.camara.leg.br/internet/deputado/bandep/178916.jpg,dep.danielcoelho@camara.leg.br,DANIEL PIRES COELHO,Superior,PE,M
+13,204377,Paula Belmonte,CIDADANIA,DF,https://www.camara.leg.br/internet/deputado/bandep/204377.jpg,dep.paulabelmonte@camara.leg.br,PAULA MORENO PARO BELMONTE,Superior,SP,F
+14,73466,Rubens Bueno,CIDADANIA,PR,https://www.camara.leg.br/internet/deputado/bandep/73466.jpg,dep.rubensbueno@camara.leg.br,RUBENS BUENO,Superior,PR,M
+15,204448,Luiz Antônio Corrêa,DC,RJ,https://www.camara.leg.br/internet/deputado/bandep/204448.jpg,dep.luizantoniocorrea@camara.leg.br,LUIZ ANTONIO C. C. CORRÊA DA SILVA,Superior,RJ,M
+16,178836,Alan Rick,DEM,AC,https://www.camara.leg.br/internet/deputado/bandep/178836.jpg,dep.alanrick@camara.leg.br,ALAN RICK MIRANDA,Pós-Graduação,AC,M
+17,160545,Alexandre Leite,DEM,SP,https://www.camara.leg.br/internet/deputado/bandep/160545.jpg,dep.alexandreleite@camara.leg.br,ALEXANDRE LEITE DA SILVA,Superior,SP,M
+18,160600,Arthur Oliveira Maia,DEM,BA,https://www.camara.leg.br/internet/deputado/bandep/160600.jpg,dep.arthuroliveiramaia@camara.leg.br,ARTHUR DE OLIVEIRA MAIA DA SILVA,Mestrado,BA,M
+19,141513,Bilac Pinto,DEM,MG,https://www.camara.leg.br/internet/deputado/bandep/141513.jpg,dep.bilacpinto@camara.leg.br,OLAVO BILAC PINTO NETO,Superior,RJ,M
+20,178993,Carlos Henrique Gaguim,DEM,TO,https://www.camara.leg.br/internet/deputado/bandep/178993.jpg,dep.carloshenriquegaguim@camara.leg.br,CARLOS HENRIQUE AMORIM,Pós-Graduação,GO,M
+21,204412,Dr. Zacharias Calil,DEM,GO,https://www.camara.leg.br/internet/deputado/bandep/204412.jpg,dep.dr.zachariascalil@camara.leg.br,ZACARIAS CALIL HAMU,Superior,GO,M
+22,141422,Efraim Filho,DEM,PB,https://www.camara.leg.br/internet/deputado/bandep/141422.jpg,dep.efraimfilho@camara.leg.br,EFRAIM DE ARAÚJO MORAIS FILHO,Pós-Graduação,PB,M
+23,160532,Eli Corrêa Filho,DEM,SP,https://www.camara.leg.br/internet/deputado/bandep/160532.jpg,dep.elicorreafilho@camara.leg.br,ADRIANO ELI CORRÊA,Superior,SP,M
+24,178854,Elmar Nascimento,DEM,BA,https://www.camara.leg.br/internet/deputado/bandep/178854.jpg,dep.elmarnascimento@camara.leg.br,ELMAR JOSE VIEIRA NASCIMENTO,Pós-Graduação,BA,M
+25,141431,Fernando Coelho Filho,DEM,PE,https://www.camara.leg.br/internet/deputado/bandep/141431.jpg,dep.fernandocoelhofilho@camara.leg.br,FERNANDO BEZERRA DE SOUZA COELHO FILHO,Superior,PE,M
+26,204527,Geninho Zuliani,DEM,SP,https://www.camara.leg.br/internet/deputado/bandep/204527.jpg,dep.geninhozuliani@camara.leg.br,EUGENIO JOSÉ ZULIANI,Superior,SP,M
+27,178909,Hélio Leite,DEM,PA,https://www.camara.leg.br/internet/deputado/bandep/178909.jpg,dep.helioleite@camara.leg.br,HELIO LEITE DA SILVA,Superior,PA,M
+28,204564,Igor Kannário,DEM,BA,https://www.camara.leg.br/internet/deputado/bandep/204564.jpg,dep.igorkannario@camara.leg.br,ANDERSON MACHADO DE JESUS,Ensino Fundamental,BA,M
+29,204386,Jose Mario Schreiner,DEM,GO,https://www.camara.leg.br/internet/deputado/bandep/204386.jpg,dep.josemarioschreiner@camara.leg.br,JOSE MARIO SCHREINER,Ensino Técnico,SC,M
+30,204457,Juninho do Pneu,DEM,RJ,https://www.camara.leg.br/internet/deputado/bandep/204457.jpg,dep.juninhodopneu@camara.leg.br,ROGERIO TEIXEIRA JUNIOR,Ensino Médio,RJ,M
+31,178886,Juscelino Filho,DEM,MA,https://www.camara.leg.br/internet/deputado/bandep/178886.jpg,dep.juscelinofilho@camara.leg.br,JOSE JUSCELINO DOS SANTOS REZENDE FILHO,Superior,MA,M
+32,204536,Kim Kataguiri,DEM,SP,https://www.camara.leg.br/internet/deputado/bandep/204536.jpg,dep.kimkataguiri@camara.leg.br,KIM PATROCA KATAGUIRI,Superior Incompleto,SP,M
+33,92102,Leur Lomanto Júnior,DEM,BA,https://www.camara.leg.br/internet/deputado/bandep/92102.jpg,dep.leurlomantojunior@camara.leg.br,LEUR ANTONIO DE BRITTO LOMANTO JUNIOR,Superior,BA,M
+34,204381,Luis Miranda,DEM,DF,https://www.camara.leg.br/internet/deputado/bandep/204381.jpg,dep.luismiranda@camara.leg.br,LUIS CLAUDIO FERNANDES MIRANDA,Ensino Médio,DF,M
+35,178943,Marcos Soares,DEM,RJ,https://www.camara.leg.br/internet/deputado/bandep/178943.jpg,dep.marcossoares@camara.leg.br,MARCOS BEZERRA RIBEIRO SOARES,Superior,RJ,M
+36,66179,Norma Ayub,DEM,ES,https://www.camara.leg.br/internet/deputado/bandep/66179.jpg,dep.normaayub@camara.leg.br,NORMA AYUB ALVES,Superior,ES,F
+37,204498,Olival Marques,DEM,PA,https://www.camara.leg.br/internet/deputado/bandep/204498.jpg,dep.olivalmarques@camara.leg.br,OLIVAL HENRIQUE MARQUES DE SOUZA,Superior,PA,M
+38,178860,Paulo Azi,DEM,BA,https://www.camara.leg.br/internet/deputado/bandep/178860.jpg,dep.pauloazi@camara.leg.br,PAULO VELLOSO DANTAS AZI,Superior,BA,M
+39,204395,Pedro Lupion,DEM,PR,https://www.camara.leg.br/internet/deputado/bandep/204395.jpg,dep.pedrolupion@camara.leg.br,PEDRO DEBONI LUPION MELLO,Mestrado,PR,M
+40,160639,Professora Dorinha Seabra Rezende,DEM,TO,https://www.camara.leg.br/internet/deputado/bandep/160639.jpg,dep.professoradorinhaseabrarezende@camara.leg.br,MARIA AUXILIADORA SEABRA REZENDE,Mestrado,GO,F
+41,178947,Sóstenes Cavalcante,DEM,RJ,https://www.camara.leg.br/internet/deputado/bandep/178947.jpg,dep.sostenescavalcante@camara.leg.br,SOSTENES SILVA CAVALCANTE,Superior,AL,M
+42,160559,Alceu Moreira,MDB,RS,https://www.camara.leg.br/internet/deputado/bandep/160559.jpg,dep.alceumoreira@camara.leg.br,ALCEU MOREIRA DA SILVA,Superior Incompleto,RS,M
+43,178975,Baleia Rossi,MDB,SP,https://www.camara.leg.br/internet/deputado/bandep/178975.jpg,dep.baleiarossi@camara.leg.br,LUIZ FELIPE BALEIA TENUTO ROSSI,Superior,SP,M
+44,141401,Carlos Bezerra,MDB,MT,https://www.camara.leg.br/internet/deputado/bandep/141401.jpg,dep.carlosbezerra@camara.leg.br,CARLOS GOMES BEZERRA,Superior,MT,M
+45,204361,Carlos Chiodini,MDB,SC,https://www.camara.leg.br/internet/deputado/bandep/204361.jpg,dep.carloschiodini@camara.leg.br,CARLOS ALBERTO CHIODINI,Superior,SC,M
+46,141405,Celso Maldaner,MDB,SC,https://www.camara.leg.br/internet/deputado/bandep/141405.jpg,dep.celsomaldaner@camara.leg.br,CELSO MALDANER,Pós-Graduação,SC,M
+47,204459,Daniela do Waguinho,MDB,RJ,https://www.camara.leg.br/internet/deputado/bandep/204459.jpg,dep.danieladowaguinho@camara.leg.br,DANIELA MOTE DE SOUZA CARNEIRO,Pós-Graduação,RJ,F
+48,178994,Dulce Miranda,MDB,TO,https://www.camara.leg.br/internet/deputado/bandep/178994.jpg,dep.dulcemiranda@camara.leg.br,DULCE FERREIRA PAGANI MIRANDA,Superior,MG,F
+49,74075,Elcione Barbalho,MDB,PA,https://www.camara.leg.br/internet/deputado/bandep/74075.jpg,dep.elcionebarbalho@camara.leg.br,ELCIONE THEREZINHA ZAHLUTH BARBALHO,Pós-Graduação,PA,F
+50,141427,Fábio Ramalho,MDB,MG,https://www.camara.leg.br/internet/deputado/bandep/141427.jpg,dep.fabioramalho@camara.leg.br,FÁBIO AUGUSTO RAMALHO DOS SANTOS,Superior,DF,M
+51,171623,Fabio Reis,MDB,SE,https://www.camara.leg.br/internet/deputado/bandep/171623.jpg,dep.fabioreis@camara.leg.br,FABIO DE ALMEIDA REIS,Superior Incompleto,SE,M
+52,141434,Flaviano Melo,MDB,AC,https://www.camara.leg.br/internet/deputado/bandep/141434.jpg,dep.flavianomelo@camara.leg.br,FLAVIANO FLÁVIO BAPTISTA DE MELO,Superior,AC,M
+53,178996,Giovani Feltes,MDB,RS,https://www.camara.leg.br/internet/deputado/bandep/178996.jpg,dep.giovanifeltes@camara.leg.br,GIOVANI BATISTA FELTES,Superior,RS,M
+54,204456,Gutemberg Reis,MDB,RJ,https://www.camara.leg.br/internet/deputado/bandep/204456.jpg,dep.gutembergreis@camara.leg.br,GUTEMBERG REIS DE OLIVEIRA,Ensino Médio,RJ,M
+55,204539,Hercílio Coelho Diniz,MDB,MG,https://www.camara.leg.br/internet/deputado/bandep/204539.jpg,dep.herciliocoelhodiniz@camara.leg.br,HERCÍLIO ARAÚJO DINIZ FILHO,Superior Incompleto,MG,M
+56,178981,Herculano Passos,MDB,SP,https://www.camara.leg.br/internet/deputado/bandep/178981.jpg,dep.herculanopassos@camara.leg.br,HERCULANO CASTILHO PASSOS JUNIOR,Superior Incompleto,SP,M
+57,73772,Hermes Parcianello,MDB,PR,https://www.camara.leg.br/internet/deputado/bandep/73772.jpg,dep.hermesparcianello@camara.leg.br,HERMES PARCIANELLO,Superior,PR,M
+58,178884,Hildo Rocha,MDB,MA,https://www.camara.leg.br/internet/deputado/bandep/178884.jpg,dep.hildorocha@camara.leg.br,HILDO AUGUSTO DA ROCHA NETO,Pós-Graduação,MA,M
+59,204436,Isnaldo Bulhões Jr.,MDB,AL,https://www.camara.leg.br/internet/deputado/bandep/204436.jpg,dep.isnaldobulhoesjr@camara.leg.br,ISNALDO BULHOES BARROS JUNIOR,Superior,AL,M
+60,178839,Jéssica Sales,MDB,AC,https://www.camara.leg.br/internet/deputado/bandep/178839.jpg,dep.jessicasales@camara.leg.br,JESSICA ROJAS SALES,Superior,AC,F
+61,112437,João Marcelo Souza,MDB,MA,https://www.camara.leg.br/internet/deputado/bandep/112437.jpg,dep.joaomarcelosouza@camara.leg.br,JOÃO MARCELO SANTOS SOUZA,Superior,MA,M
+62,74079,José Priante,MDB,PA,https://www.camara.leg.br/internet/deputado/bandep/74079.jpg,dep.josepriante@camara.leg.br,JOSÉ BENITO PRIANTE JÚNIOR,Superior,PA,M
+63,204474,Juarez Costa,MDB,MT,https://www.camara.leg.br/internet/deputado/bandep/204474.jpg,dep.juarezcosta@camara.leg.br,JUAREZ ALVES DA COSTA,Ensino Médio Incompleto,PR,M
+64,74254,Leonardo Picciani,MDB,RJ,https://www.camara.leg.br/internet/deputado/bandep/74254.jpg,dep.leonardopicciani@camara.leg.br,LEONARDO CARNEIRO MONTEIRO PICCIANI,Superior,RJ,M
+65,178954,Lucio Mosquini,MDB,RO,https://www.camara.leg.br/internet/deputado/bandep/178954.jpg,dep.luciomosquini@camara.leg.br,LUCIO ANTONIO MOSQUINI,Pós-Graduação,MT,M
+66,179001,Márcio Biolchi,MDB,RS,https://www.camara.leg.br/internet/deputado/bandep/179001.jpg,dep.marciobiolchi@camara.leg.br,MARCIO DELLA VALLE BIOLCHI,Superior,RS,M
+67,204431,Marcos Aurélio Sampaio,MDB,PI,https://www.camara.leg.br/internet/deputado/bandep/204431.jpg,dep.marcosaureliosampaio@camara.leg.br,MARCOS AURÉLIO  PÁDUA RIBEIRO GONÇALVES DE SAMPAIO,Superior,PI,M
+68,74749,Mauro Lopes,MDB,MG,https://www.camara.leg.br/internet/deputado/bandep/74749.jpg,dep.maurolopes@camara.leg.br,MAURO RIBEIRO LOPES,Superior,MG,M
+69,178997,Moses Rodrigues,MDB,CE,https://www.camara.leg.br/internet/deputado/bandep/178997.jpg,dep.mosesrodrigues@camara.leg.br,MOSES HAENDEL MELO RODRIGUES,Doutorado,CE,M
+70,178896,Newton Cardoso Jr,MDB,MG,https://www.camara.leg.br/internet/deputado/bandep/178896.jpg,dep.newtoncardosojr@camara.leg.br,NEWTON CARDOSO JUNIOR,Pós-Graduação,MG,M
+71,73692,Osmar Terra,MDB,RS,https://www.camara.leg.br/internet/deputado/bandep/73692.jpg,dep.osmarterra@camara.leg.br,OSMAR GASPARINI TERRA,Pós-Graduação,RS,M
+72,141523,Raul Henry,MDB,PE,https://www.camara.leg.br/internet/deputado/bandep/141523.jpg,dep.raulhenry@camara.leg.br,RAUL JEAN LOUIS HENRY JÚNIOR,Mestrado,PE,M
+73,160651,Rogério Peninha Mendonça,MDB,SC,https://www.camara.leg.br/internet/deputado/bandep/160651.jpg,dep.rogeriopeninhamendonca@camara.leg.br,ROGÉRIO MENDONÇA,Superior,SC,M
+74,178933,Sergio Souza,MDB,PR,https://www.camara.leg.br/internet/deputado/bandep/178933.jpg,dep.sergiosouza@camara.leg.br,SERGIO DE SOUZA,Pós-Graduação,PR,M
+75,178952,Walter Alves,MDB,RN,https://www.camara.leg.br/internet/deputado/bandep/178952.jpg,dep.walteralves@camara.leg.br,WALTER PEREIRA ALVES,Mestrado Incompleto,RN,M
+76,204528,Adriana Ventura,NOVO,SP,https://www.camara.leg.br/internet/deputado/bandep/204528.jpg,dep.adrianaventura@camara.leg.br,ADRIANA MIGUEL VENTURA,Doutorado,SP,F
+77,204516,Alexis Fonteyne,NOVO,SP,https://www.camara.leg.br/internet/deputado/bandep/204516.jpg,dep.alexisfonteyne@camara.leg.br,Alexis Joseph Steverlynck Fonteyne,Pós-Graduação,SP,M
+78,204365,Gilson Marques,NOVO,SC,https://www.camara.leg.br/internet/deputado/bandep/204365.jpg,dep.gilsonmarques@camara.leg.br,GILSON MARQUES VIEIRA,Pós-Graduação,SC,M
+79,204523,Lucas Gonzalez,NOVO,MG,https://www.camara.leg.br/internet/deputado/bandep/204523.jpg,dep.lucasgonzalez@camara.leg.br,LUCAS DE VASCONCELOS GONZALEZ,Pós-Graduação,MG,M
+80,156190,Marcel van Hattem,NOVO,RS,https://www.camara.leg.br/internet/deputado/bandep/156190.jpg,dep.marcelvanhattem@camara.leg.br,MARCEL VAN HATTEM,Mestrado,RS,M
+81,204461,Paulo Ganime,NOVO,RJ,https://www.camara.leg.br/internet/deputado/bandep/204461.jpg,dep.pauloganime@camara.leg.br,PAULO GUSTAVO GANIME ALVES TEIXEIRA,Pós-Graduação,RJ,M
+82,204519,Tiago Mitraud,NOVO,MG,https://www.camara.leg.br/internet/deputado/bandep/204519.jpg,dep.tiagomitraud@camara.leg.br,TIAGO LIMA MITRAUD DE CASTRO LEITE,Pós-Graduação,DF,M
+83,204532,Vinicius Poit,NOVO,SP,https://www.camara.leg.br/internet/deputado/bandep/204532.jpg,dep.viniciuspoit@camara.leg.br,VINICIUS LAZZER POIT,Superior,SP,M
+84,204413,Alcides Rodrigues,PATRI,GO,https://www.camara.leg.br/internet/deputado/bandep/204413.jpg,dep.alcidesrodrigues@camara.leg.br,ALCIDES RODRIGUES FILHO,Superior,GO,M
+85,204518,Dr. Frederico,PATRI,MG,https://www.camara.leg.br/internet/deputado/bandep/204518.jpg,dep.dr.frederico@camara.leg.br,FREDERICO DE CASTRO ESCALEIRA,Superior,RJ,M
+86,204494,Fred Costa,PATRI,MG,https://www.camara.leg.br/internet/deputado/bandep/204494.jpg,dep.fredcosta@camara.leg.br,FREDERICO BORGES DA COSTA,Superior Incompleto,MG,M
+87,204550,Júnior Mano,PATRI,CE,https://www.camara.leg.br/internet/deputado/bandep/204550.jpg,dep.juniormano@camara.leg.br,ANTÔNIO LUIZ RODRIGUES MANO JÚNIOR,Superior,CE,M
+88,204566,Marreca Filho,PATRI,MA,https://www.camara.leg.br/internet/deputado/bandep/204566.jpg,dep.marrecafilho@camara.leg.br,ANTONIO DA CRUZ FILGUEIRA NETO,Superior Incompleto,MA,M
+89,160642,Pastor Eurico,PATRI,PE,https://www.camara.leg.br/internet/deputado/bandep/160642.jpg,dep.pastoreurico@camara.leg.br,FRANCISCO EURICO DA SILVA,Superior Incompleto,SP,M
+90,215042,Ricardo da Karol,PATRI,RJ,https://www.camara.leg.br/internet/deputado/bandep/215042.jpg,dep.ricardodakarol@camara.leg.br,RICARDO CORREA DE BARROS,Ensino Médio,RJ,M
+91,204413,Alcides Rodrigues,PATRIOTA,GO,https://www.camara.leg.br/internet/deputado/bandep/204413.jpg,dep.alcidesrodrigues@camara.leg.br,ALCIDES RODRIGUES FILHO,Superior,GO,M
+92,204518,Dr. Frederico,PATRIOTA,MG,https://www.camara.leg.br/internet/deputado/bandep/204518.jpg,dep.dr.frederico@camara.leg.br,FREDERICO DE CASTRO ESCALEIRA,Superior,RJ,M
+93,204494,Fred Costa,PATRIOTA,MG,https://www.camara.leg.br/internet/deputado/bandep/204494.jpg,dep.fredcosta@camara.leg.br,FREDERICO BORGES DA COSTA,Superior Incompleto,MG,M
+94,204566,Marreca Filho,PATRIOTA,MA,https://www.camara.leg.br/internet/deputado/bandep/204566.jpg,dep.marrecafilho@camara.leg.br,ANTONIO DA CRUZ FILGUEIRA NETO,Superior Incompleto,MA,M
+95,160642,Pastor Eurico,PATRIOTA,PE,https://www.camara.leg.br/internet/deputado/bandep/160642.jpg,dep.pastoreurico@camara.leg.br,FRANCISCO EURICO DA SILVA,Superior Incompleto,SP,M
+96,215042,Ricardo da Karol,PATRIOTA,RJ,https://www.camara.leg.br/internet/deputado/bandep/215042.jpg,dep.ricardodakarol@camara.leg.br,RICARDO CORREA DE BARROS,Ensino Médio,RJ,M
+97,178930,Roman,PATRIOTA,PR,https://www.camara.leg.br/internet/deputado/bandep/178930.jpg,dep.roman@camara.leg.br,EVANDRO ROGERIO ROMAN,Doutorado,RS,M
+98,74057,Alice Portugal,PCdoB,BA,https://www.camara.leg.br/internet/deputado/bandep/74057.jpg,dep.aliceportugal@camara.leg.br,ALICE MAZZUCO PORTUGAL,Superior,BA,F
+99,74060,Daniel Almeida,PCdoB,BA,https://www.camara.leg.br/internet/deputado/bandep/74060.jpg,dep.danielalmeida@camara.leg.br,DANIEL GOMES DE ALMEIDA,Superior,BA,M
+100,74848,Jandira Feghali,PCdoB,RJ,https://www.camara.leg.br/internet/deputado/bandep/74848.jpg,dep.jandirafeghali@camara.leg.br,JANDIRA FEGHALI,Pós-Graduação,PR,F
+101,178987,Orlando Silva,PCdoB,SP,https://www.camara.leg.br/internet/deputado/bandep/178987.jpg,dep.orlandosilva@camara.leg.br,ORLANDO SILVA DE JESUS JUNIOR,Superior Incompleto,BA,M
+102,73943,Perpétua Almeida,PCdoB,AC,https://www.camara.leg.br/internet/deputado/bandep/73943.jpg,dep.perpetuaalmeida@camara.leg.br,MARIA PERPÉTUA DE ALMEIDA,Superior Incompleto,AC,F
+103,160641,Professora Marcivania,PCdoB,AP,https://www.camara.leg.br/internet/deputado/bandep/160641.jpg,dep.professoramarcivania@camara.leg.br,MARCIVANIA DO SOCORRO DA ROCHA FLEXA,Superior,AP,F
+104,73801,Renildo Calheiros,PCdoB,PE,https://www.camara.leg.br/internet/deputado/bandep/73801.jpg,dep.renildocalheiros@camara.leg.br,RENILDO VASCONCELOS CALHEIROS,Superior,AL,M
+105,178887,Rubens Pereira Júnior,PCdoB,MA,https://www.camara.leg.br/internet/deputado/bandep/178887.jpg,dep.rubenspereirajunior@camara.leg.br,RUBENS PEREIRA E SILVA JUNIOR,Superior,MA,M
+106,178835,Afonso Motta,PDT,RS,https://www.camara.leg.br/internet/deputado/bandep/178835.jpg,dep.afonsomotta@camara.leg.br,AFONSO ANTUNES DA MOTTA,Superior,RS,M
+107,204571,Alex Santana,PDT,BA,https://www.camara.leg.br/internet/deputado/bandep/204571.jpg,dep.alexsantana@camara.leg.br,ALEX MARCO SANTANA SOUSA,Ensino Médio,BA,M
+108,133439,André Figueiredo,PDT,CE,https://www.camara.leg.br/internet/deputado/bandep/133439.jpg,dep.andrefigueiredo@camara.leg.br,ANDRÉ PEIXOTO FIGUEIREDO LIMA,Pós-Graduação,CE,M
+109,141439,Chico D'Angelo,PDT,RJ,https://www.camara.leg.br/internet/deputado/bandep/141439.jpg,dep.chicodangelo@camara.leg.br,FRANCISCO JOSÉ D'ANGELO PINTO,Pós-Graduação,RJ,M
+110,141411,Dagoberto Nogueira,PDT,MS,https://www.camara.leg.br/internet/deputado/bandep/141411.jpg,dep.dagobertonogueira@camara.leg.br,DAGOBERTO NOGUEIRA FILHO,Superior,SP,M
+111,74467,Damião Feliciano,PDT,PB,https://www.camara.leg.br/internet/deputado/bandep/74467.jpg,dep.damiaofeliciano@camara.leg.br,DAMIÃO FELICIANO DA SILVA,Mestrado Incompleto,PB,M
+112,204541,Eduardo Bismarck,PDT,CE,https://www.camara.leg.br/internet/deputado/bandep/204541.jpg,dep.eduardobismarck@camara.leg.br,EDUARDO HENRIQUE MAIA BISMARCK,Superior,CE,M
+113,68720,Fábio Henrique,PDT,SE,https://www.camara.leg.br/internet/deputado/bandep/68720.jpg,dep.fabiohenrique@camara.leg.br,FABIO HENRIQUE SANTANA DE CARVALHO,Superior,SE,M
+114,160666,Félix Mendonça Júnior,PDT,BA,https://www.camara.leg.br/internet/deputado/bandep/160666.jpg,dep.felixmendoncajunior@camara.leg.br,FELIX DE ALMEIDA MENDONÇA JÚNIOR,Superior,BA,M
+115,160598,Flávia Morais,PDT,GO,https://www.camara.leg.br/internet/deputado/bandep/160598.jpg,dep.flaviamorais@camara.leg.br,FLÁVIA CARREIRO ALBUQUERQUE MORAIS,Superior,MG,F
+116,191923,Flávio Nogueira,PDT,PI,https://www.camara.leg.br/internet/deputado/bandep/191923.jpg,dep.flavionogueira@camara.leg.br,FLÁVIO RODRIGUES NOGUEIRA,Superior,CE,M
+117,204575,Gil Cutrim,PDT,MA,https://www.camara.leg.br/internet/deputado/bandep/204575.jpg,dep.gilcutrim@camara.leg.br,GILLIANO FRED NASCIMENTO CUTRIM,Superior,MA,M
+118,73460,Gustavo Fruet,PDT,PR,https://www.camara.leg.br/internet/deputado/bandep/73460.jpg,dep.gustavofruet@camara.leg.br,GUSTAVO BONATO FRUET,Superior,PR,M
+119,204533,Idilvan Alencar,PDT,CE,https://www.camara.leg.br/internet/deputado/bandep/204533.jpg,dep.idilvanalencar@camara.leg.br,ANTONIO IDILVAN DE LIMA ALENCAR,Mestrado,CE,M
+120,204435,Jesus Sérgio,PDT,AC,https://www.camara.leg.br/internet/deputado/bandep/204435.jpg,dep.jesussergio@camara.leg.br,JESUS SERGIO DE MENEZES,Pós-Graduação,AC,M
+121,74299,Leônidas Cristino,PDT,CE,https://www.camara.leg.br/internet/deputado/bandep/74299.jpg,dep.leonidascristino@camara.leg.br,JOSÉ LEÔNIDAS DE MENEZES CRISTINO,Superior,CE,M
+122,74158,Mário Heringer,PDT,MG,https://www.camara.leg.br/internet/deputado/bandep/74158.jpg,dep.marioheringer@camara.leg.br,MÁRIO LÚCIO HERINGER,Superior,MG,M
+123,204403,Marlon Santos,PDT,RS,https://www.camara.leg.br/internet/deputado/bandep/204403.jpg,dep.marlonsantos@camara.leg.br,MARLON ARATOR SANTOS DA ROSA,Pós-Graduação,RS,M
+124,204486,Mauro Benevides Filho,PDT,CE,https://www.camara.leg.br/internet/deputado/bandep/204486.jpg,dep.maurobenevidesfilho@camara.leg.br,CARLOS MAURO BENEVIDES FILHO,Doutorado,CE,M
+125,133968,Paulo Ramos,PDT,RJ,https://www.camara.leg.br/internet/deputado/bandep/133968.jpg,dep.pauloramos@camara.leg.br,Paulo Sérgio Ramos Barboza,Superior,RJ,M
+126,73486,Pompeo de Mattos,PDT,RS,https://www.camara.leg.br/internet/deputado/bandep/73486.jpg,dep.pompeodemattos@camara.leg.br,DARCI POMPEO DE MATTOS,Superior,RS,M
+127,204489,Robério Monteiro,PDT,CE,https://www.camara.leg.br/internet/deputado/bandep/204489.jpg,dep.roberiomonteiro@camara.leg.br,MARCOS ROBERIO RIBEIRO MONTEIRO,Ensino Fundamental,CE,M
+128,204360,Silvia Cristina,PDT,RO,https://www.camara.leg.br/internet/deputado/bandep/204360.jpg,dep.silviacristina@camara.leg.br,SILVIA CRISTINA AMANCIO CHAGAS,Superior,RO,F
+129,177282,Subtenente Gonzaga,PDT,MG,https://www.camara.leg.br/internet/deputado/bandep/177282.jpg,dep.subtenentegonzaga@camara.leg.br,LUIZ GONZAGA RIBEIRO,Superior,MG,M
+130,204534,Tabata Amaral,PDT,SP,https://www.camara.leg.br/internet/deputado/bandep/204534.jpg,dep.tabataamaral@camara.leg.br,TABATA CLAUDIA AMARAL DE PONTES,Superior,SP,F
+131,157130,Túlio Gadêlha,PDT,PE,https://www.camara.leg.br/internet/deputado/bandep/157130.jpg,dep.tuliogadelha@camara.leg.br,TÚLIO GADÊLHA SALES DE MELO,Superior,PE,M
+132,74439,Wolney Queiroz,PDT,PE,https://www.camara.leg.br/internet/deputado/bandep/74439.jpg,dep.wolneyqueiroz@camara.leg.br,WOLNEY QUEIROZ MACIEL,Superior Incompleto,PE,M
+133,204554,Abílio Santana,PHS,BA,https://www.camara.leg.br/internet/deputado/bandep/204554.jpg,dep.abiliosantana@camara.leg.br,JOSE ABILIO SILVA DE SANTANA,Superior Incompleto,BA,M
+134,204427,Fernando Rodolfo,PHS,PE,https://www.camara.leg.br/internet/deputado/bandep/204427.jpg,dep.fernandorodolfo@camara.leg.br,FERNANDO RODOLFO TENORIO DE VASCONCELOS,Superior,PE,M
+135,204510,Franco Cartafina,PHS,MG,https://www.camara.leg.br/internet/deputado/bandep/204510.jpg,dep.francocartafina@camara.leg.br,FRANCO CARTAFINA GOMES,Pós-Graduação,MG,M
+136,115746,Gelson Azevedo,PHS,RJ,https://www.camara.leg.br/internet/deputado/bandep/115746.jpg,dep.gelsonazevedo@camara.leg.br,GELSON DE AZEVEDO ALMEIDA,Ensino Médio Incompleto,RJ,M
+137,204564,Igor Kannário,PHS,BA,https://www.camara.leg.br/internet/deputado/bandep/204564.jpg,dep.igorkannario@camara.leg.br,ANDERSON MACHADO DE JESUS,Ensino Fundamental,BA,M
+138,215043,Josivaldo JP,PHS,MA,https://www.camara.leg.br/internet/deputado/bandep/215043.jpg,dep.josivaldojp@camara.leg.br,JOSIVALDO DOS SANTOS MELO,Ensino Médio,PA,M
+139,146788,Marcelo Aro,PHS,MG,https://www.camara.leg.br/internet/deputado/bandep/146788.jpg,dep.marceloaro@camara.leg.br,MARCELO GUILHERME DE ARO FERREIRA,Superior,MG,M
+140,204554,Abílio Santana,PL,BA,https://www.camara.leg.br/internet/deputado/bandep/204554.jpg,dep.abiliosantana@camara.leg.br,JOSE ABILIO SILVA DE SANTANA,Superior Incompleto,BA,M
+141,141372,Aelton Freitas,PL,MG,https://www.camara.leg.br/internet/deputado/bandep/141372.jpg,dep.aeltonfreitas@camara.leg.br,AELTON JOSÉ DE FREITAS,Superior,MG,M
+142,178937,Altineu Côrtes,PL,RJ,https://www.camara.leg.br/internet/deputado/bandep/178937.jpg,dep.altineucortes@camara.leg.br,ALTINEU CÔRTES FREITAS COUTINHO,Ensino Médio,RJ,M
+143,74052,Bosco Costa,PL,SE,https://www.camara.leg.br/internet/deputado/bandep/74052.jpg,dep.boscocosta@camara.leg.br,JOÃO BOSCO DA COSTA,Superior Incompleto,SE,M
+144,178829,Capitão Augusto,PL,SP,https://www.camara.leg.br/internet/deputado/bandep/178829.jpg,dep.capitaoaugusto@camara.leg.br,JOSE AUGUSTO ROSA,Mestrado,SP,M
+145,178924,Capitão Fábio Abreu,PL,PI,https://www.camara.leg.br/internet/deputado/bandep/178924.jpg,dep.capitaofabioabreu@camara.leg.br,FABIO ABREU COSTA,Pós-Graduação,CE,M
+146,178928,Christiane de Souza Yared,PL,PR,https://www.camara.leg.br/internet/deputado/bandep/178928.jpg,dep.christianedesouzayared@camara.leg.br,CHRISTIANE DE SOUZA YARED,Ensino Médio,PR,F
+147,135054,Cristiano Vale,PL,PA,https://www.camara.leg.br/internet/deputado/bandep/135054.jpg,dep.cristianovale@camara.leg.br,CRISTIANO DUTRA VALE,Secundário,MG,M
+148,204481,Dr. Jaziel,PL,CE,https://www.camara.leg.br/internet/deputado/bandep/204481.jpg,dep.dr.jaziel@camara.leg.br,JAZIEL PEREIRA DE SOUSA,Superior,CE,M
+149,141417,Edio Lopes,PL,RR,https://www.camara.leg.br/internet/deputado/bandep/141417.jpg,dep.ediolopes@camara.leg.br,ÉDIO VIEIRA LOPES,Superior Incompleto,SP,M
+150,204427,Fernando Rodolfo,PL,PE,https://www.camara.leg.br/internet/deputado/bandep/204427.jpg,dep.fernandorodolfo@camara.leg.br,FERNANDO RODOLFO TENORIO DE VASCONCELOS,Superior,PE,M
+151,115746,Gelson Azevedo,PL,RJ,https://www.camara.leg.br/internet/deputado/bandep/115746.jpg,dep.gelsonazevedo@camara.leg.br,GELSON DE AZEVEDO ALMEIDA,Ensino Médio Incompleto,RJ,M
+152,74383,Giacobo,PL,PR,https://www.camara.leg.br/internet/deputado/bandep/74383.jpg,dep.giacobo@camara.leg.br,FERNANDO LÚCIO GIACOBO,Superior,PR,M
+153,160673,Giovani Cherini,PL,RS,https://www.camara.leg.br/internet/deputado/bandep/160673.jpg,dep.giovanicherini@camara.leg.br,GIOVANI CHERINI,Pós-Graduação,RS,M
+154,141458,João Carlos Bacelar,PL,BA,https://www.camara.leg.br/internet/deputado/bandep/141458.jpg,dep.joaocarlosbacelar@camara.leg.br,JOÃO CARLOS PAOLILO BACELAR FILHO,Pós-Graduação,BA,M
+155,141459,João Maia,PL,RN,https://www.camara.leg.br/internet/deputado/bandep/141459.jpg,dep.joaomaia@camara.leg.br,JOÃO DA SILVA MAIA,Superior,PB,M
+156,218245,Jorielson,PL,AP,https://www.camara.leg.br/internet/deputado/bandep/218245.jpg,dep.jorielson@camara.leg.br,JORIELSON BRITO NASCIMENTO,Superior,AP,M
+157,74554,José Rocha,PL,BA,https://www.camara.leg.br/internet/deputado/bandep/74554.jpg,dep.joserocha@camara.leg.br,JOSÉ ALVES ROCHA,Pós-Graduação,BA,M
+158,204563,Josimar Maranhãozinho,PL,MA,https://www.camara.leg.br/internet/deputado/bandep/204563.jpg,dep.josimarmaranhaozinho@camara.leg.br,JOSIMAR CUNHA RODRIGUES,Superior,CE,M
+159,204574,Junior Lourenço,PL,MA,https://www.camara.leg.br/internet/deputado/bandep/204574.jpg,dep.juniorlourenco@camara.leg.br,JOSE LOURENÇO BOMFIM JUNIOR,Superior,MA,M
+160,204550,Júnior Mano,PL,CE,https://www.camara.leg.br/internet/deputado/bandep/204550.jpg,dep.juniormano@camara.leg.br,ANTÔNIO LUIZ RODRIGUES MANO JÚNIOR,Superior,CE,M
+161,141478,Laerte Bessa,PL,DF,https://www.camara.leg.br/internet/deputado/bandep/141478.jpg,dep.laertebessa@camara.leg.br,LAERTE RODRIGUES DE BESSA,Pós-Graduação,GO,M
+162,160534,Lauriete,PL,ES,https://www.camara.leg.br/internet/deputado/bandep/160534.jpg,dep.lauriete@camara.leg.br,LAURIETE RODRIGUES DE JESUS,Ensino Médio,ES,F
+163,74585,Lincoln Portela,PL,MG,https://www.camara.leg.br/internet/deputado/bandep/74585.jpg,dep.lincolnportela@camara.leg.br,LINCOLN DINIZ PORTELA,Superior,MG,M
+164,204448,Luiz Antônio Corrêa,PL,RJ,https://www.camara.leg.br/internet/deputado/bandep/204448.jpg,dep.luizantoniocorrea@camara.leg.br,LUIZ ANTONIO C. C. CORRÊA DA SILVA,Superior,RJ,M
+165,204485,Luiz Carlos Motta,PL,SP,https://www.camara.leg.br/internet/deputado/bandep/204485.jpg,dep.luizcarlosmotta@camara.leg.br,LUIZ CARLOS MOTTA,Superior,SP,M
+166,162332,Luiz Nishimori,PL,PR,https://www.camara.leg.br/internet/deputado/bandep/162332.jpg,dep.luiznishimori@camara.leg.br,LUIZ HILOSHI NISHIMORI,Superior,PR,M
+167,166402,Magda Mofatto,PL,GO,https://www.camara.leg.br/internet/deputado/bandep/166402.jpg,dep.magdamofatto@camara.leg.br,MAGDA MOFATTO HON,Ensino Fundamental,SP,F
+168,204556,Marcelo Ramos,PL,AM,https://www.camara.leg.br/internet/deputado/bandep/204556.jpg,dep.marceloramos@camara.leg.br,MARCELO RAMOS RODRIGUES,Superior,AM,M
+169,178983,Marcio Alvino,PL,SP,https://www.camara.leg.br/internet/deputado/bandep/178983.jpg,dep.marcioalvino@camara.leg.br,MARCIO LUIZ ALVINO DE SOUZA,Superior,SP,M
+170,204432,Marina Santos,PL,PI,https://www.camara.leg.br/internet/deputado/bandep/204432.jpg,dep.marinasantos@camara.leg.br,MARINA SANTOS BATISTA DIAS,Superior,PI,F
+171,178985,Miguel Lombardi,PL,SP,https://www.camara.leg.br/internet/deputado/bandep/178985.jpg,dep.miguellombardi@camara.leg.br,MIGUEL LOMBARDI,Superior,SP,M
+172,204570,Pastor Gil,PL,MA,https://www.camara.leg.br/internet/deputado/bandep/204570.jpg,dep.pastorgil@camara.leg.br,GILDENEMIR DE LIMA SOUSA,Superior,MA,M
+173,160558,Paulo Freire Costa,PL,SP,https://www.camara.leg.br/internet/deputado/bandep/160558.jpg,dep.paulofreirecosta@camara.leg.br,PAULO ROBERTO FREIRE DA COSTA,Superior,SP,M
+174,204529,Policial Katia Sastre,PL,SP,https://www.camara.leg.br/internet/deputado/bandep/204529.jpg,dep.policialkatiasastre@camara.leg.br,KATIA DA SILVA SASTRE,Pós-Graduação,SP,F
+175,160601,Pr. Marco Feliciano,PL,SP,https://www.camara.leg.br/internet/deputado/bandep/160601.jpg,dep.pr.marcofeliciano@camara.leg.br,MARCO ANTÔNIO FELICIANO,Superior,SP,M
+176,204567,Raimundo Costa,PL,BA,https://www.camara.leg.br/internet/deputado/bandep/204567.jpg,dep.raimundocosta@camara.leg.br,RAIMUNDO MAGALHÃES COSTA,Superior,BA,M
+177,178921,Sebastião Oliveira,PL,PE,https://www.camara.leg.br/internet/deputado/bandep/178921.jpg,dep.sebastiaooliveira@camara.leg.br,SEBASTIAO IGNACIO DE OLIVEIRA JUNIOR,Superior,PE,M
+178,204438,Sergio Toledo,PL,AL,https://www.camara.leg.br/internet/deputado/bandep/204438.jpg,dep.sergiotoledo@camara.leg.br,SERGIO TOLEDO DE ALBUQUERQUE,Superior,AL,M
+179,178946,Soraya Santos,PL,RJ,https://www.camara.leg.br/internet/deputado/bandep/178946.jpg,dep.sorayasantos@camara.leg.br,SORAYA ALENCAR DOS SANTOS,Superior,RJ,F
+180,160976,Tiririca,PL,SP,https://www.camara.leg.br/internet/deputado/bandep/160976.jpg,dep.tiririca@camara.leg.br,FRANCISCO EVERARDO TIRIRICA OLIVEIRA SILVA,Ensino Fundamental,CE,M
+181,204385,Valdevan Noventa,PL,SE,https://www.camara.leg.br/internet/deputado/bandep/204385.jpg,dep.valdevannoventa@camara.leg.br,José Valdevan de Jesus Santos,Ensino Médio,SE,M
+182,137070,Vicentinho Júnior,PL,TO,https://www.camara.leg.br/internet/deputado/bandep/137070.jpg,dep.vicentinhojunior@camara.leg.br,VICENTE ALVES DE OLIVEIRA JUNIOR,Superior Incompleto,GO,M
+183,74043,Wellington Roberto,PL,PB,https://www.camara.leg.br/internet/deputado/bandep/74043.jpg,dep.wellingtonroberto@camara.leg.br,JOSÉ WELLINGTON ROBERTO,Superior Incompleto,PB,M
+184,204517,Zé Vitor,PL,MG,https://www.camara.leg.br/internet/deputado/bandep/204517.jpg,dep.zevitor@camara.leg.br,JOSE VITOR DE RESENDE AGUIAR,Superior,MG,M
+185,204570,Pastor Gil,PMN,MA,https://www.camara.leg.br/internet/deputado/bandep/204570.jpg,dep.pastorgil@camara.leg.br,GILDENEMIR DE LIMA SOUSA,Superior,MA,M
+186,204517,Zé Vitor,PMN,MG,https://www.camara.leg.br/internet/deputado/bandep/204517.jpg,dep.zevitor@camara.leg.br,JOSE VITOR DE RESENDE AGUIAR,Superior,MG,M
+187,178881,Aluisio Mendes,PODE,MA,https://www.camara.leg.br/internet/deputado/bandep/178881.jpg,dep.aluisiomendes@camara.leg.br,ALUISIO GUIMARAES MENDES FILHO,Superior,MG,M
+188,69871,Bacelar,PODE,BA,https://www.camara.leg.br/internet/deputado/bandep/69871.jpg,dep.bacelar@camara.leg.br,JOAO CARLOS BACELAR BATISTA,Mestrado,BA,M
+189,178929,Diego Garcia,PODE,PR,https://www.camara.leg.br/internet/deputado/bandep/178929.jpg,dep.diegogarcia@camara.leg.br,DIEGO ALEXSANDER GONCALO PAULA GARCIA,Superior,PR,M
+190,204508,Igor Timo,PODE,MG,https://www.camara.leg.br/internet/deputado/bandep/204508.jpg,dep.igortimo@camara.leg.br,IGOR TARCIANO TIMO,Superior Incompleto,MG,M
+191,204472,José Medeiros,PODE,MT,https://www.camara.leg.br/internet/deputado/bandep/204472.jpg,dep.josemedeiros@camara.leg.br,JOSE ANTONIO DOS SANTOS MEDEIROS,Superior,RN,M
+192,204391,José Nelto,PODE,GO,https://www.camara.leg.br/internet/deputado/bandep/204391.jpg,dep.josenelto@camara.leg.br,JOSÉ NELTO LAGARES DAS MERCEZ,Superior,MG,M
+193,215043,Josivaldo JP,PODE,MA,https://www.camara.leg.br/internet/deputado/bandep/215043.jpg,dep.josivaldojp@camara.leg.br,JOSIVALDO DOS SANTOS MELO,Ensino Médio,PA,M
+194,204359,Léo Moraes,PODE,RO,https://www.camara.leg.br/internet/deputado/bandep/204359.jpg,dep.leomoraes@camara.leg.br,LEONARDO BARRETO DE MORAES,Mestrado Incompleto,PR,M
+195,160601,Pr. Marco Feliciano,PODE,SP,https://www.camara.leg.br/internet/deputado/bandep/160601.jpg,dep.pr.marcofeliciano@camara.leg.br,MARCO ANTÔNIO FELICIANO,Superior,SP,M
+196,178989,Renata Abreu,PODE,SP,https://www.camara.leg.br/internet/deputado/bandep/178989.jpg,dep.renataabreu@camara.leg.br,RENATA HELLMEISTER DE ABREU,Superior,SP,F
+197,178920,Ricardo Teobaldo,PODE,PE,https://www.camara.leg.br/internet/deputado/bandep/178920.jpg,dep.ricardoteobaldo@camara.leg.br,RICARDO TEOBALDO CAVALCANTI,Ensino Médio,PE,M
+198,160653,Roberto de Lucena,PODE,SP,https://www.camara.leg.br/internet/deputado/bandep/160653.jpg,dep.robertodelucena@camara.leg.br,ROBERTO ALVES DE LUCENA,Superior,SP,M
+199,204366,Rodrigo Coelho,PODE,SC,https://www.camara.leg.br/internet/deputado/bandep/204366.jpg,dep.rodrigocoelho@camara.leg.br,RODRIGO COELHO,Pós-Graduação,SC,M
+200,121948,Adriano do Baldy,PP,GO,https://www.camara.leg.br/internet/deputado/bandep/121948.jpg,dep.adrianodobaldy@camara.leg.br,ADRIANO ANTÔNIO AVELAR,Superior Incompleto,GO,M
+201,136811,Afonso Hamm,PP,RS,https://www.camara.leg.br/internet/deputado/bandep/136811.jpg,dep.afonsohamm@camara.leg.br,JOSÉ ALFONSO EBERT HAMM,Superior,RS,M
+202,160527,Aguinaldo Ribeiro,PP,PB,https://www.camara.leg.br/internet/deputado/bandep/160527.jpg,dep.aguinaldoribeiro@camara.leg.br,AGUINALDO VELLOSO BORGES RIBEIRO,Pós-Graduação,PB,M
+203,204549,AJ Albuquerque,PP,CE,https://www.camara.leg.br/internet/deputado/bandep/204549.jpg,dep.ajalbuquerque@camara.leg.br,ANTONIO JOSE AGUIAR ALBUQUERQUE,Superior,CE,M
+204,178831,André Abdon,PP,AP,https://www.camara.leg.br/internet/deputado/bandep/178831.jpg,dep.andreabdon@camara.leg.br,ANDRE DOS SANTOS ABDON,Superior,PA,M
+205,178882,André Fufuca,PP,MA,https://www.camara.leg.br/internet/deputado/bandep/178882.jpg,dep.andrefufuca@camara.leg.br,ANDRE LUIZ CARVALHO RIBEIRO,Superior,MA,M
+206,73696,Angela Amin,PP,SC,https://www.camara.leg.br/internet/deputado/bandep/73696.jpg,dep.angelaamin@camara.leg.br,ANGELA REGINA HEINZEN AMIN HELOU,Doutorado,SC,F
+207,160541,Arthur Lira,PP,AL,https://www.camara.leg.br/internet/deputado/bandep/160541.jpg,dep.arthurlira@camara.leg.br,ARTHUR CÉSAR PEREIRA DE LIRA,Superior,AL,M
+208,74090,Átila Lins,PP,AM,https://www.camara.leg.br/internet/deputado/bandep/74090.jpg,dep.atilalins@camara.leg.br,ÁTILA SIDNEY LINS ALBUQUERQUE,Superior,AM,M
+209,74459,Átila Lira,PP,PI,https://www.camara.leg.br/internet/deputado/bandep/74459.jpg,dep.atilalira@camara.leg.br,ÁTILA FREITAS LIRA,Pós-Graduação,PI,M
+210,178948,Beto Rosado,PP,RN,https://www.camara.leg.br/internet/deputado/bandep/178948.jpg,dep.betorosado@camara.leg.br,CARLOS ALBERTO DE SOUSA ROSADO SEGUNDO,Pós-Graduação,RN,M
+211,93083,Cacá Leão,PP,BA,https://www.camara.leg.br/internet/deputado/bandep/93083.jpg,dep.cacaleao@camara.leg.br,CARLOS FELIPE VAZQUEZ DE SOUZA LEÃO,Pós-Graduação,BA,M
+212,204380,Celina Leão,PP,DF,https://www.camara.leg.br/internet/deputado/bandep/204380.jpg,dep.celinaleao@camara.leg.br,CELINA LEAO HIZIM FERREIRA,Pós-Graduação,GO,F
+213,204440,Christino Aureo,PP,RJ,https://www.camara.leg.br/internet/deputado/bandep/204440.jpg,dep.christinoaureo@camara.leg.br,CHRISTINO AUREO DA SILVA,Pós-Graduação,RJ,M
+214,74537,Claudio Cajado,PP,BA,https://www.camara.leg.br/internet/deputado/bandep/74537.jpg,dep.claudiocajado@camara.leg.br,CLÁUDIO CAJADO SAMPAIO,Superior,BA,M
+215,178963,Covatti Filho,PP,RS,https://www.camara.leg.br/internet/deputado/bandep/178963.jpg,dep.covattifilho@camara.leg.br,LUIS ANTONIO FRANCISCATTO COVATTI,Superior,RS,M
+216,160599,Dimas Fabiano,PP,MG,https://www.camara.leg.br/internet/deputado/bandep/160599.jpg,dep.dimasfabiano@camara.leg.br,DIMAS FABIANO TOLEDO JÚNIOR,Superior,RJ,M
+217,204450,Dr. Luiz Antonio Teixeira Jr.,PP,RJ,https://www.camara.leg.br/internet/deputado/bandep/204450.jpg,dep.dr.luizantonioteixeirajr@camara.leg.br,LUIZ ANTONIO DE SOUZA TEIXEIRA JÚNIOR,Superior,RJ,M
+218,141421,Eduardo da Fonte,PP,PE,https://www.camara.leg.br/internet/deputado/bandep/141421.jpg,dep.eduardodafonte@camara.leg.br,EDUARDO HENRIQUE DA FONTE DE ALBUQUERQUE SILVA,Ensino Médio,PE,M
+219,178871,Evair Vieira de Melo,PP,ES,https://www.camara.leg.br/internet/deputado/bandep/178871.jpg,dep.evairvieirademelo@camara.leg.br,EVAIR VIEIRA DE MELO,Pós-Graduação,ES,M
+220,66828,Fausto Pinato,PP,SP,https://www.camara.leg.br/internet/deputado/bandep/66828.jpg,dep.faustopinato@camara.leg.br,FAUSTO RUY PINATO,Superior,SP,M
+221,92699,Fernando Monteiro,PP,PE,https://www.camara.leg.br/internet/deputado/bandep/92699.jpg,dep.fernandomonteiro@camara.leg.br,FERNANDO MONTEIRO DE ALBUQUERQUE,Superior,PE,M
+222,204510,Franco Cartafina,PP,MG,https://www.camara.leg.br/internet/deputado/bandep/204510.jpg,dep.francocartafina@camara.leg.br,FRANCO CARTAFINA GOMES,Pós-Graduação,MG,M
+223,204531,Guilherme Derrite,PP,SP,https://www.camara.leg.br/internet/deputado/bandep/204531.jpg,dep.guilhermederrite@camara.leg.br,GUILHERME MURARO DERRITE,Pós-Graduação,SP,M
+224,160667,Guilherme Mussi,PP,SP,https://www.camara.leg.br/internet/deputado/bandep/160667.jpg,dep.guilhermemussi@camara.leg.br,GUILHERME MUSSI FERREIRA,Superior,PR,M
+225,178959,Hiran Gonçalves,PP,RR,https://www.camara.leg.br/internet/deputado/bandep/178959.jpg,dep.hirangoncalves@camara.leg.br,HIRAN MANUEL GONCALVES DA SILVA,Superior,AM,M
+226,67138,Iracema Portella,PP,PI,https://www.camara.leg.br/internet/deputado/bandep/67138.jpg,dep.iracemaportella@camara.leg.br,IRACEMA MARIA PORTELLA NUNES NOGUEIRA LIMA,Superior,PI,F
+227,108338,Jaqueline Cassol,PP,RO,https://www.camara.leg.br/internet/deputado/bandep/108338.jpg,dep.jaquelinecassol@camara.leg.br,DIRLAINE JAQUELINE CASSOL,Pós-Graduação,SC,F
+228,160570,Jerônimo Goergen,PP,RS,https://www.camara.leg.br/internet/deputado/bandep/160570.jpg,dep.jeronimogoergen@camara.leg.br,JERÔNIMO PIZZOLOTTO GOERGEN,Superior,RS,M
+229,74253,Julio Lopes,PP,RJ,https://www.camara.leg.br/internet/deputado/bandep/74253.jpg,dep.juliolopes@camara.leg.br,JULIO LUIZ BAPTISTA LOPES,Superior,RJ,M
+230,151208,Laercio Oliveira,PP,SE,https://www.camara.leg.br/internet/deputado/bandep/151208.jpg,dep.laerciooliveira@camara.leg.br,LAERCIO JOSÉ DE OLIVEIRA,Pós-Graduação,PE,M
+231,146788,Marcelo Aro,PP,MG,https://www.camara.leg.br/internet/deputado/bandep/146788.jpg,dep.marceloaro@camara.leg.br,MARCELO GUILHERME DE ARO FERREIRA,Superior,MG,M
+232,204430,Margarete Coelho,PP,PI,https://www.camara.leg.br/internet/deputado/bandep/204430.jpg,dep.margaretecoelho@camara.leg.br,MARGARETE DE CASTRO COELHO,Doutorado Incompleto,PI,F
+233,178858,Mário Negromonte Jr.,PP,BA,https://www.camara.leg.br/internet/deputado/bandep/178858.jpg,dep.marionegromontejr@camara.leg.br,MARIO S. M. NEGROMONTE JR.,Superior,BA,M
+234,146307,Neri Geller,PP,MT,https://www.camara.leg.br/internet/deputado/bandep/146307.jpg,dep.nerigeller@camara.leg.br,NERI GELLER,Secundário,RS,M
+235,73463,Osmar Serraglio,PP,PR,https://www.camara.leg.br/internet/deputado/bandep/73463.jpg,dep.osmarserraglio@camara.leg.br,OSMAR JOSÉ SERRAGLIO,Mestrado,RS,M
+236,204406,Pedro Westphalen,PP,RS,https://www.camara.leg.br/internet/deputado/bandep/204406.jpg,dep.pedrowestphalen@camara.leg.br,PEDRO BANDARRA WESTPHALEN,Superior,RS,M
+237,204524,Pinheirinho,PP,MG,https://www.camara.leg.br/internet/deputado/bandep/204524.jpg,dep.pinheirinho@camara.leg.br,ANTÔNIO PINHEIRO NETO,Superior,MG,M
+238,204390,Professor Alcides,PP,GO,https://www.camara.leg.br/internet/deputado/bandep/204390.jpg,dep.professoralcides@camara.leg.br,ALCIDES RIBEIRO FILHO,Mestrado,BA,M
+239,73788,Ricardo Barros,PP,PR,https://www.camara.leg.br/internet/deputado/bandep/73788.jpg,dep.ricardobarros@camara.leg.br,RICARDO JOSÉ MAGALHÃES BARROS,Superior,PR,M
+240,160655,Ricardo Izar,PP,SP,https://www.camara.leg.br/internet/deputado/bandep/160655.jpg,dep.ricardoizar@camara.leg.br,RICARDO IZAR JUNIOR,Superior,SP,M
+241,178861,Ronaldo Carletto,PP,BA,https://www.camara.leg.br/internet/deputado/bandep/178861.jpg,dep.ronaldocarletto@camara.leg.br,RONALDO CARLETTO,Ensino Médio,ES,M
+242,178863,Uldurico Junior,PPL,BA,https://www.camara.leg.br/internet/deputado/bandep/178863.jpg,dep.ulduricojunior@camara.leg.br,ULDURICO ALENCAR PINTO,Superior,DF,M
+243,178972,Alex Manente,PPS,SP,https://www.camara.leg.br/internet/deputado/bandep/178972.jpg,dep.alexmanente@camara.leg.br,ALEX SPINELLI MANENTE,Superior,SP,M
+244,141391,Arnaldo Jardim,PPS,SP,https://www.camara.leg.br/internet/deputado/bandep/141391.jpg,dep.arnaldojardim@camara.leg.br,ARNALDO CALIL PEREIRA JARDIM,Superior,SP,M
+245,164360,Carmen Zanotto,PPS,SC,https://www.camara.leg.br/internet/deputado/bandep/164360.jpg,dep.carmenzanotto@camara.leg.br,CARMEN EMÍLIA BONFÁ ZANOTTO,Superior,SC,F
+246,204355,Da Vitoria,PPS,ES,https://www.camara.leg.br/internet/deputado/bandep/204355.jpg,dep.davitoria@camara.leg.br,JOSIAS MARIO DA VITORIA,Superior,ES,M
+247,178916,Daniel Coelho,PPS,PE,https://www.camara.leg.br/internet/deputado/bandep/178916.jpg,dep.danielcoelho@camara.leg.br,DANIEL PIRES COELHO,Superior,PE,M
+248,204377,Paula Belmonte,PPS,DF,https://www.camara.leg.br/internet/deputado/bandep/204377.jpg,dep.paulabelmonte@camara.leg.br,PAULA MORENO PARO BELMONTE,Superior,SP,F
+249,73466,Rubens Bueno,PPS,PR,https://www.camara.leg.br/internet/deputado/bandep/73466.jpg,dep.rubensbueno@camara.leg.br,RUBENS BUENO,Superior,PR,M
+250,204554,Abílio Santana,PR,BA,https://www.camara.leg.br/internet/deputado/bandep/204554.jpg,dep.abiliosantana@camara.leg.br,JOSE ABILIO SILVA DE SANTANA,Superior Incompleto,BA,M
+251,141372,Aelton Freitas,PR,MG,https://www.camara.leg.br/internet/deputado/bandep/141372.jpg,dep.aeltonfreitas@camara.leg.br,AELTON JOSÉ DE FREITAS,Superior,MG,M
+252,178937,Altineu Côrtes,PR,RJ,https://www.camara.leg.br/internet/deputado/bandep/178937.jpg,dep.altineucortes@camara.leg.br,ALTINEU CÔRTES FREITAS COUTINHO,Ensino Médio,RJ,M
+253,74052,Bosco Costa,PR,SE,https://www.camara.leg.br/internet/deputado/bandep/74052.jpg,dep.boscocosta@camara.leg.br,JOÃO BOSCO DA COSTA,Superior Incompleto,SE,M
+254,178829,Capitão Augusto,PR,SP,https://www.camara.leg.br/internet/deputado/bandep/178829.jpg,dep.capitaoaugusto@camara.leg.br,JOSE AUGUSTO ROSA,Mestrado,SP,M
+255,178924,Capitão Fábio Abreu,PR,PI,https://www.camara.leg.br/internet/deputado/bandep/178924.jpg,dep.capitaofabioabreu@camara.leg.br,FABIO ABREU COSTA,Pós-Graduação,CE,M
+256,178928,Christiane de Souza Yared,PR,PR,https://www.camara.leg.br/internet/deputado/bandep/178928.jpg,dep.christianedesouzayared@camara.leg.br,CHRISTIANE DE SOUZA YARED,Ensino Médio,PR,F
+257,135054,Cristiano Vale,PR,PA,https://www.camara.leg.br/internet/deputado/bandep/135054.jpg,dep.cristianovale@camara.leg.br,CRISTIANO DUTRA VALE,Secundário,MG,M
+258,204481,Dr. Jaziel,PR,CE,https://www.camara.leg.br/internet/deputado/bandep/204481.jpg,dep.dr.jaziel@camara.leg.br,JAZIEL PEREIRA DE SOUSA,Superior,CE,M
+259,141417,Edio Lopes,PR,RR,https://www.camara.leg.br/internet/deputado/bandep/141417.jpg,dep.ediolopes@camara.leg.br,ÉDIO VIEIRA LOPES,Superior Incompleto,SP,M
+260,204427,Fernando Rodolfo,PR,PE,https://www.camara.leg.br/internet/deputado/bandep/204427.jpg,dep.fernandorodolfo@camara.leg.br,FERNANDO RODOLFO TENORIO DE VASCONCELOS,Superior,PE,M
+261,115746,Gelson Azevedo,PR,RJ,https://www.camara.leg.br/internet/deputado/bandep/115746.jpg,dep.gelsonazevedo@camara.leg.br,GELSON DE AZEVEDO ALMEIDA,Ensino Médio Incompleto,RJ,M
+262,74383,Giacobo,PR,PR,https://www.camara.leg.br/internet/deputado/bandep/74383.jpg,dep.giacobo@camara.leg.br,FERNANDO LÚCIO GIACOBO,Superior,PR,M
+263,160673,Giovani Cherini,PR,RS,https://www.camara.leg.br/internet/deputado/bandep/160673.jpg,dep.giovanicherini@camara.leg.br,GIOVANI CHERINI,Pós-Graduação,RS,M
+264,141458,João Carlos Bacelar,PR,BA,https://www.camara.leg.br/internet/deputado/bandep/141458.jpg,dep.joaocarlosbacelar@camara.leg.br,JOÃO CARLOS PAOLILO BACELAR FILHO,Pós-Graduação,BA,M
+265,141459,João Maia,PR,RN,https://www.camara.leg.br/internet/deputado/bandep/141459.jpg,dep.joaomaia@camara.leg.br,JOÃO DA SILVA MAIA,Superior,PB,M
+266,218245,Jorielson,PR,AP,https://www.camara.leg.br/internet/deputado/bandep/218245.jpg,dep.jorielson@camara.leg.br,JORIELSON BRITO NASCIMENTO,Superior,AP,M
+267,74554,José Rocha,PR,BA,https://www.camara.leg.br/internet/deputado/bandep/74554.jpg,dep.joserocha@camara.leg.br,JOSÉ ALVES ROCHA,Pós-Graduação,BA,M
+268,204563,Josimar Maranhãozinho,PR,MA,https://www.camara.leg.br/internet/deputado/bandep/204563.jpg,dep.josimarmaranhaozinho@camara.leg.br,JOSIMAR CUNHA RODRIGUES,Superior,CE,M
+269,204574,Junior Lourenço,PR,MA,https://www.camara.leg.br/internet/deputado/bandep/204574.jpg,dep.juniorlourenco@camara.leg.br,JOSE LOURENÇO BOMFIM JUNIOR,Superior,MA,M
+270,204550,Júnior Mano,PR,CE,https://www.camara.leg.br/internet/deputado/bandep/204550.jpg,dep.juniormano@camara.leg.br,ANTÔNIO LUIZ RODRIGUES MANO JÚNIOR,Superior,CE,M
+271,141478,Laerte Bessa,PR,DF,https://www.camara.leg.br/internet/deputado/bandep/141478.jpg,dep.laertebessa@camara.leg.br,LAERTE RODRIGUES DE BESSA,Pós-Graduação,GO,M
+272,160534,Lauriete,PR,ES,https://www.camara.leg.br/internet/deputado/bandep/160534.jpg,dep.lauriete@camara.leg.br,LAURIETE RODRIGUES DE JESUS,Ensino Médio,ES,F
+273,74585,Lincoln Portela,PR,MG,https://www.camara.leg.br/internet/deputado/bandep/74585.jpg,dep.lincolnportela@camara.leg.br,LINCOLN DINIZ PORTELA,Superior,MG,M
+274,204485,Luiz Carlos Motta,PR,SP,https://www.camara.leg.br/internet/deputado/bandep/204485.jpg,dep.luizcarlosmotta@camara.leg.br,LUIZ CARLOS MOTTA,Superior,SP,M
+275,162332,Luiz Nishimori,PR,PR,https://www.camara.leg.br/internet/deputado/bandep/162332.jpg,dep.luiznishimori@camara.leg.br,LUIZ HILOSHI NISHIMORI,Superior,PR,M
+276,166402,Magda Mofatto,PR,GO,https://www.camara.leg.br/internet/deputado/bandep/166402.jpg,dep.magdamofatto@camara.leg.br,MAGDA MOFATTO HON,Ensino Fundamental,SP,F
+277,204556,Marcelo Ramos,PR,AM,https://www.camara.leg.br/internet/deputado/bandep/204556.jpg,dep.marceloramos@camara.leg.br,MARCELO RAMOS RODRIGUES,Superior,AM,M
+278,178983,Marcio Alvino,PR,SP,https://www.camara.leg.br/internet/deputado/bandep/178983.jpg,dep.marcioalvino@camara.leg.br,MARCIO LUIZ ALVINO DE SOUZA,Superior,SP,M
+279,178985,Miguel Lombardi,PR,SP,https://www.camara.leg.br/internet/deputado/bandep/178985.jpg,dep.miguellombardi@camara.leg.br,MIGUEL LOMBARDI,Superior,SP,M
+280,160558,Paulo Freire Costa,PR,SP,https://www.camara.leg.br/internet/deputado/bandep/160558.jpg,dep.paulofreirecosta@camara.leg.br,PAULO ROBERTO FREIRE DA COSTA,Superior,SP,M
+281,204529,Policial Katia Sastre,PR,SP,https://www.camara.leg.br/internet/deputado/bandep/204529.jpg,dep.policialkatiasastre@camara.leg.br,KATIA DA SILVA SASTRE,Pós-Graduação,SP,F
+282,204567,Raimundo Costa,PR,BA,https://www.camara.leg.br/internet/deputado/bandep/204567.jpg,dep.raimundocosta@camara.leg.br,RAIMUNDO MAGALHÃES COSTA,Superior,BA,M
+283,178921,Sebastião Oliveira,PR,PE,https://www.camara.leg.br/internet/deputado/bandep/178921.jpg,dep.sebastiaooliveira@camara.leg.br,SEBASTIAO IGNACIO DE OLIVEIRA JUNIOR,Superior,PE,M
+284,204438,Sergio Toledo,PR,AL,https://www.camara.leg.br/internet/deputado/bandep/204438.jpg,dep.sergiotoledo@camara.leg.br,SERGIO TOLEDO DE ALBUQUERQUE,Superior,AL,M
+285,178946,Soraya Santos,PR,RJ,https://www.camara.leg.br/internet/deputado/bandep/178946.jpg,dep.sorayasantos@camara.leg.br,SORAYA ALENCAR DOS SANTOS,Superior,RJ,F
+286,160976,Tiririca,PR,SP,https://www.camara.leg.br/internet/deputado/bandep/160976.jpg,dep.tiririca@camara.leg.br,FRANCISCO EVERARDO TIRIRICA OLIVEIRA SILVA,Ensino Fundamental,CE,M
+287,137070,Vicentinho Júnior,PR,TO,https://www.camara.leg.br/internet/deputado/bandep/137070.jpg,dep.vicentinhojunior@camara.leg.br,VICENTE ALVES DE OLIVEIRA JUNIOR,Superior Incompleto,GO,M
+288,74043,Wellington Roberto,PR,PB,https://www.camara.leg.br/internet/deputado/bandep/74043.jpg,dep.wellingtonroberto@camara.leg.br,JOSÉ WELLINGTON ROBERTO,Superior Incompleto,PB,M
+289,204517,Zé Vitor,PR,MG,https://www.camara.leg.br/internet/deputado/bandep/204517.jpg,dep.zevitor@camara.leg.br,JOSE VITOR DE RESENDE AGUIAR,Superior,MG,M
+290,204353,Aline Gurgel,PRB,AP,https://www.camara.leg.br/internet/deputado/bandep/204353.jpg,dep.alinegurgel@camara.leg.br,ALINE PARANHOS VARONIL GURGEL,Superior,AP,F
+291,204356,Amaro Neto,PRB,ES,https://www.camara.leg.br/internet/deputado/bandep/204356.jpg,dep.amaroneto@camara.leg.br,AMARO ROCHA NASCIMENTO NETO,Superior,ES,M
+292,204414,Aroldo Martins,PRB,PR,https://www.camara.leg.br/internet/deputado/bandep/204414.jpg,dep.aroldomartins@camara.leg.br,JOSE AROLDO SOUZA MARTINS,Doutorado,SP,M
+293,109429,Benes Leocádio,PRB,RN,https://www.camara.leg.br/internet/deputado/bandep/109429.jpg,dep.benesleocadio@camara.leg.br,LUIZ BENES LEOCADIO DE ARAUJO,Superior,RN,M
+294,204572,Capitão Alberto Neto,PRB,AM,https://www.camara.leg.br/internet/deputado/bandep/204572.jpg,dep.capitaoalbertoneto@camara.leg.br,ALBERTO BARROS CAVALCANTE NETO,Pós-Graduação,CE,M
+295,178962,Carlos Gomes,PRB,RS,https://www.camara.leg.br/internet/deputado/bandep/178962.jpg,dep.carlosgomes@camara.leg.br,ANTONIO CARLOS GOMES DA SILVA,Superior Incompleto,BA,M
+296,73441,Celso Russomanno,PRB,SP,https://www.camara.leg.br/internet/deputado/bandep/73441.jpg,dep.celsorussomanno@camara.leg.br,CELSO UBIRAJARA RUSSOMANNO,Superior,SP,M
+297,141408,Cleber Verde,PRB,MA,https://www.camara.leg.br/internet/deputado/bandep/141408.jpg,dep.cleberverde@camara.leg.br,CLEBER VERDE CORDEIRO MENDES,Superior,MA,M
+298,218086,Ely Santos,PRB,SP,https://www.camara.leg.br/internet/deputado/bandep/218086.jpg,dep.elysantos@camara.leg.br,ELIANE DE SOUSA ALVES MACHADO,,SP,F
+299,204491,Gilberto Abramo,PRB,MG,https://www.camara.leg.br/internet/deputado/bandep/204491.jpg,dep.gilbertoabramo@camara.leg.br,GILBERTO APARECIDO ABRAMO,Superior,SP,M
+300,204373,Hélio Costa,PRB,SC,https://www.camara.leg.br/internet/deputado/bandep/204373.jpg,dep.heliocosta@camara.leg.br,HÉLIO FRANCISCO DA COSTA,Ensino Médio,SC,M
+301,160674,Hugo Motta,PRB,PB,https://www.camara.leg.br/internet/deputado/bandep/160674.jpg,dep.hugomotta@camara.leg.br,HUGO MOTTA WANDERLEY DA NÓBREGA,Superior,PB,M
+302,160531,Jhonatan de Jesus,PRB,RR,https://www.camara.leg.br/internet/deputado/bandep/160531.jpg,dep.jhonatandejesus@camara.leg.br,JOHNATHAN PEREIRA DE JESUS,Superior,RR,M
+303,74366,João Campos,PRB,GO,https://www.camara.leg.br/internet/deputado/bandep/74366.jpg,dep.joaocampos@camara.leg.br,JOÃO CAMPOS DE ARAÚJO,Pós-Graduação,TO,M
+304,205550,Jorge Braz,PRB,RJ,https://www.camara.leg.br/internet/deputado/bandep/205550.jpg,dep.jorgebraz@camara.leg.br,JORGE BRAZ DE OLIVEIRA,Superior Incompleto,MG,M
+305,204372,Julio Cesar Ribeiro,PRB,DF,https://www.camara.leg.br/internet/deputado/bandep/204372.jpg,dep.juliocesarribeiro@camara.leg.br,JULIO CESAR RIBEIRO,Superior,SP,M
+306,98057,Lafayette de Andrada,PRB,MG,https://www.camara.leg.br/internet/deputado/bandep/98057.jpg,dep.lafayettedeandrada@camara.leg.br,LAFAYETTE LUIZ DOORGAL DE ANDRADA,Doutorado Incompleto,MG,M
+307,204418,Luizão Goulart,PRB,PR,https://www.camara.leg.br/internet/deputado/bandep/204418.jpg,dep.luizaogoulart@camara.leg.br,LUIZ GOULARTE ALVES,Superior,PR,M
+308,118594,Marcelo Squassoni,PRB,SP,https://www.camara.leg.br/internet/deputado/bandep/118594.jpg,dep.marcelosquassoni@camara.leg.br,MARCELO SQUASSONI,Superior,SP,M
+309,150418,Márcio Marinho,PRB,BA,https://www.camara.leg.br/internet/deputado/bandep/150418.jpg,dep.marciomarinho@camara.leg.br,MÁRCIO CARLOS MARINHO,Superior,RJ,M
+310,204506,Marcos Pereira,PRB,SP,https://www.camara.leg.br/internet/deputado/bandep/204506.jpg,dep.marcospereira@camara.leg.br,MARCOS ANTONIO PEREIRA,Pós-Graduação,ES,M
+311,154178,Milton Vieira,PRB,SP,https://www.camara.leg.br/internet/deputado/bandep/154178.jpg,dep.miltonvieira@camara.leg.br,MILTON VIEIRA PINTO,Superior Incompleto,SP,M
+312,204422,Ossesio Silva,PRB,PE,https://www.camara.leg.br/internet/deputado/bandep/204422.jpg,dep.ossesiosilva@camara.leg.br,OSSESIO JOSE DA SILVA,Superior Incompleto,RJ,M
+313,178945,Rosangela Gomes,PRB,RJ,https://www.camara.leg.br/internet/deputado/bandep/178945.jpg,dep.rosangelagomes@camara.leg.br,ROSANGELA DE SOUZA GOMES,Pós-Graduação,RJ,F
+314,204437,Severino Pessoa,PRB,AL,https://www.camara.leg.br/internet/deputado/bandep/204437.jpg,dep.severinopessoa@camara.leg.br,SEVERINO DE LIRA PESSÔA,Ensino Médio,AL,M
+315,74356,Silas Câmara,PRB,AM,https://www.camara.leg.br/internet/deputado/bandep/74356.jpg,dep.silascamara@camara.leg.br,SILAS CÂMARA,Superior,AC,M
+316,204425,Silvio Costa Filho,PRB,PE,https://www.camara.leg.br/internet/deputado/bandep/204425.jpg,dep.silviocostafilho@camara.leg.br,SILVIO SERAFIM COSTA FILHO,Superior,PE,M
+317,178862,Tia Eron,PRB,BA,https://www.camara.leg.br/internet/deputado/bandep/178862.jpg,dep.tiaeron@camara.leg.br,ERONILDES VASCONCELOS CARVALHO,Superior,BA,F
+318,204505,Vavá Martins,PRB,PA,https://www.camara.leg.br/internet/deputado/bandep/204505.jpg,dep.vavamartins@camara.leg.br,WAGNER BACH MARTINS,Superior,RS,M
+319,141555,Vinicius Carvalho,PRB,SP,https://www.camara.leg.br/internet/deputado/bandep/141555.jpg,dep.viniciuscarvalho@camara.leg.br,VINICIUS RAPOZO DE CARVALHO,Mestrado,RJ,M
+320,204379,Acácio Favacho,PROS,AP,https://www.camara.leg.br/internet/deputado/bandep/204379.jpg,dep.acaciofavacho@camara.leg.br,ACÁCIO DA SILVA FAVACHO NETO,Superior,AP,M
+321,204487,Capitão Wagner,PROS,CE,https://www.camara.leg.br/internet/deputado/bandep/204487.jpg,dep.capitaowagner@camara.leg.br,WAGNER SOUSA GOMES,Superior,SP,M
+322,213762,Carla Dickson,PROS,RN,https://www.camara.leg.br/internet/deputado/bandep/213762.jpg,dep.carladickson@camara.leg.br,HILKEA CARLA DE SOUZA MEDEIROS LIMA,Superior,PA,F
+323,178939,Clarissa Garotinho,PROS,RJ,https://www.camara.leg.br/internet/deputado/bandep/178939.jpg,dep.clarissagarotinho@camara.leg.br,CLARISSA BARROS ASSED MATHEUS DE OLIVEIRA,Superior,RJ,F
+324,160640,Eros Biondini,PROS,MG,https://www.camara.leg.br/internet/deputado/bandep/160640.jpg,dep.erosbiondini@camara.leg.br,EROS FERREIRA BIONDINI,Pós-Graduação,MG,M
+325,74200,Gastão Vieira,PROS,MA,https://www.camara.leg.br/internet/deputado/bandep/74200.jpg,dep.gastaovieira@camara.leg.br,GASTÃO DIAS VIEIRA,Superior,MA,M
+326,178934,Toninho Wandscheer,PROS,PR,https://www.camara.leg.br/internet/deputado/bandep/178934.jpg,dep.toninhowandscheer@camara.leg.br,ANTONIO WANDSCHEER,Superior,PR,M
+327,178863,Uldurico Junior,PROS,BA,https://www.camara.leg.br/internet/deputado/bandep/178863.jpg,dep.ulduricojunior@camara.leg.br,ULDURICO ALENCAR PINTO,Superior,DF,M
+328,195866,Vaidon Oliveira,PROS,CE,https://www.camara.leg.br/internet/deputado/bandep/195866.jpg,dep.vaidonoliveira@camara.leg.br,FRANCISCO VAIDON OLIVEIRA,Ensino Médio,CE,M
+329,160518,Weliton Prado,PROS,MG,https://www.camara.leg.br/internet/deputado/bandep/160518.jpg,dep.welitonprado@camara.leg.br,WELITON FERNANDES PRADO,Superior,MG,M
+330,204413,Alcides Rodrigues,PRP,GO,https://www.camara.leg.br/internet/deputado/bandep/204413.jpg,dep.alcidesrodrigues@camara.leg.br,ALCIDES RODRIGUES FILHO,Superior,GO,M
+331,204374,Bia Kicis,PRP,DF,https://www.camara.leg.br/internet/deputado/bandep/204374.jpg,dep.biakicis@camara.leg.br,BEATRIZ KICIS TORRENTS DE SORDI,Superior,RJ,F
+332,204567,Raimundo Costa,PRP,BA,https://www.camara.leg.br/internet/deputado/bandep/204567.jpg,dep.raimundocosta@camara.leg.br,RAIMUNDO MAGALHÃES COSTA,Superior,BA,M
+333,215042,Ricardo da Karol,PRP,RJ,https://www.camara.leg.br/internet/deputado/bandep/215042.jpg,dep.ricardodakarol@camara.leg.br,RICARDO CORREA DE BARROS,Ensino Médio,RJ,M
+334,160511,Alessandro Molon,PSB,RJ,https://www.camara.leg.br/internet/deputado/bandep/160511.jpg,dep.alessandromolon@camara.leg.br,ALESSANDRO LUCCIOLA MOLON,Mestrado,MG,M
+335,178927,Aliel Machado,PSB,PR,https://www.camara.leg.br/internet/deputado/bandep/178927.jpg,dep.alielmachado@camara.leg.br,ALIEL MACHADO BARK,Superior Incompleto,PR,M
+336,74459,Átila Lira,PSB,PI,https://www.camara.leg.br/internet/deputado/bandep/74459.jpg,dep.atilalira@camara.leg.br,ÁTILA FREITAS LIRA,Pós-Graduação,PI,M
+337,204561,Bira do Pindaré,PSB,MA,https://www.camara.leg.br/internet/deputado/bandep/204561.jpg,dep.biradopindare@camara.leg.br,UBIRAJARA DO PINDARÉ ALMEIDA SOUSA,Mestrado,MA,M
+338,204352,Camilo Capiberibe,PSB,AP,https://www.camara.leg.br/internet/deputado/bandep/204352.jpg,dep.camilocapiberibe@camara.leg.br,CARLOS CAMILO GÓES CAPIBERIBE,Superior,,M
+339,204499,Cássio Andrade,PSB,PA,https://www.camara.leg.br/internet/deputado/bandep/204499.jpg,dep.cassioandrade@camara.leg.br,CASSIO COELHO ANDRADE,Superior,BA,M
+340,160528,Danilo Cabral,PSB,PE,https://www.camara.leg.br/internet/deputado/bandep/160528.jpg,dep.danilocabral@camara.leg.br,DANILO JORGE DE BARROS CABRAL,Pós-Graduação,PE,M
+341,204542,Denis Bezerra,PSB,CE,https://www.camara.leg.br/internet/deputado/bandep/204542.jpg,dep.denisbezerra@camara.leg.br,DENIS ANDERSON DA ROCHA BEZERRA,Superior,CE,M
+342,204389,Elias Vaz,PSB,GO,https://www.camara.leg.br/internet/deputado/bandep/204389.jpg,dep.eliasvaz@camara.leg.br,ELIAS VAZ DE ANDRADE,Superior,GO,M
+343,161550,Emidinho Madeira,PSB,MG,https://www.camara.leg.br/internet/deputado/bandep/161550.jpg,dep.emidinhomadeira@camara.leg.br,EMIDIO ALVES MADEIRA JUNIOR,Ensino Fundamental,MG,M
+344,72442,Felipe Carreras,PSB,PE,https://www.camara.leg.br/internet/deputado/bandep/72442.jpg,dep.felipecarreras@camara.leg.br,FELIPE AUGUSTO LYRA CARRERAS,Superior Incompleto,PE,M
+345,204371,Felipe Rigoni,PSB,ES,https://www.camara.leg.br/internet/deputado/bandep/204371.jpg,dep.feliperigoni@camara.leg.br,FELIPE RIGONI LOPES,Mestrado,ES,M
+346,204394,Gervásio Maia,PSB,PB,https://www.camara.leg.br/internet/deputado/bandep/204394.jpg,dep.gervasiomaia@camara.leg.br,GERVÁSIO AGRIPINO MAIA,Superior,SP,M
+347,74419,Gonzaga Patriota,PSB,PE,https://www.camara.leg.br/internet/deputado/bandep/74419.jpg,dep.gonzagapatriota@camara.leg.br,LUIZ GONZAGA PATRIOTA,Doutorado,PE,M
+348,178964,Heitor Schuch,PSB,RS,https://www.camara.leg.br/internet/deputado/bandep/178964.jpg,dep.heitorschuch@camara.leg.br,HEITOR JOSE SCHUCH,Superior Incompleto,RS,M
+349,74273,Jefferson Campos,PSB,SP,https://www.camara.leg.br/internet/deputado/bandep/74273.jpg,dep.jeffersoncampos@camara.leg.br,JEFFERSON ALVES DE CAMPOS,Superior,SP,M
+350,73586,Júlio Delgado,PSB,MG,https://www.camara.leg.br/internet/deputado/bandep/73586.jpg,dep.juliodelgado@camara.leg.br,JÚLIO CÉSAR DELGADO,Pós-Graduação,MG,M
+351,139285,Lídice da Mata,PSB,BA,https://www.camara.leg.br/internet/deputado/bandep/139285.jpg,dep.lidicedamata@camara.leg.br,LÍDICE DA MATA E SOUZA,Superior,BA,F
+352,204405,Liziane Bayer,PSB,RS,https://www.camara.leg.br/internet/deputado/bandep/204405.jpg,dep.lizianebayer@camara.leg.br,LIZIANE BAYER DA COSTA,Superior Incompleto,RS,F
+353,178931,Luciano Ducci,PSB,PR,https://www.camara.leg.br/internet/deputado/bandep/178931.jpg,dep.lucianoducci@camara.leg.br,LUCIANO DUCCI,Superior,PR,M
+354,76874,Marcelo Freixo,PSB,RJ,https://www.camara.leg.br/internet/deputado/bandep/76874.jpg,dep.marcelofreixo@camara.leg.br,MARCELO RIBEIRO FREIXO,Superior,RJ,M
+355,204558,Marcelo Nilo,PSB,BA,https://www.camara.leg.br/internet/deputado/bandep/204558.jpg,dep.marcelonilo@camara.leg.br,JOSÉ MARCELO DO NASCIMENTO NILO,Superior,BA,M
+356,141508,Mauro Nazif,PSB,RO,https://www.camara.leg.br/internet/deputado/bandep/141508.jpg,dep.mauronazif@camara.leg.br,MAURO NAZIF RASUL,Superior,RJ,M
+357,92172,Milton Coelho,PSB,PE,https://www.camara.leg.br/internet/deputado/bandep/92172.jpg,dep.miltoncoelho@camara.leg.br,MILTON COELHO DA SILVA NETO,Superior,MA,M
+358,178951,Rafael Motta,PSB,RN,https://www.camara.leg.br/internet/deputado/bandep/178951.jpg,dep.rafaelmotta@camara.leg.br,RAFAEL HUETE DA MOTTA,Superior,RN,M
+359,213274,Ricardo Silva,PSB,SP,https://www.camara.leg.br/internet/deputado/bandep/213274.jpg,dep.ricardosilva@camara.leg.br,RICARDO AUGUSTO MACHADO DA SILVA,Superior,SP,M
+360,204530,Rodrigo Agostinho,PSB,SP,https://www.camara.leg.br/internet/deputado/bandep/204530.jpg,dep.rodrigoagostinho@camara.leg.br,RODRIGO ANTONIO DE AGOSTINHO MENDONÇA,Mestrado,SP,M
+361,204366,Rodrigo Coelho,PSB,SC,https://www.camara.leg.br/internet/deputado/bandep/204366.jpg,dep.rodrigocoelho@camara.leg.br,RODRIGO COELHO,Pós-Graduação,SC,M
+362,204525,Rosana Valle,PSB,SP,https://www.camara.leg.br/internet/deputado/bandep/204525.jpg,dep.rosanavalle@camara.leg.br,ROSANA DE OLIVEIRA VALLE,Superior,SP,F
+363,204534,Tabata Amaral,PSB,SP,https://www.camara.leg.br/internet/deputado/bandep/204534.jpg,dep.tabataamaral@camara.leg.br,TABATA CLAUDIA AMARAL DE PONTES,Superior,SP,F
+364,178922,Tadeu Alencar,PSB,PE,https://www.camara.leg.br/internet/deputado/bandep/178922.jpg,dep.tadeualencar@camara.leg.br,FRANCISCO TADEU BARBOSA DE ALENCAR,Superior,CE,M
+365,206231,Ted Conti,PSB,ES,https://www.camara.leg.br/internet/deputado/bandep/206231.jpg,dep.tedconti@camara.leg.br,JOÃO BATISTA CONTI,Superior,ES,M
+366,204483,Vilson da Fetaemg,PSB,MG,https://www.camara.leg.br/internet/deputado/bandep/204483.jpg,dep.vilsondafetaemg@camara.leg.br,VILSON LUIZ DA SILVA,Ensino Médio,MG,M
+367,178881,Aluisio Mendes,PSC,MA,https://www.camara.leg.br/internet/deputado/bandep/178881.jpg,dep.aluisiomendes@camara.leg.br,ALUISIO GUIMARAES MENDES FILHO,Superior,MG,M
+368,204423,André Ferreira,PSC,PE,https://www.camara.leg.br/internet/deputado/bandep/204423.jpg,dep.andreferreira@camara.leg.br,ANDRÉ FERREIRA RODRIGUES,Superior,PE,M
+369,204482,Euclydes Pettersen,PSC,MG,https://www.camara.leg.br/internet/deputado/bandep/204482.jpg,dep.euclydespettersen@camara.leg.br,EUCLYDES MARCOS PETTERSEN NETO,Superior,MG,M
+370,74270,Gilberto Nascimento,PSC,SP,https://www.camara.leg.br/internet/deputado/bandep/74270.jpg,dep.gilbertonascimento@camara.leg.br,GILBERTO NASCIMENTO SILVA,Superior,SP,M
+371,204419,Glaustin da Fokus,PSC,GO,https://www.camara.leg.br/internet/deputado/bandep/204419.jpg,dep.glaustindafokus@camara.leg.br,GLAUSKSTON BATISTA RIOS,Superior,GO,M
+372,160534,Lauriete,PSC,ES,https://www.camara.leg.br/internet/deputado/bandep/160534.jpg,dep.lauriete@camara.leg.br,LAURIETE RODRIGUES DE JESUS,Ensino Médio,ES,F
+373,204363,Osires Damaso,PSC,TO,https://www.camara.leg.br/internet/deputado/bandep/204363.jpg,dep.osiresdamaso@camara.leg.br,OSIRES RODRIGUES DAMASO,Ensino Médio,GO,M
+374,204441,Otoni de Paula,PSC,RJ,https://www.camara.leg.br/internet/deputado/bandep/204441.jpg,dep.otonidepaula@camara.leg.br,OTONI MOURA DE PAULO JUNIOR,Superior Incompleto,RJ,M
+375,193726,Paulo Eduardo Martins,PSC,PR,https://www.camara.leg.br/internet/deputado/bandep/193726.jpg,dep.pauloeduardomartins@camara.leg.br,PAULO EDUARDO LIMA MARTINS,Superior,SP,M
+376,217330,Pedro Dalua,PSC,AP,https://www.camara.leg.br/internet/deputado/bandep/217330.jpg,dep.pedrodalua@camara.leg.br,PEDRO DOS SANTOS MARTINS,Ensino Médio,PA,M
+377,215042,Ricardo da Karol,PSC,RJ,https://www.camara.leg.br/internet/deputado/bandep/215042.jpg,dep.ricardodakarol@camara.leg.br,RICARDO CORREA DE BARROS,Ensino Médio,RJ,M
+378,204385,Valdevan Noventa,PSC,SE,https://www.camara.leg.br/internet/deputado/bandep/204385.jpg,dep.valdevannoventa@camara.leg.br,José Valdevan de Jesus Santos,Ensino Médio,SE,M
+379,74471,André de Paula,PSD,PE,https://www.camara.leg.br/internet/deputado/bandep/74471.jpg,dep.andredepaula@camara.leg.br,ANDRÉ CARLOS ALVES DE PAULA FILHO,Superior,PE,M
+380,160553,Antonio Brito,PSD,BA,https://www.camara.leg.br/internet/deputado/bandep/160553.jpg,dep.antoniobrito@camara.leg.br,ANTONIO LUIZ PARANHOS RIBEIRO LEITE DE BRITO,Pós-Graduação,BA,M
+381,204504,Cezinha de Madureira,PSD,SP,https://www.camara.leg.br/internet/deputado/bandep/204504.jpg,dep.cezinhademadureira@camara.leg.br,ANTONIO CEZAR CORREIA FREIRE,Superior,BA,M
+382,205476,Charles Fernandes,PSD,BA,https://www.camara.leg.br/internet/deputado/bandep/205476.jpg,dep.charlesfernandes@camara.leg.br,CHARLES FERNANDES SILVEIRA SANTANA,Superior,BA,M
+383,116379,Darci de Matos,PSD,SC,https://www.camara.leg.br/internet/deputado/bandep/116379.jpg,dep.darcidematos@camara.leg.br,DARCI DE MATOS,Superior,PR,M
+384,178908,Delegado Éder Mauro,PSD,PA,https://www.camara.leg.br/internet/deputado/bandep/178908.jpg,dep.delegadoedermauro@camara.leg.br,EDER MAURO CARDOSO BARRA,Superior,PA,M
+385,160588,Diego Andrade,PSD,MG,https://www.camara.leg.br/internet/deputado/bandep/160588.jpg,dep.diegoandrade@camara.leg.br,DIEGO LEONARDO DE ANDRADE CARVALHO,Pós-Graduação,MG,M
+386,143632,Domingos Neto,PSD,CE,https://www.camara.leg.br/internet/deputado/bandep/143632.jpg,dep.domingosneto@camara.leg.br,DOMINGOS GOMES DE AGUIAR NETO,Mestrado Incompleto,CE,M
+387,204562,Edilázio Júnior,PSD,MA,https://www.camara.leg.br/internet/deputado/bandep/204562.jpg,dep.edilaziojunior@camara.leg.br,EDILAZIO GOMES DA SILVA JUNIOR,Pós-Graduação,MA,M
+388,178953,Expedito Netto,PSD,RO,https://www.camara.leg.br/internet/deputado/bandep/178953.jpg,dep.expeditonetto@camara.leg.br,EXPEDITO GONCALVES FERREIRA NETTO,Mestrado Incompleto,RO,M
+389,178969,Fábio Mitidieri,PSD,SE,https://www.camara.leg.br/internet/deputado/bandep/178969.jpg,dep.fabiomitidieri@camara.leg.br,FABIO CRUZ MITIDIERI,Superior,SE,M
+390,160587,Fábio Trad,PSD,MS,https://www.camara.leg.br/internet/deputado/bandep/160587.jpg,dep.fabiotrad@camara.leg.br,FÁBIO RICARDO TRAD,Mestrado,MS,M
+391,204392,Francisco Jr.,PSD,GO,https://www.camara.leg.br/internet/deputado/bandep/204392.jpg,dep.franciscojr@camara.leg.br,FRANCISCO RODRIGUES VALE JUNIOR,Mestrado,GO,M
+392,204465,Haroldo Cathedral,PSD,RR,https://www.camara.leg.br/internet/deputado/bandep/204465.jpg,dep.haroldocathedral@camara.leg.br,HAROLDO ALVES CAMPOS,Pós-Graduação,MG,M
+393,141450,Hugo Leal,PSD,RJ,https://www.camara.leg.br/internet/deputado/bandep/141450.jpg,dep.hugoleal@camara.leg.br,HUGO LEAL MELO DA SILVA,Pós-Graduação,MG,M
+394,178910,Joaquim Passarinho,PSD,PA,https://www.camara.leg.br/internet/deputado/bandep/178910.jpg,dep.joaquimpassarinho@camara.leg.br,JOAQUIM PASSARINHO PINTO DE SOUZA PORTO,Superior,PA,M
+395,217480,Jones Moura,PSD,RJ,https://www.camara.leg.br/internet/deputado/bandep/217480.jpg,dep.jonesmoura@camara.leg.br,JONES BARBOSA DE MOURA,,RJ,M
+396,160619,José Nunes,PSD,BA,https://www.camara.leg.br/internet/deputado/bandep/160619.jpg,dep.josenunes@camara.leg.br,JOSÉ NUNES SOARES,Superior,PE,M
+397,74317,Júlio Cesar,PSD,PI,https://www.camara.leg.br/internet/deputado/bandep/74317.jpg,dep.juliocesar@camara.leg.br,JÚLIO CÉSAR DE CARVALHO LIMA,Superior,PI,M
+398,204497,Júnior Ferrari,PSD,PA,https://www.camara.leg.br/internet/deputado/bandep/204497.jpg,dep.juniorferrari@camara.leg.br,JOÃO FERRARI JÚNIOR,Superior,PA,M
+399,204522,Marco Bertaiolli,PSD,SP,https://www.camara.leg.br/internet/deputado/bandep/204522.jpg,dep.marcobertaiolli@camara.leg.br,MARCO AURELIO BERTAIOLLI,Mestrado,SP,M
+400,178843,Marx Beltrão,PSD,AL,https://www.camara.leg.br/internet/deputado/bandep/178843.jpg,dep.marxbeltrao@camara.leg.br,MARX BELTRÃO LIMA SIQUEIRA,Superior,AL,M
+401,178895,Misael Varella,PSD,MG,https://www.camara.leg.br/internet/deputado/bandep/178895.jpg,dep.misaelvarella@camara.leg.br,MISAEL ARTUR FERREIRA VARELLA,Pós-Graduação,MG,M
+402,74165,Neucimar Fraga,PSD,ES,https://www.camara.leg.br/internet/deputado/bandep/74165.jpg,dep.neucimarfraga@camara.leg.br,NEUCIMAR FERREIRA FRAGA,Superior Incompleto,BA,M
+403,204573,Otto Alencar Filho,PSD,BA,https://www.camara.leg.br/internet/deputado/bandep/204573.jpg,dep.ottoalencarfilho@camara.leg.br,OTTO ROBERTO MENDONÇA DE ALENCAR FILHO,Pós-Graduação,BA,M
+404,74574,Paulo Magalhães,PSD,BA,https://www.camara.leg.br/internet/deputado/bandep/74574.jpg,dep.paulomagalhaes@camara.leg.br,PAULO SÉRGIO PARANHOS DE MAGALHÃES,Superior,BA,M
+405,216544,Paulo Vicente Caleffi,PSD,RS,https://www.camara.leg.br/internet/deputado/bandep/216544.jpg,dep.paulovicentecaleffi@camara.leg.br,PAULO VICENTE CALEFFI,Superior,RS,M
+406,215045,Pedro Augusto Palareti,PSD,RJ,https://www.camara.leg.br/internet/deputado/bandep/215045.jpg,dep.pedroaugustopalareti@camara.leg.br,PEDRO AUGUSTO PALARETI,Ensino Médio,SP,M
+407,205865,Reinhold Stephanes Junior,PSD,PR,https://www.camara.leg.br/internet/deputado/bandep/205865.jpg,dep.reinholdstephanesjunior@camara.leg.br,REINHOLD STEPHANES JUNIOR,Superior,PR,M
+408,204362,Ricardo Guidi,PSD,SC,https://www.camara.leg.br/internet/deputado/bandep/204362.jpg,dep.ricardoguidi@camara.leg.br,RICARDO ZANATTA GUIDI,Pós-Graduação,SC,M
+409,178930,Roman,PSD,PR,https://www.camara.leg.br/internet/deputado/bandep/178930.jpg,dep.roman@camara.leg.br,EVANDRO ROGERIO ROMAN,Doutorado,RS,M
+410,204387,Sargento Fahur,PSD,PR,https://www.camara.leg.br/internet/deputado/bandep/204387.jpg,dep.sargentofahur@camara.leg.br,GILSON CARDOSO FAHUR,Ensino Fundamental,PR,M
+411,73808,Sérgio Brito,PSD,BA,https://www.camara.leg.br/internet/deputado/bandep/73808.jpg,dep.sergiobrito@camara.leg.br,SÉRGIO LUÍS LACERDA BRITO,Superior,BA,M
+412,204557,Sidney Leite,PSD,AM,https://www.camara.leg.br/internet/deputado/bandep/204557.jpg,dep.sidneyleite@camara.leg.br,SIDNEY RICARDO DE OLIVEIRA LEITE,Superior,AM,M
+413,92776,Stefano Aguiar,PSD,MG,https://www.camara.leg.br/internet/deputado/bandep/92776.jpg,dep.stefanoaguiar@camara.leg.br,STEFANO AGUIAR DOS SANTOS,Superior,MG,M
+414,204396,Vermelho,PSD,PR,https://www.camara.leg.br/internet/deputado/bandep/204396.jpg,dep.vermelho@camara.leg.br,NELSI COGUETTO MARIA,Superior,PR,M
+415,204560,Adolfo Viana,PSDB,BA,https://www.camara.leg.br/internet/deputado/bandep/204560.jpg,dep.adolfoviana@camara.leg.br,ADOLFO VIANA DE CASTRO NETO,Superior,BA,M
+416,74646,Aécio Neves,PSDB,MG,https://www.camara.leg.br/internet/deputado/bandep/74646.jpg,dep.aecioneves@camara.leg.br,AÉCIO NEVES DA CUNHA,Superior,MG,M
+417,204544,Alexandre Frota,PSDB,SP,https://www.camara.leg.br/internet/deputado/bandep/204544.jpg,dep.alexandrefrota@camara.leg.br,ALEXANDRE FROTA DE ANDRADE,Ensino Médio,RJ,M
+418,204358,Beto Pereira,PSDB,MS,https://www.camara.leg.br/internet/deputado/bandep/204358.jpg,dep.betopereira@camara.leg.br,HUMBERTO REZENDE PEREIRA,Superior,MS,M
+419,207176,Bia Cavassa,PSDB,MS,https://www.camara.leg.br/internet/deputado/bandep/207176.jpg,dep.biacavassa@camara.leg.br,BEATRIZ ROSALIA RIBEIRO CAVASSA DE OLIVEIRA,Superior,MS,F
+420,160589,Bruna Furlan,PSDB,SP,https://www.camara.leg.br/internet/deputado/bandep/160589.jpg,dep.brunafurlan@camara.leg.br,BRUNA DIAS FURLAN,Pós-Graduação,SP,F
+421,74262,Carlos Sampaio,PSDB,SP,https://www.camara.leg.br/internet/deputado/bandep/74262.jpg,dep.carlossampaio@camara.leg.br,CARLOS HENRIQUE FOCESI SAMPAIO,Superior,SP,M
+422,178876,Célio Silveira,PSDB,GO,https://www.camara.leg.br/internet/deputado/bandep/178876.jpg,dep.celiosilveira@camara.leg.br,CELIO ANTONIO DA SILVEIRA,Superior,GO,M
+423,204496,Celso Sabino,PSDB,PA,https://www.camara.leg.br/internet/deputado/bandep/204496.jpg,dep.celsosabino@camara.leg.br,CELSO SABINO DE OLIVEIRA,Doutorado,PA,M
+424,204409,Daniel Trzeciak,PSDB,RS,https://www.camara.leg.br/internet/deputado/bandep/204409.jpg,dep.danieltrzeciak@camara.leg.br,DANIEL TRZECIAK DUARTE,Superior,RS,M
+425,62881,Danilo Forte,PSDB,CE,https://www.camara.leg.br/internet/deputado/bandep/62881.jpg,dep.daniloforte@camara.leg.br,FRANCISCO DANILO BASTOS FORTE,Superior,CE,M
+426,160758,Domingos Sávio,PSDB,MG,https://www.camara.leg.br/internet/deputado/bandep/160758.jpg,dep.domingossavio@camara.leg.br,DOMINGOS SÁVIO CAMPOS RESENDE,Pós-Graduação,MG,M
+427,204421,Edna Henrique,PSDB,PB,https://www.camara.leg.br/internet/deputado/bandep/204421.jpg,dep.ednahenrique@camara.leg.br,EDNACE ALVES SILVESTRE HENRIQUE,Superior,BA,F
+428,74655,Eduardo Barbosa,PSDB,MG,https://www.camara.leg.br/internet/deputado/bandep/74655.jpg,dep.eduardobarbosa@camara.leg.br,EDUARDO LUIZ BARROS BARBOSA,Pós-Graduação,MG,M
+429,178977,Eduardo Cury,PSDB,SP,https://www.camara.leg.br/internet/deputado/bandep/178977.jpg,dep.eduardocury@camara.leg.br,EDUARDO PEDROSA CURY,Superior,SP,M
+430,178966,Geovania de Sá,PSDB,SC,https://www.camara.leg.br/internet/deputado/bandep/178966.jpg,dep.geovaniadesa@camara.leg.br,Geovânia de Sá,Pós-Graduação,SC,F
+431,204404,Lucas Redecker,PSDB,RS,https://www.camara.leg.br/internet/deputado/bandep/204404.jpg,dep.lucasredecker@camara.leg.br,LUCAS BELLO REDECKER,Superior Incompleto,RS,M
+432,204471,Mara Rocha,PSDB,AC,https://www.camara.leg.br/internet/deputado/bandep/204471.jpg,dep.mararocha@camara.leg.br,CYLMARA FERNANDES DA ROCHA GRIPP,Superior,AC,F
+433,178956,Mariana Carvalho,PSDB,RO,https://www.camara.leg.br/internet/deputado/bandep/178956.jpg,dep.marianacarvalho@camara.leg.br,MARIANA FONSECA RIBEIRO CARVALHO DE MORAES,Superior,SP,F
+434,178984,Miguel Haddad,PSDB,SP,https://www.camara.leg.br/internet/deputado/bandep/178984.jpg,dep.miguelhaddad@camara.leg.br,MIGUEL MOUBADDA HADDAD,Superior,SP,M
+435,74352,Nilson Pinto,PSDB,PA,https://www.camara.leg.br/internet/deputado/bandep/74352.jpg,dep.nilsonpinto@camara.leg.br,NILSON PINTO DE OLIVEIRA,Doutorado,PA,M
+436,141515,Otavio Leite,PSDB,RJ,https://www.camara.leg.br/internet/deputado/bandep/141515.jpg,dep.otavioleite@camara.leg.br,OTAVIO SANTOS SILVA LEITE,Mestrado Incompleto,SE,M
+437,141516,Paulo Abi-Ackel,PSDB,MG,https://www.camara.leg.br/internet/deputado/bandep/141516.jpg,dep.pauloabiackel@camara.leg.br,PAULO ABI-ACKEL,Mestrado,MG,M
+438,178912,Pedro Cunha Lima,PSDB,PB,https://www.camara.leg.br/internet/deputado/bandep/178912.jpg,dep.pedrocunhalima@camara.leg.br,PEDRO OLIVEIRA CUNHA LIMA,Mestrado,PB,M
+439,178844,Pedro Vilela,PSDB,AL,https://www.camara.leg.br/internet/deputado/bandep/178844.jpg,dep.pedrovilela@camara.leg.br,PEDRO TORRES BRANDÃO VILELA,Superior,AL,M
+440,141531,Rodrigo de Castro,PSDB,MG,https://www.camara.leg.br/internet/deputado/bandep/141531.jpg,dep.rodrigodecastro@camara.leg.br,RODRIGO BATISTA DE CASTRO,Mestrado,MG,M
+441,204357,Rose Modesto,PSDB,MS,https://www.camara.leg.br/internet/deputado/bandep/204357.jpg,dep.rosemodesto@camara.leg.br,ROSIANE MODESTO  DE OLIVEIRA,Superior,MS,F
+442,178935,Rossoni,PSDB,PR,https://www.camara.leg.br/internet/deputado/bandep/178935.jpg,dep.rossoni@camara.leg.br,VALDIR LUIZ ROSSONI,Superior,PR,M
+443,160635,Ruy Carneiro,PSDB,PB,https://www.camara.leg.br/internet/deputado/bandep/160635.jpg,dep.ruycarneiro@camara.leg.br,RUY MANUEL CARNEIRO BARBOSA DE ACA BELCHIOR,Superior,PB,M
+444,178990,Samuel Moreira,PSDB,SP,https://www.camara.leg.br/internet/deputado/bandep/178990.jpg,dep.samuelmoreira@camara.leg.br,SAMUEL MOREIRA DA SILVA JUNIOR,Superior,MG,M
+445,178961,Shéridan,PSDB,RR,https://www.camara.leg.br/internet/deputado/bandep/178961.jpg,dep.sheridan@camara.leg.br,SHÉRIDAN ESTÉRFANY OLIVEIRA,Superior,RR,F
+446,204466,Tereza Nelma,PSDB,AL,https://www.camara.leg.br/internet/deputado/bandep/204466.jpg,dep.terezanelma@camara.leg.br,TEREZA NELMA DA SILVA PORTO VIANA SOARES,Pós-Graduação,AL,F
+447,141553,Vanderlei Macris,PSDB,SP,https://www.camara.leg.br/internet/deputado/bandep/141553.jpg,dep.vanderleimacris@camara.leg.br,VANDERLEI MACRIS,Superior,SP,M
+448,178992,Vitor Lippi,PSDB,SP,https://www.camara.leg.br/internet/deputado/bandep/178992.jpg,dep.vitorlippi@camara.leg.br,VITOR LIPPI,Superior,SP,M
+449,204521,Abou Anni,PSL,SP,https://www.camara.leg.br/internet/deputado/bandep/204521.jpg,dep.abouanni@camara.leg.br,PAULO SERGIO ABOU ANNI,Superior,SP,M
+450,204545,Alê Silva,PSL,MG,https://www.camara.leg.br/internet/deputado/bandep/204545.jpg,dep.alesilva@camara.leg.br,ALESSANDRA DA SILVA,Pós-Graduação,RJ,F
+451,204544,Alexandre Frota,PSL,SP,https://www.camara.leg.br/internet/deputado/bandep/204544.jpg,dep.alexandrefrota@camara.leg.br,ALEXANDRE FROTA DE ANDRADE,Ensino Médio,RJ,M
+452,204400,Aline Sleutjes,PSL,PR,https://www.camara.leg.br/internet/deputado/bandep/204400.jpg,dep.alinesleutjes@camara.leg.br,ALINE SLEUTJES,Pós-Graduação,PR,F
+453,204374,Bia Kicis,PSL,DF,https://www.camara.leg.br/internet/deputado/bandep/204374.jpg,dep.biakicis@camara.leg.br,BEATRIZ KICIS TORRENTS DE SORDI,Superior,RJ,F
+454,204388,Bibo Nunes,PSL,RS,https://www.camara.leg.br/internet/deputado/bandep/204388.jpg,dep.bibonunes@camara.leg.br,ALCIBIO MESQUITA BIBO NUNES,Superior Incompleto,RS,M
+455,204502,Bozzella,PSL,SP,https://www.camara.leg.br/internet/deputado/bandep/204502.jpg,dep.bozzella@camara.leg.br,NICOLINO BOZZELLA JUNIOR,Superior,SP,M
+456,204507,Carla Zambelli,PSL,SP,https://www.camara.leg.br/internet/deputado/bandep/204507.jpg,dep.carlazambelli@camara.leg.br,CARLA ZAMBELLI SALGADO DE OLIVEIRA,Pós-Graduação,SP,F
+457,204460,Carlos Jordy,PSL,RJ,https://www.camara.leg.br/internet/deputado/bandep/204460.jpg,dep.carlosjordy@camara.leg.br,Carlos Roberto Coelho de Mattos Júnior,Superior,RJ,M
+458,204369,Caroline de Toni,PSL,SC,https://www.camara.leg.br/internet/deputado/bandep/204369.jpg,dep.carolinedetoni@camara.leg.br,CAROLINE RODRIGUES DE TONI,Mestrado,SC,F
+459,204496,Celso Sabino,PSL,PA,https://www.camara.leg.br/internet/deputado/bandep/204496.jpg,dep.celsosabino@camara.leg.br,CELSO SABINO DE OLIVEIRA,Doutorado,PA,M
+460,204490,Charlles Evangelista,PSL,MG,https://www.camara.leg.br/internet/deputado/bandep/204490.jpg,dep.charllesevangelista@camara.leg.br,CHARLLES THOMACELLI EVANGELISTA,Superior,MG,M
+461,204462,Chris Tonietto,PSL,RJ,https://www.camara.leg.br/internet/deputado/bandep/204462.jpg,dep.christonietto@camara.leg.br,CHRISTINE NOGUEIRA DOS REIS TONIETTO,Superior,RJ,F
+462,204376,Coronel Armando,PSL,SC,https://www.camara.leg.br/internet/deputado/bandep/204376.jpg,dep.coronelarmando@camara.leg.br,LUIZ ARMANDO SCHROEDER REIS,Pós-Graduação,RJ,M
+463,204378,Coronel Chrisóstomo,PSL,RO,https://www.camara.leg.br/internet/deputado/bandep/204378.jpg,dep.coronelchrisostomo@camara.leg.br,JOAO CHRISÓSTOMO DE MOURA,Superior,AM,M
+464,204514,Coronel Tadeu,PSL,SP,https://www.camara.leg.br/internet/deputado/bandep/204514.jpg,dep.coroneltadeu@camara.leg.br,MARCIO TADEU ANHAIA DE LEMOS,Mestrado,SP,M
+465,204367,Daniel Freitas,PSL,SC,https://www.camara.leg.br/internet/deputado/bandep/204367.jpg,dep.danielfreitas@camara.leg.br,DANIEL COSTA DE FREITAS,Superior,SC,M
+466,204454,Daniel Silveira,PSL,RJ,https://www.camara.leg.br/internet/deputado/bandep/204454.jpg,dep.danielsilveira@camara.leg.br,DANIEL LUCIO DA SILVEIRA,Superior,RJ,M
+467,204451,Delegado Antônio Furtado,PSL,RJ,https://www.camara.leg.br/internet/deputado/bandep/204451.jpg,dep.delegadoantoniofurtado@camara.leg.br,ANTÔNIO DA LUZ FURTADO,Superior,RJ,M
+468,204512,Delegado Marcelo Freitas,PSL,MG,https://www.camara.leg.br/internet/deputado/bandep/204512.jpg,dep.delegadomarcelofreitas@camara.leg.br,MARCELO EDUARDO FREITAS,Doutorado,MG,M
+469,204569,Delegado Pablo,PSL,AM,https://www.camara.leg.br/internet/deputado/bandep/204569.jpg,dep.delegadopablo@camara.leg.br,PABLO OLIVA SOUZA,Mestrado,AM,M
+470,164359,Delegado Waldir,PSL,GO,https://www.camara.leg.br/internet/deputado/bandep/164359.jpg,dep.delegadowaldir@camara.leg.br,WALDIR SOARES DE OLIVEIRA,Superior,PR,M
+471,204351,Dr. Luiz Ovando,PSL,MS,https://www.camara.leg.br/internet/deputado/bandep/204351.jpg,dep.dr.luizovando@camara.leg.br,LUIZ ALBERTO OVANDO,Superior,MS,M
+472,81297,Dra. Soraya Manato,PSL,ES,https://www.camara.leg.br/internet/deputado/bandep/81297.jpg,dep.dra.sorayamanato@camara.leg.br,SORAYA DE SOUZA MANNATO,Pós-Graduação,ES,F
+473,92346,Eduardo Bolsonaro,PSL,SP,https://www.camara.leg.br/internet/deputado/bandep/92346.jpg,dep.eduardobolsonaro@camara.leg.br,EDUARDO NANTES BOLSONARO,Superior,RJ,M
+474,204368,Fabio Schiochet,PSL,SC,https://www.camara.leg.br/internet/deputado/bandep/204368.jpg,dep.fabioschiochet@camara.leg.br,FÁBIO LUIZ SCHIOCHET FILHO,Superior Incompleto,SC,M
+475,204477,Felício Laterça,PSL,RJ,https://www.camara.leg.br/internet/deputado/bandep/204477.jpg,dep.feliciolaterca@camara.leg.br,FELÍCIO LATERÇA DE ALMEIDA,Superior,RJ,M
+476,204398,Felipe Francischini,PSL,PR,https://www.camara.leg.br/internet/deputado/bandep/204398.jpg,dep.felipefrancischini@camara.leg.br,LUIS FELIPE BONATTO FRANCISCHINI,Superior,PR,M
+477,204411,Filipe Barros,PSL,PR,https://www.camara.leg.br/internet/deputado/bandep/204411.jpg,dep.filipebarros@camara.leg.br,FILIPE BARROS BAPTISTA DE TOLEDO RIBEIRO,Superior,PR,M
+478,204473,General Girão,PSL,RN,https://www.camara.leg.br/internet/deputado/bandep/204473.jpg,dep.generalgirao@camara.leg.br,ELIÉSER GIRÃO MONTEIRO FILHO,Doutorado,CE,M
+479,204484,General Peternelli,PSL,SP,https://www.camara.leg.br/internet/deputado/bandep/204484.jpg,dep.generalpeternelli@camara.leg.br,ROBERTO SEBASTIÃO PETERNELLI JUNIOR,Doutorado,SP,M
+480,204513,Guiga Peixoto,PSL,SP,https://www.camara.leg.br/internet/deputado/bandep/204513.jpg,dep.guigapeixoto@camara.leg.br,JOSÉ GUILHERME NEGRÃO PEIXOTO,Pós-Graduação,SP,M
+481,204442,Gurgel,PSL,RJ,https://www.camara.leg.br/internet/deputado/bandep/204442.jpg,dep.gurgel@camara.leg.br,JOÃO CARLOS SOARES GURGEL,Pós-Graduação,RJ,M
+482,204548,Heitor Freire,PSL,CE,https://www.camara.leg.br/internet/deputado/bandep/204548.jpg,dep.heitorfreire@camara.leg.br,HEITOR RODRIGO PEREIRA FREIRE,Mestrado,CE,M
+483,204444,Helio Lopes,PSL,RJ,https://www.camara.leg.br/internet/deputado/bandep/204444.jpg,dep.heliolopes@camara.leg.br,HELIO FERNANDO BARBOSA LOPES,Superior,RJ,M
+484,204546,Joice Hasselmann,PSL,SP,https://www.camara.leg.br/internet/deputado/bandep/204546.jpg,dep.joicehasselmann@camara.leg.br,JOICE CRISTINA HASSELMANN,Superior,PR,F
+485,204420,Julian Lemos,PSL,PB,https://www.camara.leg.br/internet/deputado/bandep/204420.jpg,dep.julianlemos@camara.leg.br,GULLIEM CHARLES BEZERRA LEMOS,Superior,PB,M
+486,204520,Junio Amaral,PSL,MG,https://www.camara.leg.br/internet/deputado/bandep/204520.jpg,dep.junioamaral@camara.leg.br,GERALDO JUNIO DO AMARAL,Superior Incompleto,MG,M
+487,204547,Léo Motta,PSL,MG,https://www.camara.leg.br/internet/deputado/bandep/204547.jpg,dep.leomotta@camara.leg.br,ELIEL MÁRCIO DO CARMO,Superior Incompleto,MG,M
+488,204382,Loester Trutis,PSL,MS,https://www.camara.leg.br/internet/deputado/bandep/204382.jpg,dep.loestertrutis@camara.leg.br,LOESTER CARLOS GOMES DE SOUZA,Superior,MS,M
+489,196358,Lourival Gomes,PSL,RJ,https://www.camara.leg.br/internet/deputado/bandep/196358.jpg,dep.lourivalgomes@camara.leg.br,LOURIVAL GOMES DE ALMEIDA,Ensino Fundamental,RJ,M
+490,74478,Luciano Bivar,PSL,PE,https://www.camara.leg.br/internet/deputado/bandep/74478.jpg,dep.lucianobivar@camara.leg.br,LUCIANO CALDAS BIVAR,Superior,PE,M
+491,204455,Luiz Lima,PSL,RJ,https://www.camara.leg.br/internet/deputado/bandep/204455.jpg,dep.luizlima@camara.leg.br,LUIZ EDUARDO CARNEIRO DA SILVA DE SOUZA LIMA,Superior,RJ,M
+492,204526,Luiz Philippe de Orleans e Bragança,PSL,SP,https://www.camara.leg.br/internet/deputado/bandep/204526.jpg,dep.luizphilippedeorleansebraganca@camara.leg.br,LUIZ PHILIPPE DE ORLEANS BRAGANÇA,Mestrado,RJ,M
+493,204458,Major Fabiana,PSL,RJ,https://www.camara.leg.br/internet/deputado/bandep/204458.jpg,dep.majorfabiana@camara.leg.br,FABIANA SILVA DE SOUZA POUBEL,Superior,RJ,F
+494,179000,Marcelo Álvaro Antônio,PSL,MG,https://www.camara.leg.br/internet/deputado/bandep/179000.jpg,dep.marceloalvaroantonio@camara.leg.br,MARCELO HENRIQUE TEIXEIRA DIAS,Superior,MG,M
+495,205863,Marcelo Brum,PSL,RS,https://www.camara.leg.br/internet/deputado/bandep/205863.jpg,dep.marcelobrum@camara.leg.br,MARCELO DE BRUM DA COSTA,Ensino Médio Incompleto,RS,M
+496,204452,Márcio Labre,PSL,RJ,https://www.camara.leg.br/internet/deputado/bandep/204452.jpg,dep.marciolabre@camara.leg.br,MÁRCIO DA SILVEIRA LABRE,Ensino Técnico,RJ,M
+497,204449,Nelson Barbudo,PSL,MT,https://www.camara.leg.br/internet/deputado/bandep/204449.jpg,dep.nelsonbarbudo@camara.leg.br,NELSON NED PREVIDENTE,Ensino Médio,SP,M
+498,204415,Nereu Crispim,PSL,RS,https://www.camara.leg.br/internet/deputado/bandep/204415.jpg,dep.nereucrispim@camara.leg.br,NEREU CRISPIM,Superior,RS,M
+499,204479,Nicoletti,PSL,RR,https://www.camara.leg.br/internet/deputado/bandep/204479.jpg,dep.nicoletti@camara.leg.br,ANTONIO CARLOS NICOLETTI,Superior,RS,M
+500,204446,Professor Joziel,PSL,RJ,https://www.camara.leg.br/internet/deputado/bandep/204446.jpg,dep.professorjoziel@camara.leg.br,JOZIEL FERREIRA CARLOS,Pós-Graduação,RJ,M
+501,204565,Professora Dayane Pimentel,PSL,BA,https://www.camara.leg.br/internet/deputado/bandep/204565.jpg,dep.professoradayanepimentel@camara.leg.br,DAYANE JAMILLE CARNEIRO DOS SANTOS PIMENTEL,Pós-Graduação,BA,F
+502,204416,Sanderson,PSL,RS,https://www.camara.leg.br/internet/deputado/bandep/204416.jpg,dep.sanderson@camara.leg.br,UBIRATAN ANTUNES SANDERSON,Pós-Graduação,RS,M
+503,179587,Vitor Hugo,PSL,GO,https://www.camara.leg.br/internet/deputado/bandep/179587.jpg,dep.vitorhugo@camara.leg.br,VITOR HUGO DE ARAUJO ALMEIDA,Mestrado,BA,M
+504,204509,Áurea Carolina,PSOL,MG,https://www.camara.leg.br/internet/deputado/bandep/204509.jpg,dep.aureacarolina@camara.leg.br,ÁUREA CAROLINA DE FREITAS E SILVA,Mestrado,PA,F
+505,205548,David Miranda,PSOL,RJ,https://www.camara.leg.br/internet/deputado/bandep/205548.jpg,dep.davidmiranda@camara.leg.br,DAVID MICHAEL DOS SANTOS MIRANDA,Superior,RJ,M
+506,204407,Fernanda Melchionna,PSOL,RS,https://www.camara.leg.br/internet/deputado/bandep/204407.jpg,dep.fernandamelchionna@camara.leg.br,FERNANDA MELCHIONNA E SILVA,Superior,RS,F
+507,152605,Glauber Braga,PSOL,RJ,https://www.camara.leg.br/internet/deputado/bandep/152605.jpg,dep.glauberbraga@camara.leg.br,GLAUBER DE MEDEIROS BRAGA,Superior,RJ,M
+508,73531,Ivan Valente,PSOL,SP,https://www.camara.leg.br/internet/deputado/bandep/73531.jpg,dep.ivanvalente@camara.leg.br,IVAN VALENTE,Superior,SP,M
+509,74784,Luiza Erundina,PSOL,SP,https://www.camara.leg.br/internet/deputado/bandep/74784.jpg,dep.luizaerundina@camara.leg.br,LUIZA ERUNDINA DE SOUSA,Mestrado,PB,F
+510,76874,Marcelo Freixo,PSOL,RJ,https://www.camara.leg.br/internet/deputado/bandep/76874.jpg,dep.marcelofreixo@camara.leg.br,MARCELO RIBEIRO FREIXO,Superior,RJ,M
+511,204535,Sâmia Bomfim,PSOL,SP,https://www.camara.leg.br/internet/deputado/bandep/204535.jpg,dep.samiabomfim@camara.leg.br,SAMIA DE SOUZA BOMFIM,Superior,SP,F
+512,204464,Talíria Petrone,PSOL,RJ,https://www.camara.leg.br/internet/deputado/bandep/204464.jpg,dep.taliriapetrone@camara.leg.br,TALIRIA PETRONE SOARES,Mestrado Incompleto,RJ,F
+513,215044,Vivi Reis,PSOL,PA,https://www.camara.leg.br/internet/deputado/bandep/215044.jpg,dep.vivireis@camara.leg.br,VIVIANE DA COSTA REIS,Superior,PA,F
+514,160508,Afonso Florence,PT,BA,https://www.camara.leg.br/internet/deputado/bandep/160508.jpg,dep.afonsoflorence@camara.leg.br,AFONSO BANDEIRA FLORENCE,Mestrado,BA,M
+515,204495,Airton Faleiro,PT,PA,https://www.camara.leg.br/internet/deputado/bandep/204495.jpg,dep.airtonfaleiro@camara.leg.br,AIRTON LUIZ FALEIRO,Ensino Fundamental,RS,M
+516,204501,Alencar Santana Braga,PT,SP,https://www.camara.leg.br/internet/deputado/bandep/204501.jpg,dep.alencarsantanabraga@camara.leg.br,ALENCAR SANTANA BRAGA,Superior,SP,M
+517,204503,Alexandre Padilha,PT,SP,https://www.camara.leg.br/internet/deputado/bandep/204503.jpg,dep.alexandrepadilha@camara.leg.br,ALEXANDRE ROCHA SANTOS PADILHA,Pós-Graduação,SP,M
+518,73433,Arlindo Chinaglia,PT,SP,https://www.camara.leg.br/internet/deputado/bandep/73433.jpg,dep.arlindochinaglia@camara.leg.br,ARLINDO CHIGNALIA JUNIOR,Pós-Graduação,SP,M
+519,73701,Benedita da Silva,PT,RJ,https://www.camara.leg.br/internet/deputado/bandep/73701.jpg,dep.beneditadasilva@camara.leg.br,BENEDITA SOUZA DA SILVA SAMPAIO,Superior,RJ,F
+520,141335,Beto Faro,PT,PA,https://www.camara.leg.br/internet/deputado/bandep/141335.jpg,dep.betofaro@camara.leg.br,JOSÉ ROBERTO OLIVEIRA FARO,Secundário,PA,M
+521,160538,Bohn Gass,PT,RS,https://www.camara.leg.br/internet/deputado/bandep/160538.jpg,dep.bohngass@camara.leg.br,ELVINO JOSÉ BOHN GASS,Pós-Graduação,RS,M
+522,204426,Carlos Veras,PT,PE,https://www.camara.leg.br/internet/deputado/bandep/204426.jpg,dep.carlosveras@camara.leg.br,JOSÉ CARLOS VERAS DOS SANTOS,Superior,PE,M
+523,141398,Carlos Zarattini,PT,SP,https://www.camara.leg.br/internet/deputado/bandep/141398.jpg,dep.carloszarattini@camara.leg.br,CARLOS ALBERTO ROLIM ZARATTINI,Superior,SP,M
+524,204370,Célio Moura,PT,TO,https://www.camara.leg.br/internet/deputado/bandep/204370.jpg,dep.celiomoura@camara.leg.br,CELIO ALVES DE MOURA,Superior,MG,M
+525,132504,Enio Verri,PT,PR,https://www.camara.leg.br/internet/deputado/bandep/132504.jpg,dep.enioverri@camara.leg.br,ENIO JOSÉ VERRI,Doutorado,PR,M
+526,160575,Erika Kokay,PT,DF,https://www.camara.leg.br/internet/deputado/bandep/160575.jpg,dep.erikakokay@camara.leg.br,ÉRIKA JUCÁ KOKAY,Superior,CE,F
+527,204393,Frei Anastacio Ribeiro,PT,PB,https://www.camara.leg.br/internet/deputado/bandep/204393.jpg,dep.freianastacioribeiro@camara.leg.br,ANTONIO RIBEIRO,Superior,PB,M
+528,107283,Gleisi Hoffmann,PT,PR,https://www.camara.leg.br/internet/deputado/bandep/107283.jpg,dep.gleisihoffmann@camara.leg.br,GLEISI HELENA HOFFMANN,Pós-Graduação,PR,F
+529,178873,Helder Salomão,PT,ES,https://www.camara.leg.br/internet/deputado/bandep/178873.jpg,dep.heldersalomao@camara.leg.br,HELDER IGNACIO SALOMAO,Pós-Graduação,ES,M
+530,73482,Henrique Fontana,PT,RS,https://www.camara.leg.br/internet/deputado/bandep/73482.jpg,dep.henriquefontana@camara.leg.br,HENRIQUE FONTANA JÚNIOR,Superior,RS,M
+531,178970,João Daniel,PT,SE,https://www.camara.leg.br/internet/deputado/bandep/178970.jpg,dep.joaodaniel@camara.leg.br,JOAO SOMARIVA DANIEL,Ensino Médio,SC,M
+532,178857,Jorge Solla,PT,BA,https://www.camara.leg.br/internet/deputado/bandep/178857.jpg,dep.jorgesolla@camara.leg.br,JORGE JOSE SANTOS PEREIRA SOLLA,Doutorado,BA,M
+533,141464,José Airton Félix Cirilo,PT,CE,https://www.camara.leg.br/internet/deputado/bandep/141464.jpg,dep.joseairtonfelixcirilo@camara.leg.br,JOSÉ AIRTON FÉLIX CIRILO DA SILVA,Mestrado,CE,M
+534,141470,José Guimarães,PT,CE,https://www.camara.leg.br/internet/deputado/bandep/141470.jpg,dep.joseguimaraes@camara.leg.br,JOSÉ NOBRE GUIMARÃES,Superior,CE,M
+535,204555,José Ricardo,PT,AM,https://www.camara.leg.br/internet/deputado/bandep/204555.jpg,dep.josericardo@camara.leg.br,JOSÉ RICARDO WENDLING,Pós-Graduação,RS,M
+536,209189,Joseildo Ramos,PT,BA,https://www.camara.leg.br/internet/deputado/bandep/209189.jpg,dep.joseildoramos@camara.leg.br,JOSEILDO RIBEIRO RAMOS,Superior,BA,M
+537,178825,Leo de Brito,PT,AC,https://www.camara.leg.br/internet/deputado/bandep/178825.jpg,dep.leodebrito@camara.leg.br,LEONARDO CUNHA DE BRITO,Mestrado,AC,M
+538,74156,Leonardo Monteiro,PT,MG,https://www.camara.leg.br/internet/deputado/bandep/74156.jpg,dep.leonardomonteiro@camara.leg.br,JOSÉ LEONARDO COSTA MONTEIRO,Superior,MG,M
+539,178866,Luizianne Lins,PT,CE,https://www.camara.leg.br/internet/deputado/bandep/178866.jpg,dep.luiziannelins@camara.leg.br,LUIZIANNE DE OLIVEIRA LINS,Mestrado Incompleto,CE,F
+540,160535,Marcon,PT,RS,https://www.camara.leg.br/internet/deputado/bandep/160535.jpg,dep.marcon@camara.leg.br,DIONILSO MATEUS MARCON,Primário Incompleto,RS,M
+541,74398,Maria do Rosário,PT,RS,https://www.camara.leg.br/internet/deputado/bandep/74398.jpg,dep.mariadorosario@camara.leg.br,MARIA DO ROSÁRIO NUNES,Pós-Graduação,RS,F
+542,204428,Marília Arraes,PT,PE,https://www.camara.leg.br/internet/deputado/bandep/204428.jpg,dep.mariliaarraes@camara.leg.br,MARÍLIA VALENÇA ROCHA ARRAES DE ALENCAR,Superior,PE,F
+543,188097,Merlong Solano,PT,PI,https://www.camara.leg.br/internet/deputado/bandep/188097.jpg,dep.merlongsolano@camara.leg.br,MERLONG SOLANO NOGUEIRA,Mestrado,PI,M
+544,204453,Natália Bonavides,PT,RN,https://www.camara.leg.br/internet/deputado/bandep/204453.jpg,dep.nataliabonavides@camara.leg.br,NATÁLIA BASTOS BONAVIDES,Mestrado,RN,F
+545,178986,Nilto Tatto,PT,SP,https://www.camara.leg.br/internet/deputado/bandep/178986.jpg,dep.niltotatto@camara.leg.br,NILTO IGNACIO TATTO,Superior,RS,M
+546,74159,Odair Cunha,PT,MG,https://www.camara.leg.br/internet/deputado/bandep/74159.jpg,dep.odaircunha@camara.leg.br,ODAIR JOSÉ DA CUNHA,Superior,SP,M
+547,160556,Padre João,PT,MG,https://www.camara.leg.br/internet/deputado/bandep/160556.jpg,dep.padrejoao@camara.leg.br,JOÃO CARLOS SIQUEIRA,Superior,MG,M
+548,74160,Patrus Ananias,PT,MG,https://www.camara.leg.br/internet/deputado/bandep/74160.jpg,dep.patrusananias@camara.leg.br,PATRUS ANANIAS DE SOUZA,Mestrado,MG,M
+549,171617,Paulão,PT,AL,https://www.camara.leg.br/internet/deputado/bandep/171617.jpg,dep.paulao@camara.leg.br,PAULO FERNANDO DOS SANTOS,Pós-Graduação,AL,M
+550,204492,Paulo Guedes,PT,MG,https://www.camara.leg.br/internet/deputado/bandep/204492.jpg,dep.pauloguedes@camara.leg.br,PAULO JOSE CARLOS GUEDES,Superior Incompleto,MG,M
+551,74400,Paulo Pimenta,PT,RS,https://www.camara.leg.br/internet/deputado/bandep/74400.jpg,dep.paulopimenta@camara.leg.br,PAULO ROBERTO SEVERO PIMENTA,Superior,RS,M
+552,141488,Paulo Teixeira,PT,SP,https://www.camara.leg.br/internet/deputado/bandep/141488.jpg,dep.pauloteixeira@camara.leg.br,LUIZ PAULO TEIXEIRA FERREIRA,Mestrado,SP,M
+553,160604,Pedro Uczai,PT,SC,https://www.camara.leg.br/internet/deputado/bandep/160604.jpg,dep.pedrouczai@camara.leg.br,PEDRO FRANCISCO UCZAI,Mestrado,SC,M
+554,204467,Professora Rosa Neide,PT,MT,https://www.camara.leg.br/internet/deputado/bandep/204467.jpg,dep.professorarosaneide@camara.leg.br,ROSA NEIDE SANDES DE ALMEIDA,Mestrado,BA,F
+555,74161,Reginaldo Lopes,PT,MG,https://www.camara.leg.br/internet/deputado/bandep/74161.jpg,dep.reginaldolopes@camara.leg.br,REGINALDO LÁZARO DE OLIVEIRA LOPES,Superior,MG,M
+556,178925,Rejane Dias,PT,PI,https://www.camara.leg.br/internet/deputado/bandep/178925.jpg,dep.rejanedias@camara.leg.br,REJANE RIBEIRO SOUSA DIAS,Superior,PI,F
+557,204480,Rogério Correia,PT,MG,https://www.camara.leg.br/internet/deputado/bandep/204480.jpg,dep.rogeriocorreia@camara.leg.br,ROGÉRIO CORREIA DE MOURA BAPTISTA,Superior,MG,M
+558,74371,Rubens Otoni,PT,GO,https://www.camara.leg.br/internet/deputado/bandep/74371.jpg,dep.rubensotoni@camara.leg.br,RUBENS OTONI GOMIDE,Superior,GO,M
+559,73604,Rui Falcão,PT,SP,https://www.camara.leg.br/internet/deputado/bandep/73604.jpg,dep.ruifalcao@camara.leg.br,RUI GOETHE DA COSTA FALCÃO,Superior,MG,M
+560,160610,Valmir Assunção,PT,BA,https://www.camara.leg.br/internet/deputado/bandep/160610.jpg,dep.valmirassuncao@camara.leg.br,VALMIR CARLOS DA ASSUNÇÃO,Ensino Fundamental,BA,M
+561,74376,Vander Loubet,PT,MS,https://www.camara.leg.br/internet/deputado/bandep/74376.jpg,dep.vanderloubet@camara.leg.br,VANDER LUIZ DOS SANTOS LOUBET,Superior,MS,M
+562,74283,Vicentinho,PT,SP,https://www.camara.leg.br/internet/deputado/bandep/74283.jpg,dep.vicentinho@camara.leg.br,VICENTE PAULO DA SILVA,Pós-Graduação,RN,M
+563,160569,Waldenor Pereira,PT,BA,https://www.camara.leg.br/internet/deputado/bandep/160569.jpg,dep.waldenorpereira@camara.leg.br,WALDENOR ALVES PEREIRA FILHO,Doutorado Incompleto,BA,M
+564,178889,Zé Carlos,PT,MA,https://www.camara.leg.br/internet/deputado/bandep/178889.jpg,dep.zecarlos@camara.leg.br,JOSÉ CARLOS NUNES JÚNIOR,Superior,MA,M
+565,204559,Zé Neto,PT,BA,https://www.camara.leg.br/internet/deputado/bandep/204559.jpg,dep.zeneto@camara.leg.br,JOSÉ CERQUEIRA DE SANTANA NETO,Pós-Graduação,BA,M
+566,160592,Zeca Dirceu,PT,PR,https://www.camara.leg.br/internet/deputado/bandep/160592.jpg,dep.zecadirceu@camara.leg.br,JOSÉ CARLOS BECKER DE OLIVEIRA E SILVA,Superior,PR,M
+567,204500,Eduardo Costa,PTB,PA,https://www.camara.leg.br/internet/deputado/bandep/204500.jpg,dep.eduardocosta@camara.leg.br,JOSE EDUARDO PEREIRA DA COSTA,Superior,PA,M
+568,198783,Emanuel Pinheiro Neto,PTB,MT,https://www.camara.leg.br/internet/deputado/bandep/198783.jpg,dep.emanuelpinheironeto@camara.leg.br,EMANUEL PINHEIRO DA SILVA PRIMO,Superior,MT,M
+569,204410,Luisa Canziani,PTB,PR,https://www.camara.leg.br/internet/deputado/bandep/204410.jpg,dep.luisacanziani@camara.leg.br,LUISA CANZIANI DOS SANTOS SILVEIRA,Superior,PR,F
+570,133810,Marcelo Moraes,PTB,RS,https://www.camara.leg.br/internet/deputado/bandep/133810.jpg,dep.marcelomoraes@camara.leg.br,MARCELO PIRES MORAES,Superior Incompleto,RS,M
+571,75431,Maurício Dziedricki,PTB,RS,https://www.camara.leg.br/internet/deputado/bandep/75431.jpg,dep.mauriciodziedricki@camara.leg.br,MAURÍCIO ALEXANDRE DZIEDRICKI,Superior,PR,M
+572,194260,Nivaldo Albuquerque,PTB,AL,https://www.camara.leg.br/internet/deputado/bandep/194260.jpg,dep.nivaldoalbuquerque@camara.leg.br,NIVALDO FERREIRA DE ALBUQUERQUE NETO,Superior Incompleto,AL,M
+573,204538,Paulo Bengtson,PTB,PA,https://www.camara.leg.br/internet/deputado/bandep/204538.jpg,dep.paulobengtson@camara.leg.br,PAULO EDUARDO MAESTRI BENGTSON,Superior,BA,M
+574,90201,Pedro Augusto Bezerra,PTB,CE,https://www.camara.leg.br/internet/deputado/bandep/90201.jpg,dep.pedroaugustobezerra@camara.leg.br,PEDRO AUGUSTO GEROMEL BEZERRA DE MENEZES,Pós-Graduação,CE,M
+575,122974,Pedro Lucas Fernandes,PTB,MA,https://www.camara.leg.br/internet/deputado/bandep/122974.jpg,dep.pedrolucasfernandes@camara.leg.br,PEDRO LUCAS ANDRADE FERNANDES RIBEIRO,Superior,MA,M
+576,74044,Wilson Santiago,PTB,PB,https://www.camara.leg.br/internet/deputado/bandep/74044.jpg,dep.wilsonsantiago@camara.leg.br,JOSÉ WILSON SANTIAGO,Superior,PB,M
+577,109429,Benes Leocádio,PTC,RN,https://www.camara.leg.br/internet/deputado/bandep/109429.jpg,dep.benesleocadio@camara.leg.br,LUIZ BENES LEOCADIO DE ARAUJO,Superior,RN,M
+578,204432,Marina Santos,PTC,PI,https://www.camara.leg.br/internet/deputado/bandep/204432.jpg,dep.marinasantos@camara.leg.br,MARINA SANTOS BATISTA DIAS,Superior,PI,F
+579,204488,Célio Studart,PV,CE,https://www.camara.leg.br/internet/deputado/bandep/204488.jpg,dep.celiostudart@camara.leg.br,CELIO STUDART BARBOSA,Superior,CE,M
+580,204537,Enrico Misasi,PV,SP,https://www.camara.leg.br/internet/deputado/bandep/204537.jpg,dep.enricomisasi@camara.leg.br,ENRICO VAN BLARCUM DE GRAAFF MISASI,Mestrado,SP,M
+581,178832,Leandre,PV,PR,https://www.camara.leg.br/internet/deputado/bandep/178832.jpg,dep.leandre@camara.leg.br,LEANDRE DAL PONTE,Superior,PR,F
+582,204383,Professor Israel Batista,PV,DF,https://www.camara.leg.br/internet/deputado/bandep/204383.jpg,dep.professorisraelbatista@camara.leg.br,ISRAEL MATOS BATISTA,Superior,DF,M
+583,204468,Joenia Wapichana,REDE,RR,https://www.camara.leg.br/internet/deputado/bandep/204468.jpg,dep.joeniawapichana@camara.leg.br,JOENIA BATISTA DE CARVALHO,Mestrado,RR,F
+584,204353,Aline Gurgel,REPUBLICANOS,AP,https://www.camara.leg.br/internet/deputado/bandep/204353.jpg,dep.alinegurgel@camara.leg.br,ALINE PARANHOS VARONIL GURGEL,Superior,AP,F
+585,204356,Amaro Neto,REPUBLICANOS,ES,https://www.camara.leg.br/internet/deputado/bandep/204356.jpg,dep.amaroneto@camara.leg.br,AMARO ROCHA NASCIMENTO NETO,Superior,ES,M
+586,204414,Aroldo Martins,REPUBLICANOS,PR,https://www.camara.leg.br/internet/deputado/bandep/204414.jpg,dep.aroldomartins@camara.leg.br,JOSE AROLDO SOUZA MARTINS,Doutorado,SP,M
+587,109429,Benes Leocádio,REPUBLICANOS,RN,https://www.camara.leg.br/internet/deputado/bandep/109429.jpg,dep.benesleocadio@camara.leg.br,LUIZ BENES LEOCADIO DE ARAUJO,Superior,RN,M
+588,204572,Capitão Alberto Neto,REPUBLICANOS,AM,https://www.camara.leg.br/internet/deputado/bandep/204572.jpg,dep.capitaoalbertoneto@camara.leg.br,ALBERTO BARROS CAVALCANTE NETO,Pós-Graduação,CE,M
+589,178962,Carlos Gomes,REPUBLICANOS,RS,https://www.camara.leg.br/internet/deputado/bandep/178962.jpg,dep.carlosgomes@camara.leg.br,ANTONIO CARLOS GOMES DA SILVA,Superior Incompleto,BA,M
+590,73441,Celso Russomanno,REPUBLICANOS,SP,https://www.camara.leg.br/internet/deputado/bandep/73441.jpg,dep.celsorussomanno@camara.leg.br,CELSO UBIRAJARA RUSSOMANNO,Superior,SP,M
+591,141408,Cleber Verde,REPUBLICANOS,MA,https://www.camara.leg.br/internet/deputado/bandep/141408.jpg,dep.cleberverde@camara.leg.br,CLEBER VERDE CORDEIRO MENDES,Superior,MA,M
+592,218086,Ely Santos,REPUBLICANOS,SP,https://www.camara.leg.br/internet/deputado/bandep/218086.jpg,dep.elysantos@camara.leg.br,ELIANE DE SOUSA ALVES MACHADO,,SP,F
+593,204575,Gil Cutrim,REPUBLICANOS,MA,https://www.camara.leg.br/internet/deputado/bandep/204575.jpg,dep.gilcutrim@camara.leg.br,GILLIANO FRED NASCIMENTO CUTRIM,Superior,MA,M
+594,204491,Gilberto Abramo,REPUBLICANOS,MG,https://www.camara.leg.br/internet/deputado/bandep/204491.jpg,dep.gilbertoabramo@camara.leg.br,GILBERTO APARECIDO ABRAMO,Superior,SP,M
+595,204373,Hélio Costa,REPUBLICANOS,SC,https://www.camara.leg.br/internet/deputado/bandep/204373.jpg,dep.heliocosta@camara.leg.br,HÉLIO FRANCISCO DA COSTA,Ensino Médio,SC,M
+596,160674,Hugo Motta,REPUBLICANOS,PB,https://www.camara.leg.br/internet/deputado/bandep/160674.jpg,dep.hugomotta@camara.leg.br,HUGO MOTTA WANDERLEY DA NÓBREGA,Superior,PB,M
+597,160531,Jhonatan de Jesus,REPUBLICANOS,RR,https://www.camara.leg.br/internet/deputado/bandep/160531.jpg,dep.jhonatandejesus@camara.leg.br,JOHNATHAN PEREIRA DE JESUS,Superior,RR,M
+598,74366,João Campos,REPUBLICANOS,GO,https://www.camara.leg.br/internet/deputado/bandep/74366.jpg,dep.joaocampos@camara.leg.br,JOÃO CAMPOS DE ARAÚJO,Pós-Graduação,TO,M
+599,205550,Jorge Braz,REPUBLICANOS,RJ,https://www.camara.leg.br/internet/deputado/bandep/205550.jpg,dep.jorgebraz@camara.leg.br,JORGE BRAZ DE OLIVEIRA,Superior Incompleto,MG,M
+600,204372,Julio Cesar Ribeiro,REPUBLICANOS,DF,https://www.camara.leg.br/internet/deputado/bandep/204372.jpg,dep.juliocesarribeiro@camara.leg.br,JULIO CESAR RIBEIRO,Superior,SP,M
+601,98057,Lafayette de Andrada,REPUBLICANOS,MG,https://www.camara.leg.br/internet/deputado/bandep/98057.jpg,dep.lafayettedeandrada@camara.leg.br,LAFAYETTE LUIZ DOORGAL DE ANDRADA,Doutorado Incompleto,MG,M
+602,204418,Luizão Goulart,REPUBLICANOS,PR,https://www.camara.leg.br/internet/deputado/bandep/204418.jpg,dep.luizaogoulart@camara.leg.br,LUIZ GOULARTE ALVES,Superior,PR,M
+603,118594,Marcelo Squassoni,REPUBLICANOS,SP,https://www.camara.leg.br/internet/deputado/bandep/118594.jpg,dep.marcelosquassoni@camara.leg.br,MARCELO SQUASSONI,Superior,SP,M
+604,150418,Márcio Marinho,REPUBLICANOS,BA,https://www.camara.leg.br/internet/deputado/bandep/150418.jpg,dep.marciomarinho@camara.leg.br,MÁRCIO CARLOS MARINHO,Superior,RJ,M
+605,204506,Marcos Pereira,REPUBLICANOS,SP,https://www.camara.leg.br/internet/deputado/bandep/204506.jpg,dep.marcospereira@camara.leg.br,MARCOS ANTONIO PEREIRA,Pós-Graduação,ES,M
+606,154178,Milton Vieira,REPUBLICANOS,SP,https://www.camara.leg.br/internet/deputado/bandep/154178.jpg,dep.miltonvieira@camara.leg.br,MILTON VIEIRA PINTO,Superior Incompleto,SP,M
+607,204422,Ossesio Silva,REPUBLICANOS,PE,https://www.camara.leg.br/internet/deputado/bandep/204422.jpg,dep.ossesiosilva@camara.leg.br,OSSESIO JOSE DA SILVA,Superior Incompleto,RJ,M
+608,160601,Pr. Marco Feliciano,REPUBLICANOS,SP,https://www.camara.leg.br/internet/deputado/bandep/160601.jpg,dep.pr.marcofeliciano@camara.leg.br,MARCO ANTÔNIO FELICIANO,Superior,SP,M
+609,178945,Rosangela Gomes,REPUBLICANOS,RJ,https://www.camara.leg.br/internet/deputado/bandep/178945.jpg,dep.rosangelagomes@camara.leg.br,ROSANGELA DE SOUZA GOMES,Pós-Graduação,RJ,F
+610,204437,Severino Pessoa,REPUBLICANOS,AL,https://www.camara.leg.br/internet/deputado/bandep/204437.jpg,dep.severinopessoa@camara.leg.br,SEVERINO DE LIRA PESSÔA,Ensino Médio,AL,M
+611,74356,Silas Câmara,REPUBLICANOS,AM,https://www.camara.leg.br/internet/deputado/bandep/74356.jpg,dep.silascamara@camara.leg.br,SILAS CÂMARA,Superior,AC,M
+612,204425,Silvio Costa Filho,REPUBLICANOS,PE,https://www.camara.leg.br/internet/deputado/bandep/204425.jpg,dep.silviocostafilho@camara.leg.br,SILVIO SERAFIM COSTA FILHO,Superior,PE,M
+613,178862,Tia Eron,REPUBLICANOS,BA,https://www.camara.leg.br/internet/deputado/bandep/178862.jpg,dep.tiaeron@camara.leg.br,ERONILDES VASCONCELOS CARVALHO,Superior,BA,F
+614,204505,Vavá Martins,REPUBLICANOS,PA,https://www.camara.leg.br/internet/deputado/bandep/204505.jpg,dep.vavamartins@camara.leg.br,WAGNER BACH MARTINS,Superior,RS,M
+615,141555,Vinicius Carvalho,REPUBLICANOS,SP,https://www.camara.leg.br/internet/deputado/bandep/141555.jpg,dep.viniciuscarvalho@camara.leg.br,VINICIUS RAPOZO DE CARVALHO,Mestrado,RJ,M
+616,204544,Alexandre Frota,S.PART.,SP,https://www.camara.leg.br/internet/deputado/bandep/204544.jpg,dep.alexandrefrota@camara.leg.br,ALEXANDRE FROTA DE ANDRADE,Ensino Médio,RJ,M
+617,204496,Celso Sabino,S.PART.,PA,https://www.camara.leg.br/internet/deputado/bandep/204496.jpg,dep.celsosabino@camara.leg.br,CELSO SABINO DE OLIVEIRA,Doutorado,PA,M
+618,204448,Luiz Antônio Corrêa,S.PART.,RJ,https://www.camara.leg.br/internet/deputado/bandep/204448.jpg,dep.luizantoniocorrea@camara.leg.br,LUIZ ANTONIO C. C. CORRÊA DA SILVA,Superior,RJ,M
+619,160665,Augusto Coutinho,SOLIDARIEDADE,PE,https://www.camara.leg.br/internet/deputado/bandep/160665.jpg,dep.augustocoutinho@camara.leg.br,AUGUSTO RODRIGUES COUTINHO DE MELO,Superior,PE,M
+620,160512,Aureo Ribeiro,SOLIDARIEDADE,RJ,https://www.camara.leg.br/internet/deputado/bandep/160512.jpg,dep.aureoribeiro@camara.leg.br,AUREO LIDIO MOREIRA RIBEIRO,Superior Incompleto,RJ,M
+621,204551,Bosco Saraiva,SOLIDARIEDADE,AM,https://www.camara.leg.br/internet/deputado/bandep/204551.jpg,dep.boscosaraiva@camara.leg.br,JOÃO BOSCO GOMES SARAIVA,Superior,AM,M
+622,204439,Dr. Leonardo,SOLIDARIEDADE,MT,https://www.camara.leg.br/internet/deputado/bandep/204439.jpg,dep.dr.leonardo@camara.leg.br,LEONARDO RIBEIRO ALBUQUERQUE,Pós-Graduação,GO,M
+623,204434,Dra. Vanda Milani,SOLIDARIEDADE,AC,https://www.camara.leg.br/internet/deputado/bandep/204434.jpg,dep.dra.vandamilani@camara.leg.br,VANDA DENIR MILANI NOGUEIRA,Superior,SP,F
+624,204364,Eli Borges,SOLIDARIEDADE,TO,https://www.camara.leg.br/internet/deputado/bandep/204364.jpg,dep.eliborges@camara.leg.br,ELI DIAS BORGES,Superior,GO,M
+625,160669,Genecias Noronha,SOLIDARIEDADE,CE,https://www.camara.leg.br/internet/deputado/bandep/160669.jpg,dep.geneciasnoronha@camara.leg.br,GENECIAS MATEUS NORONHA,Ensino Médio,CE,M
+626,204408,Gustinho Ribeiro,SOLIDARIEDADE,SE,https://www.camara.leg.br/internet/deputado/bandep/204408.jpg,dep.gustinhoribeiro@camara.leg.br,LUIZ AUGUSTO CARVALHO RIBEIRO FILHO,Superior,SE,M
+627,178879,Lucas Vergilio,SOLIDARIEDADE,GO,https://www.camara.leg.br/internet/deputado/bandep/178879.jpg,dep.lucasvergilio@camara.leg.br,LUCAS DE CASTRO SANTOS,Superior,GO,M
+628,204432,Marina Santos,SOLIDARIEDADE,PI,https://www.camara.leg.br/internet/deputado/bandep/204432.jpg,dep.marinasantos@camara.leg.br,MARINA SANTOS BATISTA DIAS,Superior,PI,F
+629,204475,Ottaci Nascimento,SOLIDARIEDADE,RR,https://www.camara.leg.br/internet/deputado/bandep/204475.jpg,dep.ottacinascimento@camara.leg.br,JOSE OTACI BARROSO DO NASCIMENTO,Ensino Médio,AM,M
+630,141518,Paulo Pereira da Silva,SOLIDARIEDADE,SP,https://www.camara.leg.br/internet/deputado/bandep/141518.jpg,dep.paulopereiradasilva@camara.leg.br,PAULO PEREIRA DA SILVA,Ensino Médio,PR,M
+631,143084,Tiago Dimas,SOLIDARIEDADE,TO,https://www.camara.leg.br/internet/deputado/bandep/143084.jpg,dep.tiagodimas@camara.leg.br,Tiago Dimas Braga Pereira,Superior Incompleto,MG,M
+632,160632,Zé Silva,SOLIDARIEDADE,MG,https://www.camara.leg.br/internet/deputado/bandep/160632.jpg,dep.zesilva@camara.leg.br,JOSÉ SILVA SOARES,Pós-Graduação,MG,M
