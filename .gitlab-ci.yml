@@ -33,7 +33,7 @@ unit-test-backend-job:    # This job runs in the test stage.
       junit:
         - backend/junit.xml
 
-lint-backend-job:   # This job runs in the test stage.
+.lint-backend-job:   # This job runs in the test stage.
   stage: test       # It only starts when the job in the build stage completes successfully.
   script:
     - cd "$BACKEND_PATH"
