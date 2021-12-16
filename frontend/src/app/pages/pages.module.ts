@@ -12,6 +12,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatFormFieldModule } from '@angular/material/form-field'; 
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { ChartsModule } from 'ng2-charts';
 
 import { CoreModule } from '../core/core.module';
@@ -55,6 +56,7 @@ import { MonEntVotingsComponent } from './mon-ent-votings/mon-ent-votings.compon
     MatAutocompleteModule,
     MatFormFieldModule,
     MatSidenavModule,
+    MatProgressSpinnerModule,
     ChartsModule,
 
     // Project Imports
