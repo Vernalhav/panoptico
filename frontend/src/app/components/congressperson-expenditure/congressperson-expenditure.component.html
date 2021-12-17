@@ -1,0 +1,58 @@
+<mat-card class="grow">
+	<div *ngIf="this.congressperson !== undefined" class="flex flex-row gap-6 justify-items-start mb-6">
+		<img src="{{ this.congressperson!.photoUrl }}" style="max-width: 114px;">
+		
+		<div class="grow">
+			<mat-card-title>{{ this.congressperson!.name }}</mat-card-title>
+			<mat-card-content style="margin-bottom: 0;">
+				<p><strong>Nome civil:</strong>     {{ this.congressperson!.civilName }}</p>
+				<p class="mt-0"><strong>E-mail:</strong>         {{ this.congressperson!.email }}</p>
+				<p class="mt-0"><strong>Estado Eleito:</strong>  {{ this.congressperson!.state }}</p> 
+				<p class="mt-0"><strong>Nascimento:</strong>     {{ this.congressperson!.birthCity }} - {{ this.congressperson!.birthState }}</p>
+				<p class="mt-0"><strong>Escolaridade:</strong>   {{ this.congressperson!.scholarity }}</p>
+			</mat-card-content>
+		</div>
+	</div>
+
+	<div *ngIf="expenses" class="flex justify-items-start flex-wrap">
+		<div class="grow">
+			<mat-card-title class="text-right px-2"> Gasto Total: {{ this.currencyFormater.format(totalCost) }}</mat-card-title>
+			<mat-card-content style="margin-bottom: 0;">
+				<table mat-table [dataSource]="expenses" class="w-full table-auto">
+			
+					<!-- Name Column -->
+					<ng-container matColumnDef="type">
+						<th mat-header-cell *matHeaderCellDef class="expense-header" style="text-align: left;"> Tipo de Despesa </th>
+						<td mat-cell class="expense-row" style="text-align: left;" *matCellDef="let element">{{element.type}}</td>
+					</ng-container>
+
+					<!-- Date Column -->
+					<ng-container matColumnDef="date">
+						<th mat-header-cell *matHeaderCellDef class="expense-header" style="text-align: center;"> Data de Expedição </th>
+						<td mat-cell class="expense-row" style="text-align: center;" *matCellDef="let element">{{element.date.toLocaleString('pt-BR', { year: 'numeric', month: 'numeric', day: 'numeric' })}}</td>
+					</ng-container>
+		
+					<!-- Cost Column -->
+					<ng-container matColumnDef="cost">
+						<th mat-header-cell *matHeaderCellDef class="expense-header" style="text-align: right;"> Custo (R$) </th>
+						<td mat-cell class="expense-row" style="text-align: right;" *matCellDef="let element">{{ this.currencyFormater.format(element.cost) }}</td>
+					</ng-container>
+					
+					<!-- Document Url Column -->
+					<ng-container matColumnDef="documentUrl">
+						<th mat-header-cell *matHeaderCellDef class="expense-header" style="text-align: center;"> Link para Documento </th>
+						<td mat-cell class="expense-row" style="text-align: center;" *matCellDef="let element">
+							<a mat-button href="{{element.documentUrl}}" target="_blank"> 
+								<fa-icon [icon]="['fas', 'file-alt']" size="2x"></fa-icon>
+							</a>
+						</td>
+					</ng-container>
+
+						<!--Data Rows-->
+					<tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+					<tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+				</table>
+			</mat-card-content>
+		</div>
+	</div>
+</mat-card>

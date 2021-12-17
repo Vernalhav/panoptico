@@ -1,0 +1,60 @@
+<div class="body-wrapper h-screen max-h-screen overflow-hidden flex flex-col flex-nowrap">
+  <app-header></app-header>
+  
+  <main class="monitor-ent-votings grow flex flex-col flex-nowrap overflow-hidden">
+    <mat-drawer-container class="example-container grow">
+      
+      <!-- Sidebar -->
+      <mat-drawer mode="side" opened class="w-1/3 grow flex flex-col flex-nowrap">
+  
+        <div class="info-section py-6 w-full grow flex flex-row justify-center">
+          <div class="row px-6 w-full md:max-w-screen-xl gap-6 md:8 grow flex justify-center flex-col">
+            
+            <app-congressperson-selector
+              [congresspeopleByParty]="availablePartiesView.availableParties"
+              (congresspersonId)="updateCongresspersonId($event)"
+            ></app-congressperson-selector>
+              
+          </div>
+        </div>
+  
+      </mat-drawer>
+      
+      <!-- Right Content -->
+      <mat-drawer-content class="overflow-y-scroll">
+        
+        <div class="info-section py-6 w-full flex flex-row justify-center">
+          <div class="row px-6 w-full md:max-w-screen-xl gap-6 md:8 flex grow justify-center flex-col">
+            
+            <div class="title-section">
+              <p class="text-left font-semibold text-3xl md:text-6xl">Monitor de Gastos</p>
+              <p class="text-left text-lg md:text-1xl">Dado um deputado mostra o total de suas despesas nos últimos 6 meses além da descrição de cada nota fiscal emitida!</p>
+            </div>
+            
+            <!-- Empty or no result to display -->
+            <div class="title-section grow py-6" *ngIf="this.congresspersonId === -1">
+              <app-results-message></app-results-message>
+            </div>
+  
+            <!-- Loading Results -->
+            <!-- <div class="flex flex-row justify-center py-6"
+              *ngIf="this.isLoading && backendQueryModel.votingsFromMonitoredSubjects.value.length == 0">
+              <mat-spinner></mat-spinner>
+            </div> -->
+            
+            <!-- Results -->
+            <app-congressperson-expenditure 
+              *ngIf="this.congresspersonId !== -1"
+              [congresspersonId]="this.congresspersonId">
+            </app-congressperson-expenditure>
+  
+          </div>
+        </div>
+  
+      </mat-drawer-content>
+  
+    </mat-drawer-container>
+  </main>
+  
+  <app-footer></app-footer>
+  </div>

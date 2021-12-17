@@ -1,0 +1,23 @@
+<mat-accordion>
+  <mat-expansion-panel *ngFor="let party of congresspeopleByParty">
+    
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <span class="px-2">{{ party.name }} ({{ party.acronym }})</span>
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+
+    <mat-selection-list #shoes [multiple]="false">
+      <mat-list-option *ngFor="let member of party.members" 
+        (click)="this.emitCongressId(member.id)" 
+        [selected]="member.id == this.currentId">
+          <span class="flex flex-row w-full items-center">
+            <span>{{ member.name }} [{{ member.state }}]</span>
+            <span class="grow"></span>
+            <button mat-stroked-button color="accent">Ver</button>
+          </span>
+      </mat-list-option>
+    </mat-selection-list>
+    
+  </mat-expansion-panel>
+</mat-accordion>
