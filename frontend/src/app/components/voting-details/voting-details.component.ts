@@ -7,7 +7,7 @@ import { VotingDetailsResponse } from 'src/app/core/services/camara/camara.types
   templateUrl: './voting-details.component.html',
   styleUrls: ['./voting-details.component.scss'],
 })
-export class VotingDetailsComponent implements OnInit {
+export class VotingDetailsComponent {
   @Input() votingId!: string;
   loading = false;
   details?: VotingDetailsResponse;
@@ -22,7 +22,8 @@ export class VotingDetailsComponent implements OnInit {
     });
   }
 
-  ngOnInit(): void {
-    // this.load();
+  lazyLoadData() {
+    if (this.details || this.loading) return;
+    this.load(); 
   }
 }

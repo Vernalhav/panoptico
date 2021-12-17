@@ -2,7 +2,10 @@
   <mat-expansion-panel *ngFor="let party of congresspeopleByParty">
     
     <mat-expansion-panel-header>
-      <mat-panel-title>{{ party.name }} ({{ party.acronym }})</mat-panel-title>
+      <mat-panel-title>
+        <span class="px-2">{{ party.name }} ({{ party.acronym }})</span>
+        <span *ngIf="countSelected(party) > 0" class="text-green-400 font-bold">{{ countSelected(party) }}</span>
+      </mat-panel-title>
     </mat-expansion-panel-header>
 
     <mat-selection-list>

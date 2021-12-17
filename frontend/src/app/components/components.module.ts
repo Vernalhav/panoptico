@@ -28,6 +28,8 @@ import { PartiesChecklistComponent } from "./parties-checklist/parties-checklist
 import { WordCloudComponent } from './word-cloud/word-cloud.component';
 import { AngularD3CloudModule } from "angular-d3-cloud";
 import { CongresspersonExpenditureComponent } from "./congressperson-expenditure/congressperson-expenditure.component";
+import { ExternalModule } from "../external/external.module";
+import { BinaryWordCloudComponent } from './binary-word-cloud/binary-word-cloud.component';
 
 
 @NgModule({
@@ -41,6 +43,7 @@ import { CongresspersonExpenditureComponent } from "./congressperson-expenditure
     TopicCardComponent,
     PartiesChecklistComponent,
     WordCloudComponent,
+    BinaryWordCloudComponent,
   ],
 
   exports: [
@@ -53,6 +56,7 @@ import { CongresspersonExpenditureComponent } from "./congressperson-expenditure
     TopicCardComponent,
     PartiesChecklistComponent,
     WordCloudComponent,
+    BinaryWordCloudComponent,
   ],
 
   imports: [
@@ -75,11 +79,11 @@ import { CongresspersonExpenditureComponent } from "./congressperson-expenditure
     FormsModule,
     ReactiveFormsModule,
     ChartsModule,
-    AngularD3CloudModule,
 
     // App Modules
     CoreModule,
     MonitoredKeywordsModule,
+    ExternalModule,
   ],
 
   providers: [

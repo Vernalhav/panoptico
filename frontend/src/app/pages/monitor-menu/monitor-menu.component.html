@@ -1,6 +1,6 @@
 <app-header></app-header>
 
-<main class="monitor-menu-component">
+<main class="monitor-menu-component mat-app-background">
 
   <div class="info-section py-6 md:py-16 w-full flex flex-row justify-center">
     <div class="row px-4 md:px-16 w-full md:max-w-screen-lg gap-6 md:8 flex grow justify-center flex-col">
@@ -33,34 +33,10 @@
         </mat-card>
         
         <mat-card class="">
-          <mat-card-title>Monitor de Proposições</mat-card-title>
-          <mat-card-content>
-            <p>Mostra as últimas proposições feitas pelos deputados, seus temas e também 
-            seus co-autores! Afinal educação e saúde não são apenas slogan de campanha!</p>
-          </mat-card-content>
-          <mat-card-actions align="end">
-            <button mat-flat-button color="accent">MONITORAR JÁ</button>
-          </mat-card-actions>
-        </mat-card>
-        
-        <mat-card class="">
           <mat-card-title>Monitor de Gastos</mat-card-title>
           <mat-card-content>
             <p>Utiliza dos dados abertos da câmara para te mostrar os últimos gastos
             de cada um dos deputados em exercício! Chora mesmo empreiteiras!</p>
-          </mat-card-content>
-          <mat-card-actions align="end">
-            <button mat-flat-button color="accent">MONITORAR JÁ</button>
-          </mat-card-actions>
-        </mat-card>
-        
-        <mat-card class="">
-          <mat-card-title>Monitor de Temas</mat-card-title>
-          <mat-card-content>
-            <p>
-              Veja de forma elegante e resumida uma nuvem de palavras que destacam 
-              quais temas seu deputado tem participado com mais afinco!
-            </p>
           </mat-card-content>
           <mat-card-actions align="end">
             <button mat-flat-button color="accent">MONITORAR JÁ</button>
@@ -81,7 +57,7 @@
             <p>Saiba quais foram os votos parciais dados pelas entidades monitoradas nas votações mais recentes.</p>
           </mat-card-content>
           <mat-card-actions align="end">
-            <button mat-flat-button color="accent">MONITORAR JÁ</button>
+            <button mat-flat-button routerLink="/monitor/votacoes-entidades" color="accent">MONITORAR JÁ</button>
           </mat-card-actions>
         </mat-card>
 
@@ -91,7 +67,30 @@
             <p>Selecione os temas de seu interesse e veja de forma elegante quais tem recebido maior atenção das entidades monitoradas!</p>
           </mat-card-content>
           <mat-card-actions align="end">
-            <button mat-flat-button color="accent">MONITORAR JÁ</button>
+            <button mat-flat-button routerLink="/monitor/tematicas-entidades" color="accent">MONITORAR JÁ</button>
+          </mat-card-actions>
+        </mat-card>
+
+        <mat-card class="">
+          <mat-card-title>Monitor de Proposições</mat-card-title>
+          <mat-card-content>
+            <p>Mostra em escala os temas das últimas proposições feitas pelos deputados ou partidos! 
+              Afinal educação e saúde não são apenas slogan de campanha!</p>
+          </mat-card-content>
+          <mat-card-actions align="end">
+            <button mat-flat-button routerLink="/monitor/proposicoes-entidades" color="accent">MONITORAR JÁ</button>
+          </mat-card-actions>
+        </mat-card>
+
+        <mat-card class="">
+          <mat-card-title>Monitor de Votos por Temas</mat-card-title>
+          <mat-card-content>
+            <p>Veja de forma elegante e resumida uma nuvem de palavras que destacam 
+              quais temas os deputado e partidos tem participado com mais afinco!
+            </p>
+          </mat-card-content>
+          <mat-card-actions align="end">
+            <button mat-flat-button routerLink="/monitor/votes-por-temas-entidades" color="accent">MONITORAR JÁ</button>
           </mat-card-actions>
         </mat-card>
       </div>

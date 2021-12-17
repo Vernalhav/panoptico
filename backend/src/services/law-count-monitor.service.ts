@@ -20,7 +20,7 @@ export class LawCountMonitorService {
     
     for (const partyId of partyIds) {
       try {
-        result.pariesLawCounts.push(await this.getPartyLawCounts(partyId));
+        result.partiesLawCounts.push(await this.getPartyLawCounts(partyId));
       } catch { continue; }
     }
     

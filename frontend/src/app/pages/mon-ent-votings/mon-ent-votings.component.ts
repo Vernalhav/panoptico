@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Party } from 'src/app/core/entities';
+import { MatSlideToggleChange } from '@angular/material/slide-toggle';
 import { BackendQueryModel } from 'src/app/core/models';
 import { AvailablePartiesView } from 'src/app/core/views';
 
@@ -10,6 +10,18 @@ import { AvailablePartiesView } from 'src/app/core/views';
 })
 export class MonEntVotingsComponent implements OnInit {
   
+  public isLoading = false;
+  public isCheckedParties = true;
+  public isCheckedCongresspeople = true;
+
+  public checkedPartiesChanged(e: MatSlideToggleChange) {
+    this.isCheckedParties = e.checked;
+  }
+
+  public checkedCongresspeopleChanged(e: MatSlideToggleChange) {
+    this.isCheckedCongresspeople = e.checked;
+  }
+
   constructor(
     readonly availablePartiesView: AvailablePartiesView,
     readonly backendQueryModel: BackendQueryModel
@@ -19,7 +31,8 @@ export class MonEntVotingsComponent implements OnInit {
   }
 
   handleMonitorButton() {
-    this.backendQueryModel.queryUsingCurrentFilters();
-    // this.router.navigate(['votings']);
+    this.isLoading = true;
+    this.backendQueryModel.clearQueryResults();
+    this.backendQueryModel.queryVotingsFromEntities();
   }
 }

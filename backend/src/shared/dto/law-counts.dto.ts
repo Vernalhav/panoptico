@@ -21,6 +21,6 @@ export class CongresspersonLawCountsDTO {
 export class LawCountsDTO {
   constructor(
     public congresspeopleLawCounts: CongresspersonLawCountsDTO[] = [],
-    public pariesLawCounts: PartyLawCountsDTO[] = [],
+    public partiesLawCounts: PartyLawCountsDTO[] = [],
   ) {}
 }

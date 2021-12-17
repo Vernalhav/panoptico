@@ -11,7 +11,8 @@ import { AvailablePartiesApiModel,
   BackendQueryModel, 
   MonitoredEntitiesLocalStorageModel,
   MonitoredEntitiesModel, 
-  MonitoredIntervalModel, 
+  MonitoredIntervalModel,
+  MonitoredIntervalLocalStorageModel,
   MonitoredKeywordsLocalStorageModel, 
   MonitoredKeywordsModel } from "./models";
 import { BackendService, CamaraService } from "./services";
@@ -44,7 +45,9 @@ import { AvailablePartiesView,
       provide: MonitoredEntitiesModel,
       useClass: MonitoredEntitiesLocalStorageModel,
     },
-    { provide: MonitoredIntervalModel, useClass: MonitoredIntervalModel },
+    { provide: MonitoredIntervalModel,
+      useClass: MonitoredIntervalLocalStorageModel,
+    },
 
     // Views Providers
     {
