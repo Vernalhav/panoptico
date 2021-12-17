@@ -9,13 +9,17 @@ import { Subject } from 'src/app/core/entities';
 export class TabCloudsComponent {
 
   // General Subjects Wordcloud
-  _yesSubjectsVotes: {text: string, value: number}[] = []
-  _noSubjectsVotes: {text: string, value: number}[] = []
+  _yesSubjectsVotes: {text: string, value: number, hotColor: boolean}[] = []
+  _noSubjectsVotes: {text: string, value: number, hotColor: boolean}[] = []
   _fixedMaxValue: number = 1  
 
+  @Input() fixedIncrementValue: number = 0
+
+  @Input() baseTextSize: number = 40
+  
   @Input() set votingsFromSubjects(val: Subject[]) {
-    this._yesSubjectsVotes = this.reduceVotingsToKeywordData(val, 'yes')
-    this._noSubjectsVotes = this.reduceVotingsToKeywordData(val, 'no')
+    this._yesSubjectsVotes = this.reduceVotingsToKeywordData(val, 'yes', false)
+    this._noSubjectsVotes = this.reduceVotingsToKeywordData(val, 'no', true)
     
     // To preserve the size significance between the wordclouds compute a fixed max value
     this._fixedMaxValue = Math.max(
@@ -25,12 +29,13 @@ export class TabCloudsComponent {
     )
   }
 
-  reduceVotingsToKeywordData = (votings: Subject[], voteField: 'yes' | 'no' | 'other'): {text: string, value: number}[] => {
-    let data: {text: string, value: number}[] = []
+  reduceVotingsToKeywordData = (votings: Subject[], voteField: 'yes' | 'no' | 'other', hotColor: boolean): {text: string, hotColor: boolean, value: number}[] => {
+    let data: {text: string, value: number, hotColor: boolean}[] = []
 
     for(let s of votings){
       data.push({
         text: s.subjectName,
+        hotColor: hotColor,
         value: s.votes.reduce((acc, vote) => acc + Number(vote[voteField]), 0)
       })
     }
