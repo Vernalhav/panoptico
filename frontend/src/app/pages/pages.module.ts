@@ -22,8 +22,6 @@ import { CoreModule } from '../core/core.module';
 import { ComponentsModule } from '../components/components.module';
 import { SharedModule } from '../shared/shared.module';
 
-import { HomePageComponent } from './home-page/home-page.component';
-import { VotingsPageComponent } from './votings-page/votings-page.component';
 import { TabCloudsComponent } from './mon-ent-votes-subjects/tab-clouds/tab-clouds.component';
 import { HomeComponent } from './home/home.component';
 import { MonitorMenuComponent } from './monitor-menu/monitor-menu.component';
@@ -37,10 +35,6 @@ import { MonDepExpensesComponent } from './mon-dep-expenses/mon-dep-expenses.com
 
 @NgModule({
   declarations: [
-    // Pages
-    HomePageComponent, 
-    VotingsPageComponent, 
-    
     // Pages Components
     TabCloudsComponent, 
 

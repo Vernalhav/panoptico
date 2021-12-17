@@ -8,22 +8,25 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { InputAutocompleteComponent } from './input-autocomplete/input-autocomplete.component';
-
+import { ResultsMessageComponent } from './results-message/results-message.component';
 
 @NgModule({
   declarations: [
     HeaderComponent,
     FooterComponent,
-    InputAutocompleteComponent
+    InputAutocompleteComponent,
+    ResultsMessageComponent,
   ],
   exports: [
     HeaderComponent,
     FooterComponent,
     InputAutocompleteComponent,
+    ResultsMessageComponent,
   ],
   imports: [
     CommonModule,
@@ -35,7 +38,8 @@ import { InputAutocompleteComponent } from './input-autocomplete/input-autocompl
     MatInputModule,
     MatAutocompleteModule,
     FormsModule, 
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FontAwesomeModule,
   ]
 })
 export class SharedModule { }
