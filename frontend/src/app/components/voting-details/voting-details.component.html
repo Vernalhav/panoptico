@@ -1,18 +1,18 @@
-<div
-  [class]="
-    'py-2 text-black text-xl font-bold ' +
-    (!!details?.aprovacao ? 'text-green-600' : '')
-  "
->
-  {{
-    (details && (details?.aprovacao ? 'Aprovado' : 'Não aprovado')) ||
-      'Carregando detalhes...'
-  }}
-</div>
-<mat-expansion-panel>
+<mat-expansion-panel (opened)="lazyLoadData()">
   <mat-expansion-panel-header>
-    <mat-panel-title>Proposições afetadas</mat-panel-title>
+    <mat-panel-title>Detalhes</mat-panel-title>
   </mat-expansion-panel-header>
+  <div
+    [class]="
+      'pb-2 text-black text-xl font-bold ' +
+      (!!details ? (!!details.aprovacao ? 'text-green-300' : 'text-red-300') : 'text-gray-200')"
+  >
+    {{
+      (details && (details?.aprovacao ? 'Aprovado' : 'Não aprovado')) ||
+        'Carregando detalhes...'
+    }}
+  </div>
+  <div *ngIf="!details">Carregando detalhes...</div>
   <div *ngIf="!!details">
     <div *ngFor="let prop of details.proposicoesAfetadas; let i = index">
       <h3>{{ prop.siglaTipo }} {{ prop.numero }}/{{ prop.ano }}</h3>
