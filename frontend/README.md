@@ -2,7 +2,7 @@
 
 ## Estrutura do projeto
 ```bash
-monitor-politico-frontend
+frontend
 └── src
     ├── app
     │   ├── app-component       # Contém o componente raíz da aplicação Angular
