@@ -1,12 +1,12 @@
+import { Injectable } from '@angular/core';
 import { MonitoredKeyword } from '../../entities';
 import { MonitoredKeywordsModel } from '../monitored-keywords.model';
 
 const isString = (value: any): value is string => typeof value === 'string';
 
+@Injectable()
 export class MonitoredKeywordsLocalStorageModel extends MonitoredKeywordsModel {
   public static readonly KEY_MONITORED_KEYWORDS: string = 'monitoredKeywords';
-  public static readonly KEY_MONITORED_KEYWORDS_LAST_UPDATE: string =
-    'monitoredKeywordsLastUpdate';
 
   constructor() {
     super();
