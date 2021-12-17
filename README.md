@@ -21,6 +21,7 @@ Detalhes sobre o [monitor de tema (versão nuvem)](https://gitlab.com/Vernalhav/
 <img src="https://cdn.discordapp.com/attachments/766101843276988416/921528776175779840/unknown.png">
 <img src="https://cdn.discordapp.com/attachments/766101843276988416/921525769820315739/unknown.png">
 <img src="https://cdn.discordapp.com/attachments/766101843276988416/921527201596330054/unknown.png">
+<img src="https://cdn.discordapp.com/attachments/802326923660886138/921549384355840010/unknown.png">
 
 ### Entrega 3: Requisito 5, melhoria do requisito 4
 <img src="https://cdn.discordapp.com/attachments/766087042199191562/913421944781668463/unknown.png">
