@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 
+type Color = [number, number, number];
 
 @Component({
   selector: 'app-word-cloud',
@@ -32,20 +33,21 @@ export class WordCloudComponent {
     })
   }
 
-
-  private interpolate = (start: number, end: number, p: number):number => {
-    return (1.0-p)*start + p*end;
+  private interpolateColor = (start: Color, end: Color, p: number): Color => {
+    return [(1.0-p)*start[0] + p*end[0], (1.0-p)*start[1] + p*end[1], (1.0-p)*start[2] + p*end[2]];
   }
 
   handlerFillColor = (word: any, index: number) => {
     
     const p = (word.value - this.fixedIncrementValue)/this.baseTextSize;
-    const cold = [64, 196, 255]; 
-    const hot  = [230, 81, 0];
+    const reallyCold: Color = [64, 196, 255];
+    const kindaCold: Color = [1, 87, 155];
+    const reallyHot: Color  = [230, 81, 0];
+    const kindaHot: Color  = [255, 204, 128];
 
-    const r = Math.floor(this.interpolate(cold[0], hot[0], p));
-    const g = Math.floor(this.interpolate(cold[1], hot[1], p));
-    const b = Math.floor(this.interpolate(cold[2], hot[2], p));
+    let [r, g, b] = this.interpolateColor(kindaCold, reallyCold, 2 * p);
+    if (p >= 0.5)
+      [r, g, b] = this.interpolateColor(kindaHot, reallyHot, 2 * p - 1);
     
     return `rgb(${r},${g},${b})`;
   }
