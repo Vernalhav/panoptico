@@ -1,30 +1,62 @@
 import { Component, Input } from '@angular/core';
-import { Congressperson } from 'src/app/core/entities';
-// TODO: translate to english
-export interface Despesas { 
-  name: string, 
-  cost: number, 
-  notaFiscal: string
-}
-// TODO: inject expenses
-const EXPENSES : Despesas[] = [
-  {name: 'Rachadinha', cost: 100000, notaFiscal: 'example.org'},
-  {name: 'Triplex', cost: 3000000, notaFiscal: 'example.org'},
-  {name: 'Jogo do bixo', cost: 10000, notaFiscal: 'example.org'},
-]
+import { CamaraService, Expense, ExpensesResponse } from 'src/app/core/services';
+
 
 @Component({
   selector: 'app-congressperson-expenditure',
   templateUrl: './congressperson-expenditure.component.html',
   styleUrls: ['./congressperson-expenditure.component.scss']
 })
-export class CongresspersonExpenditureComponent {
-  dataSource = EXPENSES; 
-  displayedColumns: string[] = ['name', 'cost', 'notaFiscal'];
+export class CongresspersonExpenditureComponent { 
+  private _congresspersonId?: number;
   
-  @Input()
-  congressperson: Congressperson | undefined = undefined;
+  displayedColumns: string[] = ['type', 'date', 'cost', 'documentUrl'];
+  expenses?: ExpenseTableElement[];
+  totalCost: number = 0;
+  
+  
+  @Input() set congresspersonId(value: number) {
+    if (this._congresspersonId != value) {
+      this._congresspersonId = value;
+      this.load(this._congresspersonId);
+    }
+  }
+  
+  constructor(private readonly svc: CamaraService) {}
 
-  @Input()
-  totalExpenses: number = 100000;
+  load(id: number): void {
+    this.svc.getExpensesFromCongressperson(id).subscribe((response: ExpensesResponse) => {
+      let tableElements: ExpenseTableElement[] = [];
+      response.map((expense: Expense)=>{
+        let element = new ExpenseTableElement(
+          new Date(expense.dataDocumento),
+          expense.tipoDespesa,
+          expense.valorDocumento,
+          expense.urlDocumento
+        );
+        tableElements.push(element);
+      });
+      this.expenses = tableElements;
+      this.calculateTotalCost();
+    });
+  }
+
+  private calculateTotalCost(): void {
+    this.totalCost = 0;
+    this.expenses?.forEach((expense) => this.totalCost += expense.cost);
+  }
+}
+
+class ExpenseTableElement {
+  date: Date;
+  type: string;
+  cost: number;
+  documentUrl: string;
+
+  constructor(date: Date, type: string, cost: number, documentUrl: string) {
+    this.date = date;
+    this.type = type;
+    this.cost = cost;
+    this.documentUrl = documentUrl;
+  }
 }

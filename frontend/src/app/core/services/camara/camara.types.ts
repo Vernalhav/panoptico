@@ -43,3 +43,25 @@ export interface VotingDetailsResponse {
   objetosPossiveis: ObjetoPossivel[];
   proposicoesAfetadas: ProposicaoAfetada[];
 }
+
+export type ExpensesResponse = Expense[];
+
+export interface Expense {
+  ano: number,
+  mes: number,
+  tipoDespesa: string,
+  codDocumento: number,
+  tipoDocumento: string,
+  codTipoDocumento: number,
+  dataDocumento: string,
+  numDocumento: number,
+  valorDocumento: number,
+  urlDocumento: string,
+  nomeFornecedor: string,
+  cnpjCpfFornecedor: string,
+  valorLiquido: number,
+  valorGlosa: number,
+  numRessarcimento: string,
+  codLote: number,
+  parcela: number
+}

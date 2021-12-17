@@ -1,1 +1,5 @@
-<app-congressperson-expenditure *ngFor="let person of congresspeople" [congressperson]="person"></app-congressperson-expenditure>
+<app-header></app-header>
+
+<app-congressperson-expenditure *ngFor="let person of congresspeople" [congresspersonId]="person.id"></app-congressperson-expenditure>
+
+<app-footer></app-footer>

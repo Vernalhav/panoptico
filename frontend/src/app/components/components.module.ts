@@ -20,17 +20,18 @@ import { MatCardModule } from "@angular/material/card";
 import { MatInputModule } from "@angular/material/input";
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatSlideToggleModule } from "@angular/material/slide-toggle";
-import {MatTableModule} from '@angular/material/table';
+import { MatTableModule } from '@angular/material/table';
 import { MatNativeDateModule, MAT_DATE_LOCALE } from "@angular/material/core";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { ChartsModule } from "ng2-charts";
 import { PartiesChecklistComponent } from "./parties-checklist/parties-checklist.component";
 import { WordCloudComponent } from './word-cloud/word-cloud.component';
-import { AngularD3CloudModule } from "angular-d3-cloud";
 import { CongresspersonExpenditureComponent } from "./congressperson-expenditure/congressperson-expenditure.component";
 import { ExternalModule } from "../external/external.module";
 import { BinaryWordCloudComponent } from './binary-word-cloud/binary-word-cloud.component';
 
+import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { faFileAlt } from '@fortawesome/free-solid-svg-icons';
 
 @NgModule({
   declarations: [
@@ -63,7 +64,7 @@ import { BinaryWordCloudComponent } from './binary-word-cloud/binary-word-cloud.
     // Angular Modules
     CommonModule,
 
-    // Material UI Modules
+    // Material UI & Font Awesome Modules
     MatSelectModule,
     MatListModule,
     MatButtonModule,
@@ -79,6 +80,7 @@ import { BinaryWordCloudComponent } from './binary-word-cloud/binary-word-cloud.
     FormsModule,
     ReactiveFormsModule,
     ChartsModule,
+    FontAwesomeModule,
 
     // App Modules
     CoreModule,
@@ -91,4 +93,9 @@ import { BinaryWordCloudComponent } from './binary-word-cloud/binary-word-cloud.
   ]
   
 })
-export class ComponentsModule {}
+
+export class ComponentsModule {
+  constructor(library: FaIconLibrary) {
+    library.addIcons(faFileAlt);
+  }
+}
