@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { Congressperson } from 'src/app/core/entities';
+import { BackendQueryModel } from 'src/app/core/models';
+import { AvailablePartiesView } from 'src/app/core/views';
 
 @Component({
   selector: 'app-mon-dep-expenses',
@@ -7,10 +8,15 @@ import { Congressperson } from 'src/app/core/entities';
   styleUrls: ['./mon-dep-expenses.component.scss']
 })
 export class MonDepExpensesComponent {
-  congresspeople: Congressperson[] = [
-    new Congressperson(204558, 'Joaozin da barra', 'UF'),
-    new Congressperson(141508, 'Tabata Amaral', 'SP'),
-    new Congressperson(92172, 'Tiririca', 'MG'),
-    new Congressperson(178951, 'Ze que foi', 'AC'),
-  ];
+  
+  public congresspersonId: number = -1;
+
+  constructor(
+    readonly availablePartiesView: AvailablePartiesView
+  ) {}
+
+  updateCongresspersonId(id:number){
+    this.congresspersonId = id;
+  }
+
 }

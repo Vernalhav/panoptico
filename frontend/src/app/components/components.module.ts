@@ -32,10 +32,12 @@ import { BinaryWordCloudComponent } from './binary-word-cloud/binary-word-cloud.
 
 import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faFileAlt } from '@fortawesome/free-solid-svg-icons';
+import { CongresspersonSelectorComponent } from './congressperson-selector/congressperson-selector.component';
 
 @NgModule({
   declarations: [
     CongresspeopleChecklistComponent,
+    CongresspersonSelectorComponent,
     CongresspersonExpenditureComponent,
     FilterableChecklistComponent,
     MonitoredDatesComponent,
@@ -49,6 +51,7 @@ import { faFileAlt } from '@fortawesome/free-solid-svg-icons';
 
   exports: [
     CongresspeopleChecklistComponent,
+    CongresspersonSelectorComponent,
     CongresspersonExpenditureComponent,
     FilterableChecklistComponent,
     MonitoredDatesComponent,

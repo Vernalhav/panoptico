@@ -1,7 +1,10 @@
 .expense-row {
-	width: 33%;
+	white-space:nowrap;
 }
 
-.card {
-	max-width: 400px;
+.expense-row td,
+.expense-header th {
+	padding: 1rem;
+	overflow: hidden;
+	min-width: 100px;
 }
