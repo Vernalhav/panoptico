@@ -5,6 +5,6 @@
     [selected]="!!view.isPartyMonitored[party.id]"
     (click)="handleOptionClick(party)"
   >
-    {{ party.name }}
+    {{ party.name }} ({{ party.acronym }})
   </mat-list-option>
 </mat-selection-list>
