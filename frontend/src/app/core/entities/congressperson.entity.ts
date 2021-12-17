@@ -6,6 +6,14 @@ export class Congressperson {
   state: string;
   party?: Party;
 
+  photoUrl?: string;
+  email?: string;
+  civilName?: string;
+  scholarity?: string;
+  birthState?: string;
+  birthCity?: string;
+  sex?: string;
+
   public get partyAcronym() {
     return this.party ? this.party.acronym : 'Sem partido';
   }
