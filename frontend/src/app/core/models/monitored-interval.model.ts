@@ -3,10 +3,10 @@ import { PublishableValue, SubscribableValue } from './common';
 
 @Injectable()
 export class MonitoredIntervalModel {
-  private _start: PublishableValue<Date> = new PublishableValue(
-    new Date(Date.now() - 90 * 24 * 60 * 60 * 1000),
+  protected _start: PublishableValue<Date> = new PublishableValue(
+    new Date(2020, 4, 1)
   );
-  private _end: PublishableValue<Date> = new PublishableValue(new Date());
+  protected _end: PublishableValue<Date> = new PublishableValue(new Date(2020, 4, 30));
 
   public get start(): SubscribableValue<Date> {
     return this._start;
