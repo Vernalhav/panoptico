@@ -1,13 +1,15 @@
 <img src="frontend/src/assets/logo_black.png" width=600px>  
 
 Projeto criado para a disciplina Tópicos Avançados em Programação Orientada a Objetos. O site permitirá visualizar os votos de partidos e deputados sobre determinados temas.  
-Para mais detalhes sobre o [front-end](./political-tracker-frontend/README.md) e o [back-end](./political-tracker-backend/README.md), consulte o README no diretório correspondente.  
+Para mais detalhes sobre o [front-end](./frontend/README.md) e o [back-end](./backend/README.md), consulte o README no diretório correspondente.  
 
 
 ## Entregas
 ### Entrega 4: Requisito 7, requisito bônus e repaginada no front-end
 Como alteramos todas as páginas do site, não é prático colocar todas os fotos nesse documento.
 Vamos destacar algumas aqui, mas cada uma está detalhada no README de seus diretórios.
+
+
 <img src="https://cdn.discordapp.com/attachments/766101843276988416/921521992589541396/unknown.png">
 <img src="https://cdn.discordapp.com/attachments/766101843276988416/921522751473344522/unknown.png">
 <img src="https://cdn.discordapp.com/attachments/766101843276988416/921528776175779840/unknown.png">
