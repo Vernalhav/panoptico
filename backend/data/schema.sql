@@ -5,14 +5,25 @@
 CREATE TABLE partidos(
 	id INTEGER PRIMARY KEY,
 	sigla VARCHAR(64),
-	nome VARCHAR(128)
+	nome VARCHAR(128),
+	atividade VARCHAR(32),
+	totalMembros INTEGER,
+	nomeLider VARCHAR(128)
 );
 
 CREATE TABLE deputados(
-	id INTEGER PRIMARY KEY,
+	id INTEGER,
 	nome VARCHAR(128),
-	UF VARCHAR(3),
 	idPartido INTEGER,
+	siglaPartido VARCHAR(64),
+	UF VARCHAR(3),
+	urlFoto VARCHAR(256),
+	email VARCHAR(128),
+	nomeCivil VARCHAR(128),
+	escolaridade VARCHAR(128),
+	ufNascimento VARCHAR(3),
+	municipioNascimento VARCHAR(128),
+	sexo CHAR,
 	FOREIGN KEY(idPartido) REFERENCES partidos(id)
 );
 
@@ -49,8 +60,12 @@ CREATE TABLE votos(
 .mode csv partidos
 .import ./csv/partidos.csv partidos
 
+DELETE FROM partidos WHERE partidos.atividade <> 'Ativo' OR partidos.totalMembros = 0;
+
 .mode csv deputados
 .import ./csv/deputados.csv deputados
+
+DELETE FROM deputados WHERE deputados.idPartido not in (SELECT id FROM partidos);
 
 .mode csv topicos
 .import ./csv/topicos.csv topicos
@@ -80,14 +95,23 @@ DELETE FROM proposicoesVotacoes
 CREATE TABLE Party (
 	id INTEGER PRIMARY KEY,
 	acronym VARCHAR(64),
-	name VARCHAR(128)
+	name VARCHAR(128),
+	totalMembers INTEGER,
+	liderName VARCHAR(128)
 );
 
 CREATE TABLE Congressperson(
 	id INTEGER PRIMARY KEY,
 	name VARCHAR(128),
 	state VARCHAR(3),
-	partyId INTEGER
+	partyId INTEGER,
+	photoUrl VARCHAR(256),
+	email VARCHAR(128),
+	civilName VARCHAR(128),
+	scholarity VARCHAR(128),
+	birthState VARCHAR(3),
+	birthCity VARCHAR(128),
+	sex CHAR
 );
 
 CREATE TABLE Voting(
@@ -151,9 +175,11 @@ CREATE TABLE LawCountByParty(
 );
 
 -- POPULATE ENTITIES TABLES
-INSERT INTO Party SELECT id, sigla, nome FROM partidos;
+INSERT INTO Party SELECT id, sigla, nome, totalMembros, nomeLider FROM partidos;
 
-INSERT INTO Congressperson SELECT id, nome, UF, idPartido FROM deputados;
+INSERT INTO Congressperson 
+	SELECT id, nome, UF, idPartido, urlFoto, email, nomeCivil, escolaridade, ufNascimento, municipioNascimento, sexo 
+	FROM deputados;
 
 INSERT INTO Voting SELECT idVotacao, dataVotacao FROM proposicoesVotacoes GROUP BY idVotacao;
 

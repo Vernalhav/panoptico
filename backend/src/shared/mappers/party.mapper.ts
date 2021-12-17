@@ -18,13 +18,15 @@ export class PartyMapper extends Mapper<PartyDTO, Party> {
     party.id = data.id;
     party.acronym = data.acronym;
     party.name = data.name;
+    party.totalMembers = data.totalMembers;
+    party.liderName = data.liderName;
     if (data.members)
       data.members.map((e) => this.congresspersonMapper.mapFrom);
     return party;
   }
 
   public mapTo(data: Party): PartyDTO {
-    return new PartyDTO(data.id, data.acronym, data.name, data?.members);
+    return new PartyDTO(data.id, data.acronym, data.name, data.totalMembers, data.liderName, data?.members);
   }
 }
 

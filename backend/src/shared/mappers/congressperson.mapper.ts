@@ -22,6 +22,14 @@ export class CongresspersonMapper extends Mapper<
     congressperson.name = data.name;
     congressperson.state = data.state;
     congressperson.partyId = data.partyId;
+    congressperson.partyId = data.partyId;
+    congressperson.photoUrl = data.photoUrl;
+    congressperson.email = data.email;
+    congressperson.civilName = data.civilName;
+    congressperson.scholarity = data.scholarity;
+    congressperson.birthState = data.birthState;
+    congressperson.birthCity = data.birthCity;
+    congressperson.sex = data.sex;
     if (data.party) data.party = this.partyMapper.mapFrom(data.party);
     return congressperson;
   }
@@ -32,6 +40,13 @@ export class CongresspersonMapper extends Mapper<
       data.name,
       data.state,
       data.partyId,
+      data.photoUrl,
+      data.email,
+      data.civilName,
+      data.scholarity,
+      data.birthState,
+      data.birthCity,
+      data.sex,
       data.party,
     );
   }
