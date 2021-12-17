@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { HomeComponent } from './pages/home/home.component';
+import { MonDepExpensesComponent } from './pages/mon-dep-expenses/mon-dep-expenses.component';
 import { MonEntVotingsComponent } from './pages/mon-ent-votings/mon-ent-votings.component';
 import { MonPartsAndDepsComponent } from './pages/mon-parts-and-deps/mon-parts-and-deps.component';
 import { MonitorMenuComponent } from './pages/monitor-menu/monitor-menu.component';
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'monitores', component: MonitorMenuComponent },
   { path: 'monitor/partidos-e-deputados', component: MonPartsAndDepsComponent },
   { path: 'monitor/votacoes-entidades', component: MonEntVotingsComponent },
+  { path: 'monitor/gastos-deputados', component: MonDepExpensesComponent },
 
   // 404 Callback
   { path: '**', redirectTo: '/' },

@@ -25,6 +25,7 @@ import { HomeComponent } from './home/home.component';
 import { MonitorMenuComponent } from './monitor-menu/monitor-menu.component';
 import { MonPartsAndDepsComponent } from './mon-parts-and-deps/mon-parts-and-deps.component';
 import { MonEntVotingsComponent } from './mon-ent-votings/mon-ent-votings.component';
+import { MonDepExpensesComponent } from './mon-dep-expenses/mon-dep-expenses.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { faHandshake, faShieldAlt, faUniversity } from '@fortawesome/free-solid-svg-icons';
@@ -40,7 +41,7 @@ import { faHandshake, faShieldAlt, faUniversity } from '@fortawesome/free-solid-
     TabCloudsComponent, 
 
     // New Pages
-    HomeComponent, MonitorMenuComponent, MonPartsAndDepsComponent, MonEntVotingsComponent,
+    HomeComponent, MonitorMenuComponent, MonPartsAndDepsComponent, MonEntVotingsComponent, MonDepExpensesComponent
   ],
   imports: [
     // Angular Imports

@@ -1,0 +1,42 @@
+<mat-card *ngIf="congressperson">
+	<div class="flex flex-row gap-6 justify-items-start flex-wrap">
+		<!-- TODO: Not flex the image, separate image from table (content) -->
+		<img src="https://www.camara.leg.br/internet/deputado/bandep/160508.jpg" alt="Foto do deputado">
+		<div class="grow">
+			<mat-card-title>{{ congressperson.name }}</mat-card-title>
+			<mat-card-title> Gasto Total: R${{ totalExpenses }}</mat-card-title>
+			<mat-card-content style="margin-bottom: 0;">
+				<table mat-table [dataSource]="dataSource">
+			
+					<!-- Name Column -->
+					<ng-container matColumnDef="name">
+						<th mat-header-cell *matHeaderCellDef class="expense-row"> Nome </th>
+						<td mat-cell *matCellDef="let element">{{element.name}}</td>
+					</ng-container>
+		
+					<!-- Cost Column -->
+					<ng-container matColumnDef="cost">
+						<th mat-header-cell *matHeaderCellDef class="expense-row"> Gastos </th>
+						<td mat-cell *matCellDef="let element">{{element.cost}}</td>
+					</ng-container>
+					
+					<!-- Nota fiscal Column -->
+					<ng-container matColumnDef="notaFiscal">
+						<th mat-header-cell *matHeaderCellDef class="expense-row"> Nota Fiscal </th>
+						<td mat-cell *matCellDef="let element">
+							<button onclick="window.open('http://example.org')">
+								<img src="https://img.icons8.com/material-outlined/24/000000/document--v1.png"/>
+							</button>
+						</td>
+					</ng-container>
+					;
+					<tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+					<tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+					<!-- <tr mat-footer-row *matFooterRowDef="displayedColumns"> -->
+						<a href="https://icons8.com/icon/82775/document">Document icon by Icons8</a>
+					<!-- </tr> -->
+				</table>
+			</mat-card-content>
+		</div>
+	</div>
+</mat-card>
