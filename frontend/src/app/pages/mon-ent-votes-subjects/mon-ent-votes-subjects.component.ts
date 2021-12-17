@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { MatSlideToggleChange } from '@angular/material/slide-toggle';
-import { CongresspersonLawCounts, PartyLawCounts } from 'src/app/core/entities';
 import { BackendQueryModel } from 'src/app/core/models';
 import { AvailablePartiesView } from 'src/app/core/views';
 
