@@ -9,15 +9,14 @@ export class LawCountMonitorController {
 
   @Get()
   async lawCounts(
-    @Query('congresspeopleIds') congresspeopleIds: number[] | number = [],
+    @Query('congresspersonIds') congresspersonIds: number[] | number = [],
     @Query('partiesIds') partiesIds: number[] | number = [],
   ) {
-    congresspeopleIds = arrayOrElementToArray(congresspeopleIds);
+    congresspersonIds = arrayOrElementToArray(congresspersonIds);
     partiesIds = arrayOrElementToArray(partiesIds);
 
-    return await this.lawCountMonitorService.getLawCounts(congresspeopleIds, partiesIds);
+    return await this.lawCountMonitorService.getLawCounts(congresspersonIds, partiesIds);
   }
-
 
   @Get('party')
   async partyLawCounts(@Query('partyId') partyId = 36839) {

@@ -61,6 +61,16 @@ export class BackendQueryAPIModel extends BackendQueryModel {
       .subscribe((subjects) => this._votingsFromMonitoredSubjects.publish(subjects))
   }
 
+  private updateLawCountsFromEntities() {
+    const params = this.monitoredSubjectsParams;
+    this.backendService
+      .getLawCountsByEntities(params)
+      .subscribe((laws) => {
+        this._lawCountsFromCongressperson.publish(laws.congresspeopleLawCounts);
+        this._lawCountsFromParties.publish(laws.partiesLawCounts)
+      })
+  }
+
   public queryUsingCurrentFilters() {
     this.updateVotingsFromMonitoredEntities();
     this.updateVotingsFromMonitoredSubjects();
@@ -74,4 +84,7 @@ export class BackendQueryAPIModel extends BackendQueryModel {
     this.updateVotingsFromMonitoredSubjects();
   }
 
+  public queryLawCountsFromEntities(){
+    this.updateLawCountsFromEntities();
+  }
 }

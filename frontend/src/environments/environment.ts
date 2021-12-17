@@ -12,6 +12,7 @@ export const environment = {
       GET_CONGRESSPEOPLE_PATH: '/congressperson',
       GET_MONITOR_VOTINGS: '/monitor',
       GET_MONITOR_SUBJECTS: '/subjects-monitor/',
+      GET_MONITOR_LAW_COUNTS: '/law-counts',
     },
   },
 };
