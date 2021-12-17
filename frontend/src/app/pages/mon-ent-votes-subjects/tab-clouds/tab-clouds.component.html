@@ -1,25 +1,29 @@
 <div class="grow flex flex-col flex-nowrap">
+    <p>Legenda: 
+        <span class="font-semibold" style="color: rgb(185, 246, 202)">Votos a Favor (Sim)</span> | 
+        <span class="font-semibold" style="color: rgb(255, 138, 128)">Votos Contra (Não)</span>
+    </p>
     <div class="grow" #containerYes>
-        <app-word-cloud
+        <app-binary-word-cloud
             [fixedIncrementValue]="fixedIncrementValue"
             [baseTextSize]="baseTextSize"    
             [fixedMaxValue]="_fixedMaxValue"
-            [data]='_yesSubjectsVotes'
+            [data]='_yesSubjectsVotes.concat(_noSubjectsVotes)'
             [width]='containerYes.offsetWidth'
             [height]='containerYes.offsetHeight'
-        ></app-word-cloud>
+        ></app-binary-word-cloud>
     </div>
     
-    <div class="grow" #containerNo>
-        <app-word-cloud *ngIf="containerNo.offsetWidth"
+    <!-- <div class="grow" #containerNo>
+        <app-binary-word-cloud *ngIf="containerNo.offsetWidth"
             [fixedIncrementValue]="fixedIncrementValue"
             [baseTextSize]="baseTextSize"
             [fixedMaxValue]="_fixedMaxValue"
             [data]='_noSubjectsVotes'
             [width]='containerNo.offsetWidth'
             [height]='containerNo.offsetHeight'
-        ></app-word-cloud>
-        <!-- Mockup data: [{ text:"Administração Pública",value:30 }, { text:"Saúde e Cidadania :)",value:50 }] -->
-    </div>
+        ></app-binary-word-cloud>
+    </div> -->
+    <!-- Mockup data: [{ text:"Administração Pública",value:30 }, { text:"Saúde e Cidadania :)",value:50 }] -->
 </div>
 

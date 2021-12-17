@@ -26,6 +26,7 @@ import { ChartsModule } from "ng2-charts";
 import { PartiesChecklistComponent } from "./parties-checklist/parties-checklist.component";
 import { WordCloudComponent } from './word-cloud/word-cloud.component';
 import { ExternalModule } from "../external/external.module";
+import { BinaryWordCloudComponent } from './binary-word-cloud/binary-word-cloud.component';
 
 
 @NgModule({
@@ -38,6 +39,7 @@ import { ExternalModule } from "../external/external.module";
     TopicCardComponent,
     PartiesChecklistComponent,
     WordCloudComponent,
+    BinaryWordCloudComponent,
   ],
 
   exports: [
@@ -49,6 +51,7 @@ import { ExternalModule } from "../external/external.module";
     TopicCardComponent,
     PartiesChecklistComponent,
     WordCloudComponent,
+    BinaryWordCloudComponent,
   ],
 
   imports: [
