@@ -70,7 +70,7 @@ export class AngularD3CloudComponent implements OnChanges, OnInit {
       .remove();
 
     // Now this wasn't so hard, was it??
-    const randomFunction = AngularD3CloudComponent.mulberry32(this.seed || Math.floor(Math.random() * (1 << 32)));
+    const randomFunction = this.seed ? AngularD3CloudComponent.mulberry32(this.seed) : Math.random;
 
     const layout = cloud()
       .random(randomFunction)
