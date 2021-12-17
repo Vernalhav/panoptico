@@ -14,6 +14,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { ChartsModule } from 'ng2-charts';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
+import { faHandshake, faShieldAlt, faUniversity } from '@fortawesome/free-solid-svg-icons';
 
 import { CoreModule } from '../core/core.module';
 import { ComponentsModule } from '../components/components.module';
@@ -60,6 +63,7 @@ import { MonEntProposicoesComponent } from './mon-ent-proposicoes/mon-ent-propos
     MatSidenavModule,
     MatProgressSpinnerModule,
     ChartsModule,
+    FontAwesomeModule,
 
     // Project Imports
     CoreModule,
@@ -67,4 +71,8 @@ import { MonEntProposicoesComponent } from './mon-ent-proposicoes/mon-ent-propos
     SharedModule,
   ],
 })
-export class PagesModule {}
+export class PagesModule {
+  constructor(library: FaIconLibrary) {
+    library.addIcons(faHandshake, faShieldAlt, faUniversity);
+  }
+}
