@@ -3,7 +3,7 @@ import { map } from 'rxjs/operators';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
-import { Congressperson, Party, Subject, Voting } from '../../entities';
+import { Congressperson, LawCounts, Party, Subject, Voting } from '../../entities';
 import { IAPICongresspersonResponse, IAPIMonitorSubjectsResponse, IAPIMonitorVotingsResponse, IAPIPartiesResponse, IAPIVotingsRequest } from '.';
 
 
@@ -50,4 +50,9 @@ export class BackendService {
     return this.request<IAPIMonitorSubjectsResponse>('GET', BackendService.config.GET_MONITOR_SUBJECTS, { params: req })
       .pipe( map(r => r.subjects) )
   }
+
+  getLawCountsByEntities(req: IAPIVotingsRequest): Observable<LawCounts> {
+    return this.request<LawCounts>('GET', BackendService.config.GET_MONITOR_LAW_COUNTS, { params: req })
+  }
+
 }

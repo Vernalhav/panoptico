@@ -1,0 +1,113 @@
+<div class="body-wrapper h-screen max-h-screen overflow-hidden flex flex-col flex-nowrap">
+  <app-header></app-header>
+  
+  <main class="monitor-ent-votings grow flex flex-col flex-nowrap overflow-hidden">
+    <mat-drawer-container class="example-container grow">
+      
+      <!-- Sidebar -->
+      <mat-drawer mode="side" opened class="w-1/3 grow flex flex-col flex-nowrap">
+  
+        <div class="info-section py-6 w-full grow flex flex-row justify-center">
+          <div class="row px-6 w-full md:max-w-screen-xl gap-6 md:8 grow flex justify-center flex-col">
+            
+            <mat-tab-group >
+              <mat-tab label="Partidos">
+                <app-parties-checklist
+                  [items]="availablePartiesView.availableParties"
+                ></app-parties-checklist>
+              </mat-tab>
+              
+              <mat-tab label="Deputados">
+                <app-congresspeople-checklist
+                  [congresspeopleByParty]="availablePartiesView.availableParties"
+                ></app-congresspeople-checklist>
+              </mat-tab>
+              
+              <mat-tab label="Tópicos">
+                <app-monitored-keywords></app-monitored-keywords>
+              </mat-tab>
+              
+              <mat-tab label="Datas">
+                <app-monitored-dates></app-monitored-dates>
+              </mat-tab>
+            </mat-tab-group>
+  
+            <button
+              mat-raised-button
+              color="accent"
+              class="monitor-button"
+              (click)="handleMonitorButton()"
+            >
+              Monitorar
+            </button>
+          </div>
+        </div>
+  
+      </mat-drawer>
+      
+      <!-- Right Content -->
+      <mat-drawer-content class="overflow-y-scroll">
+        
+        <div class="info-section py-6 w-full flex flex-row justify-center">
+          <div class="row px-6 w-full md:max-w-screen-xl gap-6 md:8 flex grow justify-center flex-col">
+            
+            <div class="title-section">
+              <p class="text-left font-semibold font-serif text-3xl md:text-6xl">Monitor de Temas</p>
+              <p class="text-left text-lg md:text-1xl">Selecione os temas de seu interesse e veja de forma elegante quais tem recebido maior atenção 
+                das entidades monitoradas em um dado intervalo de tempo!</p>
+            </div>
+            
+            <!-- Empty or no result to display -->
+            <div class="title-section grow py-6"
+              *ngIf="!this.isLoading && backendQueryModel.votingsFromMonitoredSubjects.value.length == 0">
+              <p class="text-left font-semibold text-3xl">Nenhum resultado para ser exibido.</p>
+            </div>
+  
+            <!-- Loading Results -->
+            <!-- <div class="flex flex-row justify-center py-6"
+              *ngIf="this.isLoading && backendQueryModel.votingsFromMonitoredSubjects.value.length == 0">
+              <mat-spinner></mat-spinner>
+            </div> -->
+            
+            <!-- Results -->
+            <div>
+              <!-- Filters -->
+              <div class="flex flex-row nowrap px-2"
+              *ngIf="backendQueryModel.votingsFromMonitoredSubjects.value.length > 0">
+                <span>{{backendQueryModel.votingsFromMonitoredSubjects.value.length}} Resultados.</span>
+                <span class="grow"></span>
+                <span>Ativar Resultados de &nbsp;&nbsp;</span>
+                <mat-slide-toggle class="font-regular mr-4" 
+                  [checked]="isCheckedParties" 
+                  (change)="checkedPartiesChanged($event)">
+                    Partidos
+                </mat-slide-toggle>
+                <mat-slide-toggle class="font-regular"
+                  [checked]="isCheckedCongresspeople"
+                  (change)="checkedCongresspeopleChanged($event)">
+                    Deputados
+                </mat-slide-toggle>
+              </div>
+              
+              <!-- Cards -->
+              <div class="grid grid-cols-1 lg:grid-cols-2">
+                <div *ngFor="let voting of backendQueryModel.votingsFromMonitoredSubjects.value" class="p-2">
+                  <app-topic-card
+                    [voting]="voting"
+                    [includeParties]="isCheckedParties"
+                    [includeCongresspeople]="isCheckedCongresspeople"
+                  ></app-topic-card>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+  
+      </mat-drawer-content>
+  
+    </mat-drawer-container>
+  </main>
+  
+  <app-footer></app-footer>
+  </div>

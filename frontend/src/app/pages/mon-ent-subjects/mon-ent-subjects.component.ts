@@ -4,11 +4,11 @@ import { BackendQueryModel } from 'src/app/core/models';
 import { AvailablePartiesView } from 'src/app/core/views';
 
 @Component({
-  selector: 'app-mon-ent-votings',
-  templateUrl: './mon-ent-votings.component.html',
-  styleUrls: ['./mon-ent-votings.component.scss']
+  selector: 'app-mon-ent-subjects',
+  templateUrl: './mon-ent-subjects.component.html',
+  styleUrls: ['./mon-ent-subjects.component.scss']
 })
-export class MonEntVotingsComponent implements OnInit {
+export class MonEntSubjectsComponent implements OnInit {
   
   public isLoading = false;
   public isCheckedParties = true;
@@ -33,6 +33,6 @@ export class MonEntVotingsComponent implements OnInit {
   handleMonitorButton() {
     this.isLoading = true;
     this.backendQueryModel.clearQueryResults();
-    this.backendQueryModel.queryVotingsFromEntities();
+    this.backendQueryModel.querySubjectsFromEntities();
   }
 }

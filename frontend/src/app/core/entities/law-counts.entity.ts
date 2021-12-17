@@ -3,7 +3,7 @@ type LawCount = {
   count: number;
 }
 
-export class PartyLawCountsDTO {
+export class PartyLawCounts {
   constructor(
     public partyName: string,
     public partyAcronym: string,
@@ -11,16 +11,16 @@ export class PartyLawCountsDTO {
   ) {}
 }
 
-export class CongresspersonLawCountsDTO {
+export class CongresspersonLawCounts {
   constructor(
     public congresspersonName: string,
     public lawCounts: LawCount[] = [],
   ) {}
 }
 
-export class LawCountsDTO {
+export class LawCounts {
   constructor(
-    public congresspeopleLawCounts: CongresspersonLawCountsDTO[] = [],
-    public partiesLawCounts: PartyLawCountsDTO[] = [],
+    public congresspeopleLawCounts: CongresspersonLawCounts[] = [],
+    public partiesLawCounts: PartyLawCounts[] = [],
   ) {}
 }
