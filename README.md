@@ -9,6 +9,12 @@ Para mais detalhes sobre o [front-end](./frontend/README.md) e o [back-end](./ba
 Como alteramos todas as páginas do site, não é prático colocar todas os fotos nesse documento.
 Vamos destacar algumas aqui, mas cada uma está detalhada no README de seus diretórios.
 
+Detalhes sobre o [menu de seleção de ferramenta](https://gitlab.com/Vernalhav/politicaltracker/-/blob/develop/frontend/src/app/pages/monitor-menu/README.md).
+Detalhes sobre o [monitor de votações](https://gitlab.com/Vernalhav/politicaltracker/-/blob/develop/frontend/src/app/pages/mon-ent-votings/README.md).
+Detalhes sobre o [monitor de temas](https://gitlab.com/Vernalhav/politicaltracker/-/blob/develop/frontend/src/app/pages/mon-ent-subjects/README.md).
+Detalhes sobre o [monitor de projetos de lei](https://gitlab.com/Vernalhav/politicaltracker/-/blob/develop/frontend/src/app/pages/mon-ent-proposicoes/README.md).
+Detalhes sobre o [monitor de tema (versão nuvem)](https://gitlab.com/Vernalhav/politicaltracker/-/blob/develop/frontend/src/app/pages/mon-ent-votes-subjects/README.md).
+
 
 <img src="https://cdn.discordapp.com/attachments/766101843276988416/921521992589541396/unknown.png">
 <img src="https://cdn.discordapp.com/attachments/766101843276988416/921522751473344522/unknown.png">
