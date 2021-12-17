@@ -25,7 +25,7 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { ChartsModule } from "ng2-charts";
 import { PartiesChecklistComponent } from "./parties-checklist/parties-checklist.component";
 import { WordCloudComponent } from './word-cloud/word-cloud.component';
-import { AngularD3CloudModule } from "angular-d3-cloud";
+import { ExternalModule } from "../external/external.module";
 
 
 @NgModule({
@@ -70,11 +70,11 @@ import { AngularD3CloudModule } from "angular-d3-cloud";
     FormsModule,
     ReactiveFormsModule,
     ChartsModule,
-    AngularD3CloudModule,
 
     // App Modules
     CoreModule,
     MonitoredKeywordsModule,
+    ExternalModule,
   ],
 
   providers: [
