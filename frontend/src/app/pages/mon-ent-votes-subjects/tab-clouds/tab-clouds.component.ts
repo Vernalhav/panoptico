@@ -13,6 +13,10 @@ export class TabCloudsComponent {
   _noSubjectsVotes: {text: string, value: number}[] = []
   _fixedMaxValue: number = 1  
 
+  @Input() fixedIncrementValue: number = 0
+
+  @Input() baseTextSize: number = 40
+  
   @Input() set votingsFromSubjects(val: Subject[]) {
     this._yesSubjectsVotes = this.reduceVotingsToKeywordData(val, 'yes')
     this._noSubjectsVotes = this.reduceVotingsToKeywordData(val, 'no')

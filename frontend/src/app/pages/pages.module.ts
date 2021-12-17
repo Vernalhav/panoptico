@@ -24,13 +24,14 @@ import { SharedModule } from '../shared/shared.module';
 
 import { HomePageComponent } from './home-page/home-page.component';
 import { VotingsPageComponent } from './votings-page/votings-page.component';
-import { TabCloudsComponent } from './votings-page/tab-clouds/tab-clouds.component';
+import { TabCloudsComponent } from './mon-ent-votes-subjects/tab-clouds/tab-clouds.component';
 import { HomeComponent } from './home/home.component';
 import { MonitorMenuComponent } from './monitor-menu/monitor-menu.component';
 import { MonPartsAndDepsComponent } from './mon-parts-and-deps/mon-parts-and-deps.component';
 import { MonEntVotingsComponent } from './mon-ent-votings/mon-ent-votings.component';
 import { MonEntSubjectsComponent } from './mon-ent-subjects/mon-ent-subjects.component';
 import { MonEntProposicoesComponent } from './mon-ent-proposicoes/mon-ent-proposicoes.component';
+import { MonEntVotesSubjectsComponent } from './mon-ent-votes-subjects/mon-ent-votes-subjects.component';
 
 
 @NgModule({
@@ -43,7 +44,7 @@ import { MonEntProposicoesComponent } from './mon-ent-proposicoes/mon-ent-propos
     TabCloudsComponent, 
 
     // New Pages
-    HomeComponent, MonitorMenuComponent, MonPartsAndDepsComponent, MonEntVotingsComponent, MonEntSubjectsComponent, MonEntProposicoesComponent,
+    HomeComponent, MonitorMenuComponent, MonPartsAndDepsComponent, MonEntVotingsComponent, MonEntSubjectsComponent, MonEntProposicoesComponent, MonEntVotesSubjectsComponent,
   ],
   imports: [
     // Angular Imports
