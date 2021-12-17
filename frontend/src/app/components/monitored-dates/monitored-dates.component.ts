@@ -23,23 +23,17 @@ export class MonitoredDatesComponent {
       start: view.start,
       end: view.end,
     });
+    
+    this.range.valueChanges.subscribe(value => {
+      const { start, end } = value as { start: Date, end: Date };
+      if (!this.validRange(start, end)) return;
 
-    this.range.get('start')?.valueChanges.subscribe(value=>{
-      if(this.validateDates()){
-        this.controller.setStart(value);
-      }
-    })
-
-    this.range.get('end')?.valueChanges.subscribe(value=>{
-      if(this.validateDates()){
-        this.controller.setEnd(value);
-      }
+      this.controller.setStart(start);
+      this.controller.setEnd(end);
     })
   }
 
-  validateDates() {
-    const { start, end } = this.range.value;
-    return !start || !end || start <= end;
+  validRange(start: Date | null, end: Date | null) {
+    return !!start && !!end && start <= end;
   }
-
 }
