@@ -13,17 +13,20 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { InputAutocompleteComponent } from './input-autocomplete/input-autocomplete.component';
+import { ResultsMessageComponent } from './results-message/results-message.component';
 
 @NgModule({
   declarations: [
     HeaderComponent,
     FooterComponent,
-    InputAutocompleteComponent
+    InputAutocompleteComponent,
+    ResultsMessageComponent,
   ],
   exports: [
     HeaderComponent,
     FooterComponent,
     InputAutocompleteComponent,
+    ResultsMessageComponent,
   ],
   imports: [
     CommonModule,

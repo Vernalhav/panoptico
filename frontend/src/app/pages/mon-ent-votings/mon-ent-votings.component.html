@@ -56,7 +56,7 @@
           <!-- Empty or no result to display -->
           <div class="title-section grow py-6"
             *ngIf="!this.isLoading && backendQueryModel.votingsFromMonitoredEntities.value.length == 0">
-            <p class="text-left font-semibold text-3xl">Nenhum resultado para ser exibido.</p>
+            <app-results-message class="grow"> </app-results-message>
           </div>
 
           <!-- Loading Results -->
