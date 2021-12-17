@@ -32,9 +32,8 @@
             </div>
             
             <!-- Empty or no result to display -->
-            <div class="title-section grow py-6"
-              *ngIf="this.congresspersonId === -1">
-              <p class="text-left font-semibold text-3xl">Nenhum resultado para ser exibido.</p>
+            <div class="title-section grow py-6" *ngIf="this.congresspersonId === -1">
+              <app-results-message></app-results-message>
             </div>
   
             <!-- Loading Results -->

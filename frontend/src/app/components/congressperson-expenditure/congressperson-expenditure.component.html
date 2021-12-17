@@ -29,7 +29,7 @@
 					<!-- Date Column -->
 					<ng-container matColumnDef="date">
 						<th mat-header-cell *matHeaderCellDef class="expense-header" style="text-align: center;"> Data de Expedição </th>
-						<td mat-cell class="expense-row" style="text-align: center;" *matCellDef="let element">{{element.date.toLocaleString()}}</td>
+						<td mat-cell class="expense-row" style="text-align: center;" *matCellDef="let element">{{element.date.toLocaleString('pt-BR', { year: 'numeric', month: 'numeric', day: 'numeric' })}}</td>
 					</ng-container>
 		
 					<!-- Cost Column -->
