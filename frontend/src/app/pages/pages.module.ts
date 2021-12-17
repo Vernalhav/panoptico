@@ -25,6 +25,9 @@ import { HomeComponent } from './home/home.component';
 import { MonitorMenuComponent } from './monitor-menu/monitor-menu.component';
 import { MonPartsAndDepsComponent } from './mon-parts-and-deps/mon-parts-and-deps.component';
 import { MonEntVotingsComponent } from './mon-ent-votings/mon-ent-votings.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
+import { faHandshake, faShieldAlt, faUniversity } from '@fortawesome/free-solid-svg-icons';
 
 
 @NgModule({
@@ -56,6 +59,7 @@ import { MonEntVotingsComponent } from './mon-ent-votings/mon-ent-votings.compon
     MatFormFieldModule,
     MatSidenavModule,
     ChartsModule,
+    FontAwesomeModule,
 
     // Project Imports
     CoreModule,
@@ -63,4 +67,8 @@ import { MonEntVotingsComponent } from './mon-ent-votings/mon-ent-votings.compon
     SharedModule,
   ],
 })
-export class PagesModule {}
+export class PagesModule {
+  constructor(library: FaIconLibrary) {
+    library.addIcons(faHandshake, faShieldAlt, faUniversity);
+  }
+}
