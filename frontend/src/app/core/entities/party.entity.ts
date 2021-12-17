@@ -6,6 +6,9 @@ export class Party {
   acronym: string;
   members: Congressperson[];
 
+  totalMembers: number = 0;
+  liderName: string = '';
+
   constructor(
     id: number,
     name: string,
