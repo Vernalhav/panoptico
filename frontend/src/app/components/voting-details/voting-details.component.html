@@ -1,0 +1,25 @@
+<mat-expansion-panel (opened)="lazyLoadData()">
+  <mat-expansion-panel-header>
+    <mat-panel-title>Detalhes</mat-panel-title>
+  </mat-expansion-panel-header>
+  <div
+    [class]="
+      'pb-2 text-black text-xl font-bold ' +
+      (!!details ? (!!details.aprovacao ? 'text-green-300' : 'text-red-300') : 'text-gray-200')"
+  >
+    {{
+      (details && (details?.aprovacao ? 'Aprovado' : 'Não aprovado')) ||
+        'Carregando detalhes...'
+    }}
+  </div>
+  <div *ngIf="!details">Carregando detalhes...</div>
+  <div *ngIf="!!details">
+    <div *ngFor="let prop of details.proposicoesAfetadas; let i = index">
+      <h3>{{ prop.siglaTipo }} {{ prop.numero }}/{{ prop.ano }}</h3>
+      <p>{{ prop.ementa }}</p>
+      <mat-divider
+        *ngIf="i !== details.proposicoesAfetadas.length - 1"
+      ></mat-divider>
+    </div>
+  </div>
+</mat-expansion-panel>

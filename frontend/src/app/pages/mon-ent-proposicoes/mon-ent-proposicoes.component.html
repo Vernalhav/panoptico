@@ -1,0 +1,90 @@
+<div class="body-wrapper h-screen max-h-screen overflow-hidden flex flex-col flex-nowrap">
+  <app-header></app-header>
+  
+  <main class="monitor-ent-votings grow flex flex-col flex-nowrap overflow-hidden">
+    <mat-drawer-container class="example-container grow">
+      
+      <!-- Sidebar -->
+      <mat-drawer mode="side" opened class="w-1/3 grow flex flex-col flex-nowrap">
+  
+        <div class="info-section py-6 w-full grow flex flex-row justify-center">
+          <div class="row px-6 w-full md:max-w-screen-xl gap-6 md:8 grow flex justify-center flex-col">
+            
+            <mat-tab-group >
+              <mat-tab label="Partidos">
+                <app-parties-checklist
+                  [items]="availablePartiesView.availableParties"
+                ></app-parties-checklist>
+              </mat-tab>
+              
+              <mat-tab label="Deputados">
+                <app-congresspeople-checklist
+                  [congresspeopleByParty]="availablePartiesView.availableParties"
+                ></app-congresspeople-checklist>
+              </mat-tab>
+            </mat-tab-group>
+  
+            <button
+              mat-raised-button
+              color="accent"
+              class="monitor-button"
+              (click)="handleMonitorButton()">
+              Monitorar
+            </button>
+          </div>
+        </div>
+  
+      </mat-drawer>
+      
+      <!-- Right Content -->
+      <mat-drawer-content class="overflow-y-scroll grow flex flex-col flex-nowrap" style="display: flex;">
+        
+        <div class="info-section py-6 w-full grow flex flex-col justify-center">
+          <div class="row px-6 w-full md:max-w-screen-xl gap-6 md:8 grow flex justify-center flex-col">
+            
+            <div class="title-section">
+              <p class="text-left font-semibold text-3xl md:text-6xl">Monitor de Projetos de Lei</p>
+              <p class="text-left text-lg md:text-1xl">Veja quais os temas dos projetos de leis
+                propostos por um deputado ou partido. Palavras maiores e com cores mais quentes
+                representam mais projetos propostos. </p>
+            </div>
+            
+            <!-- Empty or no result to display -->
+            <div class="title-section grow py-6"
+              *ngIf="backendQueryModel.lawCountsFromCongressperson.value.length == 0 
+                      && backendQueryModel.lawCountsFromParties.value.length == 0">
+              <app-results-message></app-results-message>
+            </div>
+  
+            <!-- Loading Results -->
+            <!-- <div class="flex flex-row justify-center py-6"
+              *ngIf="this.isLoading && backendQueryModel.votingsFromMonitoredSubjects.value.length == 0">
+              <mat-spinner></mat-spinner>
+            </div> -->
+            
+            <!-- Results -->
+            <div class="grow" #container>
+                <!-- {{container.offsetWidth}} - {{container.offsetHeight}} -->
+                <app-word-cloud 
+                  *ngIf="!(backendQueryModel.lawCountsFromCongressperson.value.length == 0 
+                      && backendQueryModel.lawCountsFromParties.value.length == 0)"
+                    [fixedMaxValue]="undefined"
+                    [fixedIncrementValue]="20"
+                    [baseTextSize]="60"
+                    [data]='mapCountsToWordData(backendQueryModel.lawCountsFromParties.value, backendQueryModel.lawCountsFromCongressperson.value)'
+                    [width]='container.offsetWidth'
+                    [height]='container.offsetHeight'
+                ></app-word-cloud>
+                <!-- Mockup data: [{ text:"Administração Pública",value:30 }, { text:"Saúde e Cidadania :)",value:50 }] -->
+            </div>
+            
+          </div>
+        </div>
+  
+      </mat-drawer-content>
+  
+    </mat-drawer-container>
+  </main>
+  
+  <app-footer></app-footer>
+  </div>

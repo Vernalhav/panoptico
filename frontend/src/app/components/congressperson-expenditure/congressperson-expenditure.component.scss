@@ -1,0 +1,10 @@
+.expense-row {
+	white-space:nowrap;
+}
+
+.expense-row td,
+.expense-header th {
+	padding: 1rem;
+	overflow: hidden;
+	min-width: 100px;
+}

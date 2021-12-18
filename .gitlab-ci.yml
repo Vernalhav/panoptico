@@ -1,0 +1,46 @@
+image: node:latest
+
+stages:          # List of stages for jobs, and their order of execution
+  - build
+  - test
+  - deploy
+
+variables:
+  BACKEND_PATH: 'backend'
+
+build-backend-job:       # This job runs in the build stage, which runs first.
+  stage: build
+  script:
+    - cd "$BACKEND_PATH"
+    - npm install
+  cache:
+    paths:
+      - backend/node_modules/
+  artifacts:
+    expire_in: 1 days
+    when: on_success
+    paths:
+      - backend/node_modules/
+
+unit-test-backend-job:    # This job runs in the test stage.
+  stage: test             # It only starts when the job in the build stage completes successfully.
+  script:
+    - cd "$BACKEND_PATH"
+    - 'npm run test:cli'
+  artifacts:
+    when: always
+    reports:
+      junit:
+        - backend/junit.xml
+
+.lint-backend-job:   # This job runs in the test stage.
+  stage: test       # It only starts when the job in the build stage completes successfully.
+  script:
+    - cd "$BACKEND_PATH"
+    - 'npm run lint'
+
+.deploy-backend-job:      # This job runs in the deploy stage.
+  stage: deploy  # It only runs when all jobs in the test stage complete successfully.
+  script:
+    - echo "(mock) Deploying application..."
+    - echo "(mock) Application successfully deployed."

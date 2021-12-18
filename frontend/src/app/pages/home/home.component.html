@@ -1,0 +1,87 @@
+<main class="home-component mat-app-background">
+
+  <!-- Hero Sections -->
+  <div class="hero-section p-8 h-screen flex flex-col justify-center bg-cover bg-center brightness-50"
+      style="background-image: linear-gradient(rgba(116, 4, 116, 0.7), rgba(128, 11, 128, 0.7)), url('/assets/images/hero.jpg');">
+    <div class="block mx-auto md:max-w-screen-md p-6 border-white border-solid border-inherit border-2">
+      <img src="/assets/images/logo_white.png" class="mx-auto" />
+      <p class="mt-2 text-center font-serif text-2xl md:text-4xl text-white">
+        Ferramentas digitais que facilitam a fiscalização daqueles que o povo elege!
+      </p>
+      <p class="mt-6 text-center ">
+        <button mat-raised-button routerLink="monitores" class="text-lg py-1 px-4" color="accent"
+            style="font-size: 28px; padding: 10px 24px;">
+                MONITORAR AGORA</button>
+      </p>
+    </div>
+  </div>
+
+  <!-- Info: Sobre as Ferramentas -->
+  <div class="info-section py-6 md:py-16 w-full flex flex-row justify-center" style="background-color: rgba(255, 255, 255, 0.1);">
+    <div class="row px-6 md:px-16 w-full md:max-w-screen-lg gap-6 md:8 flex grow justify-around flex-col md:flex-row">
+      
+      <div class="info-content max-w-lg">
+        <p class="text-center font-semibold font-serif text-2xl md:text-4xl md:text-left">Fiscalize seus votos</p>
+        <p class="mt-2 text-center text-lg md:text-1xl md:text-left">
+          Utilize de nossas ferramentas para ter insights rápidos e 
+          descobrir se educação e saúde foram apenas um slogan ou se
+          os deputados eleitos realmente estão atuando como deveriam!
+        </p>
+        <p class="mt-3 text-center text-lg md:text-1xl md:text-left">
+          <button mat-raised-button routerLink="monitores" class="text-lg py-1 px-4" color="accent" 
+            style="font-size: 18px; padding: 4px 18px;">MONITORAR AGORA</button>
+        </p>
+      </div>
+      
+      <div class="info-image">
+        <fa-icon [icon]="['fas', 'handshake']" size="10x"></fa-icon>
+      </div>
+    </div>
+  </div>
+
+  <!-- Info: Privacidade & LGPD -->
+  <div class="info-section py-6 md:py-16 w-full flex flex-row justify-center">
+    <div class="row px-6 md:px-16 w-full md:max-w-screen-lg gap-6 md:8 flex grow justify-around flex-col md:flex-row-reverse md:text-right">
+      <div class="info-content max-w-lg">
+        <p class="mt-2 text-center font-semibold font-serif text-2xl md:text-4xl md:text-right">Privacidade e Liberdade</p>
+        <p class="mt-2 text-center text-lg md:text-1xl md:text-right">
+          Nosso sistema não necessita de cadastro e não armazena no servidor nenhum
+          tipo de identificação sobre buscas dos usuários. Todos os dados ficam salvos
+          apenas na sua máquina e podem ser removidos com um clique!
+        </p>
+        <p class="mt-3 text-center text-lg md:text-1xl md:text-right">
+          <button mat-raised-button routerLink="monitores" class="text-lg py-1 px-4" color="accent" 
+            style="font-size: 18px; padding: 4px 18px;">MONITORAR AGORA</button>
+        </p>
+      </div>
+      
+      <div class="info-image">
+        <fa-icon [icon]="['fas', 'shield-alt']" size="10x"></fa-icon>
+      </div>
+    </div>
+  </div>
+
+  <!-- Info: Sobre a Transparência de Dados -->
+  <div class="info-section py-6 md:py-16 w-full flex flex-row justify-center" style="background-color: rgba(255, 255, 255, 0.1);">
+    <div class="row px-6 md:px-16 w-full md:max-w-screen-lg gap-6 md:8 flex grow justify-around flex-col md:flex-row">
+      
+      <div class="info-content max-w-lg">
+        <p class="mt-2 text-center font-semibold font-serif text-2xl md:text-4xl md:text-left">Dados Abertos</p>
+        <p class="mt-2 text-center text-lg md:text-1xl md:text-left">
+          Nosso sistema se utiliza sempre dos dados mais recentes fornecidos pela própria câmara dos deputados.
+        </p>
+        <p class="mt-2 text-center text-lg md:text-1xl md:text-left">
+          Nossos dados não são atualizados em tempo real, mas são precessados para garantir performance
+          otimizada nas ferramentas disponibilizadas.
+        </p>
+      </div>
+      
+      <div class="info-image">
+        <fa-icon [icon]="['fas', 'university']" size="10x"></fa-icon>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<app-footer></app-footer>

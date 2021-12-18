@@ -1,0 +1,87 @@
+<div class="body-wrapper h-screen max-h-screen overflow-hidden flex flex-col flex-nowrap">
+<app-header></app-header>
+
+<main class="monitor-parts-and-deps-component mat-app-background grow flex flex-col flex-nowrap overflow-y-scroll">
+
+  <div class="info-section py-6 md:py-16 w-full grow flex flex-col justify-center items-center">
+    <div class="row px-4 md:px-16 w-full md:max-w-screen-xl gap-6 md:8 grow flex flex-col justify-center">
+      
+      <div class="title-section">
+        <p class="text-left font-semibold text-3xl md:text-6xl">Informações sobre Deputados</p>
+        <p class="text-left text-lg md:text-1xl">Quer conhecer os participantes do Big Senado Brasil 2021? 
+          Tenha uma introdução aos simpáticos deputados em exercício atualmente!</p>
+      </div>
+
+      <!-- Filtros -->
+      <div class="w-full grid grid-cols-1 md:grid-cols-2 justify-between gap-6">
+        <div  class="z-10" color="primary">
+          <app-input-autocomplete
+            label="Filtar Partidos"
+            placeholder="Nome ou Sigla do Partido"
+            [options]="this.mapToNames(this.partiesView.availableParties)"
+            (value)="eventHandlerPartyFilter($event)"
+          ></app-input-autocomplete>  
+        </div>
+        <!-- <div>{{ partyFilter }}</div> -->
+
+        <div  class="z-10" color="primary">
+          <app-input-autocomplete
+            label="Filtar Deputados"
+            placeholder="Nome do Deputado"
+            [options]="this.getMembersNames()"
+            (value)="eventHandlerCongressFilter($event)"
+          ></app-input-autocomplete>  
+        </div>
+        <div>{{ congressFilter }}</div>
+      </div>
+
+      <div class="w-full grow grid grid-cols-1 md:grid-cols-2 justify-between gap-6">
+        
+        <div class="grow flex flex-col gap-6">
+          <ng-container *ngFor="let party of this.mapToSorted(this.partiesView.availableParties)">
+            <mat-card *ngIf="!this.partyFilter || party.name.toLowerCase().includes(partyFilter.toLowerCase())" class=""> 
+              <mat-card-title-group>
+                <mat-card-title>{{party.name}} ({{party.acronym}})</mat-card-title>
+                <mat-card-subtitle style="margin-bottom: 0;">Líder: {{party.liderName}} | Membros: {{party.totalMembers}} </mat-card-subtitle>
+              </mat-card-title-group>
+              <mat-card-actions align="end">
+                <button mat-button color="accent" (click)="this.updateCurrentParty(party.id)">VER MEMBROS</button>
+              </mat-card-actions>
+            </mat-card>
+          </ng-container>
+        </div>
+
+        <div class="grow flex flex-col gap-6">
+          
+          <p *ngIf="currentParty === undefined">Selecione um partido!</p>
+          
+          <ng-container *ngFor="let congress of this.members">
+            <ng-container *ngIf="!this.congressFilter || congress.name.toLowerCase().includes(congressFilter.toLowerCase())" >
+              <mat-card>
+                <div class="flex flex-row gap-6 justify-items-start">
+                  <img src="{{ congress.photoUrl }}" style="max-width: 114px;">
+                  <div class="grow">
+                    <mat-card-title>{{ congress.name }}</mat-card-title>
+                    <mat-card-content style="margin-bottom: 0;">
+                      <p><strong>Nome civil:</strong> {{ congress.civilName }} <br/> 
+                      <strong>E-mail:</strong> {{ congress.email }} <br>
+                      <strong>Estado Eleito:</strong> {{ congress.state }} <br/> 
+                      <strong>Nascimento:</strong> {{ congress.birthCity }} - {{ congress.birthState }} <br/>
+                      <strong>Escolaridade:</strong> {{ congress.scholarity }} <br/></p>
+                    </mat-card-content>
+                  </div>
+                </div>
+              </mat-card>
+            </ng-container>
+          </ng-container>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</main>
+
+<app-footer></app-footer>
+</div>

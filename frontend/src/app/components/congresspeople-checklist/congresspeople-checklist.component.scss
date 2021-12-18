@@ -1,0 +1,7 @@
+.mat-expansion-panel {
+    transition: background-color 0.5s ease;
+}
+
+.mat-expansion-panel.mat-expanded {
+    background-color: #666;
+}
