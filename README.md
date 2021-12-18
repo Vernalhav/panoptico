@@ -14,6 +14,7 @@ Detalhes sobre o [monitor de votações](https://gitlab.com/Vernalhav/politicalt
 Detalhes sobre o [monitor de temas](https://gitlab.com/Vernalhav/politicaltracker/-/blob/develop/frontend/src/app/pages/mon-ent-subjects/README.md).  
 Detalhes sobre o [monitor de projetos de lei](https://gitlab.com/Vernalhav/politicaltracker/-/blob/develop/frontend/src/app/pages/mon-ent-proposicoes/README.md).  
 Detalhes sobre o [monitor de tema (versão nuvem)](https://gitlab.com/Vernalhav/politicaltracker/-/blob/develop/frontend/src/app/pages/mon-ent-votes-subjects/README.md).  
+Detalhes sobre o [monitor de gastos](https://gitlab.com/Vernalhav/politicaltracker/-/blob/develop/frontend/src/app/pages/mon-dep-expenses/README.md).  
 
 
 <img src="https://cdn.discordapp.com/attachments/766101843276988416/921521992589541396/unknown.png">
