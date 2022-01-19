@@ -1,6 +1,6 @@
 <img src="frontend/src/assets/logo_black.png" width=600px>  
 
-Projeto criado para a disciplina Tópicos Avançados em Programação Orientada a Objetos. O site permitirá visualizar os votos de partidos e deputados sobre determinados temas.  
+Projeto criado para a disciplina Tópicos Avançados em Programação Orientada a Objetos. O site permite visualizar os votos de partidos e deputados sobre determinados temas.  
 Para mais detalhes sobre o [front-end](./frontend/README.md) e o [back-end](./backend/README.md), consulte o README no diretório correspondente.  
 
 
